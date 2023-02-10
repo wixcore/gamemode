@@ -919,7 +919,7 @@ user.updateCharacterFace = function(player) {
                     0
                 );
 
-                if (skin.SKIN_FACE_SPECIFICATIONS) {
+                if (methods.isValidJSON(skin.SKIN_FACE_SPECIFICATIONS)) {
                     try {
                         JSON.parse(skin.SKIN_FACE_SPECIFICATIONS).forEach((item, i) => {
                             try {
@@ -956,7 +956,7 @@ user.updateCharacterFace = function(player) {
             );
             player.setClothes(2, skin.SKIN_HAIR, 0, 0);
 
-            if (skin.SKIN_FACE_SPECIFICATIONS) {
+            if (methods.isValidJSON(skin.SKIN_FACE_SPECIFICATIONS)) {
                 try {
                     JSON.parse(skin.SKIN_FACE_SPECIFICATIONS).forEach((item, i) => {
                         try {
