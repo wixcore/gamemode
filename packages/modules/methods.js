@@ -1,5 +1,6 @@
 "use strict";
 
+const fs = require('fs/promises');
 const crypto = require('crypto');
 
 let Container = require('./data');
