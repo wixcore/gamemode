@@ -27,8 +27,6 @@ import inventory from './inventory';
 import weapons from './weapons';
 import chat from './chat';
 import shopMenu from './shopMenu';
-//import voice from './voice';
-
 import houses from './property/houses';
 import condos from './property/condos';
 import stocks from './property/stocks';

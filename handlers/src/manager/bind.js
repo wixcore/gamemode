@@ -1,25 +1,19 @@
 import Container from '../modules/data';
 import methods from '../modules/methods';
 import ui from "../modules/ui";
-
 import vehicles from "../property/vehicles";
-
 import phone from "../phone";
 import mainMenu from "../mainMenu";
-//import voice from "../voice";
 import voiceRage from "../voiceRage";
 import user from '../user';
 import inventory from "../inventory";
-import chat from "../chat";
 import weapons from "../weapons";
 import menuList from "../menuList";
 import enums from "../enums";
 import walkie from "../walkie";
-
 import pSync from "./pSync";
 import heliCam from "./heliCam";
 import drone from "./drone";
-import radialMenu from "../radialMenu";
 import shopMenu from "../shopMenu";
 
 let bind = {};
