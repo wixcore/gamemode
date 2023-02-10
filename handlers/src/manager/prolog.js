@@ -288,8 +288,7 @@ prolog.timer = function() {
     pickupsPool.forEach(p => {
 
         try {
-            if (p.handle && mp.game.object.hasPickupBeenCollected(p.handle)) //Проверить сущестоввание
-            {
+            if (p.handle && !mp.game.object.doesPickupExist(p.handle) && !mp.game.object.doesPickupObjectExist(p.handle)) {
                 if (p.fuel) {
 
                     inventory.takeNewItemJust(9, "{}", 1); //Канистра
