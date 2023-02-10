@@ -1022,6 +1022,15 @@ timer.loadAll = function () {
                 mp.game.controls.disableControlAction(2, 257, true);
                 mp.game.controls.disableControlAction(2, 263, true);
             }
+            // Отключаем приклад, введения ragemp 1.1
+            if (user.getCurrentWeapon() != -1569615261) {
+                mp.game.controls.disableControlAction(2, 140, true);
+                mp.game.controls.disableControlAction(2, 141, true);
+                mp.game.controls.disableControlAction(2, 142, true);
+                mp.game.controls.disableControlAction(2, 143, true);
+                mp.game.controls.disableControlAction(2, 263, true);
+                mp.game.controls.disableControlAction(2, 264, true);
+            }
         }
         catch (e) {}
     }, 5);
