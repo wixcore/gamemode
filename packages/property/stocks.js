@@ -649,7 +649,7 @@ stocks.saveAll = function() {
 stocks.save = function(id) {
 
     return new Promise((resolve) => {
-        methods.debug('stocks.save');
+        methods.debug('stocks.save', id);
 
         if (!stocks.has(id, "id")) {
             resolve();
@@ -721,7 +721,7 @@ stocks.cargoUnload = function(player, bid = 1) {
 
                 let countLoad = 0;
                 upgrade.forEach((item, i) => {
-                    if (item == -1 && countLoad == 0) {
+                    if (parseInt(item) == -1 && countLoad == 0) {
                         upgrade[i] = boxes[bid];
                         boxes[bid] = -1;
                         veh.setVariable('box', JSON.stringify(boxes));
@@ -852,7 +852,7 @@ stocks.addCargo = function(stockKey, bid = 1) {
                 let countLoad = 0;
 
                 upgrade.forEach((item, i) => {
-                    if (item == -1 && countLoad == 0) {
+                    if (parseInt(item) == -1 && countLoad == 0) {
                         upgrade[i] = bid;
                         countLoad++;
                     }
@@ -1082,23 +1082,18 @@ stocks.upgradeResetAll = function(id) {
 };
 
 stocks.loadUpgrades = function(upgradeString, id, interior) {
-
-    mp.objects.forEachInDimension(id + enums.offsets.stock, o => {
-        try {
-            o.destroy();
-        }
-        catch (e) {
-            methods.debug(e);
+    
+    mp.objects.forEach((obj) => {
+        if (obj && mp.objects.exists(obj) && obj.dimension === id + enums.offsets.stock) {
+            obj.destroy();
         }
     });
 
-    upgradeString.split('_').forEach((boxId, slot) => {
-
-        boxId = methods.parseInt(boxId);
-
-        if (boxId == -1)
+    let boxArray = upgradeString.split('_');
+    boxArray.forEach((boxId, slot) => {
+        if (parseInt(boxId) === -1) {
             return;
-
+        }
         stocks.addObject(boxId, slot, id, interior);
     });
 };
