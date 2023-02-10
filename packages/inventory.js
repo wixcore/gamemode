@@ -73,7 +73,7 @@ inventory.getItemList = function(player, ownerType, ownerId, isFrisk = false, ju
         if (ownerType === 1 && ownerId === user.getId(player))
             sql = `SELECT * FROM items WHERE owner_id = '${ownerId}' AND owner_type = '${ownerType}'${addWhere} ORDER BY is_equip DESC, item_id DESC LIMIT 400`;
         if (ownerId == 0 && ownerType == 0)
-            sql = `SELECT * FROM items WHERE DISTANCE(POINT(pos_x, pos_y), POINT(${player.position.x}, ${player.position.y})) < 2 AND owner_type = 0 ORDER BY is_equip DESC, item_id DESC LIMIT 400`;
+            sql = `SELECT * FROM items WHERE ST_Distance(POINT(pos_x, pos_y), POINT(${player.position.x}, ${player.position.y})) < 2 AND owner_type = 0 ORDER BY is_equip DESC, item_id DESC LIMIT 400`;
 
         mysql.executeQuery(sql, function (err, rows, fields) {
             rows.forEach(row => {
