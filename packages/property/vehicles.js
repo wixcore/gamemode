@@ -1556,8 +1556,8 @@ vehicles.lockStatus = (player, vehicle) => {
         return;
     try {
         vehicle.locked = !vehicle.locked;
-        //let lockStatus = !vSync.getLockState(vehicle);
         vSync.setLockStatus(vehicle, vehicle.locked);
+        vehicle.setVariable('locked', vehicle.locked);
         if (!vehicle.locked)
             player.notify('Вы ~g~открыли~s~ транспорт');
         else
