@@ -45,7 +45,7 @@ business.loadAll = function() {
 };
 
 business.save = function(id) {
-    methods.debug('business.save');
+    methods.debug('business.save', id);
 
     if (!business.has(id, "id")) return;
 

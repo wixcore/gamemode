@@ -14,6 +14,8 @@ const pool = mysql2.createPool({
     database: 'ragemp-staterp',
     port: 3306,
     waitForConnections: true,
+    connectTimeout: 15000,
+    acquireTimeout: 15000,
     connectionLimit: 500,
     queueLimit: 0,
     timeout: 600000
