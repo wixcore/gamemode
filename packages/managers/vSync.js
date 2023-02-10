@@ -410,15 +410,22 @@ mp.events.add("playerEnterVehicle", function (player, vehicle) {
 
 mp.events.add("playerExitVehicle", function (player, vehicle) {
     setTimeout(function () {
-    if (vehicles.exists(vehicle))
-        vSync.setEngineState(vehicle, vSync.getEngineState(vehicle));
+        if (vehicles.exists(vehicle)) {
+            vSync.setEngineState(vehicle, vSync.getEngineState(vehicle));
+        }
+        let data = vSync.getVehicleSyncData(vehicle);
+        if(data.SirenState) {
+            vSync.setSirenState(vehicle, true);
+        }
     }, 1500);
 
     try {
-        for (let i = -1; i < 20; i++)
+        for (let i = -1; i < 20; i++) {
             vehicle.setOccupant(i, null);
+        }
+    } catch (e) {
+        methods.debug('Player Exit Vehicle', e);
     }
-    catch (e) {}
 });
 
 mp.events.add('s:vSync:setDirtLevel', (player, vId, level) => {
