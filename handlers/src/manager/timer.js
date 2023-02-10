@@ -1004,8 +1004,8 @@ timer.loadAll = function () {
                 mp.game.controls.disableControlAction(0, 34, true); //move (a)
                 mp.game.controls.disableControlAction(0, 33, true); //move (s)
                 mp.game.controls.disableControlAction(0, 35, true); //move (d)
-                mp.game.controls.disableControlAction(0, 59, true);
-                mp.game.controls.disableControlAction(0, 60, true);
+                //mp.game.controls.disableControlAction(0, 59, true); // Переворот транспорта влево
+                //mp.game.controls.disableControlAction(0, 60, true); // Переворот транспорта вправо
             }
 
             if(ui.isGreenZone() && !user.isPolice() && !user.isGov() && !user.isCartel()) {
