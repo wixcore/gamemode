@@ -139,7 +139,7 @@ fuel.fillVeh = function(price, shopId, type, idx) {
 
         let currentFuel = vehicles.getFuel(veh);
         if (vInfo.fuel_full <= vehicles.getFuel(veh) + 1) {
-            mp.game.ui.notifications.show.notify('~r~Транспорт уже заправлен');
+            mp.game.ui.notifications.show('~r~Транспорт уже заправлен');
             return;
         }
 
