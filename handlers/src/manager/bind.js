@@ -414,7 +414,7 @@ for(let code in keyCodes) {
             }
         }
         if (user.getCache('s_bind_phone') == parseInt(code)) {
-            if (!methods.isBlockKeys() && !mp.gui.cursor.visible) {
+            if (!methods.isBlockKeys()) {
                 if (Container.Data.HasLocally(mp.players.local.remoteId, "isPhoneTimeout"))
                 {
                     mp.game.ui.notifications.show("~r~Таймаут на действие 0.5 секунд");
@@ -429,7 +429,7 @@ for(let code in keyCodes) {
         }
         //if (user.getCache('s_bind_walkie') == parseInt(code)) {
         if (user.getCache('s_bind_voice_walkie') == parseInt(code)) {
-            if (!methods.isBlockKeys() && !mp.gui.cursor.visible) {
+            if (!methods.isBlockKeys()) {
                 if (Container.Data.HasLocally(mp.players.local.remoteId, "isWalkieTimeout"))
                 {
                     mp.game.ui.notifications.show("~r~Таймаут на действие 0.5 секунд");
