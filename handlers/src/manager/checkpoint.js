@@ -111,7 +111,7 @@ mp.events.add('render', () => {
                     item.scale, item.scale, item.height,
                     item.color[0], item.color[1], item.color[2], item.color[3],
                     false, false, 2,
-                    false, "", "",false
+                    false, null, null, false
                 );
             }
         });
@@ -127,7 +127,7 @@ mp.events.add('render', () => {
                     item.scale, item.scale, item.height,
                     item.color[0], item.color[1], item.color[2], item.color[3],
                     true, false, 2,
-                    false, "", "",false
+                    false, null, null, false
                 );
             }
         });
