@@ -300,18 +300,29 @@ mp.events.add('client:createGlobalPedInVehicle', (id, model, vehicleId) => {
 
     let veh = mp.vehicles.atRemoteId(vehicleId);
     if (mp.vehicles.exists(veh) && methods.distanceToPos(veh.position, mp.players.local.position) < 300) {
-        /*let spawnPos = veh.position;
-        if (methods.distanceToPos(veh.position, mp.players.local.position) > 300)
-            spawnPos = new mp.Vector3(0, 0, 0);*/
-
-        let ped = mp.peds.new(mp.game.joaat(model), veh.position, 270.0);
+        let pos = new mp.Vector3(veh.position.x,veh.position.y + 2.5, veh.position.z);
+        let ped = mp.peds.new(mp.game.joaat(model), pos, 270.0);
+        var seat = null;
         try {
-            ped.setCollision(false, false);
-        }
-        catch (e) {
+            for (let i = 0; i < veh.getMaxNumberOfPassengers(); i++) {
+                if (veh.isSeatFree(i)) {
+                    seat = i;
+                    break;
+                }
+            }
+
+            if(seat != null) {
+                setTimeout(function () {
+                    ped.setCollision(false, false);
+                    ped.taskEnterVehicle(veh.handle, 3000, seat, 1, 1, 0);
+                }, 250);
+            } else {
+                mp.game.ui.notifications.show('~r~В вашем авто нет свободного места для пассажира!');
+                return;
+            }
+        } catch (e) {
             methods.debug(e);
         }
-        mp.game.invoke(methods.TASK_ENTER_VEHICLE, ped.handle, veh.handle, 3, 0, 0, 0);
         pedList.push({ped: ped, pedId: id});
     }
 });
