@@ -2009,7 +2009,7 @@ user.getVehicleDriver = function(vehicle) {
     if (!mp.vehicles.exists(vehicle))
         return driver;
     vehicle.getOccupants().forEach((p) => {
-        if (p.seat == -1)
+        if (p.seat == 0)
             driver = p;
     });
     return driver;

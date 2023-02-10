@@ -124,7 +124,7 @@ lsc.checkPosForOpenMenu = function(player) {
                         player.notify('~r~К сожалению автосервис сейчас не работает');
                         return;
                     }*/
-                    if (player.seat >= 0) {
+                    if (player.seat > 0) {
                         player.notify('~r~Доступно только на водительском');
                         return;
                     }

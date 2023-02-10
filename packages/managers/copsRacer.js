@@ -329,7 +329,7 @@ copsRacer.playerToLobby = function(player, role = 0) {
             }
 
             if (user.isLogin(player))
-                user.putInVehicle(player, veh, -1);
+                user.putInVehicle(player, veh, 0);
 
         }, new mp.Vector3(spawnPos[0], spawnPos[1], spawnPos[2]), spawnPos[3], currentVehicle);
 

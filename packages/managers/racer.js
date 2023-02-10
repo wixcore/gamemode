@@ -6499,7 +6499,7 @@ racer.startRace = function () {
                             }
 
                             if (user.isLogin(p))
-                                user.putInVehicle(p, veh, -1);
+                                user.putInVehicle(p, veh, 0);
 
                         }, spawnPos, spawnRot, currentVehicle);
                     }, 1000);

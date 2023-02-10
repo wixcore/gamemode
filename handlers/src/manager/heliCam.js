@@ -140,8 +140,7 @@ heliCam.keyPressToggleLockVehicle = function () {
 heliCam.isValideVeh = function () {
     try {
         return mp.players.local.vehicle &&
-            mp.players.local.isInAnyVehicle(true) &&
-            (mp.players.local.vehicle.getPedInSeat(-1) == mp.players.local.handle || mp.players.local.vehicle.getPedInSeat(0) == mp.players.local.handle);
+            mp.players.local.isInAnyVehicle(true) && (mp.players.local.vehicle.getPedInSeat(-1) == mp.players.local.handle || mp.players.local.vehicle.getPedInSeat(-1) == mp.players.local.handle);
     }
     catch (e) {
 

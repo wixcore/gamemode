@@ -19,7 +19,7 @@ const getClosestVehicleInRange = (range) => {
 mp.game.controls.useDefaultVehicleEntering = false;
 mp.keys.bind(71, false, () => {
     if (mp.players.local.vehicle === null && !mp.gui.cursor.visible) {
-        const driverSeatId = -1; // CHANGE THIS AS THE DRIVER INDEX CHANGES
+        const driverSeatId = 0; // CHANGE THIS AS THE DRIVER INDEX CHANGES
         const playerPos = mp.players.local.position;
         const vehicle = getClosestVehicleInRange(6);
         if (!vehicle) return;

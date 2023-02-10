@@ -215,7 +215,7 @@ rent.buy = function(player, hash, price, shopId, payType) {
 
         if (!user.isLogin(player))
             return;
-        user.putInVehicle(player, veh, -1);
+        user.putInVehicle(player, veh, 0);
 
     }, player.position, player.heading, hash);
 

@@ -639,7 +639,7 @@ mp.events.add('server:vehicles:speedLimit', (player, vId, speed) => {
     let veh = mp.vehicles.at(vId);
     if (mp.players.exists(player) && vehicles.exists(veh)) {
         vehicles.getOccupants(veh).forEach(p => {
-            if (user.isLogin(p) && p.seat === -1)
+            if (user.isLogin(p) && p.seat === 0)
                 p.call('client:setNewMaxSpeedServer', [speed]);
         });
     }

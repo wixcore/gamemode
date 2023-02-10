@@ -1928,7 +1928,7 @@ mp.events.addRemoteCounted('server:user:inCarById', (player, targetId) => {
             }
             let v = methods.getNearestVehicleWithCoords(player.position, 7);
             if (v && mp.vehicles.exists(v)) {
-                user.putInVehicle(pl, v, 0);
+                user.putInVehicle(pl, v, 1);
                 player.notify('~g~Вы затащили человека в транспорт');
                 pl.notify('~r~Вас затащили в транспорт');
             } else {
@@ -2272,7 +2272,7 @@ mp.events.addRemoteCounted('server:admin:spawnVeh', (player, vName) => {
     try {
         if (user.isAdmin(player)) {
             let v = vehicles.spawnCar(player.position, player.heading, vName, undefined, player.dimension);
-            user.putInVehicle(player, v, -1);
+            user.putInVehicle(player, v, 0);
             v.setVariable('isAdmin', true);
         }
     }
@@ -2296,7 +2296,7 @@ mp.events.addRemoteCounted('server:startSpecMission', (player) => {
     try {
         if (user.isAdmin(player)) {
             let v = vehicles.spawnCar(player.position, player.heading, 'rcbandito');
-            user.putInVehicle(player, v, -1);
+            user.putInVehicle(player, v, 0);
             v.alpha = 0;
             v.locked = true;
             v.addAttachment('spec1');
@@ -2339,7 +2339,7 @@ mp.events.addRemoteCounted('server:startSpecMissionLspd', (player, vId) => {
             player.call('client:drone:status', [true]);
 
             let v = vehicles.spawnCar(player.position, player.heading, 'rcbandito');
-            user.putInVehicle(player, v, -1);
+            user.putInVehicle(player, v, 0);
             v.alpha = 0;
             v.locked = true;
             v.addAttachment('spec1');
@@ -3378,7 +3378,7 @@ mp.events.addRemoteCounted('server:vehicles:spawnJobCar', (player, x, y, z, head
             vehicles.spawnJobCar(veh => {
                 if (!vehicles.exists(veh))
                     return;
-                user.putInVehicle(player, veh, -1);
+                user.putInVehicle(player, veh, 0);
                 vehicles.set(veh.getVariable('container'), 'owner_id', user.getId(player));
                 veh.setVariable('owner_id', user.getId(player));
 
@@ -3464,7 +3464,7 @@ mp.events.addRemoteCounted('server:vehicles:spawnLamarCar', (player, x, y, z, he
             vehicles.spawnCarCb(veh => {
                 if (!vehicles.exists(veh))
                     return;
-                user.putInVehicle(player, veh, -1);
+                user.putInVehicle(player, veh, 0);
                 vehicles.set(veh.getVariable('container'), 'owner_id', user.getId(player));
                 veh.setVariable('owner_id', user.getId(player));
                 veh.setVariable('lamar', true);
@@ -4584,7 +4584,7 @@ mp.events.addRemoteCounted('server:lspd:takeVehicle', (player, x, y, z, rot, vid
         setTimeout(function () {
             try {
                 vehicles.setHeading(vid, rot);
-                user.putInVehicle(player, veh, -1);
+                user.putInVehicle(player, veh, 0);
                 player.notify('~y~Не забудьте оплатить штраф через 2 - Транспорт');
                 user.teleportVeh(player, x, y, z, rot);
             }

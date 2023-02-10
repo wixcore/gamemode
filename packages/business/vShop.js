@@ -253,7 +253,7 @@ vShop.buy = function(player, model, color1, color2, shopId, payType) {
                         if (vehicles.exists(veh)) {
                             veh.position = new mp.Vector3(shopItem.spawnPos[0], shopItem.spawnPos[1], shopItem.spawnPos[2]);
                             veh.heading = shopItem.spawnPos[3] - 180;
-                            user.putInVehicle(player, veh, -1);
+                            user.putInVehicle(player, veh, 0);
                             vehicles.setFuel(veh, methods.getVehicleInfo(veh.model).fuel_full);
                         }
                     }
@@ -365,7 +365,7 @@ vShop.rent = function(player, model, color1, color2, shopId) {
 
         if (!user.isLogin(player))
             return;
-        user.putInVehicle(player, veh, -1);
+        user.putInVehicle(player, veh, 0);
         vShop.sendNotify(player, shopId, 'Аренда', `Вы арендовали транспорт ~b~${vInfo.display_name}~s~.`);
 
     }, new mp.Vector3(shopItem.spawnPos[0], shopItem.spawnPos[1], shopItem.spawnPos[2]), shopItem.spawnPos[3], model);
