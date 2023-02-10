@@ -1,0 +1,15 @@
+<svg width="80" height="50" viewBox="0 0 80 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="80" height="49.7778" rx="4" fill="url(#paint0_angular)"/>
+<circle cx="8.88802" cy="8.88802" r="5.33333" fill="#736100"/>
+<rect x="55.1123" y="35.5547" width="21.3333" height="10.6667" rx="3" fill="#736100"/>
+<rect x="60.4453" y="7.11133" width="10.6667" height="3.55556" rx="1.77778" fill="#736100"/>
+<defs>
+<radialGradient id="paint0_angular" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(40.8889 24.8889) rotate(32.4712) scale(46.3588 74.5052)">
+<stop stop-color="#FFD700"/>
+<stop offset="0.239583" stop-color="#FFF2AD"/>
+<stop offset="0.5" stop-color="#FFD700"/>
+<stop offset="0.739583" stop-color="#FFF9DB"/>
+<stop offset="1" stop-color="#FFD700"/>
+</radialGradient>
+</defs>
+</svg>

@@ -1,0 +1,21 @@
+.tatoo__content__header {
+    display: flex;
+    flex-direction: column;
+    padding: 8%;
+}
+
+.tatoo__content__header__img {
+    width: 100%;
+    height: auto;
+}
+
+.tatoo__content__header__title {
+    font-family: 'Gotham Pro Medium';
+    font-size: 1.6rem;
+}
+
+.tatoo__content__header__subtitle {
+    color: #c9c9c9;
+    font-family: 'RobotoMedium';
+    font-size: 1.4rem;
+}

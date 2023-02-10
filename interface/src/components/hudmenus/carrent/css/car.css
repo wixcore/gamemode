@@ -1,0 +1,124 @@
+.carrent__content__list__img {
+    width: 70%;
+    padding-left: 10%;
+    padding-right: 10%;
+    height: auto;
+}
+
+.carrent__content__list__img__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: top;
+}
+
+.carrent__content__list__img__item {
+    width: 100%;
+    height: auto;
+    border-radius: 7px;
+}
+
+.carrent__content__list__item {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.carrent__content__list__item__info__price {
+    font-family: 'Gotham Pro Regular';
+    font-size: 2rem;
+}
+
+.carrent__hide {
+    display: none;
+}
+
+.carrent__content__list__item__info__type {
+    font-family: 'Gotham Pro Regular';
+    font-size: 1rem;
+}
+
+.carrent__content__list__item__info__name {
+    font-family: 'Gotham Pro Medium';
+    font-size: 2.4rem;
+}
+
+.carrent__content__list__item__info__rentbtn {
+    font-family: 'Gotham Pro Regular';
+    font-size: 1rem;
+    cursor: pointer;
+    border: 0.5px solid rgba(255, 255, 255, 0.25);
+    border-radius: 7px;
+    margin-bottom: 3%;
+    width: 100%;
+    text-align: center;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 1.3rem;
+    padding-bottom: 1.3rem;
+}
+
+.carrent__content__list__item__info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-top: 2rem;
+    margin-top: auto;
+}
+
+.carrent__content__list__item__name {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+    font-family: 'RobotoBold';
+    letter-spacing: 0.05rem;
+}
+
+.carrent__content__list__img__container__data {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.carrent__content__list__item__info__rent {
+    /*display: flex;*/
+    flex-direction: row;
+    align-items: center;
+    display: flex;
+    height: 50px;
+}
+
+.carrent__content__list__item__info__rentbtn:first-child {
+    margin-right: 20px;
+}
+
+.carrent__content__list__item__sale {
+    padding-top: 0.6rem;
+    padding-bottom: 0.6rem;
+    padding-left: 1.3rem;
+    padding-right: 1.3rem;
+    font-family: 'Gotham Pro Regular';
+    background: linear-gradient(105.63deg, rgba(221, 64, 64, 0) -80.94%, #E93A3A 275.52%);
+    border: 0.5px solid #FF6161;
+    border-radius: 5px;
+    font-size: 1.1rem;
+}
+
+.carrent__content__list__item__sale__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 7px 0px 0px 7px;
+    padding-left: 1.1rem;
+    padding-right: 1.1rem;
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
+    margin-top: -7rem;
+    margin-left: auto;
+}

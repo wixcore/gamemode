@@ -1,0 +1,27 @@
+{
+  "name": "wixcore.net",
+  "version": "1.0.0",
+  "description": "Files for the build of the game mod for the RAGEMP 1.1 platform.",
+  "homepage": "https://github.com/wixcore/ragemp-staterp#readme",
+  "main": "index.js",
+  "author": "ua.lifesheetst@wixcore.net",
+  "license": "MIT",
+  "scripts": {
+    "start": "nodemon --watch packages --watch client_packages --exec \"./ragemp-server.exe\"",
+    "build": "npm run build:handlers && npm run build:interface",
+    "build:interface": "cd interface && npm run build",
+    "build:handlers": "cd handlers && npm run build"
+  },
+  "dependencies": {
+    "mysql2": "^3.1.2",
+    "nodemon": "^2.0.20",
+    "webhook-discord": "^3.7.8"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wixcore/ragemp-staterp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/wixcore/ragemp-staterp/issues"
+  }
+}

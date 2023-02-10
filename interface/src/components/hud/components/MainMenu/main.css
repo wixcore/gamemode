@@ -1,0 +1,14 @@
+.mainmenu__header__title {
+    font-family: 'Gotham Pro Medium';
+    font-size: 2.2rem;
+}
+
+.mainmenu__header__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-radius: 10px;
+}

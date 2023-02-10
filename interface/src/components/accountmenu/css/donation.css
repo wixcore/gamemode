@@ -1,0 +1,162 @@
+.accountmenu__donation__kit__kitcontainer {
+    padding: 5%;
+}
+
+.accountmenu__donation__kit__kititem__name {
+    font-family: 'Hacked';
+    font-size: 3.2rem;
+}
+
+.accountmenu__donation__kit__kititem__info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 5%;
+}
+
+.accountmenu__donation__kit__kititem__info__row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.accountmenu__donation__kit__kititem__img {
+    height: 220px;
+    border-radius: 0.4rem;
+}
+
+.accountmenu__donation__kit__kititem__img__wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+.accountmenu__donation__kit__kititem__img__carname {
+    width: 100%;
+    text-align: center;
+    font-family: 'RotoboMedium';
+    font-size: 1.4rem;
+    margin-top: 5%;
+}
+
+.accountmenu__donation__kit__kititem__info__wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+
+.accountmenu__donation__kit__kititem__info__wrapper__row {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.accountmenu__donation__kit__kititem__img__wrapper__name { 
+    font-family: 'RobotoLight';
+    color: #fff;
+    font-size: 1.2rem;
+    text-align: center;
+    width: 100%;
+}
+
+.accountmenu__donation__kit__kititem__img__wrapper__content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 4%;
+}
+
+.accountmenu__donation__kit__kititem__row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.accountmenu__donation__kit__kititem__row__name {
+    font-family: 'Hacked';
+    font-size: 2.2rem;
+}
+
+.accountmenu__content__cards__answer__row__li {
+    list-style-type: square;
+    padding-top: 0.4rem;
+    padding-bottom: 0.4rem;
+    font-family: 'RobotoLight';
+    letter-spacing: 0.1rem;
+    font-size: 1.2rem;
+    line-height: 1.7;
+}
+
+.accountmenu__donation__kit__kititem__row__img {
+    height: 320px;
+    width: 88%;
+    object-fit: cover;
+    border-radius: 0.4rem;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.accountmenu__donation__vip__row__card {
+    display: flex;
+    flex-direction: column;
+}
+
+.accountmenu__donation__vip__row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 2%;
+}
+
+.accountmenu__donation__kit__kititem__img__wrapper__name_bold {
+    font-family: 'RobotoBold';
+    color: #fff;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.accountmenu__donation__vip__row__card__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 6%;
+    padding-bottom: 8%;
+    border-top: 1px solid #70cfff;
+}
+
+.about__donation {
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
+    margin-top: 2%;
+}
+
+.accountmenu__donation__change__row {
+    display: flex;
+    flex-direction: row;
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
+    align-items: center;
+    margin-top: 2%;
+}
+
+.accountmenu__donation__service__item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 4%;
+    align-items: center;
+}
+
+.accountmenu__donation__service__item__info {
+    display: flex;
+    flex-direction: column;
+}
+
+.accountmenu__donation__kit__kititem__cars {
+    display: flex;
+    flex-direction: row;
+    width: 40%;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}

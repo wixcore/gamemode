@@ -1,0 +1,287 @@
+
+
+.accountmenu__scrollable {
+    overflow-y: auto;
+}
+
+.accountmenu__scrollable::-webkit-scrollbar {
+   width: 0.8rem;
+ }
+   
+ .accountmenu__scrollable::-webkit-scrollbar-track {
+   background: #303030;
+ }
+   
+ .accountmenu__scrollable::-webkit-scrollbar-thumb {
+   background: #fff;
+}
+
+.accountmenu__content__cards__bitem {
+    display: flex;
+    height: 90%;
+    width: 44%;
+    background: rgba(0, 0, 0, 0.35);
+    border: 0.5px solid rgba(255, 255, 255, 0.5);
+    box-sizing: border-box;
+    border-radius: 15px;
+    flex-direction: column;
+}
+
+.accountmenu__content__cards__sitem {
+    display: flex;
+    height: 90%;
+    width: 22%;
+    background: rgba(0, 0, 0, 0.35);
+    border: 0.5px solid rgba(255, 255, 255, 0.5);
+    box-sizing: border-box;
+    border-radius: 15px;
+    flex-direction: column;
+}
+
+
+.accountmenu__content__cards__container {
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.accountmenu__content__cards__container__help {
+    height: 100%;
+}
+
+.accountmenu__content__cards__ptext {
+    font-family: 'Gotham Pro Regular';
+    font-size: 1.4rem;
+    color: #fff;
+    text-align: center;
+}
+
+.accountmenu__content__cards__ptext__container {
+    margin-top: 1.5rem;
+    margin-bottom: 2.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.accountmenu__content__cards__bigbutton_red {
+    background: #ED213A;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    box-shadow: 0 0 16px rgba(243, 85, 98, 0.34);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+}
+
+.accountmenu__content__cards__bigbutton_border_red {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    border: 0.5px solid rgba(255, 99, 99, 0.5);
+    box-sizing: border-box;
+    border-radius: 7px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+}
+
+.accountmenu__content__cards__bigbutton_border_blue {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    border: 0.5px solid rgba(0, 133, 255, 0.5);
+    box-sizing: border-box;
+    border-radius: 7px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+}
+
+.accountmenu__content__cards__bigbutton_disabled {
+    background: #5f5f5f;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    box-shadow: 0 0 16px rgba(168, 168, 168, 0.34);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+}
+
+.accountmenu__content__cards__bigbutton_green {
+    background: #36cc5c;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+}
+
+.accountmenu__content__cards__bigbutton_blue {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    padding-bottom: 1.2rem;
+    padding-top: 1.2rem;
+    border: 0.5px solid rgba(255, 255, 255, 0.25);
+    box-sizing: border-box;
+    border-radius: 7px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+}
+
+.accountmenu__content__cards__bigbutton__text {
+    font-family: 'Gotham Pro Regular';
+    font-size: 1rem;
+    text-align: center;
+}
+
+
+.accountmenu__cards__question {
+    padding-top: 6%;
+    padding-bottom: 6%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    border: 0.5px solid rgba(255, 255, 255, 0.25);
+    box-sizing: border-box;
+    border-radius: 7px;
+    padding-left: 5%;
+    padding-right: 5%;
+    cursor: pointer;
+}
+
+.accountmenu__cards__question__active {
+    padding-top: 6%;
+    padding-bottom: 6%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.25);
+    border: 0.5px solid rgba(255, 255, 255, 0.25);
+    box-sizing: border-box;
+    border-radius: 7px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    padding-left: 5%;
+    cursor: pointer;
+    padding-right: 5%;
+}
+
+.accountmenu__cards__question__icon {
+    
+    width: 100%;
+    height: auto;
+}
+
+.accountmenu__cards__question__text {
+    margin-left: 1.5rem;
+    width: 90%;
+    color: #fff;
+    font-family: 'Gotham Pro Regular';
+    font-size: 1.2rem;
+}
+
+.accountmenu__cards__question__icon__container {
+    width: 1.6rem;
+    padding: 2%;
+    border-radius: 0.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.accountmenu__cards__question__active .accountmenu__cards__question__text {
+    margin-left: 1.5rem;
+    color: #fff;
+    width: 90%;
+    font-family: 'Gotham Pro Regular';
+    font-size: 1.2rem;
+}
+
+.accountmenu__cards__question__active .accountmenu__cards__question__icon__container {
+    width: 1.6rem;
+    padding: 2%;
+    border-radius: 0.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.accountmenu__cards__question__active .accountmenu__cards__question__icon {
+    width: 100%;
+    height: auto;
+}
+
+.accountmenu__content__cards__answer__img {
+    display: flex;
+    height: 40vh;
+    border: 0.5px solid rgba(255, 255, 255, 0.25);
+    box-sizing: border-box;
+    border-radius: 7px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('../img/bg_faq_img.svg');
+}
+
+.accountmenu__cards__question__icon__container__active {
+    padding: 2% 2rem 2% 2rem;
+    margin-right: 1.5rem;
+    margin-left: 1.5rem;
+    border-radius: 0.4rem;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    margin-top: -12%;
+    background: rgba(0, 0, 0, 0.8);
+    border: 0.5px solid rgba(255, 255, 255, 0.25);
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+.accountmenu__cards__question__icon__active {
+    width: 100%;
+    height: auto;
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%) contrast(103%);
+}
+
+.accountmenu__content__cards__answer__title {
+    font-family: 'Gotham Pro Medium';
+    font-size: 1rem;
+}
+
+.accountmenu__content__cards__answer__title__container {
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.accountmenu__content__cards__answer__text {
+    font-family: 'Gotham Pro Regular';
+    font-size: 1.2rem;
+    line-height: 20px;
+}
+
+.accountmenu__content__cards__answer__li {
+    list-style-type: square;
+    padding-left: 10px;
+    padding-top: 0.4rem;
+    padding-bottom: 0.4rem;
+    font-family: 'Gotham Pro Regular';
+    font-size: 1.2rem;
+    /*color: #43b2ea;*/
+    margin-left: 22px;
+}
+
+ol .accountmenu__content__cards__answer__li::first-line {
+    color: #fff;
+}

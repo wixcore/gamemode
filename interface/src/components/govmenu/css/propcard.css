@@ -1,0 +1,175 @@
+.govmenu__propertygov__propertycar__img {
+    display: flex;
+    height: 100%;
+    background-position: center;
+    background-size: 100%;
+    border-radius: 0.4rem;
+    background-repeat: no-repeat;
+}
+
+.govmenu__propertygov__propertycar {
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+.govmenu__propertygov__propertycar__card {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 4px solid rgba(72, 72, 72, 0.1);
+}
+
+.govmenu__propertygov__container {
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
+}
+
+.govmenu__propertygov__propertycar__card__type {
+    color: #70cfff;
+    letter-spacing: 0.15rem;
+    font-family: 'RobotoLight';
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    margin-top: 1%;
+}
+
+.govmenu__propertygov__propertycar__card__name {
+    font-family: 'RobotoBold';
+    font-size: 2.2rem;
+    text-transform: uppercase;
+}
+
+.govmenu__propertygov__info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 2%;
+    align-items: center;
+    padding-bottom: 2%;
+}
+
+.property__listed:hover {
+    background: rgba(255, 255, 255, 0.15);
+}
+
+.govmenu__propertygov__info__name {
+    font-family: 'RobotoBold';
+    font-size: 2.2rem;
+    text-transform: uppercase;
+}
+
+.govmenu__propertygov__imgheader {
+    display: flex;
+    min-height: 250px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.govmenu__propertygov__info__wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.govmenu__propertygov__info__balance__info__max {
+    color: #70cfff;
+    letter-spacing: 0.15rem;
+    font-family: 'RobotoBold';
+    font-size: 1.3rem;
+    text-transform: uppercase;
+}
+
+.govmenu__propertygov__info__balance__info {
+    color: #00bb6d;
+    letter-spacing: 0.15rem;
+    font-family: 'RobotoBold';
+    font-size: 1.3rem;
+    text-transform: uppercase;
+}
+
+.govmenu__propertygov__info__balance {
+    letter-spacing: 0.15rem;
+    font-family: 'RobotoLight';
+    font-size: 1.3rem;
+    color: #c9c9c9;
+    text-transform: uppercase;
+}
+
+.govmenu__propertygov__info__img {
+    width: 20%;
+    margin-left: auto;
+    padding-right: 5%;
+    height: auto;
+    border-radius: 0.4rem;
+}
+
+.govmenu__content__reports__dialog__input {
+    height: 6vh;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.7rem;
+    padding-bottom: 0.7rem;
+    background-color: rgba(136, 136, 136, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.govmenu__propertygov__payment {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.govmenu__propertygov__payment__btns {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.govmenu__property__roommates__container {
+    padding-top: 0;
+    margin-bottom: 2%;
+    display: flex;
+}
+
+.govmenu__property__roommates__list {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.govmenu__property__roommates__list__item {
+    font-family: 'RobotoBold';
+    font-size: 1.4rem;
+    letter-spacing: 0.05rem;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+.govmenu__property__roommates__list__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.govmenu__property__roommatesheader__container {
+    display: flex;
+    flex-direction: row;
+    padding-top: 0;
+    margin-top: 0;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 2%;
+}
+
+.govmenu__propertygov__info__balance__container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2%;
+    margin-bottom: 4%;
+}

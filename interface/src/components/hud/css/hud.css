@@ -1,0 +1,1057 @@
+
+.hud-main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: absolute;
+    /*background-image: url('https://sun9-56.userapi.com/impg/0JfXCbRsmDKjQDg1aM8C50x4I0uocy60xDLSrA/L2uXeWyOZ4s.jpg?size=1280x720&quality=96&sign=8c45c70986b74dd06036643841aff64b&type=album');
+    background-size: cover;
+    background-repeat: no-repeat;*/
+}
+.hud-position-leftop {
+    margin-right: auto;
+    margin-bottom: auto;
+    position: absolute;
+}
+.hud-position-rightbottom {
+    margin-left: auto;
+    margin-top: auto;
+    display: flex;
+}
+
+.radialmenu__slice__title {
+    font-family: 'Gotham Pro Medium';
+    font-size: 1.2rem;
+    color: #fff;
+}
+
+.radialmenu__center__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.radialmenu__container {
+    z-index: 111;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.hud-position-leftbottom {
+    margin-right: auto;
+    margin-top: auto;
+}
+
+.player-hud {
+    display: flex;
+    margin-bottom: 50px;
+    align-items: flex-end;
+}
+
+
+
+.phud-mic {
+    width: 51px;
+    height: 51px;
+    background: rgb(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.phud-mic .mic-img {
+    background: url(../img/mic-off.png) no-repeat;
+    width: 21px;
+    height: 36px;
+}
+
+.phud-needs {
+    height: 63px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+.player-hud__box {
+    display: flex;
+    flex-direction: column;
+    margin-right: 50px;
+}
+
+.player-hud__box__row {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1rem;
+}
+
+.needs-box {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.needs-box:last-child {
+    margin-top: 10px;
+}
+
+.needs-box .img-drink {
+    background: url(../img/drink.png) no-repeat;
+    width: 12px;
+    height: 15px;
+    margin-right: 9px;
+    margin-left: 4px;
+}
+
+.needs-box .img-eat {
+    background: url(../img/eat.png) no-repeat;
+    width: 19px;
+    height: 15px;
+    margin-right: 6px;
+}
+
+.liner-needs {
+    width: 60%;
+    height: 3px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 2px;
+}
+
+.liner-needs-drink {
+    width: 60%;
+    height: 3px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 2px;
+}
+
+.liner-needs-drink-low {
+    width: 60%;
+    height: 3px;
+    background: rgba(255, 79, 79, 0.2);
+    border-radius: 2px;
+}
+
+.color-liner {
+    background: #fff;
+    height: inherit;
+    transition-duration: 0.2s;
+}
+
+.color-liner-drink {
+    background: #fff;
+    height: inherit;
+    transition-duration: 0.2s;
+}
+
+.color-liner-drink-low {
+    background: #FF4F4F;
+    height: inherit;
+    transition-duration: 0.2s;
+}
+
+.needs-text {
+    font-family: "Gotham Pro Medium";
+    font-size: 1rem;
+    color: #fff;
+}
+
+.needs-text-drink {
+    font-family: "Gotham Pro Medium";
+    font-size: 1rem;
+    color: #fff;
+}
+
+.needs-text-drink-low {
+    font-family: "Gotham Pro Medium";
+    font-size: 1rem;
+    color: #FF4F4F;
+}
+
+.phud-money {
+    width: 187px;
+    height: 51px;
+    background: rgb(0, 0, 0, 0.5);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+    margin-right: 9px;
+}
+
+.money-box {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.money-box:last-child {
+    margin-top: 6px;
+}
+
+.money-box .img-wallet {
+    background: url(../img/wallet.png) no-repeat;
+    width: 21px;
+    height: 21px;
+    margin-left: 12px;
+    margin-right: 10px;
+}
+
+.money-box .img-credit-card {
+    background: url(../img/credit-card.png) no-repeat;
+    width: 21px;
+    height: 15px;
+    margin-left: 12px;
+    margin-right: 10px;
+}
+
+.wallet-text {
+    font-size: 0.9rem;
+    font-family: "Gotham Pro Medium";
+    color: #fff;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    margin-right: 0.6rem;
+}
+
+.credit-text {
+    font-size: 0.9rem;
+    font-family: "Gotham Pro Medium";
+    font-weight: medium;
+    color: #fff;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    margin-right: 0.6rem;
+}
+
+.use-mic {
+    filter: brightness(0) saturate(100%) invert(59%) sepia(82%) saturate(454%) hue-rotate(169deg) brightness(97%) contrast(96%);
+}
+
+.car-hud {
+    display: flex;
+    margin-bottom: 2px;
+}
+
+.elements-auto {
+    width: 194px;
+    height: 48px;
+    background: rgb(0, 0, 0, 0.502);
+    margin-right: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bak-oil {
+    width: 188px;
+    height: 48px;
+    background: rgb(0, 0, 0, 0.502);
+    display: flex;
+    flex-direction: column;
+}
+
+.light-auto {
+    background: url(../img/light.png) no-repeat;
+    width: 50px;
+    height: 29px;
+}
+
+.off-door-auto {
+    background: url(../img/off-door.png) no-repeat;
+    width: 48px;
+    height: 36px;
+    margin-left: 20px;
+}
+
+.on-door-auto {
+    background: url(../img/on-door.png) no-repeat;
+    width: 48px;
+    height: 29px;
+    margin-left: 20px;
+}
+
+.key-auto {
+    background: url(../img/key.png) no-repeat;
+    width: 48px;
+    height: 24px;
+    margin-left: 15px;
+}
+
+.oil-text {
+    margin-top: 6px;
+    display: flex;
+    width: inherit;
+    font-family: "RobotoLight";
+    font-size: 15px;
+    color: #fff;
+}
+
+.oil-tt {
+    margin-left: 12px;
+}
+
+.oil-num {
+    margin-left: auto;
+    margin-right: 11px;
+}
+
+.oil-liner {
+    width: 166.99px;
+    height: 6.99px;
+    background: rgb(71, 71, 71);
+    margin-top: 6px;
+    margin-left: 12px;
+    overflow: hidden;
+}
+
+.full-liner {
+    background: #48b9f2;
+    height: inherit;
+    transition-duration: 0.2s;
+}
+
+.speedbox-main {
+    margin-bottom: 26px;
+    width: 432px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+
+}
+
+.speedbox-main-small {
+    margin-bottom: 26px;
+    width: 432px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-right: 90px;
+    margin-left: auto;
+    zoom: 0.45;
+}
+
+.speedbox-small {
+    font-family: "Gotham Pro Regular";
+    margin-bottom: 2px;
+    width: 384px;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 10px;
+    position: relative;
+}
+
+.speedbox-small .speed-txt {
+    font-family: "Gotham Pro Regular";
+    font-size: 34px;
+    font-weight: bold;
+    margin-right: 8px;
+}
+
+.speedbox {
+    display: flex;
+    position: relative;
+    width: 390px;
+    height: 195px;
+}
+
+.speedbox-groove {
+    width: 390px;
+    height: 195px;
+    background: transparent;
+    border-top-left-radius: 195px;
+    border-top-right-radius: 195px;
+    border: 14.69px solid rgb(0, 0, 0, 0.302);
+    border-bottom: 0;
+    box-sizing: border-box;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.speedbox-score {
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: rotate(-45deg);
+    width: 390px;
+    height: 390px;
+    background: transparent;
+    border-radius: 50%;
+    border: 14.69px solid #48b9f2;
+    border-color: transparent transparent #48b9f2 #48b9f2;
+    box-sizing: border-box;
+    cursor: pointer;
+    z-index: 1;
+    transition: transform 0.3s ease;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.hud__speedometr {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    position: absolute;
+    right: 340px;
+    bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: 76%;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: 25px;
+    z-index: 10;
+}
+
+.backg-speed {
+    background: url(../img/speed.svg) no-repeat;
+    width: 426px;
+    height: 231px;
+    position: absolute;
+    left: 57px;
+    top: 30px;
+    display: flex;
+    justify-content: center;
+    zoom: 0.8;
+}
+
+.hud__speedometr__line-bg {
+    width: 160px;
+    height: 160px;
+    margin: auto;
+    border: 5px rgba(255, 255, 255, 0.2) solid;
+    border-radius: 50%;
+    border-bottom-color: transparent;
+    position: absolute;
+    z-index: 0;
+    -webkit-animation: rota 1s infinite;
+}
+
+.hud__speedometr__line-progress {
+    width: 160px;
+    height: 160px;
+    margin: auto;
+    border: 5px #fff solid;
+    border-radius: 50%;
+    border-bottom-color: transparent;
+    position: absolute;
+    z-index: 4;
+    -webkit-animation: rota 1s infinite;
+}
+
+.hud__speedometr__speed {
+    position: absolute;
+    font-family: 'Gotham Pro Medium';
+    font-size: 2rem;
+    font-weight: medium;
+}
+
+.hud__speedometr__light-on {
+    position: absolute;
+    top: 64px;
+    left: 80px;
+}
+
+.hud__speedometr__light-off {
+    position: absolute;
+    top: 64px;
+    left: 120px;
+}
+
+.hud__speedometr__door-off {
+    position: absolute;
+    top: 100px;
+    left: 144px;
+}
+
+.hud__speedometr__door-on {
+    position: absolute;
+    top: 100px;
+    left: 64px;
+}
+
+
+.hud__speedometr__arrow-right {
+    position: absolute;
+    bottom: 74px;
+    left: 136px;
+}
+
+.hud__speedometr__arrow-left {
+    position: absolute;
+    bottom: 74px;
+    left: 76px;
+}
+
+.hud__speedometr__info {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 160px;
+    align-items: center;
+}
+
+.hud__speedometr__info__carname {
+    font-family: 'Century Gothic';
+    font-weight: medium;
+    position: absolute;
+    margin-top: 20px;
+}
+
+.hud__speedometr__info__row {
+    display: flex;
+    align-items: center;
+}
+
+.hud__speedometr__info__fuel__text {
+    font-family: 'Century Gothic';
+    font-weight: medium;
+    margin-left: 0.6rem;
+    font-size: 0.86rem;
+}
+
+.hud__speedometr__speed__subtitle {
+    position: absolute;
+    font-family: 'Century Gothic';
+    font-size: 0.7rem;
+    font-weight: lighter;
+    top: 126px;
+    text-transform: lowercase;
+}
+
+.svg-speedometer {
+    display: block;
+    width: 100px;
+    height: 100px;
+    transform: scale(2.35) rotate(40deg);
+    margin-left: 6px;
+    margin-bottom: 5px;
+  }
+  
+.path-speedometer {
+    stroke-linecap: round;
+    stroke-width: 2;
+    fill: none;
+  }
+  
+  path.speedometer__fullbar {
+    stroke: rgba(255, 255, 255, 0.2);
+    stroke-dasharray: calc(40 * 3.142 * 1.85);
+  }
+  
+  path.speedometer__progress {
+    stroke: #fff;
+    stroke-dasharray: calc(40 * 3.142 * 1.85);
+    /* adjust last number for variance */
+  }
+
+.backg-speed .speed-txt {
+    font-family: "RobotoBold";
+    font-size: 48px;
+    color: rgb(255, 255, 255, 0.4);
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: 40px;
+}
+
+.gang-war-info {
+    font-family: "Gotham Pro Regular";
+    width: 260px;
+    height: 114px;
+    background: rgb(0, 0, 0, 0.502);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 19px;
+    padding-right: 19px;
+    position: absolute;
+    bottom: 30px;
+    left: 12px;
+    border-radius: 10px;
+}
+
+.gps-main {
+    /*width: 386px;*/
+    min-width: 115px;
+    height: 64px;
+    margin-left: 323px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.gps-title {
+    font-family: "Century Gothic";
+    color: #fff;
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+.gps-txt {
+    font-family: "Gotham Pro Regular";
+    color: rgb(255, 255, 255);
+    font-size: 1rem;
+    text-align: left;
+}
+
+.hud__hints {
+    position: absolute;
+    left: 18px;
+    bottom: 40%;
+    display: flex;
+    flex-direction: column;
+}
+
+.hud__hints__element {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 0.75rem;
+    align-items: center;
+}
+
+.hud__hints__element__key {
+    width: 2.5rem;
+    height: 2.5rem;
+    font-family: 'Century Gothic';
+    font-size: 1rem;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    margin-right: 8px;
+    justify-content: center;
+}
+
+.hud__hints__element__text {
+    font-family: 'Gotham Pro Regular';
+    font-size: 1rem;
+}
+
+.watch-main {
+    width: 153px;
+    height: 48px;
+    margin-left: 323px;
+    margin-bottom: 2px;
+    display: flex;
+    flex-direction: row;
+}
+
+.watch-main .degrees {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    margin-left: 1rem;
+    font-family: "Gotham Pro Regular";
+    color: rgb(255, 255, 255);
+    margin-bottom: auto;
+}
+
+.watch-main .time-box {
+    display: flex;
+    flex-direction: column;
+}
+
+.time-box .time {
+    width: inherit;
+    height: 14px;
+    font-weight: medium;
+    display: flex;
+    align-items: center;
+    padding-bottom: 2px;
+    font-size: 1rem;
+    font-family: "Gotham Pro Medium";
+    color: rgb(255, 255, 255);
+}
+
+.time-img-watch {
+    width: 12px;
+    height: 12px;
+    background: url(../img/clock.png) no-repeat;
+    background-size: cover;
+    margin-left: 3px
+}
+
+.zone-box {
+    font-family: "RobotoLight";
+    margin-left: 323px;
+    margin-bottom: 8px;
+    display: flex;
+}
+
+.time-img-greenzone {
+    background: linear-gradient(131.14deg, rgba(0, 255, 102, 0.3) -21.5%, rgba(0, 255, 102, 0) 92.21%);
+    border: 0.5px solid #00FF66;
+    box-sizing: border-box;
+    border-radius: 10px;
+    padding: 1rem;
+    display: flex;
+    min-width: 50px;
+    min-height: 50px;
+    max-width: 50px;
+    margin-bottom: 20px;
+    max-height: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.time-img-yellowzone {
+    width: 60px;
+    height: 60px;
+    background: url(../img/YellowZone.png) no-repeat;
+    background-size: cover;
+    margin-left: 8px;
+}
+
+.time-box .date {
+    margin-top: 3px;
+    font-size: 1rem;
+    font-family: "Gotham Pro Medium";
+    color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: row;
+}
+
+.hud-position-righttop {
+    width: inherit;
+    display: flex;
+    position: absolute;
+}
+
+.logo-main {
+    margin-top: 32px;
+    margin-right: 50px;
+    display: flex;
+    margin-left: auto;
+}
+
+.logo-main .logo-img {
+    background: url('../../authorization/img/logo.svg') no-repeat;
+    background-size: cover;
+    margin-top: -28px;
+    margin-right: -30px;
+    width: 82px;
+    height: 82px;
+}
+
+.logo-main .logo-info {
+    text-align: right;
+    font-size: 13px;
+    margin-top: -3px;
+    color: #fff;
+    font-family: 'Gotham Pro Regular';
+}
+
+.logo-main .logo-ammo {
+    position: absolute;
+    display: flex;
+    top: 100px;
+    right: 50px;
+    font-size: 16px;
+    border-radius: 10px;
+    font-family: 'Gotham Pro Regular';
+    padding: 8px;
+    background: rgb(0, 0, 0, 0.5);
+}
+
+.logo-main .logo-ammo-img {
+    width: 23px;
+    height: 17px;
+    margin-right: 2px;
+}
+
+.logo-main .logo-ammo-img.ammo-safe {
+    width: 23px;
+    background: url("../img/ammo-sf.png") no-repeat;
+    background-size: contain;
+}
+
+.logo-main .logo-ammo-img.ammo-single {
+    width: 11px;
+    background: url("../img/ammo-s.png") no-repeat;
+    background-size: contain;
+}
+
+.logo-main .logo-ammo-img.ammo-burst {
+    width: 18px;
+    background: url("../img/ammo-b.png") no-repeat;
+    background-size: contain;
+}
+
+.logo-main .logo-ammo-img.ammo-auto {
+    width: 23px;
+    background: url("../img/ammo.png") no-repeat;
+    background-size: contain;
+}
+
+.logo-main .logo-quest {
+    border-radius: 10px;
+    position: absolute;
+    max-width: 250px;
+    top: 144px;
+    right: 50px;
+    font-size: 16px;
+    font-family: 'Gotham Pro Regular';
+    padding: 16px;
+    background: rgb(0, 0, 0, 0.502);
+}
+
+.logo-main .logo-quest .quest-title {
+    font-family: 'Gotham Pro Medium';
+    font-weight: 300;
+    color: rgba(255, 255, 255, 1);
+    color: #FFC107;
+}
+
+.logo-main .logo-quest .quest-text {
+    font-family: 'Gotham Pro Regular';
+    font-weight: 300;
+    color: rgba(255, 255, 255, 1);
+}
+
+.logo-main .logo-quest .quest-desc {
+    font-family: 'Gotham Pro Regular';
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.4);
+}
+
+.logo-main .logo-quest .quest-win {
+    font-family: 'Gotham Pro Regular';
+    font-weight: 300;
+    color: #64DD17;
+}
+
+.span-bold {
+    font-family: 'RobotoBlack';
+}
+
+.hide {
+    display: none;
+}
+
+#car-radar {
+    width: 390px;
+    height: 155px;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    background-color: #0a0a0a;
+    border: 5px solid #000;
+    border-radius: 10px;
+    font-family: 'D-DIN Bold';
+}
+
+.primary {
+    display: inline-block;
+}
+
+.patrol {
+    display: inline-block;
+    position: absolute;
+    margin-top: 30px;
+    margin-left: 10px;
+}
+
+.label {
+    letter-spacing: 0.05em;
+    display: block;
+    color: #c0c0c0;
+    font-weight: bold;
+    font-size: 10pt;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'D-DIN Bold';
+}
+
+.label.logo {
+    font-size: 14pt;
+}
+
+.label.dim {
+    color: #666;
+}
+
+#car-radar .front .lamps, #car-radar .front .arrows {
+    margin-top: 15px;
+}
+
+#car-radar .rear .lamps, #car-radar .rear .arrows {
+    margin-bottom: 15px;
+}
+
+.lamps {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    color: #600;
+    line-height: 15px;
+    font-weight: bold;
+    font-size: 8pt;
+    text-transform: uppercase;
+    text-align: right;
+    font-family: 'D-DIN Bold';
+}
+
+.lit {
+    color: #e00;
+}
+
+.display {
+    display: inline-block;
+    width: 2.5em;
+    height: 1.2em;
+    font-size: 28pt;
+    line-height: 45px;
+    margin: 2px;
+    font-family: 'DSEG7Classic';
+    border: 3px solid #000;
+}
+
+.display::after {
+    position: absolute;
+    content: '888';
+}
+
+.display span {
+    z-index: 100;
+    position: absolute;
+}
+
+.display.orange span { color: #f79e00; }
+.display.orange { color: #592c00; background-color: #3d1c00; }
+
+.display.red span { color: #ff0000; }
+.display.red { color: #350000; background-color: #230303; }
+
+.display.green span { color: #18f400; }
+.display.green { color: #0e3800; background-color: #072600; }
+
+.display.plate {
+    display: block;
+    width: 6em;
+    height: 1.2em;
+    line-height: 1.1em;
+    font-size: 16pt;
+    border: 2px solid #000;
+    font-family: Consolas;
+    letter-spacing: 0.1em;
+}
+
+.display.plate::after {
+    position: absolute;
+    content: '';
+}
+
+.display.plate span {
+    margin-left: 0.4em;
+}
+
+.arrows {
+    width: 15px;
+}
+
+.arrow {
+    font-size: 14pt;
+    color: #500;
+    display: block;
+}
+
+.arrow.lit {
+    color: #e00;
+}
+
+#control {
+    padding: 10px;
+    border: 3px solid #000;
+    border-radius: 10px;
+    background-color: #0a0a0a;
+    text-transform: uppercase;
+    position: absolute;
+    right: 10px;
+    bottom: 185px;
+}
+
+#control .btn-grid button.lit {
+    background-color: #620000;
+    color: #ff0000;
+}
+
+#control .btn-grid td {
+    width: 50px;
+    height: 50px;
+}
+
+#control .btn-grid label {
+    color: #aaa;
+}
+
+#control .btn-grid .btn-red {
+    color: #530000;
+    background-color: #180000;
+}
+
+#control button {
+    width: 50px;
+    height: 50px;
+    border: 2px solid #000;
+    text-align: center;
+    font-family: 'D-DIN Bold';
+    font-weight: bold;
+    font-size: 9pt;
+    text-transform: uppercase;
+    background-color: #111;
+    color: #aaa;
+    overflow-wrap: normal;
+}
+
+#control button:focus {
+    border: 2px solid #000;
+}
+
+#control .btn-block {
+    display: block;
+    width: 100%;
+}
+
+#control .btn-sm {
+    height: 25px;
+}
+
+#plates {
+    width: 180px;
+    height: 100px;
+    position: absolute;
+    bottom: 10px;
+    right: 420px;
+    background-color: #0a0a0a;
+    border: 5px solid #000;
+    border-radius: 10px;
+    z-index: -1;
+}
+
+#plates .label {
+    margin-left: 0.25em;
+    line-height: 1.5em;
+}
+
+#plates .lamps li {
+    width: 3em;
+}

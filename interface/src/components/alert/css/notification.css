@@ -1,0 +1,208 @@
+/*Position*/
+.notifi-position-leftTop {
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.notifi-position-left {
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.notifi-position-leftBottom {
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+.notifi-position-centerTop {
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.notifi-position-center {
+    justify-content: center;
+    align-items: center;
+}
+
+.notifi-position-centerBottom {
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.notifi-position-rightTop {
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+.notifi-position-right {
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.notifi-position-rightBottom {
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.notifi-type {
+    display: flex;
+    width: -webkit-fill-available;
+    height: -webkit-fill-available;
+    position: absolute;
+}
+
+
+.notifi-text-box {
+    width: calc(100% - 24px);
+    height: calc(79% - 24px);
+    overflow: scroll;
+    margin-top: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'RobotoLight';
+    line-height: 1.5;
+    font-size: 1.2rem;
+    letter-spacing: 0.05rem;
+    font-size: 16px;
+    color: #fff;
+}
+
+.notifi-text-box-z {
+    width: calc(100% - 24px);
+    height: calc(79% - 24px);
+    overflow: scroll;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'RobotoLight';
+    line-height: 1.5;
+    font-size: 1.2rem;
+    letter-spacing: 0.05rem;
+    font-size: 16px;
+    color: #fff;
+}
+
+.notifi-btn {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row-reverse;
+    align-items: center;
+    font-family: "Choujikuu";
+    color: rgb(0, 0, 0);
+    font-size: 14px;
+
+}
+
+
+.n-btn-box:last-child {
+    margin-left: 0px;
+}
+
+
+.notifi-head {
+    display: flex;
+    margin-top: 8px;
+}
+
+.notifi-title {
+    width: auto;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Gotham Pro Bold";
+    color: #fff;
+    font-size: 2.5rem;
+    font-weight: 500;
+    padding-right: 8px;
+    max-width: 90%;
+}
+
+.notifi-head .notifi-close {
+    margin-top: 0px;
+}
+
+.notifi-linear-left {
+    position: absolute;
+    width: 6px;
+    height: 120px;
+    background: rgb(72, 185, 242);
+    left: -4px;
+    top: 5px;
+    z-index: 1;
+}
+
+.notifi-linear-rightbottom {
+    position: absolute;
+    width: 6px;
+    height: 120px;
+    background: rgb(72, 185, 242);
+    right: -4px;
+    bottom: 0px;
+    z-index: 1;
+}
+
+.notifi-linear-left-two {
+    position: absolute;
+    width: 6px;
+    height: 120px;
+    background: rgb(72, 185, 242);
+    left: -4px;
+    bottom: 11px;
+}
+
+.notifi-linear-bottom {
+    position: absolute;
+    width: 108px;
+    height: 6px;
+    background: rgb(72, 185, 242);
+    left: 10px;
+    bottom: -4px;
+}
+
+.notifi-linear-bottom-littel {
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    background: rgb(72, 185, 242);
+    left: 123px;
+    bottom: -4px;
+}
+
+.notifi-title-text {
+    width: auto;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Gotham Pro Medium";
+    color: #fff;
+    font-size: 25px;
+    line-height: 24px;
+    padding-right: 8px;
+    max-width: 340px;
+}
+
+
+.notifi-icons {
+    width: 20px;
+    height: 20px;
+    margin: 0;
+    padding-right: 5px;
+}
+
+/*Пример*/
+
+.alert-access-btn {
+    background: #36cc5c;
+    width: auto;
+    border-radius: 0;
+}
+
+.alert-decline-btn {
+    background: #ED213A;
+    width: auto;
+    border-radius: 0;
+}

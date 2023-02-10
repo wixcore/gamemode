@@ -1,0 +1,68 @@
+body {
+    margin: 0 auto;
+    color: #fff;
+    user-select: none;
+}
+
+li {
+    list-style: none;
+}
+
+input[type=range] {
+    -webkit-appearance: none;
+    outline: none;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+input[type="text"], input[type="password"] {
+    background: none;
+    border: none;
+    outline: none;
+}
+
+button, a {
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+input {
+    cursor: pointer;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+
+input:focus::-webkit-input-placeholder {
+    color: transparent;
+}
+
+.container {
+    width: auto;
+    height: auto;
+}
+
+.hide {
+    display: none !important;
+}
+img { pointer-events: none; }
+.box{
+	width: -webkit-fill-available;
+  height: -webkit-fill-available;
+  display: flex;
+  position: absolute;
+}

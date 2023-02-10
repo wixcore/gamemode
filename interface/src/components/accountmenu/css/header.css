@@ -1,0 +1,87 @@
+.accountmenu__topdata {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+.accountmenu__topdata__number {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0.5rem;
+    border-radius: 0.4rem;
+}
+
+.accountmenu__topdata__number__text {
+    font-family: 'Gotham Pro Regular';
+    font-size: 15px;
+    width: 100%;
+    white-space: nowrap;
+}
+
+.accountmenu__topdata__nick {
+    font-family: 'Gotham Pro Medium';
+    font-size: 17px;
+    color: #fff;
+}
+
+.accountmenu__topdata__info {
+    display: flex;
+    flex-direction: column;
+    margin-right: auto;
+}
+
+.accountmenu__topdata__donate {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.accountmenu__topdata__donate__text {
+    font-family: 'RobotoLight';
+    font-size: 0.9rem;
+    color: #f5f5f5;
+    text-transform: uppercase;
+    margin-left: auto;
+    letter-spacing: 0.1rem;
+}
+
+
+.accountmenu__topdata__donate__balance {
+    font-size: 15px;
+    font-family: 'Gotham Pro Regular';
+    background: rgba(0, 0, 0, 0.2);
+    border: 0.5px solid rgba(255, 255, 255, 0.25);
+    box-sizing: border-box;
+    border-radius: 7px;
+    color: #fff;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 1.2rem;
+    padding-top: 1.2rem;
+    margin-left: auto;
+    margin-bottom: 4%;
+}
+
+.accountmenu__topdata__donate__btn:first-child {
+    margin-right: 1.5rem;
+}
+  
+.accountmenu__topdata__donate__btn {
+    background: rgba(0, 0, 0, 0.2);
+    border: 0.5px solid rgba(255, 255, 255, 0.25);
+    border-radius: 7px;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 1.2rem;
+    padding-top: 1.2rem;
+    display: flex;
+    justify-content: center;
+    font-family: 'Gotham Pro Regular';
+    font-size: 15px;
+    text-align: center;
+    align-items: center;
+    cursor: pointer;
+}

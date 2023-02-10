@@ -1,0 +1,442 @@
+.accountmenu__content__cards__item {
+    display: flex;
+    height: 90%;
+    width: 32%;
+    background: rgba(0, 0, 0, 0.35);
+    border: 0.5px solid rgba(255, 255, 255, 0.5);
+    box-sizing: border-box;
+    border-radius: 15px;
+    flex-direction: column;
+}
+
+.accountmenu__cards__nickname {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+}
+
+.accountmenu__cards__nickname__text {
+    font-family: 'Gotham Pro Medium';
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
+    font-size: 1.8rem;
+}
+
+.accountmenu__cards__fraction {
+    margin-top: 1%;
+    display: flex;
+    align-items: center;
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
+    justify-content: center;
+    margin-bottom: 20%;
+}
+
+.accountmenu__cards__fraction__name {
+    font-family: 'Gotham Pro Regular';
+    font-size: 1rem;
+}
+
+.accountmenu__cards__fraction__text {
+    font-family: 'Gotham Pro Bold';
+    font-size: 1rem;
+    padding-left: 3%;
+}
+
+.accountmenu__cards__icline__data {
+    border: 0.5px solid rgba(255, 255, 255, 0.25);
+    box-sizing: border-box;
+    margin-left: 3.5rem;
+    margin-right: 3.5rem;
+    border-radius: 7px;
+    display: flex;
+    padding-left: 1.4rem;
+    padding-right: 1.4rem;
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
+    margin-top: 0.7rem;
+    margin-bottom: 0.7rem;
+}
+
+.accountmenu__cards__icline__data__title {
+    font-family: 'Gotham Pro Regular';
+    margin-right: auto;
+    font-size: 1.1rem;
+    color: #fff;
+}
+
+.accountmenu__cards__icline__data__info {
+    font-family: 'Gotham Pro Regular';
+    font-size: 1rem;
+}
+
+.accountmenu__cards__stats {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
+    margin-top: 6%;
+    margin-bottom: 10%;
+}
+
+.accountmenu__cards__stats__item {
+    display: flex;
+    flex-direction: column;
+}
+
+.accountmenu__cards__stats__title {
+    font-family: 'Gotham Pro Regular';
+    font-size: 1.1rem;
+}
+
+.accountmenu__cards__stats__value {
+    font-family: 'Gotham Pro Regular';
+    font-size: 1rem;
+    margin-top: 0.4rem;
+}
+
+
+.accountmenu__cards__stats__progressbar {
+    width: 7rem;
+    height: 4px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 2px;
+    margin-top: 8%;
+    margin-bottom: 8%;
+}
+
+.accountmenu__hr {
+    background-color: rgba(72, 72, 72, 0.1);
+    display: flex;
+    height: 4px;
+    justify-content: center;
+    margin-left: 3.5rem;
+    margin-right: 3.5rem;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.accountmenu__cards__logindata {
+    margin-bottom: 4%;
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 18%;
+}
+
+.accountmenu__cards__logindata__item {
+    display: flex;
+    flex-direction: column;
+}
+
+.accountmenu__cards__logindata__item__title {
+    font-family: 'Gotham Pro Regular';
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.accountmenu__cards__logindata__item__subtitle {
+    font-family: 'Gotham Pro Medium';
+    font-size: 1rem;
+    color: #fff;
+    margin-top: 5%;
+}
+
+.accountmenu__content__cards__status {
+    display: flex;
+    flex-direction: column;
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
+    margin-top: 5%;
+}
+
+.accountmenu__content__cards__status__card {
+    font-family: 'Gotham Pro Regular';
+    padding: 1.2rem 2rem 1.2rem 2rem;
+    background: linear-gradient(99.3deg, rgba(0, 255, 163, 0.088) -5.23%, rgba(0, 255, 163, 0) 104.11%);
+    border: 0.5px solid rgba(255, 255, 255, 0.25);
+    box-sizing: border-box;
+    border-radius: 7px;
+    width: fit-content;
+}
+
+.accountmenu__content__cards__status__mcircle {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 4px solid #484848;
+}
+
+.accountmenu__content__cards__status__circle {
+    width: 13rem;
+    height: 13rem;
+    border-radius: 50%;
+    border: 4px solid #43b2ea;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 0 16px rgba(85, 190, 243, 0.34);
+}
+
+.accountmenu__content__cards__status__circle__ttext {
+    font-family: 'RobotoLight';
+    color: #9e9e9e;
+    letter-spacing: 0.15rem;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    margin-bottom: 6%;
+}
+
+.accountmenu__content__cards__status__circle__mtext {
+    font-family: 'RobotoBold';
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.accountmenu__content__cards__status__circle__btext {
+    margin-top: 6%;
+    font-family: 'RobotoLight';
+    color: #9e9e9e;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+}
+
+.accountmenu__content__cards__title {
+    margin-top: 1rem;
+    font-family: 'Gotham Pro Regular';
+    font-size: 1.2rem;
+}
+
+.accountmenu__content__cards__title_single {
+    margin-top: 2rem;
+    font-family: 'Gotham Pro Medium';
+    font-size: 1.2rem;
+    padding-left: 3.5rem;
+    margin-bottom: 1.6rem;
+    display: flex;
+}
+
+.accountmenu__content__cards__title_heavy {
+    font-family: 'Gotham Pro Medium';
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+.accountmenu__content__cards__finance {
+    display: flex;
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
+    flex-direction: column;
+}
+
+.accountmenu__content__cards__finance__card:first-child {
+    margin-right: 1.5rem;
+}
+
+.accountmenu__content__cards__finance__card {
+    border: 0.5px solid rgba(255, 255, 255, 0.25);
+    box-sizing: border-box;
+    border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 3%;
+    padding-top: 3%;
+    min-width: 30%;
+    border-radius: 0.4rem;
+    width: 45%;
+}
+
+.accountmenu__card__icon {
+    width: 2.2rem;
+    height: auto;
+}
+
+.accountmenu__content__cards__finance__container {
+    margin-top: 4%;
+    display: flex;
+    flex-direction: row;
+}
+
+.accountmenu__content__cards__finance__card__title {
+    font-family: 'Gotham Pro Medium';
+    font-size: 1rem;
+    color: #fff;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.accountmenu__content__cards__finance__card__subtitle {
+    font-family: 'Gotham Pro Medium';
+    font-size: 1rem;
+    color: #fff;
+}
+
+.accountmenu__content__cards__medicine {
+    display: flex;
+    flex-direction: column;
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
+    margin-bottom: 4%;
+}
+
+.accountmenu__content__cards__medicine__name {
+    font-family: 'Gotham Pro Regular';
+    font-size: 1.1rem;
+    color: #fff;
+}
+
+.accountmenu__content__cards__medicine__status {
+    font-family: 'Gotham Pro Medium';
+    font-size: 1.1rem;
+    margin-right: 0.4rem;
+}
+
+.accountmenu__content__cards__medicine__text {
+    font-family: 'Gotham Pro Medium';
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+
+.accountmenu__content__cards__medicine__status__container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 1rem;
+    margin-bottom: 6%;
+}
+
+.accountmenu__content__cards__medicine__status__container__date {
+    display: flex;
+    flex-direction: column;
+}
+
+.accountmenu__content__cards__medicine__status__container__date__text {
+    color: #fff;
+    font-family: 'Gotham Pro Regular';
+    font-size: 0.95rem;
+    white-space: nowrap;
+}
+
+.accountmenu__content__cards__medicine__info {
+    font-family: 'RobotoLight';
+    width: 70%;
+    text-transform: uppercase;
+    color: #d2d2d2;
+    font-size: 0.8rem;
+    letter-spacing: 0.1rem;
+}
+
+.accountmenu__content__cards__medicine__container {
+    margin-top: auto;
+}
+
+.accountmenu__content__cards__item__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border: 0.5px solid rgba(255, 255, 255, 0.25);
+    box-sizing: border-box;
+    border-radius: 7px;
+    height: 4rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+    padding-left: 1.4rem;
+    padding-right: 1.4rem;
+}
+
+.accountmenu__content__cards__item__list:first-child {
+    margin-top: 0;
+}
+
+.accountmenu__list {
+    overflow-y: auto;
+    background-repeat: no-repeat;
+    background-position: right top;
+}
+
+
+
+.accountmenu__list::-webkit-scrollbar {
+    width: 0.4rem;
+  }
+    
+  .accountmenu__list::-webkit-scrollbar-track {
+     background: rgba(0, 0, 0, 0.35);
+     border-radius: 15px;
+  }
+    
+  .accountmenu__list::-webkit-scrollbar-thumb {
+     background: #FFFFFF;
+     border-radius: 15px;
+ }
+
+.accountmenu__scrollable {
+    overflow-y: auto;
+}
+
+.accountmenu__scrollable::-webkit-scrollbar {
+   width: 0.8rem;
+ }
+   
+ .accountmenu__scrollable::-webkit-scrollbar-track {
+   background: #303030;
+ }
+   
+ .accountmenu__scrollable::-webkit-scrollbar-thumb {
+   background: #fff;
+}
+
+.accountmenu__content__cards__cars__list {
+    
+}
+
+.accountmenu__content__cards__item__list__title {
+    font-family: 'Gotham Pro Regular';
+    font-size: 1rem;
+    color: #fff;
+}
+
+.accountmenu__content__cards__item__list__subtitle {
+    font-family: 'Gotham Pro Regular';
+    font-size: 1rem;
+    color: #fff;
+}
+
+.accountmenu__content__cards__item__general__person {
+    background-image: url('../img/person.png');
+    background-size: auto;
+    background-repeat: no-repeat;
+    height: 100%;
+    background-position: center;
+    padding-top: 2rem;
+}
+
+.accountmenu__cards__btnreports {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
+    margin-bottom: auto;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    margin-top: 20%;
+}
+
+.wrapper__progress {
+    position: relative;
+    height: auto;
+}

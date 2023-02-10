@@ -1,0 +1,100 @@
+.adaptive_editor {
+    width: -webkit-fill-available;
+    height: -webkit-fill-available;
+    position: absolute;
+    z-index: 1;
+}
+
+@media (max-width: 1000px) and (min-width: 600px) {
+    .adaptive_editor .сamera-editor-main, .adaptive_editor .menu-editor-default, .adaptive_editor .editor-main {
+        transform: scale(0.41);
+    }
+
+    .editor-main {
+        height: 1469px !important;
+    }
+
+    .adaptive_editor .adaptive-reg {
+        zoom: 41.6%;
+    }
+}
+
+@media (max-width: 1100px) and (min-width: 1001px) {
+    .adaptive_editor .сamera-editor-main, .adaptive_editor .menu-editor-default, .adaptive_editor .editor-main {
+        transform: scale(0.53);
+    }
+
+    .editor-main {
+        height: 1447px !important;
+    }
+
+    .adaptive_editor .adaptive-reg {
+        zoom: 53.3%;
+    }
+}
+
+@media (max-width: 1280px) and (min-width: 1101px) {
+    .adaptive_editor .сamera-editor-main, .adaptive_editor .menu-editor-default, .adaptive_editor .editor-main {
+        transform: scale(0.66);
+    }
+
+    .editor-main {
+        height: 1089px !important;
+    }
+
+    .adaptive_editor .adaptive-reg {
+        zoom: 66.6%;
+    }
+}
+
+@media (max-width: 1400px) and (min-width: 1281px) {
+    .adaptive_editor .сamera-editor-main, .adaptive_editor .menu-editor-default, .adaptive_editor .editor-main {
+        transform: scale(0.71);
+    }
+
+    .adaptive_editor .adaptive-reg {
+        zoom: 71.1%;
+    }
+}
+
+@media (max-width: 1800px) and (min-width: 1401px) {
+    .adaptive_editor .сamera-editor-main, .adaptive_editor .menu-editor-default, .adaptive_editor .editor-main {
+        transform: scale(0.83);
+    }
+
+    .adaptive_editor .adaptive-reg {
+        zoom: 83.3%;
+    }
+}
+
+@media (max-width: 2000px) and (min-width: 1800px) {
+    .adaptive_editor .сamera-editor-main, .adaptive_editor .menu-editor-default, .adaptive_editor .editor-main {
+        transform: scale(1);
+    }
+
+    .adaptive_editor .adaptive-reg {
+        zoom: 100%;
+    }
+}
+
+@media (max-width: 3000px) and (min-width: 2000px) {
+    .adaptive_editor .сamera-editor-main, .adaptive_editor .menu-editor-default, .adaptive_editor .editor-main {
+        transform: scale(1)
+    }
+
+    .adaptive_editor .adaptive-reg {
+        zoom: 100%;
+    }
+}
+
+.сamera-editor-main {
+    transform-origin: bottom left;
+}
+
+.menu-editor-default, .editor-main {
+    transform-origin: right;
+}
+
+.editor-main {
+    transform-origin: top right;
+}

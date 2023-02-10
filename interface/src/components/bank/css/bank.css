@@ -1,0 +1,942 @@
+.bank__container {
+    width: -webkit-fill-available;
+    height: -webkit-fill-available;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bank__code {
+    width: 24%;
+    height: 65%;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.325) 100%);
+    border-radius: 20px;
+    padding: 1%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bank__code__bg {
+    border-radius: 10px;
+    width: 100%;
+    height: 146px;
+}
+
+.Flecca__code__bg {
+    background: url('../img/bank_bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.Pacific__code__bg {
+    background: url('../img/bank_bg_pacific.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.Maze__code__bg {
+    background: url('../img/bank_bg_maze.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.Blaine__code__bg {
+    background: url('../img/bank_bg_blaine.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bank__code__title {
+    font-family: 'Gotham Pro Medium';
+    font-size: 1.4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+}
+
+.bank__code__input {
+    background: rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    font-family: 'Gotham Pro Medium';
+    font-size: 1.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem 5rem 1.5rem 5rem;
+    margin-top: 6%;
+    text-align: right;
+    height: 2%;
+    width: 24%;
+}
+
+.bank__code__input__text {
+    letter-spacing: 1.6rem;
+    margin-right: -1.6rem;
+}
+
+.bank__code__keyboard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bank__code__keyboard__item {
+    border: 0.5px solid rgba(255, 255, 255, 0.5);
+    box-sizing: border-box;
+    border-radius: 10px;
+    padding: 2rem;
+    max-width: 5rem;
+    min-width: 5rem;
+    max-height: 5rem;
+    min-height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4rem;
+    font-family: 'Gotham Pro Medium';
+}
+
+.bank__code__keyboard__item:hover {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.54) 51.86%, rgba(255, 255, 255, 0) 96.67%);
+    border: 0.5px solid rgba(255, 255, 255, 0.5);
+    box-sizing: border-box;
+    border-radius: 10px;
+    padding: 2rem;
+    max-width: 5rem;
+    min-width: 5rem;
+    max-height: 5rem;
+    min-height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4rem;
+    font-family: 'Gotham Pro Medium';
+}
+
+.bank__code__keyboard__row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 12%;
+}
+
+.bank__menu {
+    padding: 0 3% 2% 2.6%;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.325) 100%);
+    border-radius: 20px;
+    width: 76.5%;
+    height: 70%;
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+.bank__menu__title {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 76%;
+    top: 19.5%;
+    position: absolute;
+}
+
+.bank__cards__list__item {
+    border-radius: 20px;
+    min-height: 42%;
+    width: 30.5%;
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    background: linear-gradient(180deg, #41414187 0%, rgba(255, 255, 255, 0) 100%);
+    margin-top: 40px;
+}
+
+.bank__modal {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.58);
+    backdrop-filter: blur(20px);
+    width: -webkit-fill-available;
+    height: -webkit-fill-available;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 10;
+}
+
+.bank__modal__exit {
+    font-size: 15px;
+    line-height: 14px;
+    font-family: 'Gotham Pro Regular';
+    color: rgba(255, 255, 255, 0.45);
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+.bank__modal__container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 32%;
+    margin-top: 10%;
+}
+
+.bank__modal__content {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.1) -54.15%, rgba(255, 255, 255, 0) 87.66%);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    padding: 44px 32px 32px 32px;
+    flex-direction: column;
+}
+
+.bank__modal__content__title {
+    font-size: 20px;
+    line-height: 19px;
+    font-family: 'Gotham Pro Medium';
+    margin-bottom: 44px;
+}
+
+.bank__modal__block {
+    font-size: 15px;
+    line-height: 14px;
+    font-family: 'Gotham Pro Regular';
+    border-radius: 15px;
+    color: #FFFFFF;
+    padding: 24px 58px 24px 58px;
+    background: linear-gradient(360deg, rgb(93 93 93 / 41%) 0%, rgba(255, 255, 255, 0) 100%);
+    margin-top: 20px;
+}
+
+.bank__modal__content__text {
+    font-size: 15px;
+    line-height: 25px;
+    font-family: 'Gotham Pro Regular';
+    margin-bottom: 44px;
+    text-align: center;
+}
+
+.carditem__content__text {
+    text-align: right;
+    font-size: 14px;
+    line-height: 13px;
+    font-family: 'Gotham Pro Medium';
+    margin-right: 20px;
+}
+
+.carditem__content__row {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.carditem__content__number {
+    font-size: 12px;
+    line-height: 11px;
+    color: #FFFFFF;
+    font-family: 'Gotham Pro Regular';
+    margin-top: 5px;
+    opacity: 0.5;
+}
+
+.carditem__content__money {
+    font-size: 14px;
+    line-height: 13px;
+    font-family: 'Gotham Pro Medium';
+    margin-top: 13px;
+}
+
+.carditem__content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-right: 20px;
+}
+
+.carditem__content__img {
+    width: 60px;
+}
+
+.bank__modal__content__cimg {
+    background-image: url('../img/card__emerald.svg');
+    width: 60px;
+    height: 38px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bank__modal__content__bimg {
+    background-image: url('../img/block.png');
+    width: 140px;
+    height: 164px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.bank__cards__btns {
+    display: flex;
+    margin-top: auto;
+    width: 300px;
+    justify-content: space-between;
+}
+
+.bank__cards__btn {
+    border: 0.5px solid rgba(255, 255, 255, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    border-radius: 8px;
+    font-size: 12px;
+    width: 140px;
+    line-height: 11px;
+    font-family: 'Gotham Pro Regular';
+}
+
+.bank__cards__list__row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 180px;
+}
+
+.bank__cards__list__header {
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 50px;
+}
+
+.bank__cards__list__header__text {
+    font-size: 15px;
+    line-height: 20px;
+    font-family: 'Gotham Pro Regular';
+    text-align: right;
+}
+
+.bank__cards__list__content__title {
+    font-family: 'Gotham Pro Medium';
+    font-size: 14px;
+}
+
+.bank__cards__list__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 18px 40px 0 40px;
+}
+
+.bank__cards__list__content__text {
+    font-size: 14px;
+    line-height: 25px;
+    font-family: 'Gotham Pro Regular';
+    text-align: center;
+    margin-top: 18px;
+    margin-bottom: 38px;
+}
+
+.bank__cards__list__content__btn {
+    padding: 18px 36px 18px 36px;
+    border: 0.5px solid rgba(255, 255, 255, 0.5);
+    box-sizing: border-box;
+    border-radius: 8px;
+    font-family: 'Gotham Pro Regular';
+}
+
+.bank__cards__list__header {
+    background-image: url('../img/card__emerald.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.bank__cards__list {
+    display: flex;
+    width: 73.8%;
+    padding: 0 13.4% 0 13.8%;
+    align-items: center;
+    flex-direction: column;
+}
+
+.bank__menu__title__text {
+    font-family: 'Gotham Pro Medium';
+    font-size: 20px;
+    line-height: 19px;
+}
+
+.bank__menu__title__subtext {
+    font-family: 'Gotham Pro Regular';
+    font-size: 15px;
+    line-height: 14px;
+}
+
+.bank__menu__cards__text {
+    font-size: 18px;
+    line-height: 19px;
+    font-family: 'Gotham Pro Medium';
+    color: rgb(255, 255, 255);
+}
+
+.bank__menu__cards__text_disabled {
+    font-size: 18px;
+    line-height: 19px;
+    font-family: 'Gotham Pro Medium';
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.bank__menu__cards__list {
+    display: flex;
+    flex-direction: column;
+    margin-top: 28px;
+}
+
+.bank__menu__cards {
+    height: 85%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: 54%;
+}
+
+.bank__menu__cards__list__item {
+    display: flex;
+    background: linear-gradient(270deg, rgba(170, 177, 201, 0.1) 0%, rgba(170, 177, 201, 0) 26.41%);
+    height: 123px;
+    width: 320px;
+    border-radius: 10px;
+    margin-bottom: 19px;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.bank__menu__cards__list__circle {
+    background-image: url('../img/plus.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 73px;
+    height: 73px;
+    border-radius: 50%;
+    border: 0.5px solid rgba(255, 255, 255, 0.5);
+    margin-right: 30px;
+}
+
+.bank__menu__logo {
+    position: absolute;
+    width: 20%;
+    height: 150px;
+}
+
+.Flecca__logo {
+    background: url('../img/logo_flecca.png');
+    background-size: inherit;
+    background-repeat: no-repeat;
+    background-position: left;
+}
+
+.Blaine__logo {
+    background: url('../img/blaine__logo.png');
+    background-size: inherit;
+    background-repeat: no-repeat;
+    background-position: left;
+}
+
+.Maze__logo {
+    background: url('../img/maze__logo.png');
+    background-size: inherit;
+    background-repeat: no-repeat;
+    background-position: left;
+}
+
+.Pacific__logo {
+    background: url('../img/pacific__logo.png');
+    background-size: inherit;
+    background-repeat: no-repeat;
+    background-position: left;
+}
+
+.bank__menu__cards__list__circle:hover {
+    border: 0.5px solid rgba(255, 255, 255, 0.5);
+}
+
+.bank__menu__left {
+    display: flex;
+    flex-direction: column;
+}
+
+.bank__menu__right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 26%;
+}
+
+.bank__menu__actions {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 185px;
+    justify-content: space-between;
+    height: 60%;
+}
+
+.bank__menu__actions__item_disabled {
+    opacity: 0.5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 76px;
+    padding-left: 22px;
+    border-radius: 1em;
+    background: linear-gradient(90deg, rgb(72 72 72 / 98%) 0%, rgb(220 217 217 / 0%) 100%);
+}
+
+.bank__menu__actions__item {
+    opacity: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 76px;
+    padding-left: 22px;
+    border-radius: 1em;
+    background: linear-gradient(90deg, rgb(72 72 72 / 98%) 0%, rgb(220 217 217 / 0%) 100%);
+}
+
+.bank__menu__actions__item_active_green {
+    background: linear-gradient(91.88deg, rgba(38, 143, 58, 0.29) 1.61%, rgba(38, 143, 58, 0) 61.29%);
+    opacity: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 76px;
+    padding-left: 22px;
+    border-radius: 1em;
+}
+
+.bank__menu__actions__item_active_yellow {
+    background: linear-gradient(91.88deg, rgba(143, 120, 38, 0.29) 1.61%, rgba(143, 120, 38, 0) 61.29%);
+    opacity: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 76px;
+    padding-left: 22px;
+    border-radius: 1em;
+}
+
+.bank__menu__exit:hover {
+    background: #fff;
+    color: #000;
+}
+
+.bank__menu__back__container:hover {
+    background: #fff;
+    color: #000;
+}
+
+.bank__menu__withdraw {
+    border-radius: 15px;
+    background: linear-gradient(180deg, rgb(70 70 70 / 29%) 0%, rgba(255, 255, 255, 0) 100%);
+    width: 540px;
+    margin-left: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 538px;
+    margin-bottom: 20px;
+    margin-top: 188px;
+}
+
+.bank__menu__back__container {
+    margin-top: auto;
+    min-height: 48px;
+    margin-left: 54px;
+    width: 160px;
+    height: 48px;
+    border: 0.5px solid rgba(255, 255, 255, 0.5);
+    box-sizing: border-box;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 14px;
+}
+
+.bank__menu__back {
+    font-size: 12px;
+    line-height: 11px;
+    font-family: 'Gotham Pro Regular';
+}
+
+.bank__menu__withdraw__text {
+    font-size: 14px;
+    line-height: 20px;
+    font-family: 'Gotham Pro Regular';
+    margin-top: 30px;
+}
+
+.bank__menu__transfer__img {
+    background: url('../img/flecca_shield_mini.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 240px;
+    height: 108px;
+    margin-top: 60px;
+}
+
+.bank__menu__transfer__text {
+    font-size: 14px;
+    line-height: 20px;
+    font-family: 'Gotham Pro Regular';
+    margin-top: 30px;
+}
+
+.bank__menu__transfer__input {
+    border-radius: 10px;
+    background: linear-gradient(270deg, rgb(93 93 93 / 41%) 0%, rgba(255, 255, 255, 0) 100%);
+    border: none;
+    outline: none;
+    font-family: 'Gotham Pro Regular';
+    font-size: 12px;
+    line-height: 20px;
+    color: #fff;
+    padding: 20px 331px 20px 20px;
+}
+
+.bank__menu__pincode__input {
+    border-radius: 10px;
+    background: linear-gradient(270deg, rgb(93 93 93 / 41%) 0%, rgba(255, 255, 255, 0) 100%);
+    border: none;
+    outline: none;
+    font-family: 'Gotham Pro Regular';
+    font-size: 12px;
+    line-height: 20px;
+    color: #fff;
+    padding: 20px 65px 20px 20px;
+}
+
+.bank__menu__transfer__label:nth-of-type(odd) .bank__menu__transfer__input {
+    margin-bottom: 18px;
+    background: linear-gradient(90deg, rgb(93 93 93 / 41%) 0%, rgba(255, 255, 255, 0) 100%);
+}
+
+.bank__menu__pincode__label:nth-of-type(odd) .bank__menu__pincode__input {
+    margin-bottom: 18px;
+    background: linear-gradient(90deg, rgb(93 93 93 / 41%) 0%, rgba(255, 255, 255, 0) 100%);
+}
+
+.bank__menu__transfer__btn {
+    font-size: 12px;
+    line-height: 11px;
+    padding: 20px;
+    border-radius: 10px;
+    background: linear-gradient(180deg, rgb(93 93 93 / 41%) 0%, rgba(255, 255, 255, 0) 100%);
+    color: rgba(255, 255, 255, 0.5);
+    font-family: 'Gotham Pro Regular';
+    margin-top: 20px;
+}
+
+.bank__menu__transfer {
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(180deg, rgb(70 70 70 / 29%) 0%, rgba(255, 255, 255, 0) 100%);
+    width: 680px;
+    margin-left: 56px;
+    height: 600px;
+    margin-top: 190px;
+    border-radius: 15px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.bank__menu__withdraw__input {
+    border-radius: 10px;
+    background: linear-gradient(90deg, rgb(93 93 93 / 41%) 0%, rgba(255, 255, 255, 0) 100%);
+    border: none;
+    outline: none;
+    font-family: 'Gotham Pro Regular';
+    font-size: 12px;
+    line-height: 20px;
+    color: #fff;
+    padding: 15px 134px 15px 15px;
+}
+
+.bank__menu__transfer__content {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    align-items: center;
+}
+
+.bank__menu__withdraw__input::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.bank__menu__pincode__input::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.bank__menu__transfer__input::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.bank__menu__withdraw__content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 42px;
+    width: 90%;
+    align-items: center;
+}
+
+.bank__menu__withdraw__btn {
+    color: rgba(255, 255, 255, 0.5);
+    border-radius: 8px;
+    background: linear-gradient(270deg, rgb(93 93 93 / 41%) 0%, rgba(255, 255, 255, 0) 100%);
+    padding: 19px 20px 19px 75px;
+    font-family: 'Gotham Pro Regular';
+}
+
+.bank__menu__withdraw__img {
+    background: url('../img/flecca_shield.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 394px;
+    height: 234px;
+    margin-top: 52px;
+}
+
+.bank__menu__cards__balance {
+    font-size: 12px;
+    line-height: 11px;
+    font-family: 'Gotham Pro Medium';
+    margin-top: auto;
+    margin-bottom: 20px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.bank__menu__actions__item_active_red {
+    background: linear-gradient(91.88deg, rgba(143, 38, 38, 0.29) 1.61%, rgba(143, 38, 38, 0) 61.29%);
+    opacity: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 76px;
+    padding-left: 22px;
+    border-radius: 1em;
+}
+
+
+.bank__menu__center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    margin-left: 118px;
+}
+
+.bank__menu__history__text {
+    font-size: 15px;
+    line-height: 14px;
+    font-family: 'Gotham Pro Medium';
+}
+
+.bank__menu__history__list {
+    display: flex;
+    flex-direction: column;
+    margin-top: 38px;
+}
+
+.bank__menu__history__item__text {
+    font-size: 12px;
+    line-height: 11px;
+    font-family: 'Gotham Pro Regular';
+    margin-left: 40px;
+}
+
+.bank__menu__history__item__value {
+    font-size: 12px;
+    line-height: 11px;
+    font-family: 'Gotham Pro Medium';
+}
+
+.bank__menu__history__item__value_withdraw {
+    font-size: 12px;
+    line-height: 11px;
+    font-family: 'Gotham Pro Medium';
+    color: #E14F4F;
+}
+
+.bank__menu__history__item__value_pull {
+    font-size: 12px;
+    line-height: 11px;
+    font-family: 'Gotham Pro Medium';
+    color: #4FE16F;
+}
+
+.bank__menu__history__item__value_transfer {
+    font-size: 12px;
+    line-height: 11px;
+    font-family: 'Gotham Pro Medium';
+    color: #A3A3A3;
+}
+
+.bank__menu__cards__list__item:hover {
+    opacity: 0.75 !important;
+}
+
+.bank__menu__history__item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-radius: 8px;
+    width: 500px;
+    padding: 20px;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 100%);
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.bank__menu__history__empty {
+    font-family: 'Gotham Pro Regular';
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 12px;
+}
+
+.bank__menu__history__item:nth-child(odd) {
+    background: linear-gradient(270deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 100%);
+}
+
+.bank__menu__history__item__img_withdraw {
+    position: absolute;
+    background: url('../img/withdraw.svg');
+    filter: invert(38%) sepia(57%) saturate(545%) hue-rotate(71deg) brightness(95%) contrast(85%);
+    width: 25px;
+    background-repeat: no-repeat;
+    height: 25px;
+}
+
+.bank__menu__history__item__img_pull {
+    position: absolute;
+    background: url('../img/pull.svg');
+    filter: invert(38%) sepia(57%) saturate(545%) hue-rotate(71deg) brightness(95%) contrast(85%);
+    width: 25px;
+    background-repeat: no-repeat;
+    height: 25px;
+}
+
+.bank__menu__history__item__img_transfer {
+    position: absolute;
+    background: url('../img/transfer.svg');
+    filter: invert(38%) sepia(57%) saturate(545%) hue-rotate(71deg) brightness(95%) contrast(85%);
+    width: 25px;
+    background-repeat: no-repeat;
+    height: 25px;
+}
+
+.bank__menu__history {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 390px;
+    margin-left: 50px;
+}
+
+.bank__menu__pincode {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 15px;
+    background: linear-gradient(180deg, rgb(70 70 70 / 29%) 0%, rgba(255, 255, 255, 0) 100%);
+    width: 425px;
+    margin-top: 190px;
+    margin-left: 55px;
+}
+
+.bank__menu__pincode__btn {
+    font-size: 12px;
+    line-height: 11px;
+    font-family: 'Gotham Pro Regular';
+    color: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    padding: 20px 48px 20px 48px;
+    margin-top: 65px;
+    background: linear-gradient(180deg, rgb(70 70 70 / 29%) 0%, rgba(255, 255, 255, 0) 100%);
+}
+
+.bank__menu__pincode__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.bank__menu__getcard {
+    border-radius: 10.6719px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.125) 100%);
+    width: 280px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Gotham Pro Regular';
+    font-size: 14px;
+    line-height: 14px;
+}
+
+.bank__menu__blockcard {
+    border-radius: 10.6719px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.125) 100%);
+    width: 280px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Gotham Pro Regular';
+    font-size: 14px;
+    margin-top: 50%;
+    line-height: 14px;
+}
+
+.bank__menu__actions__item__text {
+    font-family: 'Gotham Pro Regular';
+    font-size: 14px;
+    white-space: nowrap;
+    margin-left: 24px;
+}
+
+.bank__menu__exit {
+    border: 0.355729px solid rgba(255, 255, 255, 0.5);
+    border-radius: 5.69167px;
+    font-family: 'Gotham Pro Regular';
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.bank__menu__exit__container {
+    margin-top: auto;
+    width: 140px;
+    height: 46px;
+    padding-bottom: 14px;
+}
+
+.bank__code__keyboard__row .bank__code__keyboard__item:not(:last-of-type) {
+    margin-right: 10%;
+}
+.bank__code__keyboard {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5%;
+}

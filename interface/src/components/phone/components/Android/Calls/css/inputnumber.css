@@ -1,0 +1,19 @@
+.calls__inputnumber {
+    height: 10%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.calls__inputnumber__number {
+    font-family: 'SF Pro Regular';
+    font-size: 26px;
+    color: #fff;
+    width: 70%;
+    border: none;
+    outline: none;
+    margin-right: 8%;
+}

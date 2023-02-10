@@ -1,0 +1,26 @@
+.rotate-components .calls__actions {
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
+
+.rotate-components .calls__actions__item {
+    width: auto;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+.rotate-components .calls__inputnumber {
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+.rotate-components .calls__keyboard {
+    margin-top: 0%;
+    padding-left: 0%;
+    padding-right: 0%;
+}
+
+.rotate-components .calls__docallbtn__container {
+    margin-top: 2%;
+    margin-bottom: 4%;
+}

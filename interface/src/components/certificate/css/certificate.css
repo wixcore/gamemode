@@ -1,0 +1,261 @@
+.fibcertificate-main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: -1;
+}
+
+.fib-box {
+    width: 720px;
+    height: 999px;
+    background: url(../img/bg.png) no-repeat;
+    border-width: 1.5px;
+    outline-offset: -10px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.fib-sticker {
+    width: 242px;
+    height: 79px;
+    font-family: 'RobotoBlack';
+    font-size: 75px;
+    color: #ababab;
+    background: #2d2d2d;
+    margin-top: -38px;
+    margin-left: -34px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    box-shadow: -3px 1px 9px rgba(0, 0, 0, 0.5);
+}
+
+.back-fib {
+    width: 504px;
+    height: 333px;
+    background: #2d2d2d;
+}
+
+.fib-cert {
+    width: 450px;
+    height: 280px;
+    margin-top: 150px;
+}
+
+.fib-btn-img {
+    background-size: 100% !important;
+    background-position: center !important;
+}
+
+.fib-btn {
+    width: 249.5px;
+    height: 222px;
+    position: absolute;
+    top: 10%;
+    margin-bottom: 24px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gov-lic {
+    /*width: inherit;
+    height: inherit;
+    background: url(../img/gov.png) no-repeat top right,
+    #fff url(../img/logo-2.png) no-repeat -11% bottom;
+    display: flex;
+    justify-content: center;
+    align-items: center;*/
+}
+
+.lic-gov-log {
+    background: url(../img/logo-gov.png) no-repeat;
+    width: 178px;
+    height: 178px;
+}
+
+.fib-txt-stic {
+    margin-left: 33px;
+}
+
+.fib-img {
+    width: 132px;
+    height: 132px;
+    z-index: 1;
+}
+
+.style-img-fib {
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    max-height: 100%;
+    max-width: 100%;
+    display: block;
+    width: 132px;
+    height: 132px;
+    border-bottom: 10px solid rgba(109, 59, 59, 0.62);
+    border-radius: 10px;
+}
+
+.fib-pl-inf {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 5% 4% 0 4%;
+}
+
+.fib-second-inf {
+    margin-left: 25px;
+    width: 60%;
+}
+
+.fib-name {
+    font-family: 'Gotham Pro Medium';
+    font-size: 1.2rem;
+    color: #570000;
+    white-space: nowrap;
+    margin-right: 8px;
+    width: fit-content;
+}
+
+.pl-cert-subscribe {
+    margin-top: 15px;
+    padding-top: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    border-top: 1px solid #9D3C3C;
+}
+
+.pl-cert-subscribe-text {
+    font-family: 'Gotham Pro Regular';
+    font-size: 1.1rem;
+    margin-right: 116px;
+    margin-top: 0.5%;
+    color: #570000;
+    position: absolute;
+}
+
+.pl-cert-subscribe-value {
+    color: #570000;
+    font-family: 'Sacramento';
+    font-size: 1.4rem;
+    margin-right: 3%;
+    margin-top: 0.6%;
+    position: absolute;
+    transform: rotate(-15.33deg);
+}
+
+.fib-second-inf-row {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+.fib-second-inf-line {
+    width: -webkit-fill-available;
+    height: 1px;
+    background: #9D3C3C;
+}
+
+.fib-grow {
+    font-family: 'Gotham Pro Regular';
+    color: #570000;
+    font-size: 1rem;
+}
+
+.fib-black {
+    font-family: 'Gotham Pro Regular';
+    color: #570000;
+    font-size: 1rem;
+}
+
+.box-fib-inf-tt {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 14px;
+}
+
+.ff-rr-kk {
+    width: 70px;
+    display: inline-flex;
+}
+
+.pp-aaa {
+    width: 34px;
+    display: inline-flex;
+}
+
+.kk-ll-pp {
+    font-family: 'RobotoLight', sans-serif;
+    margin-left: 50px;
+}
+
+.fib-title-lic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Gotham Pro Bold';
+    font-size: 16px;
+    line-height: 13px;
+    color: #570000;
+    margin-top: 5%;
+}
+
+.fib-title-lic::after {
+    content:"";
+    position: absolute;
+    left: 75%;
+    margin-top: 30px;
+    width: 10%;
+    height: 2px;
+    margin-left:-30%;
+    background: #9D3C3C;
+}
+
+.fib-btn .fib {
+    background: url(../img/logo-fib.png) no-repeat;
+    width: 149px;
+    height: 208px;
+}
+
+.fib-btn .lspd {
+    background: url(../img/logo-lspd.png) no-repeat;
+    width: 147px;
+    height: 202px;
+}
+
+.fib-btn .sheriff {
+    background: url(../img/logo-shef.png) no-repeat;
+    width: 203px;
+    height: 231px;
+}
+
+.fib-btn .ems {
+    background: url(../img/logo-ems.png) no-repeat;
+    width: 147px;
+    height: 224px;
+}
+
+.fib-btn .usmc {
+    background: url(../img/logo-usmc.png) no-repeat;
+    width: 240px;
+    height: 240px;
+}
+
+.fib-btn .gov {
+    background: url(../img/logo-gov.png) no-repeat;
+    width: 240px;
+    height: 240px;
+}

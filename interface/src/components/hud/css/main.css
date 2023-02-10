@@ -1,0 +1,147 @@
+*,body,html
+{
+	margin: 0;
+	padding: 0;
+}
+#chat,a,body,html
+{
+	color: #fff;
+}
+body,html
+{
+	font-size: 14px;
+	overflow: hidden;
+	webkit-font-smoothing: antialiased;
+	webkit-user-select: none;
+}
+a
+{
+	text-decoration: none;
+}
+.ui_element
+{
+	display: none;
+	position: fixed;
+	/*height: 100vh;
+	width: 100vw;
+	z-index: 2;*/
+}
+
+#chat
+{
+	display: block;
+	font-family: "Century Gothic",serif;
+	font-size: 13px;
+	font-weight: 700;
+	letter-spacing: .4px;
+	line-height: 26px;
+	margin-left: 0px;
+	text-shadow: 1px 1px 0 #333,-1px -1px 0 #333,1px -1px 0 #333,-1px 1px 0 #333,1px 1px 0 #333;
+	z-index: 0;
+}
+#chat ul#chat_messages
+{
+	list-style-type: none;
+	overflow-y: auto;
+	padding: 10px 20px;
+	transform: rotate(180deg);
+	transition: 0.3s;
+    width: 100%;
+	height: 100%;
+}
+#chat ul#chat_messages>li
+{
+    transform: rotate(-180deg);
+    margin-bottom: 6px;
+}
+#chat input#chat_msg
+{
+	background: rgba(0,0,0,.5);
+	border: none;
+	color: #fff;
+	font-family: Myriad Pro,Open Sans,sans-serif;
+	font-size: 13px;
+	line-height: 35px;
+	outline: 0;
+	padding: 5px 20px;
+	width: 100%;
+}
+#chat::-webkit-scrollbar{
+    width:5px
+}
+#chat::-webkit-scrollbar-thumb{
+    background:rgba(0,0,0,.3);
+    border-radius:0px
+}
+#chat::-webkit-scrollbar-thumb:hover{
+    background:#555
+}
+/*===============*/
+/* *,body,html{
+    padding:0;
+    margin:0
+}
+#chat,a,body,html{
+    color:#fff
+}
+body,html{
+    -webkit-font-smoothing:antialiased;
+    overflow:hidden;
+    font-size:14px;
+    -webkit-user-select:none
+}
+a{
+    text-decoration:none
+}
+.ui_element{
+    display:none;
+    position:absolute;
+    width:100vw;
+    height:100vh;
+    z-index:2
+}
+#chat{
+    display:block;
+    z-index:0;
+    line-height:26px;
+    font-weight:700;
+    text-shadow:1px 1px 0 #333,-1px -1px 0 #333,1px -1px 0 #333,-1px 1px 0 #333,1px 1px 0 #333;
+    font-family:"Century Gothic",serif;
+    font-size:13px;
+    letter-spacing:.4px;
+    margin-left:0px
+}
+
+#chat ul#chat_messages{
+    overflow-y:auto;
+    transition: 0.3s;
+    transform:rotate(180deg);
+    width: 100%;
+    height: 100%;
+    padding:10px 20px;
+    list-style-type:none
+}
+#chat ul#chat_messages>li{
+    transform:rotate(-180deg)
+}
+#chat input#chat_msg{
+    color:#fff;
+    background:rgba(0,0,0,.5);
+    outline:0;
+    border:none;
+    font-family:Myriad Pro,Open Sans,sans-serif;
+    font-size:13px;
+    line-height:35px;
+    width: 100%;
+    padding:5px 20px
+}
+#chat::-webkit-scrollbar{
+    width:5px
+}
+#chat::-webkit-scrollbar-thumb{
+    background:rgba(0,0,0,.3);
+    border-radius:0px
+}
+#chat::-webkit-scrollbar-thumb:hover{
+    background:#555
+} */

@@ -1,0 +1,11 @@
+.govmenu__worker {
+    display: flex;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    margin-bottom: 2%;
+}
+
+.govmenu__worker__info {
+    display: flex;
+    flex-direction: column;
+}

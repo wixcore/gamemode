@@ -1,0 +1,48 @@
+.tatoo__content__list__item__name {
+    font-family: 'Gotham Pro Regular';
+    font-size: 1.2rem;
+    letter-spacing: 0.05rem;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.tatoo__content__list__item__desc {
+    font-family: 'Gotham Pro Regular';
+    font-size: 0.9rem;
+    letter-spacing: 0.05rem;
+    color: rgba(255, 255, 255, 0.5);
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.tatoo__content__list__item__sale {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-radius: 0.4rem;
+    font-size: 1rem;
+    font-family: 'Gotham Pro Regular';
+    background: linear-gradient(105.63deg, rgba(255, 64, 57, 0) -80.94%, rgba(255, 64, 57, 0.45) 275.52%);
+    border: 0.5px solid #FF4039;
+    border-radius: 5px;
+}
+
+.tatoo__content__list__item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    min-height: 3vh;
+    margin-left: 8%;
+    margin-right: 8%;
+    cursor: pointer;
+    padding: 1rem;
+    align-items: center;
+    border: 0.5px solid rgba(255, 255, 255, 0.15);
+    border-radius: 7px;
+    margin-bottom: 1rem;
+}

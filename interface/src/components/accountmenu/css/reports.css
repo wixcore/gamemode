@@ -1,0 +1,354 @@
+.accountmenu__content__reports__container {
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.accountmenu__content__cards__reports__header {
+    font-family: 'Gotham Pro Medium';
+    font-size: 1.6rem;
+}
+
+.accountmenu__content__cards__item__list__reports {
+    margin-top: 8%;
+    padding-left: 3.5rem;
+}
+
+.accountmenu__content__cards__item__list__reports__name {
+    color: #fff;
+    font-family: 'Gotham Pro Medium';
+    font-size: 1.2rem;
+}
+
+.accountmenu__content__cards__item__list__reports__name_red {
+    color: #fff;
+    font-family: 'Gotham Pro Medium';
+    font-size: 1.2rem;
+}
+
+.accountmenu__content__reports__item__list {
+    margin-top: 2%;
+    margin-bottom: 2%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.7rem;
+    padding-bottom: 0.7rem;
+    background-color: rgba(136, 136, 136, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    display: flex;
+    flex-direction: column;
+}
+
+.accountmenu__content__reports__list {
+    margin-top: 5%;
+    overflow-y: auto;
+    height: 20%;
+    padding-right: 3.5rem;
+}
+
+.accountmenu__content__reports__list::-webkit-scrollbar {
+    width: 0.8rem;
+  }
+    
+  .accountmenu__content__reports__list::-webkit-scrollbar-track {
+    background: #303030;
+  }
+    
+  .accountmenu__content__reports__list::-webkit-scrollbar-thumb {
+    background: #fff;
+ }
+
+ .accountmenu__content__reports__list__header__num {
+     font-family: 'Gotham Pro Regular';
+     color: rgba(255, 255, 255, 0.5);
+     font-size: 0.9rem;
+ }
+ 
+ .accountmenu__content__reports__item__list__header {
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+ }
+ .accountmenu__content__reports__list__header__status_new {
+    color: #50bc90;
+    margin-left: auto;
+    font-family: 'Gotham Pro Medium';
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+    font-size: 0.9rem;
+ }
+
+ .accountmenu__content__reports__list__header__status_clsd {
+    color: #EE8585;
+    margin-left: auto;
+    font-family: 'Gotham Pro Medium';
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+    font-size: 0.9rem;
+ }
+
+ .accountmenu__content__reports__item__list__content__text {
+     font-family: 'Gotham Pro Regular';
+     font-size: 1.1rem;
+ }
+
+ .accountmenu__content__reports__item__list__content {
+     margin-top: 5%;
+     margin-bottom: 5%;
+     display: flex;
+     flex-direction: row;
+ }
+
+ .accountmenu__content__cards__container__help {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     padding: 4rem;
+ }
+
+ .accountmenu__content__reports__item__list__footer {
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     justify-content: space-between;
+     margin-left: auto;
+ }
+
+ .accountmenu__content__reports__item__list__time {
+     color: #9c9c9c;
+     font-family: 'RobotoLight';
+     letter-spacing: 0.1rem;
+     display: none;
+ }
+
+ .accountmenu__content__reports__item__list__open {
+     font-family: 'Gotham Pro Regular';
+     color: #fff;
+     background: linear-gradient(95.53deg, rgba(255, 255, 255, 0.5) -207.08%, rgba(255, 255, 255, 0) 122.75%);
+    border: 0.5px solid #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 7px;
+    padding: 1.2rem 2rem 1.2rem 2rem;
+ }
+
+ .accountmenu__content__reports__item__list__open:hover {
+    background: linear-gradient(95.53deg, #0086D2 -207.08%, rgba(1, 150, 214, 0) 122.75%);
+    border: 0.5px solid #00B1D8;
+ }
+
+ .accountmenu__content__reports__list__header__icon_ask {
+     width: 3vh;
+     height: auto;
+     margin-right: 4%;
+ }
+
+ .accountmenu__content__reports__list__header__icon_report {
+    width: 3vh;
+    height: auto;
+    margin-right: 4%;
+}
+
+.accountmenu__content__reports__dialog__container {
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+}
+
+.accountmenu__content__reports__dialog__header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.accountmenu__content__reports__dialog__header__data {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.accountmenu__content__reports__dialog__header__buttons {
+    display: none;
+    align-items: flex-start;
+    flex-direction: row;
+    width: 14vw;
+    justify-content: space-between;
+}
+
+.accountmenu__content__reports__dialog__header__type {
+    color: #9c9c9c;
+    font-family: 'RobotoLight';
+    text-transform: uppercase;
+    white-space: nowrap;
+    margin-left: 5%;
+    margin-right: 5%;
+    letter-spacing: 0.1rem;
+}
+
+.accountmenu__content__reports__dialog__header__num {
+    color: rgba(255, 255, 255, 0.5);
+    font-family: 'Gotham Pro Regular';
+    white-space: nowrap;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.accountmenu__content__reports__dialog__header__time {
+    color: #9c9c9c;
+    font-family: 'RobotoLight';
+    text-transform: uppercase;
+    white-space: nowrap;
+    margin-left: 5%;
+    margin-right: 5%;
+    letter-spacing: 0.1rem;
+    display: none;
+}
+
+.accountmenu__content__reports__dialog__header__icon {
+    width: 3vh;
+    height: auto;
+    filter: invert(52%) sepia(9%) saturate(11%) hue-rotate(44deg) brightness(96%) contrast(89%);
+    margin-bottom: 0.6rem;
+}
+
+.accountmenu__content__reports__dialog__header__btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+
+.accountmenu__content__reports__dialog__header__btn__text {
+    font-family: 'RobotoLight';
+    color: #9c9c9c;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 0.05rem;
+    font-size: 0.75rem;;
+}
+
+.accountmenu__content__reports__dialog__header__name {
+    font-family: 'Roboto';
+    font-size: 2rem;
+    letter-spacing: 0.05rem;
+    margin-top: 3%;
+    text-transform: uppercase;
+}
+
+.accountmenu__content__reports__dialog__content__item__lcontainer {
+    margin-left: 50%;
+    max-width: 50%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    display: flex;
+    flex-direction: column;
+}
+
+.accountmenu__content__reports__dialog__content__item__rcontainer {
+    max-width: 50%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    display: flex;
+    flex-direction: column;
+}
+
+.accountmenu__content__reports__dialog__content__item__time {
+    color: #9c9c9c;
+    font-family: 'RobotoLight';
+    letter-spacing: 0.1rem;
+}
+
+.accountmenu__content__reports__dialog__content__item__msg_to {
+    font-family: 'RobotoLight';
+    margin-top: 2%;
+    background-color: rgba(136, 136, 136, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 0.4rem 0 0.4rem 0.4rem;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    font-size: 1.2rem;
+}
+
+.accountmenu__content__reports__dialog__content__item__msg_frm {
+    font-family: 'RobotoLight';
+    margin-top: 2%;
+    background-color: #7c7c7c;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 0 0.4rem 0.4rem 0.4rem;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    font-size: 1.2rem;
+}
+
+.accountmenu__content__reports__dialog__content__item__name {
+    font-family: 'Roboto';
+    letter-spacing: 0.05rem;
+}
+
+.accountmenu__content__reports__dialog__content__item__header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.accountmenu__content__reports__dialog__content__item__name_b {
+    font-family: 'RobotoBold';
+    font-size: 1.1rem;
+}
+
+.accountmenu__content__reports__dialog__content {
+    overflow-y: auto;
+    padding-right: 10px;
+}
+
+.accountmenu__content__reports__dialog__content::-webkit-scrollbar {
+    width: 0.8rem;
+  }
+    
+  .accountmenu__content__reports__dialog__content::-webkit-scrollbar-track {
+    background: #303030;
+  }
+    
+  .accountmenu__content__reports__dialog__content::-webkit-scrollbar-thumb {
+    background: #fff;
+ }
+
+ .accountmenu__content__reports__dialog__input {
+     height: 14vh;
+     margin-top: 2%;
+     margin-bottom: 2%;
+     padding-left: 1rem;
+     padding-right: 1rem;
+     padding-top: 0.7rem;
+     padding-bottom: 0.7rem;
+     border: 0.5px solid rgba(255, 255, 255, 0.25);
+     box-sizing: border-box;
+     border-radius: 7px;
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     justify-content: space-between;
+ }
+
+ .accountmenu__report__input {
+     color: #fff;
+     font-family: 'Gotham Pro Regular';
+     font-size: 1.2rem;
+     width: 100%;
+ }
+
+ .accountmenu__report__input::placeholder {
+     color: #fff;
+ }

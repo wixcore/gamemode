@@ -1,0 +1,292 @@
+.accountmenu__content__cards__blitem {
+    display: flex;
+    height: 90%;
+    width: 66%;
+    background: rgba(0, 0, 0, 0.35);
+    border: 0.5px solid rgba(255, 255, 255, 0.5);
+    box-sizing: border-box;
+    border-radius: 15px;
+    flex-direction: column;
+}
+
+.answer {
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
+}
+
+.accountmenu__cards__question__icon__container__active .accountmenu__cards__question__icon {
+    width: 1.6rem;
+    margin-right: 1.2rem;
+}
+
+.accountmenu__content__cards__container__info {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 4rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
+}
+
+.accountmenu__content__cards__header__name {
+    font-family: 'Gotham Pro Medium';
+    font-size: 2rem;
+    color: #fff;
+}
+
+.accountmenu__content__cards__container {
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.accountmenu__cards__question__subtitle {
+    
+}
+
+.accounmenu__cards__quest__data__container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-left: 10%;
+}
+
+.accountmenu__cards__quest__icon__container:hover {
+    background: linear-gradient(230.66deg, #000000 -126.04%, rgba(0, 0, 0, 0) 133.94%);
+    border: 0.5px solid #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 7px;
+}
+
+.accountmenu__scrollable {
+    overflow-y: auto;
+}
+
+.accountmenu__scrollable::-webkit-scrollbar {
+   width: 0.4rem;
+ }
+   
+ .accountmenu__scrollable::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.35);
+    border-radius: 15px;
+ }
+   
+ .accountmenu__scrollable::-webkit-scrollbar-thumb {
+    background: #FFFFFF;
+    border-radius: 15px;
+}
+
+.accountmenu__cards__quest__active {
+    padding-top: 6%;
+    padding-bottom: 6%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    cursor: pointer;
+    border: 0.5px solid rgba(255, 255, 255, 0.25);
+    box-sizing: border-box;
+    border-radius: 7px;
+}
+
+.accountmenu__cards__quest__subtitle {
+    color: #fff;
+    font-family: 'Gotham Pro Regular';
+    font-size: 1rem;
+    margin-top: 0.4rem;
+}
+
+.accountmenu__cards__quest {
+    padding-top: 6%;
+    padding-bottom: 6%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    cursor: pointer;
+    border: 0.5px solid rgba(255, 255, 255, 0.25);
+    box-sizing: border-box;
+    border-radius: 7px;
+}
+
+.accountmenu__cards__quest__text {
+    color: #fff;
+    font-family: 'Gotham Pro Medium';
+    font-size: 1rem;
+}
+
+.accountmenu__cards__quest__active .accountmenu__cards__quest__icon__container {
+    width: 2vw;
+    height: 2vw;
+    padding: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(230.66deg, #000000 -126.04%, rgba(0, 0, 0, 0) 133.94%);
+    border: 0.5px solid #FFFFFF;
+    border-radius: 7px;
+}
+
+.accountmenu__cards__quest__icon {
+    color: #272727;
+    font-size: 2rem;
+    font-family: 'Roboto';
+}
+
+.accountmenu__cards__quest__icon_done {
+    color: #fff;
+    font-size: 2rem;
+    font-family: 'Roboto';
+}
+
+.accountmenu__cards__quest__icon__container {
+    width: 2vw;
+    height: 2vw;
+    padding: 2%;
+    border-radius: 0.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #9c9c9c;
+}
+
+.accountmenu__cards__quest__icon__container_done {
+    width: 2vw;
+    height: 2vw;
+    padding: 2%;
+    border-radius: 0.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to bottom right, #52df75, #078522);
+}
+
+.accountmenu__cards__questmenu__icon__container_done {
+    max-width: 3.4rem;
+    max-height: 3.4rem;
+    min-width: 3.4rem;
+    min-height: 3.4rem;
+    padding: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(230.66deg, #00D277 -126.04%, rgba(0, 210, 119, 0) 133.94%);
+    border: 0.5px solid #00D879;
+    box-sizing: border-box;
+    border-radius: 7px;
+    font-size: 1.4rem;
+}
+
+.accountmenu__cards__questmenu__icon__container {
+    max-width: 3.4rem;
+    max-height: 3.4rem;
+    min-width: 3.4rem;
+    min-height: 3.4rem;
+    padding: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(230.66deg, #FFFFFF -126.04%, rgba(255, 255, 255, 0) 133.94%);
+    border: 0.5px solid #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 7px;
+    border-radius: 7px;
+    font-size: 1.4rem;
+}
+
+.accountmenu__cards__questmenu__icon__container:hover {
+    background: linear-gradient(230.66deg, #000000 -126.04%, rgba(0, 0, 0, 0) 133.94%);
+    border: 0.5px solid #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 7px;
+}
+
+.accountmenu__content__cards__questinfo__img_contain {}
+
+.accountmenu__content__cards__questinfo__container {
+
+}
+
+.accountmenu__content__cards__questinfo__img__container {
+    width: 100%;
+    opacity: 0.5;
+}
+
+.accountmenu__content__cards__questinfo__header {
+    display: flex;
+    flex-direction: column;
+    margin-top: -24%;
+    padding-left: 3rem;
+    margin-bottom: 4vh;
+}
+
+.accountmenu__content__cards__questinfo__header__name {
+    font-family: 'Gotham Pro Medium';
+    font-size: 1.8rem;
+    z-index: 10;
+}
+
+.accountmenu__content__cards__questinfo__header__count {
+    margin-top: 2vh;
+    font-family: 'Gotham Pro Regular';
+    color: #fff;
+    font-size: 1.2rem;
+    z-index: 10;
+}
+
+.accountmenu__content__cards__questinfo__list__item {
+    margin-left: 3rem;
+    margin-right: 3rem;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    z-index: 10;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border: 0.5px solid rgba(255, 255, 255, 0.25);
+    box-sizing: border-box;
+    border-radius: 7px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.accountmenu__content__cards__questinfo__list__item__info {
+    display: flex;
+    flex-direction: column;
+}
+
+.accountmenu__content__cards__questinfo__item__name {
+    font-family: 'Gotham Pro Medium';
+    font-size: 1.2rem;
+    z-index: 10;
+}
+
+.accountmenu__content__cards__questinfo__item__info {
+    color: #fff;
+    font-family: 'Gotham Pro Regular';
+    margin-top: 0.4rem;
+    font-size: 1.2rem;
+    margin-bottom: 4%;
+    z-index: 10;
+}
+
+.accountmenu__content__cards__questinfo__item__btmdata {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.accountmenu__content__cards__questinfo__item__reward {
+    color: #00D879;
+    font-family: 'Gotham Pro Medium';
+    font-size: 1rem;
+    margin-top: 2rem;
+}

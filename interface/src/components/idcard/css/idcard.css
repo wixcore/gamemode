@@ -1,0 +1,250 @@
+.idcard-main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: -1;
+}
+
+.idcard_box {
+    width: 800px;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("../img/background_id.png") no-repeat;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    outline-offset: -10px;
+}
+
+.idcard_box .plash_left {
+    width: 144px;
+    height: 320px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.idcard_box .plash_right {
+    width: 564px;
+    height: 320px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+}
+
+.photo_player {
+    width: 132px;
+    height: 132px;
+    z-index: 1;
+    position: absolute;
+    left: 4%;
+    top: 24%;
+}
+
+.pl-clm-inf-docs {
+    color: #003C1F;
+    position: absolute;
+    font-family: 'Gotham Pro Regular';
+    bottom: 14%;
+    left: 4%;
+}
+
+.pl-clm-inf-docs-num {
+    color: #003C1F;
+    position: absolute;
+    font-family: 'Goblin One';
+    bottom: 7%;
+    left: 4%;
+}
+
+.pl-idcard-subscribe-text {
+    position: absolute;
+    color: #003C1F;
+    line-height: 13px;
+    font-size: 1.1rem;
+    font-family: 'Gotham Pro Regular';
+    bottom: 12%;
+    left: 50%;
+}
+
+.pl-idcard-subscribe-value {
+    position: absolute;
+    color: #003C1F;
+    line-height: 13px;
+    font-size: 1.7rem;
+    font-family: 'Sacramento';
+    bottom: 10%;
+    left: 77%;
+    transform: rotate(-15.33deg);
+}
+
+.liner-shadow-card {
+    background-image: -webkit-linear-gradient(0deg, rgba(47, 47, 47, 0) 0%, rgb(25, 25, 25) 100%);
+    width: 38px;
+    height: inherit;
+    opacity: 0.6;
+}
+
+.box-for-liner {
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.img-size-card {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    max-height: 100%;
+    max-width: 100%;
+    display: block;
+    width: 132px;
+    height: 132px;
+    border-bottom: 10px solid rgba(12, 95, 35, 0.42);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.liner-right-card {
+    background: url(../img/linear.png) no-repeat;
+    width: 271px;
+    height: 13px;
+    margin-top: -11px;
+    margin-left: auto;
+    display: flex;
+    justify-content: flex-end;
+    font-family: "RobotoBlack";
+    font-size: 24.72px;
+    color: rgb(45, 45, 45);
+}
+
+.liner-right-card .txt-lin {
+    margin-right: 10px;
+}
+
+.player_name-card {
+    font-family: "RobotoLight";
+    color: rgb(72, 185, 242);
+    font-size: 24px;
+}
+
+.pl_inf {
+    width: 350px;
+    position: absolute;
+    left: 33%;
+    top: 20%;
+    border-top: 1px solid rgb(232, 232, 232);
+    display: flex;
+    flex-direction: column;
+}
+
+.pl_inf .pl-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 15px;
+    border-bottom: 1px solid rgba(0, 60, 31, 0.4);
+    padding-bottom: 8px;
+}
+
+.pl_inf .pl-clm {
+    display: flex;
+    flex-direction: column;
+}
+
+.pl-grow {
+    font-size: 1.1rem;
+    font-family: 'Gotham Pro Regular';
+    color: #003C1F;
+}
+
+.pl-black {
+    font-size: 1.1rem;
+    color: #003C1F;
+    font-family: 'Gotham Pro Medium';
+}
+
+.row-tsp {
+    margin-right: 19px;
+}
+
+.pl-sex {
+    margin-right: 33px;
+}
+
+.pl-clm-inf {
+    margin-top: 14px;
+    border-bottom: 1px solid rgba(0, 60, 31, 0.4);
+    padding-bottom: 8px;
+}
+
+.pl-clm-f {
+    width: 117px;
+    display: inline-flex;
+}
+
+.pl_inf .pl-clm .pl-clm-inf:last-child {
+    border: none;
+}
+
+.osn-idcard {
+    width: 564px;
+    height: 320px;
+    margin-top: 75px;
+    display: flex;
+    flex-direction: column;
+}
+
+.clm-1-idcard {
+    width: inherit;
+    height: 36px;
+    background: #48b9f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "RobotoBold";
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    text-shadow: 0px 2px 3.8px rgba(0, 0, 0, 0.35);
+}
+
+.clm-2-idcard {
+    height: 100%;
+    width: inherit;
+    display: flex;
+    flex-direction: row;
+    background: url(../img/bg-flag.png) no-repeat;
+    background-position: 53px -138px;
+}
+
+.name-styl-id {
+    font-family: 'RobotoLight', sans-serif;
+}
+
+.name-pff {
+    font-family: 'RobotoLight', sans-serif;
+}
+
+.tsp-topname {
+    margin-right: 13px;
+}
+
+.pl-clm-inf-n {
+    margin-top: 10px;
+}
+
+.pl-clm-inf .pl-black {
+    margin-left: 1rem;
+}
+
+.btm-last {
+    margin-bottom: 10px;
+}

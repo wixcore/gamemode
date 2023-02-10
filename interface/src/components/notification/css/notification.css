@@ -1,0 +1,255 @@
+/*Position*/
+.notifi-position-leftTop {
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.notifi-position-left {
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.notifi-position-leftBottom {
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+.notifi-position-centerTop {
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.notifi-position-center {
+    justify-content: center;
+    align-items: center;
+}
+
+.notifi-position-centerBottom {
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.notifi-position-rightTop {
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+.notifi-position-right {
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.notifi-position-rightBottom {
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.notifi-type {
+    display: flex;
+    width: -webkit-fill-available;
+    height: -webkit-fill-available;
+    position: absolute;
+}
+
+.notifi-first-box {
+    width: 45%;
+    max-height: 800px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.notifi-f-main {
+    background: rgba(0, 0, 0, 0.5) !important;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    box-sizing: border-box;
+    border-radius: 20px;
+    height: auto;
+    padding: 4%;
+    max-height: 700px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.notifi-close {
+    background: url(../img/close.svg) no-repeat;
+    width: 17px;
+    height: 17px;
+    cursor: pointer;
+    position: absolute;
+    left: 94%;
+    top: 10%;
+}
+
+.notifi-text-box {
+    width: calc(100% - 24px);
+    height: calc(79% - 24px);
+    overflow: scroll;
+    margin-top: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'RobotoLight';
+    line-height: 1.5;
+    font-size: 1.2rem;
+    letter-spacing: 0.05rem;
+    font-size: 16px;
+    color: #fff;
+}
+
+.notifi-text-box-z {
+    width: calc(100% - 24px);
+    height: calc(79% - 24px);
+    overflow: scroll;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'RobotoLight';
+    line-height: 1.5;
+    font-size: 1.2rem;
+    letter-spacing: 0.05rem;
+    font-size: 16px;
+    color: #fff;
+}
+
+.notifi-btn {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row-reverse;
+    align-items: center;
+    font-family: "Choujikuu";
+    color: rgb(0, 0, 0);
+    font-size: 14px;
+
+}
+
+.n-btn-box {
+    background: #FFFFFF;
+    border-radius: 8px;
+    width: 16%;
+    height: auto;
+    cursor: pointer;
+    margin-top: -1.5rem;
+    z-index: 10;
+    padding-top: 1.5%;
+    padding-bottom: 1.5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Gotham Pro Regular';
+    color: #000;
+    margin-right: 5%;
+}
+
+.n-btn-box:last-child {
+    margin-left: 0px;
+}
+
+
+.notifi-head {
+    display: flex;
+    margin-top: 8px;
+}
+
+.notifi-title {
+    width: auto;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Gotham Pro Bold";
+    color: #fff;
+    font-size: 2.5rem;
+    font-weight: 500;
+    padding-right: 8px;
+    max-width: 90%;
+}
+
+.notifi-head .notifi-close {
+    margin-top: 0px;
+}
+
+.notifi-linear-left {
+    position: absolute;
+    width: 6px;
+    height: 120px;
+    background: rgb(72, 185, 242);
+    left: -4px;
+    top: 5px;
+    z-index: 1;
+}
+
+.notifi-linear-rightbottom {
+    position: absolute;
+    width: 6px;
+    height: 120px;
+    background: rgb(72, 185, 242);
+    right: -4px;
+    bottom: 0px;
+    z-index: 1;
+}
+
+.notifi-linear-left-two {
+    position: absolute;
+    width: 6px;
+    height: 120px;
+    background: rgb(72, 185, 242);
+    left: -4px;
+    bottom: 11px;
+}
+
+.notifi-linear-bottom {
+    position: absolute;
+    width: 108px;
+    height: 6px;
+    background: rgb(72, 185, 242);
+    left: 10px;
+    bottom: -4px;
+}
+
+.notifi-linear-bottom-littel {
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    background: rgb(72, 185, 242);
+    left: 123px;
+    bottom: -4px;
+}
+
+.notifi-title-text {
+    width: auto;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Gotham Pro Bold";
+    color: #fff;
+    font-size: 2.5rem;
+    font-weight: 500;
+    padding-right: 8px;
+    max-width: 90%;
+}
+
+.notifi-text-box-last {
+    margin-top: 0px;
+    height: 61%;
+    overflow: scroll;
+    display: flex;
+    margin-top: 3%;
+    font-family: 'Gotham Pro Regular';
+    line-height: 25px;
+    letter-spacing: 0.05rem;
+    font-size: 1.2rem;
+    color: #fff;
+}
+
+.notifi-icons {
+    width: 20px;
+    height: 20px;
+    margin: 0;
+    padding-right: 5px;
+}
+
+/*Пример*/

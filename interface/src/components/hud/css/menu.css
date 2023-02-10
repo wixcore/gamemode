@@ -1,0 +1,143 @@
+:root {
+    --bg-color: #0c0c0c;
+}
+
+ion-icon {
+    cursor: pointer;
+}
+
+.menu-box-content {
+    display: flex;
+    flex: 1 1 0%;
+    /*background-color: rgb(12, 12, 12);*/
+    flex-direction: column;
+    opacity: 0.88;
+    outline: none;
+    width: 473px;
+    background: rgba(0, 0, 0, 0.7);
+    border: 0.5px solid rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    padding: 2rem;
+    
+}
+
+.menu-box-footer {
+    background: rgba(0, 0, 0, 0.6);
+    border: 0.5px solid rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    padding: 2rem;
+    margin-top: 1rem;
+}
+
+.logo-info__text-bold {
+    font-family: 'Century Gothic';
+    font-weight: bold;
+}
+
+.logo-info__text-normal {
+    font-family: 'Century Gothic';
+}
+
+.menu-box-content div, label {
+    outline: none;
+}
+
+.menu-box {
+    display: flex;
+    position: absolute;
+    min-height: 568px;
+    right: 40px;
+    top: 90px;
+    flex-direction: column;
+}
+
+.checkbox-container {
+    position: relative;
+    cursor: pointer;
+}
+
+.checkbox-container input {
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkmark {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    height: 16px;
+    width: 16px;
+    border: 0.5px solid #FFFFFF;
+    border-radius: 4px;
+}
+
+.checkmark:hover {
+    background-color: #ccc;
+}
+
+.checkbox-container input:checked ~ .checkmark {
+    background-color: #fff;
+}
+
+.checkmark:after {
+    content: "";
+    display: none;
+}
+
+.checkbox-container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+.checkbox-container .checkmark:after {
+    width: 4px;
+    height: 8px;
+    border: solid #000;
+    border-width: 0 2px 2px 0;
+    margin-bottom: 2px;
+    margin-left: 1px;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.menuContainer {
+    outline: none;
+}
+
+.menu-item {
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    border-radius: 7px;
+    margin-bottom: 0.7rem;
+    border: 0.5px solid rgba(255, 255, 255, 0.25);
+}
+
+.menu-item-inverted {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 7px;
+    margin-bottom: 0.7rem;
+    border: 0.5px solid transparent;
+}
+
+.list-arrow-icon {
+    width: 24px;
+    height: 20px;
+    display: flex;
+    alignItems: center;
+    justify-content: center;
+}
+
+.menu-item-inverted span {
+}
+
+
+.menu-item:hover {
+    background: rgba(255, 255, 255, 0.05);
+    transition: 0.4s ease-in-out;
+}

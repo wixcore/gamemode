@@ -1,0 +1,136 @@
+.hmenu__gunshop__catalog {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: min-content;
+    grid-column-gap: 2rem;
+    grid-row-gap: 2rem;
+    height: 100%;
+    width: 100%;
+    padding-right: 6%;
+    overflow-y: auto;
+}
+
+.hmenu__gunshop__catalog.cols-3 {
+    grid-template-columns: 33% 33% 33%;
+}
+
+.hmenu__gunshop__catalog__container {
+    overflow-y: auto;
+    padding-right: 1%;
+    display: flex;
+    background: rgba(0, 0, 0, 0.5);
+    border: 0.5px solid rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    margin-right: 2%;
+    padding: 1.5%;
+    width: 62%;
+}
+
+.hmenu__gunshop__catalog__item {
+    border-radius: 10px;
+    display: flex;
+    padding: 1.5rem;
+    flex-direction: column;
+    cursor: pointer;
+    border: 0.5px solid rgba(255, 255, 255, 0.5);
+    height: fit-content;
+}
+
+.hmenu__gunshop__catalog__item_active {
+    background: rgba(0, 0, 0, 0.5);
+    border: 0.5px solid rgba(255, 255, 255, 0.5);
+    box-sizing: border-box;
+    border-radius: 10px;
+    display: flex;
+    padding: 1.5rem;
+    flex-direction: column;
+    cursor: pointer;
+    height: fit-content;
+}
+
+.hmenu__gunshop__catalog__item__img {
+    width: 55%;
+    object-fit: contain;
+}
+
+.hmenu__gunshop__catalog__item__img__container {
+    margin-top: 10%;
+    margin-bottom: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hmenu__gunshop__catalog__item__name {
+    font-family: 'Gotham Pro Medium';
+    font-size: 2rem;
+}
+
+.hmenu__gunshop__catalog::-webkit-scrollbar {
+   width: 0.4rem;
+ }
+   
+ .hmenu__gunshop__catalog::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.35);
+    border-radius: 15px;
+ }
+   
+ .hmenu__gunshop__catalog::-webkit-scrollbar-thumb {
+    background: #FFFFFF;
+    border-radius: 15px;
+}
+
+.hmenu__gunshop__catalog__item__info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hmenu__gunshop__catalog__item__calibr {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.hmenu__gunshop__catalog__item__price {
+    font-family: 'Gotham Pro Medium';
+    font-size: 2.2rem;
+}
+
+.hmenu__gunshop__catalog__item__calibr__text {
+    font-family: 'Gotham Pro Regular';
+    font-size: 1.1rem;
+    letter-spacing: 0.05rem;
+}
+
+.hmenu__gunshop__catalog__item__calibr__name {
+    font-family: 'Gotham Pro Medium';
+    font-size: 1.3rem;
+}
+
+.hmenu__gunshop__catalog__item__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: visible;
+    height: 24px;
+}
+
+.hmenu__gunshop__catalog__item__sale {
+
+    position: relative;
+    padding: 6px;
+    /*right: 50%;*/
+    bottom: 34px;
+
+    /*padding-top: 3%;
+    padding-bottom: 3%;
+    padding-left: 1.3rem;
+    padding-right: 1.3rem;*/
+    border-radius: 0.4rem;
+    font-family: 'Gotham Pro Regular';
+    background: linear-gradient(105.63deg, rgba(255, 64, 57, 0) -80.94%, rgba(255, 64, 57, 0.45) 275.52%);
+    border: 0.5px solid #FF4039;
+    border-radius: 5px;
+}

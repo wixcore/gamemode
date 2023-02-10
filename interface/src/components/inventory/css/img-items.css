@@ -1,0 +1,1795 @@
+/*FOOD*/
+.img-burger {
+    background: url(../img/food/burger.png) no-repeat;
+    width: 41px;
+    height: 41px;
+}
+
+.img-cola {
+    background: url(../img/food/cola.png) no-repeat;
+    width: 41px;
+    height: 41px;
+    background-size: 39px;
+    background-position: center;
+    filter: brightness(0) saturate(100%) invert(50%) sepia(0%) saturate(7500%) hue-rotate(230deg) brightness(107%) contrast(100%);
+}
+
+/*OUTFITS*/
+.img-cap {
+    background: url(../img/outfit/cap.png) no-repeat;
+    width: 41px;
+    height: 41px;
+    background-size: 36px;
+    background-position: center;
+    filter: brightness(0) saturate(100%) invert(50%) sepia(0%) saturate(7500%) hue-rotate(230deg) brightness(107%) contrast(100%);
+}
+
+.img-glasses {
+    background: url(../img/outfit/glasses.png) no-repeat;
+    width: 41px;
+    height: 41px;
+    background-size: 41px;
+    background-position: center;
+    filter: brightness(0) saturate(100%) invert(50%) sepia(0%) saturate(7500%) hue-rotate(230deg) brightness(107%) contrast(100%);
+}
+
+.img-mask {
+    background: url(../img/outfit/hockey-mask.png) no-repeat;
+    width: 41px;
+    height: 41px;
+    background-size: 35px;
+    background-position: center;
+    filter: brightness(0) saturate(100%) invert(50%) sepia(0%) saturate(7500%) hue-rotate(230deg) brightness(107%) contrast(100%);
+}
+
+.img-shirt {
+    background: url(../img/outfit/shirt.png) no-repeat;
+    width: 41px;
+    height: 41px;
+    background-size: 35px;
+    background-position: center;
+    filter: brightness(0) saturate(100%) invert(50%) sepia(0%) saturate(7500%) hue-rotate(230deg) brightness(107%) contrast(100%);
+}
+
+.img-jewerly {
+    background: url(../img/outfit/pearl-necklace.png) no-repeat;
+    width: 41px;
+    height: 41px;
+    background-size: 35px;
+    background-position: center;
+    filter: brightness(0) saturate(100%) invert(50%) sepia(0%) saturate(7500%) hue-rotate(230deg) brightness(107%) contrast(100%);
+}
+
+.img-earrings {
+    background: url(../img/outfit/earrings.png) no-repeat;
+    width: 41px;
+    height: 41px;
+    background-size: 31px;
+    background-position: center;
+    filter: brightness(0) saturate(100%) invert(50%) sepia(0%) saturate(7500%) hue-rotate(230deg) brightness(107%) contrast(100%);
+}
+
+.img-jeans {
+    background: url(../img/outfit/jeans.png) no-repeat;
+    width: 41px;
+    height: 41px;
+    background-size: 18px;
+    background-position: center;
+    filter: brightness(0) saturate(100%) invert(50%) sepia(0%) saturate(7500%) hue-rotate(230deg) brightness(107%) contrast(100%);
+}
+
+.img-watch {
+    background: url(../img/outfit/wristwatch.png) no-repeat;
+    width: 41px;
+    height: 41px;
+    background-size: 20px;
+    background-position: center;
+    filter: brightness(0) saturate(100%) invert(50%) sepia(0%) saturate(7500%) hue-rotate(230deg) brightness(107%) contrast(100%);
+}
+
+.img-bracelet {
+    background: url(../img/outfit/bracelet.png) no-repeat;
+    width: 41px;
+    height: 41px;
+    background-size: 19px;
+    background-position: center;
+    filter: brightness(0) saturate(100%) invert(50%) sepia(0%) saturate(7500%) hue-rotate(230deg) brightness(107%) contrast(100%);
+}
+
+.img-boot {
+    background: url(../img/outfit/boot.png) no-repeat;
+    width: 41px;
+    height: 41px;
+    background-size: 35px;
+    background-position: center;
+    filter: brightness(0) saturate(100%) invert(50%) sepia(0%) saturate(7500%) hue-rotate(230deg) brightness(107%) contrast(100%);
+}
+
+.img-clock {
+    background: url(../img/outfit/circular-clock-tool.png) no-repeat;
+    width: 41px;
+    height: 41px;
+    background-size: 32px;
+    background-position: center;
+    filter: brightness(0) saturate(100%) invert(50%) sepia(0%) saturate(7500%) hue-rotate(230deg) brightness(107%) contrast(100%);
+}
+
+.img-armour {
+    background: url(../img/outfit/armour.png) no-repeat;
+    width: 41px;
+    height: 41px;
+    background-size: 32px;
+    background-position: center;
+    filter: brightness(0) saturate(100%) invert(50%) sepia(0%) saturate(7500%) hue-rotate(230deg) brightness(107%) contrast(100%);
+}
+
+.img-phone {
+    background: url(../img/outfit/smartphone.png) no-repeat;
+    width: 41px;
+    height: 41px;
+    background-size: 22px;
+    background-position: center;
+    filter: brightness(0) saturate(100%) invert(50%) sepia(0%) saturate(7500%) hue-rotate(230deg) brightness(107%) contrast(100%);
+}
+
+.img-money {
+    background: url(../img/outfit/notes.png) no-repeat;
+    width: 41px;
+    height: 41px;
+    background-size: 35px;
+    background-position: center;
+    filter: brightness(0) saturate(100%) invert(50%) sepia(0%) saturate(7500%) hue-rotate(230deg) brightness(107%) contrast(100%);
+}
+
+.img-card {
+    background: url(../img/outfit/credit-card.png) no-repeat;
+    width: 41px;
+    height: 41px;
+    background-size: 33px;
+    background-position: center;
+    filter: brightness(0) saturate(100%) invert(50%) sepia(0%) saturate(7500%) hue-rotate(230deg) brightness(107%) contrast(100%);
+}
+
+/*WEAPON*/
+.img-279 {
+    background: url(../img/weapon/img-weapon.png) no-repeat;
+    width: 41px;
+    height: 41px;
+    background-size: 40px;
+    background-position: center;
+    filter: brightness(0) saturate(100%) invert(50%) sepia(0%) saturate(7500%) hue-rotate(230deg) brightness(107%) contrast(100%);
+}
+
+.img-machete {
+    background: url(../img/weapon/machete.png) no-repeat;
+    width: 41px;
+    height: 41px;
+    background-size: 40px;
+    background-position: center;
+    filter: brightness(0) saturate(100%) invert(50%) sepia(0%) saturate(7500%) hue-rotate(230deg) brightness(107%) contrast(100%);
+}
+
+/*DRUGS*/
+.img-cocaine {
+    background: url(../img/items/drugs.png) no-repeat;
+    width: 41px;
+    height: 41px;
+    background-size: 36px;
+    background-position: center;
+    filter: brightness(0) saturate(100%) invert(50%) sepia(0%) saturate(7500%) hue-rotate(230deg) brightness(107%) contrast(100%);
+}
+
+.img-0 {
+    background: url(../img/all-items/Item_0.png) no-repeat;
+}
+
+.img-1 {
+    background: url(../img/all-items/Item_1.png) no-repeat;
+}
+
+.img-2 {
+    background: url(../img/all-items/Item_2.png) no-repeat;
+}
+
+.img-3 {
+    background: url(../img/all-items/Item_3.png) no-repeat;
+}
+
+.img-4 {
+    background: url(../img/all-items/Item_4.png) no-repeat;
+}
+
+.img-5 {
+    background: url(../img/all-items/Item_5.png) no-repeat;
+}
+
+.img-6 {
+    background: url(../img/all-items/Item_6.png) no-repeat;
+}
+
+.img-7 {
+    background: url(../img/all-items/Item_7.png) no-repeat;
+}
+
+.img-8 {
+    background: url(../img/all-items/Item_8.png) no-repeat;
+}
+
+.img-9 {
+    background: url(../img/all-items/Item_9.png) no-repeat;
+}
+
+.img-10 {
+    background: url(../img/all-items/Item_10.png) no-repeat;
+}
+
+.img-11 {
+    background: url(../img/all-items/Item_11.png) no-repeat;
+}
+
+.img-12 {
+    background: url(../img/all-items/Item_12.png) no-repeat;
+}
+
+.img-13 {
+    background: url(../img/all-items/Item_13.png) no-repeat;
+}
+
+.img-14 {
+    background: url(../img/all-items/Item_14.png) no-repeat;
+}
+
+.img-15 {
+    background: url(../img/all-items/Item_15.png) no-repeat;
+}
+
+.img-16 {
+    background: url(../img/all-items/Item_16.png) no-repeat;
+}
+
+.img-17 {
+    background: url(../img/all-items/Item_17.png) no-repeat;
+}
+
+.img-18 {
+    background: url(../img/all-items/Item_18.png) no-repeat;
+}
+
+.img-19 {
+    background: url(../img/all-items/Item_19.png) no-repeat;
+}
+
+.img-20 {
+    background: url(../img/all-items/Item_20.png) no-repeat;
+}
+
+.img-21 {
+    background: url(../img/all-items/Item_21.png) no-repeat;
+}
+
+.img-22 {
+    background: url(../img/all-items/Item_22.png) no-repeat;
+}
+
+.img-23 {
+    background: url(../img/all-items/Item_23.png) no-repeat;
+}
+
+.img-24 {
+    background: url(../img/all-items/Item_24.png) no-repeat;
+}
+
+.img-25 {
+    background: url(../img/all-items/Item_25.png) no-repeat;
+}
+
+.img-26 {
+    background: url(../img/all-items/Item_26.png) no-repeat;
+}
+
+.img-27 {
+    background: url(../img/all-items/Item_27.png) no-repeat;
+}
+
+.img-28 {
+    background: url(../img/all-items/Item_28.png) no-repeat;
+}
+
+.img-29 {
+    background: url(../img/all-items/Item_29.png) no-repeat;
+}
+
+.img-30 {
+    background: url(../img/all-items/Item_30.png) no-repeat;
+}
+
+.img-31 {
+    background: url(../img/all-items/Item_31.png) no-repeat;
+}
+
+.img-32 {
+    background: url(../img/all-items/Item_32.png) no-repeat;
+}
+
+.img-33 {
+    background: url(../img/all-items/Item_33.png) no-repeat;
+}
+
+.img-34 {
+    background: url(../img/all-items/Item_34.png) no-repeat;
+}
+
+.img-35 {
+    background: url(../img/all-items/Item_35.png) no-repeat;
+}
+
+.img-36 {
+    background: url(../img/all-items/Item_36.png) no-repeat;
+}
+
+.img-37 {
+    background: url(../img/all-items/Item_37.png) no-repeat;
+}
+
+.img-38 {
+    background: url(../img/all-items/Item_38.png) no-repeat;
+}
+
+.img-39 {
+    background: url(../img/all-items/Item_39.png) no-repeat;
+}
+
+.img-40 {
+    background: url(../img/all-items/Item_40.png) no-repeat;
+}
+
+.img-41 {
+    background: url(../img/all-items/Item_41.png) no-repeat;
+}
+
+.img-42 {
+    background: url(../img/all-items/Item_42.png) no-repeat;
+}
+
+.img-43 {
+    background: url(../img/all-items/Item_43.png) no-repeat;
+}
+
+.img-44 {
+    background: url(../img/all-items/Item_44.png) no-repeat;
+}
+
+.img-45 {
+    background: url(../img/all-items/Item_45.png) no-repeat;
+}
+
+.img-46 {
+    background: url(../img/all-items/Item_46.png) no-repeat;
+}
+
+.img-47 {
+    background: url(../img/all-items/Item_47.png) no-repeat;
+}
+
+.img-48 {
+    background: url(../img/all-items/Item_48.png) no-repeat;
+}
+
+.img-49 {
+    background: url(../img/all-items/Item_49.png) no-repeat;
+}
+
+.img-50 {
+    background: url(../img/all-items/Item_50.png) no-repeat;
+}
+
+.img-51 {
+    background: url(../img/all-items/Item_51.png) no-repeat;
+}
+
+.img-52 {
+    background: url(../img/all-items/Item_52.png) no-repeat;
+}
+
+.img-53 {
+    background: url(../img/all-items/Item_53.png) no-repeat;
+}
+
+.img-54 {
+    background: url(../img/all-items/Item_54.png) no-repeat;
+}
+
+.img-55 {
+    background: url(../img/all-items/Item_55.png) no-repeat;
+}
+
+.img-56 {
+    background: url(../img/all-items/Item_56.png) no-repeat;
+}
+
+.img-57 {
+    background: url(../img/all-items/Item_57.png) no-repeat;
+}
+
+.img-58 {
+    background: url(../img/all-items/Item_58.png) no-repeat;
+}
+
+.img-59 {
+    background: url(../img/all-items/Item_59.png) no-repeat;
+}
+
+.img-60 {
+    background: url(../img/all-items/Item_60.png) no-repeat;
+}
+
+.img-61 {
+    background: url(../img/all-items/Item_61.png) no-repeat;
+}
+
+.img-62 {
+    background: url(../img/all-items/Item_62.png) no-repeat;
+}
+
+.img-63 {
+    background: url(../img/all-items/Item_63.png) no-repeat;
+}
+
+.img-64 {
+    background: url(../img/all-items/Item_64.png) no-repeat;
+}
+
+.img-65 {
+    background: url(../img/all-items/Item_65.png) no-repeat;
+}
+
+.img-66 {
+    background: url(../img/all-items/Item_66.png) no-repeat;
+}
+
+.img-67 {
+    background: url(../img/all-items/Item_67.png) no-repeat;
+}
+
+.img-68 {
+    background: url(../img/all-items/Item_68.png) no-repeat;
+}
+
+.img-69 {
+    background: url(../img/all-items/Item_69.png) no-repeat;
+}
+
+.img-70 {
+    background: url(../img/all-items/Item_70.png) no-repeat;
+}
+
+.img-71 {
+    background: url(../img/all-items/Item_71.png) no-repeat;
+}
+
+.img-72 {
+    background: url(../img/all-items/Item_72.png) no-repeat;
+}
+
+.img-73 {
+    background: url(../img/all-items/Item_73.png) no-repeat;
+}
+
+.img-74 {
+    background: url(../img/all-items/Item_74.png) no-repeat;
+}
+
+.img-75 {
+    background: url(../img/all-items/Item_75.png) no-repeat;
+}
+
+.img-76 {
+    background: url(../img/all-items/Item_76.png) no-repeat;
+}
+
+.img-77 {
+    background: url(../img/all-items/Item_77.png) no-repeat;
+}
+
+.img-78 {
+    background: url(../img/all-items/Item_78.png) no-repeat;
+}
+
+.img-79 {
+    background: url(../img/all-items/Item_79.png) no-repeat;
+}
+
+.img-80 {
+    background: url(../img/all-items/Item_80.png) no-repeat;
+}
+
+.img-81 {
+    background: url(../img/all-items/Item_81.png) no-repeat;
+}
+
+.img-82 {
+    background: url(../img/all-items/Item_82.png) no-repeat;
+}
+
+.img-83 {
+    background: url(../img/all-items/Item_83.png) no-repeat;
+}
+
+.img-84 {
+    background: url(../img/all-items/Item_84.png) no-repeat;
+}
+
+.img-85 {
+    background: url(../img/all-items/Item_85.png) no-repeat;
+}
+
+.img-86 {
+    background: url(../img/all-items/Item_86.png) no-repeat;
+}
+
+.img-87 {
+    background: url(../img/all-items/Item_87.png) no-repeat;
+}
+
+.img-88 {
+    background: url(../img/all-items/Item_88.png) no-repeat;
+}
+
+.img-89 {
+    background: url(../img/all-items/Item_89.png) no-repeat;
+}
+
+.img-90 {
+    background: url(../img/all-items/Item_90.png) no-repeat;
+}
+
+.img-91 {
+    background: url(../img/all-items/Item_91.png) no-repeat;
+}
+
+.img-92 {
+    background: url(../img/all-items/Item_92.png) no-repeat;
+}
+
+.img-93 {
+    background: url(../img/all-items/Item_93.png) no-repeat;
+}
+
+.img-94 {
+    background: url(../img/all-items/Item_94.png) no-repeat;
+}
+
+.img-95 {
+    background: url(../img/all-items/Item_95.png) no-repeat;
+}
+
+.img-96 {
+    background: url(../img/all-items/Item_96.png) no-repeat;
+}
+
+.img-97 {
+    background: url(../img/all-items/Item_97.png) no-repeat;
+}
+
+.img-98 {
+    background: url(../img/all-items/Item_98.png) no-repeat;
+}
+
+.img-99 {
+    background: url(../img/all-items/Item_99.png) no-repeat;
+}
+
+.img-100 {
+    background: url(../img/all-items/Item_100.png) no-repeat;
+}
+
+.img-101 {
+    background: url(../img/all-items/Item_101.png) no-repeat;
+}
+
+.img-102 {
+    background: url(../img/all-items/Item_102.png) no-repeat;
+}
+
+.img-103 {
+    background: url(../img/all-items/Item_103.png) no-repeat;
+}
+
+.img-104 {
+    background: url(../img/all-items/Item_104.png) no-repeat;
+}
+
+.img-105 {
+    background: url(../img/all-items/Item_105.png) no-repeat;
+}
+
+.img-106 {
+    background: url(../img/all-items/Item_106.png) no-repeat;
+}
+
+.img-107 {
+    background: url(../img/all-items/Item_107.png) no-repeat;
+}
+
+.img-108 {
+    background: url(../img/all-items/Item_108.png) no-repeat;
+}
+
+.img-109 {
+    background: url(../img/all-items/Item_109.png) no-repeat;
+}
+
+.img-110 {
+    background: url(../img/all-items/Item_110.png) no-repeat;
+}
+
+.img-111 {
+    background: url(../img/all-items/Item_111.png) no-repeat;
+}
+
+.img-112 {
+    background: url(../img/all-items/Item_112.png) no-repeat;
+}
+
+.img-113 {
+    background: url(../img/all-items/Item_113.png) no-repeat;
+}
+
+.img-114 {
+    background: url(../img/all-items/Item_114.png) no-repeat;
+}
+
+.img-115 {
+    background: url(../img/all-items/Item_115.png) no-repeat;
+}
+
+.img-116 {
+    background: url(../img/all-items/Item_116.png) no-repeat;
+}
+
+.img-117 {
+    background: url(../img/all-items/Item_117.png) no-repeat;
+}
+
+.img-118 {
+    background: url(../img/all-items/Item_118.png) no-repeat;
+}
+
+.img-119 {
+    background: url(../img/all-items/Item_119.png) no-repeat;
+}
+
+.img-120 {
+    background: url(../img/all-items/Item_120.png) no-repeat;
+}
+
+.img-121 {
+    background: url(../img/all-items/Item_121.png) no-repeat;
+}
+
+.img-122 {
+    background: url(../img/all-items/Item_122.png) no-repeat;
+}
+
+.img-123 {
+    background: url(../img/all-items/Item_123.png) no-repeat;
+}
+
+.img-124 {
+    background: url(../img/all-items/Item_124.png) no-repeat;
+}
+
+.img-125 {
+    background: url(../img/all-items/Item_125.png) no-repeat;
+}
+
+.img-126 {
+    background: url(../img/all-items/Item_126.png) no-repeat;
+}
+
+.img-127 {
+    background: url(../img/all-items/Item_127.png) no-repeat;
+}
+
+.img-128 {
+    background: url(../img/all-items/Item_128.png) no-repeat;
+}
+
+.img-129 {
+    background: url(../img/all-items/Item_129.png) no-repeat;
+}
+
+.img-130 {
+    background: url(../img/all-items/Item_130.png) no-repeat;
+}
+
+.img-131 {
+    background: url(../img/all-items/Item_131.png) no-repeat;
+}
+
+.img-132 {
+    background: url(../img/all-items/Item_132.png) no-repeat;
+}
+
+.img-133 {
+    background: url(../img/all-items/Item_133.png) no-repeat;
+}
+
+.img-134 {
+    background: url(../img/all-items/Item_134.png) no-repeat;
+}
+
+.img-135 {
+    background: url(../img/all-items/Item_135.png) no-repeat;
+}
+
+.img-136 {
+    background: url(../img/all-items/Item_136.png) no-repeat;
+}
+
+.img-137 {
+    background: url(../img/all-items/Item_137.png) no-repeat;
+}
+
+.img-138 {
+    background: url(../img/all-items/Item_138.png) no-repeat;
+}
+
+.img-139 {
+    background: url(../img/all-items/Item_139.png) no-repeat;
+}
+
+.img-140 {
+    background: url(../img/all-items/Item_140.png) no-repeat;
+}
+
+.img-141 {
+    background: url(../img/all-items/Item_141.png) no-repeat;
+}
+
+.img-142 {
+    background: url(../img/all-items/Item_142.png) no-repeat;
+}
+
+.img-143 {
+    background: url(../img/all-items/Item_143.png) no-repeat;
+}
+
+.img-144 {
+    background: url(../img/all-items/Item_144.png) no-repeat;
+}
+
+.img-145 {
+    background: url(../img/all-items/Item_145.png) no-repeat;
+}
+
+.img-146 {
+    background: url(../img/all-items/Item_146.png) no-repeat;
+}
+
+.img-147 {
+    background: url(../img/all-items/Item_147.png) no-repeat;
+}
+
+.img-148 {
+    background: url(../img/all-items/Item_148.png) no-repeat;
+}
+
+.img-149 {
+    background: url(../img/all-items/Item_149.png) no-repeat;
+}
+
+.img-150 {
+    background: url(../img/all-items/Item_150.png) no-repeat;
+}
+
+.img-151 {
+    background: url(../img/all-items/Item_151.png) no-repeat;
+}
+
+.img-152 {
+    background: url(../img/all-items/Item_152.png) no-repeat;
+}
+
+.img-153 {
+    background: url(../img/all-items/Item_153.png) no-repeat;
+}
+
+.img-154 {
+    background: url(../img/all-items/Item_154.png) no-repeat;
+}
+
+.img-155 {
+    background: url(../img/all-items/Item_155.png) no-repeat;
+}
+
+.img-156 {
+    background: url(../img/all-items/Item_156.png) no-repeat;
+}
+
+.img-157 {
+    background: url(../img/all-items/Item_157.png) no-repeat;
+}
+
+.img-158 {
+    background: url(../img/all-items/Item_158.png) no-repeat;
+}
+
+.img-159 {
+    background: url(../img/all-items/Item_159.png) no-repeat;
+}
+
+.img-160 {
+    background: url(../img/all-items/Item_160.png) no-repeat;
+}
+
+.img-161 {
+    background: url(../img/all-items/Item_161.png) no-repeat;
+}
+
+.img-162 {
+    background: url(../img/all-items/Item_162.png) no-repeat;
+}
+
+.img-163 {
+    background: url(../img/all-items/Item_163.png) no-repeat;
+}
+
+.img-164 {
+    background: url(../img/all-items/Item_164.png) no-repeat;
+}
+
+.img-165 {
+    background: url(../img/all-items/Item_165.png) no-repeat;
+}
+
+.img-166 {
+    background: url(../img/all-items/Item_166.png) no-repeat;
+}
+
+.img-167 {
+    background: url(../img/all-items/Item_167.png) no-repeat;
+}
+
+.img-168 {
+    background: url(../img/all-items/Item_168.png) no-repeat;
+}
+
+.img-169 {
+    background: url(../img/all-items/Item_169.png) no-repeat;
+}
+
+.img-170 {
+    background: url(../img/all-items/Item_170.png) no-repeat;
+}
+
+.img-171 {
+    background: url(../img/all-items/Item_171.png) no-repeat;
+}
+
+.img-172 {
+    background: url(../img/all-items/Item_172.png) no-repeat;
+}
+
+.img-173 {
+    background: url(../img/all-items/Item_173.png) no-repeat;
+}
+
+.img-174 {
+    background: url(../img/all-items/Item_174.png) no-repeat;
+}
+
+.img-175 {
+    background: url(../img/all-items/Item_175.png) no-repeat;
+}
+
+.img-176 {
+    background: url(../img/all-items/Item_176.png) no-repeat;
+}
+
+.img-177 {
+    background: url(../img/all-items/Item_177.png) no-repeat;
+}
+
+.img-178 {
+    background: url(../img/all-items/Item_178.png) no-repeat;
+}
+
+.img-179 {
+    background: url(../img/all-items/Item_179.png) no-repeat;
+}
+
+.img-180 {
+    background: url(../img/all-items/Item_180.png) no-repeat;
+}
+
+.img-181 {
+    background: url(../img/all-items/Item_181.png) no-repeat;
+}
+
+.img-182 {
+    background: url(../img/all-items/Item_182.png) no-repeat;
+}
+
+.img-183 {
+    background: url(../img/all-items/Item_183.png) no-repeat;
+}
+
+.img-184 {
+    background: url(../img/all-items/Item_184.png) no-repeat;
+}
+
+.img-185 {
+    background: url(../img/all-items/Item_185.png) no-repeat;
+}
+
+.img-186 {
+    background: url(../img/all-items/Item_186.png) no-repeat;
+}
+
+.img-187 {
+    background: url(../img/all-items/Item_187.png) no-repeat;
+}
+
+.img-188 {
+    background: url(../img/all-items/Item_188.png) no-repeat;
+}
+
+.img-189 {
+    background: url(../img/all-items/Item_189.png) no-repeat;
+}
+
+.img-190 {
+    background: url(../img/all-items/Item_190.png) no-repeat;
+}
+
+.img-191 {
+    background: url(../img/all-items/Item_191.png) no-repeat;
+}
+
+.img-192 {
+    background: url(../img/all-items/Item_192.png) no-repeat;
+}
+
+.img-193 {
+    background: url(../img/all-items/Item_193.png) no-repeat;
+}
+
+.img-194 {
+    background: url(../img/all-items/Item_194.png) no-repeat;
+}
+
+.img-195 {
+    background: url(../img/all-items/Item_195.png) no-repeat;
+}
+
+.img-196 {
+    background: url(../img/all-items/Item_196.png) no-repeat;
+}
+
+.img-197 {
+    background: url(../img/all-items/Item_197.png) no-repeat;
+}
+
+.img-198 {
+    background: url(../img/all-items/Item_198.png) no-repeat;
+}
+
+.img-199 {
+    background: url(../img/all-items/Item_199.png) no-repeat;
+}
+
+.img-200 {
+    background: url(../img/all-items/Item_200.png) no-repeat;
+}
+
+.img-201 {
+    background: url(../img/all-items/Item_201.png) no-repeat;
+}
+
+.img-202 {
+    background: url(../img/all-items/Item_202.png) no-repeat;
+}
+
+.img-203 {
+    background: url(../img/all-items/Item_203.png) no-repeat;
+}
+
+.img-204 {
+    background: url(../img/all-items/Item_204.png) no-repeat;
+}
+
+.img-205 {
+    background: url(../img/all-items/Item_205.png) no-repeat;
+}
+
+.img-206 {
+    background: url(../img/all-items/Item_206.png) no-repeat;
+}
+
+.img-207 {
+    background: url(../img/all-items/Item_207.png) no-repeat;
+}
+
+.img-208 {
+    background: url(../img/all-items/Item_208.png) no-repeat;
+}
+
+.img-209 {
+    background: url(../img/all-items/Item_209.png) no-repeat;
+}
+
+.img-210 {
+    background: url(../img/all-items/Item_210.png) no-repeat;
+}
+
+.img-211 {
+    background: url(../img/all-items/Item_211.png) no-repeat;
+}
+
+.img-212 {
+    background: url(../img/all-items/Item_212.png) no-repeat;
+}
+
+.img-213 {
+    background: url(../img/all-items/Item_213.png) no-repeat;
+}
+
+.img-214 {
+    background: url(../img/all-items/Item_214.png) no-repeat;
+}
+
+.img-215 {
+    background: url(../img/all-items/Item_215.png) no-repeat;
+}
+
+.img-216 {
+    background: url(../img/all-items/Item_216.png) no-repeat;
+}
+
+.img-217 {
+    background: url(../img/all-items/Item_217.png) no-repeat;
+}
+
+.img-218 {
+    background: url(../img/all-items/Item_218.png) no-repeat;
+}
+
+.img-219 {
+    background: url(../img/all-items/Item_219.png) no-repeat;
+}
+
+.img-220 {
+    background: url(../img/all-items/Item_220.png) no-repeat;
+}
+
+.img-221 {
+    background: url(../img/all-items/Item_221.png) no-repeat;
+}
+
+.img-222 {
+    background: url(../img/all-items/Item_222.png) no-repeat;
+}
+
+.img-223 {
+    background: url(../img/all-items/Item_223.png) no-repeat;
+}
+
+.img-224 {
+    background: url(../img/all-items/Item_224.png) no-repeat;
+}
+
+.img-225 {
+    background: url(../img/all-items/Item_225.png) no-repeat;
+}
+
+.img-226 {
+    background: url(../img/all-items/Item_226.png) no-repeat;
+}
+
+.img-227 {
+    background: url(../img/all-items/Item_227.png) no-repeat;
+}
+
+.img-228 {
+    background: url(../img/all-items/Item_228.png) no-repeat;
+}
+
+.img-229 {
+    background: url(../img/all-items/Item_229.png) no-repeat;
+}
+
+.img-230 {
+    background: url(../img/all-items/Item_230.png) no-repeat;
+}
+
+.img-231 {
+    background: url(../img/all-items/Item_231.png) no-repeat;
+}
+
+.img-232 {
+    background: url(../img/all-items/Item_232.png) no-repeat;
+}
+
+.img-233 {
+    background: url(../img/all-items/Item_233.png) no-repeat;
+}
+
+.img-234 {
+    background: url(../img/all-items/Item_234.png) no-repeat;
+}
+
+.img-235 {
+    background: url(../img/all-items/Item_235.png) no-repeat;
+}
+
+.img-236 {
+    background: url(../img/all-items/Item_236.png) no-repeat;
+}
+
+.img-237 {
+    background: url(../img/all-items/Item_237.png) no-repeat;
+}
+
+.img-238 {
+    background: url(../img/all-items/Item_238.png) no-repeat;
+}
+
+.img-239 {
+    background: url(../img/all-items/Item_239.png) no-repeat;
+}
+
+.img-240 {
+    background: url(../img/all-items/Item_240.png) no-repeat;
+}
+
+.img-241 {
+    background: url(../img/all-items/Item_241.png) no-repeat;
+}
+
+.img-242 {
+    background: url(../img/all-items/Item_242.png) no-repeat;
+}
+
+.img-243 {
+    background: url(../img/all-items/Item_243.png) no-repeat;
+}
+
+.img-244 {
+    background: url(../img/all-items/Item_244.png) no-repeat;
+}
+
+.img-245 {
+    background: url(../img/all-items/Item_245.png) no-repeat;
+}
+
+.img-246 {
+    background: url(../img/all-items/Item_246.png) no-repeat;
+}
+
+.img-247 {
+    background: url(../img/all-items/Item_247.png) no-repeat;
+}
+
+.img-248 {
+    background: url(../img/all-items/Item_248.png) no-repeat;
+}
+
+.img-249 {
+    background: url(../img/all-items/Item_249.png) no-repeat;
+}
+
+.img-250 {
+    background: url(../img/all-items/Item_250.png) no-repeat;
+}
+
+.img-251 {
+    background: url(../img/all-items/Item_251.png) no-repeat;
+}
+
+.img-252 {
+    background: url(../img/all-items/Item_252.png) no-repeat;
+}
+
+.img-253 {
+    background: url(../img/all-items/Item_253.png) no-repeat;
+}
+
+.img-254 {
+    background: url(../img/all-items/Item_254.png) no-repeat;
+}
+
+.img-255 {
+    background: url(../img/all-items/Item_255.png) no-repeat;
+}
+
+.img-256 {
+    background: url(../img/all-items/Item_256.png) no-repeat;
+}
+
+.img-257 {
+    background: url(../img/all-items/Item_257.png) no-repeat;
+}
+
+.img-258 {
+    background: url(../img/all-items/Item_258.png) no-repeat;
+}
+
+.img-259 {
+    background: url(../img/all-items/Item_259.png) no-repeat;
+}
+
+.img-260 {
+    background: url(../img/all-items/Item_260.png) no-repeat;
+}
+
+.img-261 {
+    background: url(../img/all-items/Item_261.png) no-repeat;
+}
+
+.img-262 {
+    background: url(../img/all-items/Item_262.png) no-repeat;
+}
+
+.img-263 {
+    background: url(../img/all-items/Item_263.png) no-repeat;
+}
+
+.img-264 {
+    background: url(../img/all-items/Item_264.png) no-repeat;
+}
+
+.img-265 {
+    background: url(../img/all-items/Item_265.png) no-repeat;
+}
+
+.img-266 {
+    background: url(../img/all-items/Item_266.png) no-repeat;
+}
+
+.img-267 {
+    background: url(../img/all-items/Item_267.png) no-repeat;
+}
+
+.img-268 {
+    background: url(../img/all-items/Item_268.png) no-repeat;
+}
+
+.img-269 {
+    background: url(../img/all-items/Item_269.png) no-repeat;
+}
+
+.img-270 {
+    background: url(../img/all-items/Item_270.png) no-repeat;
+}
+
+.img-271 {
+    background: url(../img/all-items/Item_271.png) no-repeat;
+}
+
+.img-272 {
+    background: url(../img/all-items/Item_272.png) no-repeat;
+}
+
+.img-273 {
+    background: url(../img/all-items/Item_273.png) no-repeat;
+}
+
+.img-274 {
+    background: url(../img/all-items/Item_274.png) no-repeat;
+}
+
+.img-275 {
+    background: url(../img/all-items/Item_275.png) no-repeat;
+}
+
+.img-276 {
+    background: url(../img/all-items/Item_276.png) no-repeat;
+}
+
+.img-277 {
+    background: url(../img/all-items/Item_277.png) no-repeat;
+}
+
+.img-278 {
+    background: url(../img/all-items/Item_278.png) no-repeat;
+}
+
+.img-279 {
+    background: url(../img/all-items/Item_279.png) no-repeat;
+}
+
+.img-280 {
+    background: url(../img/all-items/Item_280.png) no-repeat;
+}
+
+.img-281 {
+    background: url(../img/all-items/Item_281.png) no-repeat;
+}
+
+.img-282 {
+    background: url(../img/all-items/Item_282.png) no-repeat;
+}
+
+.img-283 {
+    background: url(../img/all-items/Item_283.png) no-repeat;
+}
+
+.img-284 {
+    background: url(../img/all-items/Item_284.png) no-repeat;
+}
+
+.img-285 {
+    background: url(../img/all-items/Item_285.png) no-repeat;
+}
+
+.img-286 {
+    background: url(../img/all-items/Item_286.png) no-repeat;
+}
+
+.img-287 {
+    background: url(../img/all-items/Item_287.png) no-repeat;
+}
+
+.img-288 {
+    background: url(../img/all-items/Item_288.png) no-repeat;
+}
+
+.img-289 {
+    background: url(../img/all-items/Item_289.png) no-repeat;
+}
+
+.img-290 {
+    background: url(../img/all-items/Item_290.png) no-repeat;
+}
+
+.img-291 {
+    background: url(../img/all-items/Item_291.png) no-repeat;
+}
+
+.img-292 {
+    background: url(../img/all-items/Item_292.png) no-repeat;
+}
+
+.img-293 { background: url(../img/all-items/Item_293.png) no-repeat; }
+.img-294 { background: url(../img/all-items/Item_294.png) no-repeat; }
+.img-295 { background: url(../img/all-items/Item_295.png) no-repeat; }
+.img-296 { background: url(../img/all-items/Item_296.png) no-repeat; }
+.img-297 { background: url(../img/all-items/Item_297.png) no-repeat; }
+.img-298 { background: url(../img/all-items/Item_298.png) no-repeat; }
+.img-299 { background: url(../img/all-items/Item_299.png) no-repeat; }
+.img-300 { background: url(../img/all-items/Item_300.png) no-repeat; }
+.img-301 { background: url(../img/all-items/Item_301.png) no-repeat; }
+.img-302 { background: url(../img/all-items/Item_302.png) no-repeat; }
+.img-303 { background: url(../img/all-items/Item_303.png) no-repeat; }
+.img-304 { background: url(../img/all-items/Item_304.png) no-repeat; }
+.img-305 { background: url(../img/all-items/Item_305.png) no-repeat; }
+.img-306 { background: url(../img/all-items/Item_306.png) no-repeat; }
+.img-307 { background: url(../img/all-items/Item_307.png) no-repeat; }
+.img-308 { background: url(../img/all-items/Item_308.png) no-repeat; }
+.img-309 { background: url(../img/all-items/Item_309.png) no-repeat; }
+.img-310 { background: url(../img/all-items/Item_310.png) no-repeat; }
+.img-311 { background: url(../img/all-items/Item_311.png) no-repeat; }
+.img-312 { background: url(../img/all-items/Item_312.png) no-repeat; }
+.img-313 { background: url(../img/all-items/Item_313.png) no-repeat; }
+.img-314 { background: url(../img/all-items/Item_314.png) no-repeat; }
+.img-315 { background: url(../img/all-items/Item_315.png) no-repeat; }
+.img-316 { background: url(../img/all-items/Item_316.png) no-repeat; }
+.img-317 { background: url(../img/all-items/Item_317.png) no-repeat; }
+.img-318 { background: url(../img/all-items/Item_318.png) no-repeat; }
+.img-319 { background: url(../img/all-items/Item_319.png) no-repeat; }
+.img-320 { background: url(../img/all-items/Item_320.png) no-repeat; }
+.img-321 { background: url(../img/all-items/Item_321.png) no-repeat; }
+.img-322 { background: url(../img/all-items/Item_322.png) no-repeat; }
+.img-323 { background: url(../img/all-items/Item_323.png) no-repeat; }
+.img-324 { background: url(../img/all-items/Item_324.png) no-repeat; }
+.img-325 { background: url(../img/all-items/Item_325.png) no-repeat; }
+.img-326 { background: url(../img/all-items/Item_326.png) no-repeat; }
+.img-327 { background: url(../img/all-items/Item_327.png) no-repeat; }
+.img-328 { background: url(../img/all-items/Item_328.png) no-repeat; }
+.img-329 { background: url(../img/all-items/Item_329.png) no-repeat; }
+.img-330 { background: url(../img/all-items/Item_330.png) no-repeat; }
+.img-331 { background: url(../img/all-items/Item_331.png) no-repeat; }
+.img-332 { background: url(../img/all-items/Item_332.png) no-repeat; }
+.img-333 { background: url(../img/all-items/Item_333.png) no-repeat; }
+.img-334 { background: url(../img/all-items/Item_334.png) no-repeat; }
+.img-335 { background: url(../img/all-items/Item_335.png) no-repeat; }
+.img-336 { background: url(../img/all-items/Item_336.png) no-repeat; }
+.img-337 { background: url(../img/all-items/Item_337.png) no-repeat; }
+.img-338 { background: url(../img/all-items/Item_338.png) no-repeat; }
+.img-339 { background: url(../img/all-items/Item_339.png) no-repeat; }
+.img-340 { background: url(../img/all-items/Item_340.png) no-repeat; }
+.img-341 { background: url(../img/all-items/Item_341.png) no-repeat; }
+.img-342 { background: url(../img/all-items/Item_342.png) no-repeat; }
+.img-343 { background: url(../img/all-items/Item_343.png) no-repeat; }
+.img-344 { background: url(../img/all-items/Item_344.png) no-repeat; }
+.img-345 { background: url(../img/all-items/Item_345.png) no-repeat; }
+.img-346 { background: url(../img/all-items/Item_346.png) no-repeat; }
+.img-347 { background: url(../img/all-items/Item_347.png) no-repeat; }
+.img-348 { background: url(../img/all-items/Item_348.png) no-repeat; }
+.img-349 { background: url(../img/all-items/Item_349.png) no-repeat; }
+.img-350 { background: url(../img/all-items/Item_350.png) no-repeat; }
+.img-351 { background: url(../img/all-items/Item_351.png) no-repeat; }
+.img-352 { background: url(../img/all-items/Item_352.png) no-repeat; }
+.img-353 { background: url(../img/all-items/Item_353.png) no-repeat; }
+.img-354 { background: url(../img/all-items/Item_354.png) no-repeat; }
+.img-355 { background: url(../img/all-items/Item_355.png) no-repeat; }
+.img-356 { background: url(../img/all-items/Item_356.png) no-repeat; }
+.img-357 { background: url(../img/all-items/Item_357.png) no-repeat; }
+.img-358 { background: url(../img/all-items/Item_358.png) no-repeat; }
+.img-359 { background: url(../img/all-items/Item_359.png) no-repeat; }
+.img-360 { background: url(../img/all-items/Item_360.png) no-repeat; }
+.img-361 { background: url(../img/all-items/Item_361.png) no-repeat; }
+.img-362 { background: url(../img/all-items/Item_362.png) no-repeat; }
+.img-363 { background: url(../img/all-items/Item_363.png) no-repeat; }
+.img-364 { background: url(../img/all-items/Item_364.png) no-repeat; }
+.img-365 { background: url(../img/all-items/Item_365.png) no-repeat; }
+.img-366 { background: url(../img/all-items/Item_366.png) no-repeat; }
+.img-367 { background: url(../img/all-items/Item_367.png) no-repeat; }
+.img-368 { background: url(../img/all-items/Item_368.png) no-repeat; }
+.img-369 { background: url(../img/all-items/Item_369.png) no-repeat; }
+.img-370 { background: url(../img/all-items/Item_370.png) no-repeat; }
+.img-371 { background: url(../img/all-items/Item_371.png) no-repeat; }
+.img-372 { background: url(../img/all-items/Item_372.png) no-repeat; }
+.img-373 { background: url(../img/all-items/Item_373.png) no-repeat; }
+.img-374 { background: url(../img/all-items/Item_374.png) no-repeat; }
+.img-375 { background: url(../img/all-items/Item_375.png) no-repeat; }
+.img-376 { background: url(../img/all-items/Item_376.png) no-repeat; }
+.img-377 { background: url(../img/all-items/Item_377.png) no-repeat; }
+.img-378 { background: url(../img/all-items/Item_378.png) no-repeat; }
+.img-379 { background: url(../img/all-items/Item_379.png) no-repeat; }
+.img-380 { background: url(../img/all-items/Item_380.png) no-repeat; }
+.img-381 { background: url(../img/all-items/Item_381.png) no-repeat; }
+.img-382 { background: url(../img/all-items/Item_382.png) no-repeat; }
+.img-383 { background: url(../img/all-items/Item_383.png) no-repeat; }
+.img-384 { background: url(../img/all-items/Item_384.png) no-repeat; }
+.img-385 { background: url(../img/all-items/Item_385.png) no-repeat; }
+.img-386 { background: url(../img/all-items/Item_386.png) no-repeat; }
+.img-387 { background: url(../img/all-items/Item_387.png) no-repeat; }
+.img-388 { background: url(../img/all-items/Item_388.png) no-repeat; }
+.img-389 { background: url(../img/all-items/Item_389.png) no-repeat; }
+.img-390 { background: url(../img/all-items/Item_390.png) no-repeat; }
+.img-391 { background: url(../img/all-items/Item_391.png) no-repeat; }
+.img-392 { background: url(../img/all-items/Item_392.png) no-repeat; }
+.img-393 { background: url(../img/all-items/Item_393.png) no-repeat; }
+.img-394 { background: url(../img/all-items/Item_394.png) no-repeat; }
+.img-395 { background: url(../img/all-items/Item_395.png) no-repeat; }
+.img-396 { background: url(../img/all-items/Item_396.png) no-repeat; }
+.img-397 { background: url(../img/all-items/Item_397.png) no-repeat; }
+.img-398 { background: url(../img/all-items/Item_398.png) no-repeat; }
+.img-399 { background: url(../img/all-items/Item_399.png) no-repeat; }
+.img-400 { background: url(../img/all-items/Item_400.png) no-repeat; }
+.img-401 { background: url(../img/all-items/Item_401.png) no-repeat; }
+.img-402 { background: url(../img/all-items/Item_402.png) no-repeat; }
+.img-403 { background: url(../img/all-items/Item_403.png) no-repeat; }
+.img-404 { background: url(../img/all-items/Item_404.png) no-repeat; }
+.img-405 { background: url(../img/all-items/Item_405.png) no-repeat; }
+.img-406 { background: url(../img/all-items/Item_406.png) no-repeat; }
+.img-407 { background: url(../img/all-items/Item_407.png) no-repeat; }
+.img-408 { background: url(../img/all-items/Item_408.png) no-repeat; }
+.img-409 { background: url(../img/all-items/Item_409.png) no-repeat; }
+.img-410 { background: url(../img/all-items/Item_410.png) no-repeat; }
+.img-411 { background: url(../img/all-items/Item_411.png) no-repeat; }
+.img-412 { background: url(../img/all-items/Item_412.png) no-repeat; }
+.img-413 { background: url(../img/all-items/Item_413.png) no-repeat; }
+.img-414 { background: url(../img/all-items/Item_414.png) no-repeat; }
+.img-415 { background: url(../img/all-items/Item_415.png) no-repeat; }
+.img-416 { background: url(../img/all-items/Item_416.png) no-repeat; }
+.img-417 { background: url(../img/all-items/Item_417.png) no-repeat; }
+.img-418 { background: url(../img/all-items/Item_418.png) no-repeat; }
+.img-419 { background: url(../img/all-items/Item_419.png) no-repeat; }
+.img-420 { background: url(../img/all-items/Item_420.png) no-repeat; }
+.img-421 { background: url(../img/all-items/Item_421.png) no-repeat; }
+.img-422 { background: url(../img/all-items/Item_422.png) no-repeat; }
+.img-423 { background: url(../img/all-items/Item_423.png) no-repeat; }
+.img-424 { background: url(../img/all-items/Item_424.png) no-repeat; }
+.img-425 { background: url(../img/all-items/Item_425.png) no-repeat; }
+.img-426 { background: url(../img/all-items/Item_426.png) no-repeat; }
+.img-427 { background: url(../img/all-items/Item_427.png) no-repeat; }
+.img-428 { background: url(../img/all-items/Item_428.png) no-repeat; }
+.img-429 { background: url(../img/all-items/Item_429.png) no-repeat; }
+.img-430 { background: url(../img/all-items/Item_430.png) no-repeat; }
+.img-431 { background: url(../img/all-items/Item_431.png) no-repeat; }
+.img-432 { background: url(../img/all-items/Item_432.png) no-repeat; }
+.img-433 { background: url(../img/all-items/Item_433.png) no-repeat; }
+.img-434 { background: url(../img/all-items/Item_434.png) no-repeat; }
+.img-435 { background: url(../img/all-items/Item_435.png) no-repeat; }
+.img-436 { background: url(../img/all-items/Item_436.png) no-repeat; }
+.img-437 { background: url(../img/all-items/Item_437.png) no-repeat; }
+.img-438 { background: url(../img/all-items/Item_438.png) no-repeat; }
+.img-439 { background: url(../img/all-items/Item_439.png) no-repeat; }
+.img-440 { background: url(../img/all-items/Item_440.png) no-repeat; }
+.img-441 { background: url(../img/all-items/Item_441.png) no-repeat; }
+.img-442 { background: url(../img/all-items/Item_442.png) no-repeat; }
+.img-443 { background: url(../img/all-items/Item_443.png) no-repeat; }
+.img-444 { background: url(../img/all-items/Item_444.png) no-repeat; }
+.img-445 { background: url(../img/all-items/Item_445.png) no-repeat; }
+.img-446 { background: url(../img/all-items/Item_446.png) no-repeat; }
+.img-447 { background: url(../img/all-items/Item_447.png) no-repeat; }
+.img-448 { background: url(../img/all-items/Item_448.png) no-repeat; }
+.img-449 { background: url(../img/all-items/Item_449.png) no-repeat; }
+.img-450 { background: url(../img/all-items/Item_450.png) no-repeat; }
+.img-451 { background: url(../img/all-items/Item_451.png) no-repeat; }
+.img-452 { background: url(../img/all-items/Item_452.png) no-repeat; }
+.img-453 { background: url(../img/all-items/Item_453.png) no-repeat; }
+.img-454 { background: url(../img/all-items/Item_454.png) no-repeat; }
+.img-455 { background: url(../img/all-items/Item_455.png) no-repeat; }
+.img-456 { background: url(../img/all-items/Item_456.png) no-repeat; }
+.img-457 { background: url(../img/all-items/Item_457.png) no-repeat; }
+.img-458 { background: url(../img/all-items/Item_458.png) no-repeat; }
+.img-459 { background: url(../img/all-items/Item_459.png) no-repeat; }
+.img-460 { background: url(../img/all-items/Item_460.png) no-repeat; }
+.img-461 { background: url(../img/all-items/Item_461.png) no-repeat; }
+.img-462 { background: url(../img/all-items/Item_462.png) no-repeat; }
+.img-463 { background: url(../img/all-items/Item_463.png) no-repeat; }
+.img-464 { background: url(../img/all-items/Item_464.png) no-repeat; }
+.img-465 { background: url(../img/all-items/Item_465.png) no-repeat; }
+.img-466 { background: url(../img/all-items/Item_466.png) no-repeat; }
+.img-467 { background: url(../img/all-items/Item_467.png) no-repeat; }
+.img-468 { background: url(../img/all-items/Item_468.png) no-repeat; }
+.img-469 { background: url(../img/all-items/Item_469.png) no-repeat; }
+.img-470 { background: url(../img/all-items/Item_470.png) no-repeat; }
+.img-471 { background: url(../img/all-items/Item_471.png) no-repeat; }
+.img-472 { background: url(../img/all-items/Item_472.png) no-repeat; }
+.img-473 { background: url(../img/all-items/Item_473.png) no-repeat; }
+
+.img-474 {
+    background: url("../img/all-items/Item_474.png") no-repeat;
+}
+
+.img-475 {
+    background: url("../img/all-items/Item_475.png") no-repeat;
+}
+
+.img-476 {
+    background: url("../img/all-items/Item_476.png") no-repeat;
+}
+
+.img-477 {
+    background: url("../img/all-items/Item_477.png") no-repeat;
+}
+
+.img-478 {
+    background: url("../img/all-items/Item_478.png") no-repeat;
+}
+
+.img-479 {
+    background: url("../img/all-items/Item_479.png") no-repeat;
+}
+
+.img-480 {
+    background: url("../img/all-items/Item_480.png") no-repeat;
+}
+
+.img-481 {
+    background: url("../img/all-items/Item_481.png") no-repeat;
+}
+
+.img-482 {
+    background: url("../img/all-items/Item_482.png") no-repeat;
+}
+
+.img-483 {
+    background: url("../img/all-items/Item_483.png") no-repeat;
+}
+
+.img-484 {
+    background: url("../img/all-items/Item_484.png") no-repeat;
+}
+
+.img-485 {
+    background: url("../img/all-items/Item_485.png") no-repeat;
+}
+
+.img-486 {
+    background: url("../img/all-items/Item_486.png") no-repeat;
+}
+
+.img-487 {
+    background: url("../img/all-items/Item_487-536.png") no-repeat;
+}
+
+.img-488 {
+    background: url("../img/all-items/Item_487-536.png") no-repeat;
+}
+
+.img-489 {
+    background: url("../img/all-items/Item_487-536.png") no-repeat;
+}
+
+.img-490 {
+    background: url("../img/all-items/Item_487-536.png") no-repeat;
+}
+
+.img-491 {
+    background: url("../img/all-items/Item_487-536.png") no-repeat;
+}
+
+.img-492 {
+    background: url("../img/all-items/Item_487-536.png") no-repeat;
+}
+
+.img-493 {
+    background: url("../img/all-items/Item_487-536.png") no-repeat;
+}
+
+.img-494 {
+    background: url("../img/all-items/Item_487-536.png") no-repeat;
+}
+
+.img-495 {
+    background: url("../img/all-items/Item_487-536.png") no-repeat;
+}
+
+.img-496 {
+    background: url("../img/all-items/Item_487-536.png") no-repeat;
+}
+
+.img-497 {
+    background: url("../img/all-items/Item_487-536.png") no-repeat;
+}
+
+.img-498 {
+    background: url("../img/all-items/Item_487-536.png") no-repeat;
+}
+
+.img-499 {
+    background: url("../img/all-items/Item_487-536.png") no-repeat;
+}
+
+.img-500 {
+    background: url("../img/all-items/Item_487-536.png") no-repeat;
+}
+
+.img-501 {
+    background: url("../img/all-items/Item_487-536.png") no-repeat;
+}
+
+.img-502 {
+    background: url("../img/all-items/Item_487-536.png") no-repeat;
+}
+
+.img-503 {
+    background: url("../img/all-items/Item_487-536.png") no-repeat;
+}
+
+.img-504 {
+    background: url("../img/all-items/Item_487-536.png") no-repeat;
+}
+
+.img-505 {
+    background: url("../img/all-items/Item_487-536.png") no-repeat;
+}
+
+.img-506 {
+    background: url("../img/all-items/Item_487-536.png") no-repeat;
+}
+
+.img-507 {
+    background: url("../img/all-items/Item_487-536.png") no-repeat;
+}
+
+.img-508 {
+    background: url("../img/all-items/Item_487-536.png") no-repeat;
+}
+
+.img-509 {
+    background: url("../img/all-items/Item_487-536.png") no-repeat;
+}
+
+.img-510 {
+    background: url("../img/all-items/Item_487-536.png") no-repeat;
+}
+
+.img-511 {
+    background: url("../img/all-items/Item_487-536.png") no-repeat;
+}
+
+.img-512 {
+    background: url("../img/all-items/Item_487-536.png") no-repeat;
+}
+
+.img-513 {
+    background: url("../img/all-items/Item_487-536.png") no-repeat;
+}
+
+.img-514 {
+    background: url("../img/all-items/Item_487-536.png") no-repeat;
+}
+
+.img-515 {
+    background: url("../img/all-items/Item_487-536.png") no-repeat;
+}
+
+.img-516 {
+    background: url("../img/all-items/Item_487-536.png") no-repeat;
+}
+
+.img-517 {
+    background: url("../img/all-items/Item_487-536.png") no-repeat;
+}
+
+.img-518 {
+    background: url("../img/all-items/Item_487-536.png") no-repeat;
+}
+
+.img-519 {
+    background: url("../img/all-items/Item_487-536.png") no-repeat;
+}
+
+.img-520 {
+    background: url("../img/all-items/Item_487-536.png") no-repeat;
+}
+
+.img-521 {
+    background: url("../img/all-items/Item_487-536.png") no-repeat;
+}
+
+.img-522 {
+    background: url("../img/all-items/Item_487-536.png") no-repeat;
+}
+
+.img-523 {
+    background: url("../img/all-items/Item_487-536.png") no-repeat;
+}
+
+.img-524 {
+    background: url("../img/all-items/Item_487-536.png") no-repeat;
+}
+
+.img-525 {
+    background: url("../img/all-items/Item_487-536.png") no-repeat;
+}
+
+.img-526 {
+    background: url("../img/all-items/Item_487-536.png") no-repeat;
+}
+
+.img-527 {
+    background: url("../img/all-items/Item_487-536.png") no-repeat;
+}
+
+.img-528 {
+    background: url("../img/all-items/Item_487-536.png") no-repeat;
+}
+
+.img-529 {
+    background: url("../img/all-items/Item_487-536.png") no-repeat;
+}
+
+.img-530 {
+    background: url("../img/all-items/Item_487-536.png") no-repeat;
+}
+
+.img-531 {
+    background: url("../img/all-items/Item_487-536.png") no-repeat;
+}
+
+.img-532 {
+    background: url("../img/all-items/Item_487-536.png") no-repeat;
+}
+
+.img-533 {
+    background: url("../img/all-items/Item_487-536.png") no-repeat;
+}
+
+.img-534 {
+    background: url("../img/all-items/Item_487-536.png") no-repeat;
+}
+
+.img-535 {
+    background: url("../img/all-items/Item_487-536.png") no-repeat;
+}
+
+.img-536 {
+    background: url("../img/all-items/Item_487-536.png") no-repeat;
+}
+
+.icon-item {
+    width: 24px;
+    height: 24px;
+    background-size: 24px;
+    background-position: center;
+    background-size: contain;
+    /*filter: invert(0%) sepia(100%) saturate(325%) hue-rotate(185deg) brightness(300%) contrast(100%);*/
+}

@@ -1,0 +1,3136 @@
+.phone-position {
+    /* width: -webkit-fill-available;
+    height: -webkit-fill-available;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 50px; */
+
+    /*position: absolute;
+    top: 23%;
+    right: 25px;
+    z-index: 1;*/
+
+    position: absolute;
+    bottom: 0;
+    right: 50px;
+    z-index: 1;
+}
+/* .android-phone::-webkit-scrollbar {
+    display: none;
+} */
+
+.android-phone {
+    background-size: contain;
+    width: 340px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+}
+
+.rotate-androind {
+    margin-bottom: 100%;
+    transform: rotate(-90deg) translate(-40%, -128%) scale(2);
+}
+
+.rotate-components {
+    /*transform: rotate(90deg) translate(50px, 465px) scale(0.5);
+    width: 1226px;*/
+    transform: rotate(90deg) translate(60px, 400px) scale(0.57);
+    width: 1076px;
+    /* zoom: 0.5; */
+    /* width: 463px !important;
+    height: 230px !important; */
+    transition: .5s;
+}
+
+.rotate-components .iphone__apps__bar__item {
+    width: 48px;
+    height: 48px;
+}
+
+.rotate-components .iphone__apps__bar__container {
+    opacity: 0;
+}
+
+.rotate-components .topbar-andr {
+    width: 90%;
+    padding: 0 5%;
+}
+
+.phone-bg {
+    width: 280px;
+    height: 620px;
+    border-radius: 20px;
+    overflow: hidden;
+    background-size: cover !important;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.phone-gradient {
+    background: linear-gradient(21deg, rgba(241, 236, 105, 1) 0%, rgba(216, 1, 50, 1) 100%);
+    width: 280px;
+    height: 620px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.phone__box {
+    position: absolute;
+    width: 320px;
+    z-index: 100;
+}
+
+.bg-0 {
+    background: url(https://i.imgur.com/v4aju8F.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.bg-1 {
+    background: url(https://i.imgur.com/1AaJHAC.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.bg-2 {
+    background: url(https://i.imgur.com/Z1udZP3.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.bg-3 {
+    background: url(https://i.imgur.com/Kv46Oye.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.bg-4 {
+    background: url(https://i.imgur.com/6TRT27j.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.bg-5 {
+    background: url(https://i.imgur.com/8lOLNXr.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.bg-6 {
+    background: url(https://i.imgur.com/aPQR0hE.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.bg-7 {
+    background: url(https://i.imgur.com/RmYDFxw.png) no-repeat center;
+    background-size: cover;
+}
+
+.bg-8 {
+    background: url(https://i.imgur.com/u5MfuvP.png) no-repeat center;
+    background-size: cover;
+}
+
+.android-content {
+    width: 100%;
+    height: 409px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    transition: .5s;
+    overflow: hidden;
+}
+
+.rotate-components .android-content {
+    width: inherit !important;
+    height: 452px;
+}
+
+.rotate-components .m_keys_bar {
+    width: 101%;
+    margin-top: -17px;
+    height: 45px;
+    z-index: 99999;
+    box-shadow: 1px 2px 0px #000000;
+}
+
+.rotate-components .uni-menu {
+    height: 502px;
+    /*width: 99%;
+    padding: 1%;*/
+}
+
+.rotate-components .u-li-menu {
+    height: 436px;
+    padding-left: 60px;
+    width: calc(100% - 60px);
+}
+
+.rotate-components .iphone__bar__container {
+    position: absolute;
+    bottom: 0px;
+    height: 30px;
+}
+
+.rotate-components .mobile-profile-1 .m-player-photo-1 {
+    height: auto;
+    width: 50%;
+    margin: auto;
+}
+
+.u-li-menu::-webkit-scrollbar {
+    display: none;
+}
+.main-phone-box-flex {
+    display: flex;
+    flex-direction: column;
+    width: inherit;
+    height: inherit;
+}
+/* .main-app-box a:first-child.app-box:nth-last-child(5) ~ .rotate-components .main-app-box {
+    justify-content: center;
+} */
+/* .main-app-box a:nth-last-child(n+10) ~ .main-app-box {
+    justify-content: unset;
+} */
+
+/* .main-app-box a:nth-last-child(n+10),
+ .rotate-components .main-app-box{
+    justify-content: unset !important;
+} */
+
+.main-app-box  > *:nth-last-child(n+10) ~ .main-app-box{
+    justify-content: unset !important;
+}
+
+.rotate-components .main-app-box {
+    margin-bottom: 40px;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+}
+
+.main-app-box {
+    margin-left: auto;
+    margin-right: auto;
+    width: 244px;
+    display: flex;
+    flex-flow: wrap-reverse;
+    margin-top: 30px;
+    /* flex-flow: row wrap;
+    align-content: stretch; */
+}
+
+.app-box {
+    width: 46px;
+    height: 49px;
+    border-radius: 5px;
+    margin-right: 19px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-position: center;
+    transition: 0.3s;
+    position: relative;
+}
+
+.rotate-components .android-content .app-box:nth-child(n-4), .android-content .app-box:last-child {
+    margin-top: 20px;
+}
+.android-content .app-box:nth-child(4), .android-content .app-box:last-child {
+    margin-right: 0px;
+}
+.android-content .app-box:nth-child(8), .android-content .app-box:last-child {
+    margin-right: 0px;
+}
+.android-content .app-box:nth-child(12), .android-content .app-box:last-child {
+    margin-right: 0px;
+}
+.android-content .app-box:nth-child(16), .android-content .app-box:last-child {
+    margin-right: 0px;
+}
+/* .android-content .app-box:nth-child(9), .android-content .app-box:last-child {
+    margin-top: 20px;
+} */
+
+/* .android-content .app-box:nth-child(-n+4) {
+    margin-bottom: 20px;
+} */
+.android-content .app-box {
+    margin-bottom: 25px;
+    border-radius: 0.8rem;
+}
+
+.app-box:hover {
+    opacity: 0.7;
+}
+
+.rotate-components .app-box {
+    margin-right: 30px !important;
+    margin-bottom: 0px !important;
+    width: 40px;
+    height: 41px;
+}
+
+.rotate-components .app-box:last-child {
+    margin-right: 0px !important;
+}
+
+.app-icon {
+    background-size: 32px 32px;
+    width: 32px;
+    height: 32px;
+}
+
+.rotate-components .app-box .app-icon {
+    background-size: 24px 24px;
+    width: 24px;
+    height: 24px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.icons-hack2{
+    background: url(../img/android/icons/console2.svg) no-repeat center;
+    background-size: cover;
+}
+.icons-hack{
+    background: url(../img/android/icons/hack.png) no-repeat center;
+    background-size: cover;
+}
+.icons-console{
+    background: url(../img/android/icons/console.png) no-repeat center;
+    background-size: cover;
+}
+.icons-settings {
+    background: url(../img/android/icons/settings.png) no-repeat center;
+    background-size: cover;
+}
+
+.icons-phone {
+    background: url(../img/android/icons/telephone.png) no-repeat center;
+    background-size: cover;
+}
+
+.icons-sms {
+    background: url(../img/android/icons/sms.png) no-repeat center;
+    background-size: cover;
+}
+
+.icons-gps {
+    background: url(../img/android/icons/gps.png) no-repeat center;
+    background-size: cover;
+    /*filter: invert(100%);*/
+}
+
+.icons-cont {
+    background: url(../img/android/icons/cont.png) no-repeat center;
+    background-size: cover;
+    /*filter: invert(100%);*/
+}
+
+.icons-apps {
+    background: url(../img/android/icons/apps.png) no-repeat center;
+    background-size: cover;
+    /*filter: invert(100%);*/
+}
+
+.icons-fleeca {
+    background: url(../img/android/icons/fleeca.png) no-repeat center;
+    background-size: cover;
+    /*filter: invert(100%);*/
+}
+
+.icons-maze {
+    background: url(../img/android/icons/maze.png) no-repeat center;
+    background-size: cover;
+    /*filter: invert(100%);*/
+}
+
+.icons-blaine {
+    background: url(../img/android/icons/blaine.png) no-repeat center;
+    background-size: cover;
+    /*filter: invert(100%);*/
+}
+
+.icons-pacific {
+    background: url(../img/android/icons/pacific.png) no-repeat center;
+    background-size: cover;
+    filter: invert(100%);
+}
+
+.icons-invader {
+    background: url(../img/android/icons/invader.png) no-repeat center;
+    background-size: cover;
+    /*filter: invert(100%);*/
+}
+
+.icons-news {
+    background: url(../img/android/icons/news.png) no-repeat center;
+    background-size: cover;
+    /*filter: invert(100%);*/
+}
+
+.icons-uveh {
+    background: url(../img/android/icons/car.png) no-repeat center;
+    background-size: cover;
+    /*filter: invert(100%);*/
+}
+
+.icons-ems {
+    background: url(../img/android/icons/ems.png) no-repeat center;
+    background-size: cover;
+    /*filter: invert(100%);*/
+}
+
+.icons-lspd {
+    background: url(../img/android/icons/lspd.png) no-repeat center;
+    background-size: cover;
+    /*filter: invert(100%);*/
+}
+
+.icons-lspd2 {
+    background: url(../img/android/icons/lspd2.png) no-repeat center;
+    background-size: cover;
+    /*filter: invert(100%);*/
+}
+
+.icons-usmc {
+    background: url(../img/android/icons/usmc.png) no-repeat center;
+    background-size: cover;
+    /*filter: invert(100%);*/
+}
+
+.icons-achiev, .icons-trophy {
+    background: url(../img/android/icons/trophy.png) no-repeat center;
+    background-size: cover;
+    /*filter: invert(100%);*/
+}
+
+.icons-community {
+    background: url(../img/android/icons/community.png) no-repeat center;
+    background-size: cover;
+    /*filter: invert(100%);*/
+}
+
+.icons-family {
+    background: url(../img/android/icons/families.png) no-repeat center;
+    background-size: cover;
+    /*filter: invert(100%);*/
+}
+
+.icons-browser {
+    background: url(../img/android/icons/safari.png) no-repeat center;
+    background-size: cover;
+    /*filter: invert(100%);*/
+}
+
+.icons-gov {
+    background: url(../img/android/icons/gov.png) no-repeat center;
+    background-size: cover;
+    /*filter: invert(100%);*/
+}
+
+.icons-bcsd {
+    background: url(../img/android/icons/bcsd.png) no-repeat center;
+    background-size: cover;
+    /*filter: invert(100%);*/
+}
+
+.info-top {
+    display: flex;
+    align-items: center;
+    font-family: "Montserrat";
+    font-size: 8px;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: 14px;
+}
+
+.icon-network {
+    background: url(../img/android/icons/network.png) no-repeat;
+    width: 12px;
+    height: 7px;
+    margin-right: 5px;
+    margin-top: 1px;
+}
+
+.info-time-box {
+    width: inherit;
+    display: flex;
+    flex-direction: row;
+    margin-top: 29px;
+}
+
+.time-date {
+    margin-right: auto;
+    margin-left: 21px
+}
+
+.txt-time {
+    font-family: "Montserrat";
+    color: rgb(255, 255, 255);
+    font-size: 36px;
+}
+
+.txt-date {
+    font-family: "Montserrat";
+    color: rgb(255, 255, 255);
+    font-size: 10px;
+}
+
+.weather {
+    font-family: "Montserrat";
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+    margin-right: 16px;
+    margin-top: 6px;
+}
+
+/*ANDROID*/
+.rotate-components .topbar-andr {
+    height: 23px;
+    margin-left: 5px;
+}
+
+.topbar-andr {
+    width: inherit;
+    height: 17px;
+    display: flex;
+    z-index: 1;
+    position: absolute;
+    /* background: #2d72c1; */
+    margin-top: -2px;
+    margin-top: 15px;
+}
+
+.bg-blue-andr {
+    background: #000;
+}
+
+.topbar-andr .left-topbar {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.right-topbar {
+    margin-left: 21px;
+}
+
+.left-topbar .elements-bar {
+    /* background: url(../img/android/icons/wifi.svg) no-repeat;
+    filter: brightness(0) saturate(100%) invert(100%); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.elements-bar__icon {
+    margin-left: 5px;
+}
+
+.rotate-components .left-topbar .battery-info {
+    margin-top: 1px;
+}
+
+.battery-info {
+    font-size: 12px;
+    margin-right: 5px;
+    font-family: 'SF Pro Semibold';
+    color: #fff;
+}
+
+.hoverable {
+    cursor: pointer;
+}
+
+/*UMenu*/
+.uni-menu {
+    width: inherit;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: -1px;
+    width: 101%;
+    margin-left: -1px;
+
+}
+
+.rotate-components .u-title {
+    height: 48px;
+}
+
+.u-title {
+    height: 41px;
+    min-height: 41px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #262626;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.24), 0px 0px 4px rgba(0, 0, 0, 0.12);
+    padding-top: 34px;
+}
+
+.menu-list {
+    width: 13px;
+    height: 9px;
+    /*background: url(../img/android/icons/menu.png) no-repeat;
+    margin-left: 10px;*/
+}
+
+.u-texttittle {
+    font-family: "SF Pro Semibold";
+    color: #fff;
+    font-size: 12px;
+    width: 70%;
+}
+
+.u-texttittle-center {
+    font-family: "SF Pro Semibold";
+    color: #fff;
+    font-size: 12px;
+}
+
+.u__back {
+    pointer-events: all !important;
+}
+
+.u__back-nabs {
+    position: relative;
+}
+
+.u__back-nabs {
+    pointer-events: all !important;
+}
+
+.u-li-menu {
+    width: inherit;
+    height: 100%;
+    background: #2e2e2e;
+    overflow: scroll;
+}
+
+.umenu-family-box {
+    width: inherit;
+    margin-bottom: 8px;
+    overflow: scroll;
+    background: #2e2e2e;
+}
+.umenu-family-box::-webkit-scrollbar {
+    display: none;
+}
+
+
+.rotate-components .u-menu-l {
+    width: 97%;
+    margin-left: 6px;
+}
+.u-menu-l {
+    width: auto;
+    display: flex;
+    align-items: center;
+    background: #2e2e2e;
+    transition: 0.3s;
+}
+
+.u-menu-l.hoverable:hover {
+    background: #4794eb26 !important;
+}
+
+.l-title {
+    min-height: 27px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.txt-title {
+    font-family: "SF Pro Regular";
+    margin-bottom: 2px;
+    color: #fff;
+    font-size: 14px;
+}
+
+.txt-lasttitle {
+    font-family: "Roboto";
+    color: #919191;
+    font-size: 12px;
+    white-space: pre-line;
+}
+
+.rotate-components .txt-title {
+    font-size: 14px;
+}
+
+.rotate-components .txt-lasttitle {
+    font-size: 12px;
+}
+
+.u-l-arrow {
+    width: 16px;
+    height: 20px;
+    background-size: 20px;
+    background-position: center;
+    background: url(../img/android/icons/arrow-menu.svg) no-repeat;
+    margin-left: auto;
+    transform: rotate(180deg);
+    margin-right: 10px;
+}
+
+/* style chekbox */
+
+ul, li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.tg-list {
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+.tg-list-item {
+    margin: 0 2em;
+}
+
+h2 {
+    color: #777;
+}
+
+h4 {
+    color: #999;
+}
+
+.tgl {
+    display: none;
+}
+
+.tgl, .tgl:after, .tgl:before, .tgl *, .tgl *:after, .tgl *:before, .tgl + .tgl-btn {
+    box-sizing: border-box;
+}
+
+.tgl::selection, .tgl:after::selection, .tgl:before::selection, .tgl *::selection, .tgl *:after::selection, .tgl *:before::selection, .tgl + .tgl-btn::selection {
+    background: none;
+}
+
+.tgl + .tgl-btn {
+    display: flex;
+    margin-left: auto;
+    margin-right: 20px;
+    outline: 0;
+    display: block;
+    width: 40px;
+    height: 20px;
+    position: relative;
+    cursor: pointer;
+    user-select: none;
+}
+
+.tgl + .tgl-btn:after, .tgl + .tgl-btn:before {
+    position: relative;
+    display: block;
+    content: "";
+    width: 50%;
+    height: 100%;
+}
+
+.tgl + .tgl-btn:after {
+    left: 0;
+}
+
+.tgl + .tgl-btn:before {
+    display: none;
+}
+
+.tgl:checked + .tgl-btn:after {
+    left: 50%;
+}
+
+.tgl-light + .tgl-btn {
+    background: #cecece;
+    border-radius: 2em;
+    padding: 0px;
+    transition: all 0.4s ease;
+}
+
+.tgl-light + .tgl-btn:after {
+    border-radius: 50%;
+    background: #fff;
+    transition: all 0.2s ease;
+    width: 18px;
+    height: 18px;
+    top: -1px;
+    box-shadow: 0px 3px 9px 0px rgba(0, 0, 0, 0.25);
+
+}
+
+.tgl-light:checked + .tgl-btn {
+    background: #485251;
+}
+
+.tgl-ios + .tgl-btn {
+    background: #4d4d4d;
+    border-radius: 2em;
+    padding: 2px;
+    transition: all 0.4s ease;
+}
+
+.tgl-ios + .tgl-btn:after {
+    border-radius: 2em;
+    background: #fbfbfb;
+    transition: left 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), padding 0.3s ease, margin 0.3s ease;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, .1), 0 4px 0 rgba(0, 0, 0, .08);
+}
+
+.tgl-ios + .tgl-btn:hover:after {
+    will-change: padding;
+}
+
+.tgl-ios + .tgl-btn:active {
+    box-shadow: inset 0 0 0 2em #e8eae9;
+}
+
+.tgl-ios + .tgl-btn:active:after {
+    padding-right: 0.8em;
+}
+
+.tgl-ios:checked + .tgl-btn {
+    background: #86d993;
+}
+
+.tgl-ios:checked + .tgl-btn:active {
+    box-shadow: none;
+}
+
+.tgl-ios:checked + .tgl-btn:active:after {
+    margin-left: -0.8em;
+}
+
+.tgl-skewed + .tgl-btn {
+    overflow: hidden;
+    transform: skew(-10deg);
+    backface-visibility: hidden;
+    transition: all 0.2s ease;
+    font-family: sans-serif;
+    background: #888;
+}
+
+.tgl-skewed + .tgl-btn:after, .tgl-skewed + .tgl-btn:before {
+    transform: skew(10deg);
+    display: inline-block;
+    transition: all 0.2s ease;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    line-height: 2em;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, .4);
+}
+
+.tgl-skewed + .tgl-btn:after {
+    left: 100%;
+    content: attr(data-tg-on);
+}
+
+.tgl-skewed + .tgl-btn:before {
+    left: 0;
+    content: attr(data-tg-off);
+}
+
+.tgl-skewed + .tgl-btn:active {
+    background: #888;
+}
+
+.tgl-skewed + .tgl-btn:active:before {
+    left: -10%;
+}
+
+.tgl-skewed:checked + .tgl-btn {
+    background: #86d993;
+}
+
+.tgl-skewed:checked + .tgl-btn:before {
+    left: -100%;
+}
+
+.tgl-skewed:checked + .tgl-btn:after {
+    left: 0;
+}
+
+.tgl-skewed:checked + .tgl-btn:active:after {
+    left: 10%;
+}
+
+.tgl-flat + .tgl-btn {
+    padding: 2px;
+    transition: all 0.2s ease;
+    background: #fff;
+    border: 4px solid #f2f2f2;
+    border-radius: 2em;
+}
+
+.tgl-flat + .tgl-btn:after {
+    transition: all 0.2s ease;
+    background: #f2f2f2;
+    content: "";
+    border-radius: 1em;
+}
+
+.tgl-flat:checked + .tgl-btn {
+    border: 4px solid #7fc6a6;
+}
+
+.tgl-flat:checked + .tgl-btn:after {
+    left: 50%;
+    background: #7fc6a6;
+}
+
+.tgl-flip + .tgl-btn {
+    padding: 2px;
+    transition: all 0.2s ease;
+    font-family: sans-serif;
+    perspective: 100px;
+}
+
+.tgl-flip + .tgl-btn:after, .tgl-flip + .tgl-btn:before {
+    display: inline-block;
+    transition: all 0.4s ease;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    line-height: 2em;
+    font-weight: bold;
+    color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    backface-visibility: hidden;
+    border-radius: 4px;
+}
+
+.tgl-flip + .tgl-btn:after {
+    content: attr(data-tg-on);
+    background: #02c66f;
+    transform: rotateY(-180deg);
+}
+
+.tgl-flip + .tgl-btn:before {
+    background: #ff3a19;
+    content: attr(data-tg-off);
+}
+
+.tgl-flip + .tgl-btn:active:before {
+    transform: rotateY(-20deg);
+}
+
+.tgl-flip:checked + .tgl-btn:before {
+    transform: rotateY(180deg);
+}
+
+.tgl-flip:checked + .tgl-btn:after {
+    transform: rotateY(0);
+    left: 0;
+    background: #7fc6a6;
+}
+
+.tgl-flip:checked + .tgl-btn:active:after {
+    transform: rotateY(20deg);
+}
+
+/* style chekbox */
+
+.block {
+    position: relative;
+}
+
+.block::before,
+.block::after {
+    content: '';
+    position: absolute;
+    left: -20px;
+    top: 20px;
+    border: 20px solid transparent;
+    border-right: 80px solid #f00;
+    border-radius: 180px;
+}
+
+.block::after {
+    border: 18px solid transparent;
+    border-right: 70px solid #F2C255;
+    top: 22px;
+    left: -10px;
+}
+
+.иконка {
+    border-radius: 5px;
+    background-color: rgb(0, 42, 80);
+    position: absolute;
+    left: 1588px;
+    top: 632px;
+    width: 46px;
+    height: 49px;
+    z-index: 79;
+}
+
+.top {
+    border-radius: 50%;
+    background-color: rgb(241, 241, 241);
+    box-shadow: 0px 3px 9px 0px rgba(0, 0, 0, 0.25);
+    position: absolute;
+    left: 886px;
+    top: 108px;
+    width: 60px;
+    height: 60px;
+    z-index: 35;
+}
+
+.player-info-box {
+    width: 100px;
+    height: 100px;
+    background: #fff;
+}
+
+.mobile-profile-1 {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+
+.mobile-profile-1 .m-player-photo-1 {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.mobile-profile {
+    display: flex;
+    align-items: center;
+    width: 276px;
+    height: 60px;
+    margin-left: 10px;
+}
+
+.mobile-profile .m-player-photo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    /*margin-left: 10%;*/
+}
+
+.mobile-profile .m-player-info {
+    color: #3a3a3a;
+    font-family: 'Roboto';
+    margin-left: 6%;
+}
+
+.mobile-profile .m-email-player {
+    font-size: 12px;
+    color: #757575;
+    font-family: 'SF Pro Regular';
+    margin-top: 2px;
+}
+
+.rotate-components .mobile-profile .m-email-player {
+    font-size: 12px;
+}
+
+.mobile-profile .m-name-player {
+    font-family: 'SF Pro Semibold';
+    color: #fff;
+}
+
+.m_keys_bar {
+    width: 100%;
+    height: 37px;
+    background: #0a0a0a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: auto;
+}
+
+.iphone__apps__bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgba(0, 0, 0, 0.5);
+    padding-left: 1.2rem;
+    padding-right: 1.2rem;
+    border-radius: 1.4rem;
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+    margin-bottom: 10%;
+}
+
+.iphone__apps__bar__container {
+    padding-left: 6%;
+    padding-right: 6%;
+    margin-top: auto;
+}
+
+.iphone__apps__bar__item {
+    display: flex;
+    width: 20%;
+    height: 48px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.iphone__bar__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.iphone__bar {
+    margin-top: 10px;
+    height: 4px;
+    background: #fff;
+    padding-bottom: 14px;
+    border-radius: 2rem;
+    padding-left: 40%;
+    position: absolute;
+    bottom: 0px;
+    z-index: 10;
+}
+
+.m-sqr-bar {
+    background: url(../img/android/icons/sqr-bar.svg) no-repeat;
+    width: 13px;
+    height: 13px;
+}
+
+.m-crl-bar {
+    background: url(../img/android/icons/crl-bar.svg) no-repeat;
+    width: 14px;
+    height: 15px;
+    margin-left: 64px;
+    margin-right: 64px;
+}
+
+.m-trngl-bar {
+    background: url(../img/android/icons/trngl-bar.svg) no-repeat;
+    width: 14px;
+    height: 15px;
+}
+
+.umenu-icon {
+    width: 26px;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.umenu-rov {
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+    width: 77%;
+}
+.rotate-components .umenu-rov {
+    width: 92%;
+}
+.s-wifi {
+    width: 21px;
+    height: 19px;
+    background: url(../img/android/icons/s-wifi.svg) no-repeat;
+}
+
+.s-display {
+    width: 24px;
+    height: 24px;
+    background: url(../img/android/icons/s-display.svg) no-repeat;
+}
+
+.s-sound {
+    width: 16px;
+    height: 20px;
+    background: url(../img/android/icons/s-sound.svg) no-repeat;
+}
+
+.s-apps {
+    width: 24px;
+    height: 24px;
+    background: url(../img/android/icons/s-apps.svg) no-repeat;
+}
+
+.s-volume {
+    width: 24px;
+    height: 24px;
+    background: url(../img/android/icons/s-volume.svg) no-repeat;
+    filter: invert(69%) sepia(25%) saturate(765%) hue-rotate(125deg) brightness(87%) contrast(93%);
+}
+
+.s-bluetooh {
+    width: 24px;
+    height: 24px;
+    background: url(../img/android/icons/s-bluetooh.svg) no-repeat;
+}
+
+.s-fleeca {
+    width: 24px;
+    height: 24px;
+    background: url(../img/android/icons/fleeca.png) no-repeat center;
+    background-size: 24px;
+    /*filter: invert(100%);*/
+}
+
+.s-maze {
+    width: 24px;
+    height: 24px;
+    background: url(../img/android/icons/maze.png) no-repeat center;
+    background-size: 24px;
+    /*filter: invert(100%);*/
+}
+
+.s-blaine {
+    width: 24px;
+    height: 24px;
+    background: url(../img/android/icons/blaine.png) no-repeat center;
+    background-size: 24px;
+    /*filter: invert(100%);*/
+}
+
+.s-pacific {
+    width: 24px;
+    height: 24px;
+    background: url(../img/android/icons/pacific.png) no-repeat center;
+    background-size: 24px;
+}
+
+.s-invader {
+    width: 24px;
+    height: 24px;
+    background: url(../img/android/icons/invader.png) no-repeat center;
+    background-size: 24px;
+    /*filter: invert(100%);*/
+}
+
+.s-car {
+    width: 24px;
+    height: 24px;
+    background: url(../img/android/icons/car.png) no-repeat center;
+    background-size: 24px;
+}
+
+.s-community {
+    width: 24px;
+    height: 24px;
+    background: url(../img/android/icons/community.png) no-repeat center;
+    background-size: 24px;
+}
+
+.s-green {
+    width: 24px;
+    height: 24px;
+    background: url(../img/android/icons/green.png) no-repeat center;
+    background-size: 24px;
+}
+
+.s-red {
+    width: 24px;
+    height: 24px;
+    background: url(../img/android/icons/red.png) no-repeat center;
+    background-size: 24px;
+}
+
+.umenu-title-family {
+    margin-top: 11px;
+    margin-left: 16px;
+    font-family: "SF Pro Semibold";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.5);
+    margin-bottom: 7px;
+    display: flex;
+}
+
+.umenu-liner {
+    width: 254px;
+    height: 1px;
+    background: rgba(0, 0, 0, 0.12);
+}
+
+.umenu-title-box {
+    width: 100%;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 0px 5px 0px;
+    transition: 0.3s;
+    font-family: 'SF Pro Regular';
+    font-size: 14px;
+    color: #fff;
+    margin-left: 16px;
+}
+.u-menu-l:last-child .umenu-title-box {
+    border-bottom: none;
+}
+
+.umenu-mini-box {
+    width: 100%;
+    border-bottom: 0.5px solid rgb(107 106 106 / 20%);
+    display: flex;
+    align-items: center;
+    padding: 10px 0px;
+    transition: 0.3s;
+    background: #2e2e2e;
+}
+.u-menu-l:last-child .umenu-mini-box {
+    border-bottom: none;
+}
+.umenu-mini-table-box .MuiPaper-elevation2 {
+    box-shadow: none;
+}
+.umenu-mini-table-box {
+    width: 100%;
+    /* border-bottom: 1px solid rgba(0, 0, 0, 0.12); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* padding: 10px 0px; */
+    transition: 0.3s;
+}
+
+.hoverable .umenu-mini-box:hover {
+    background: #4794eb26 !important;
+}
+
+.rotate-components .phonebook-content {
+    width: 101%;
+    height: 502px;
+    margin-left: 2px;
+}
+
+.phonebook-content {
+    width: inherit;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.rotate-components .phonebook-content .b-bar {
+    width: 99.3%;
+}
+
+.phonebook-content .b-bar {
+    width: inherit;
+    background: #2A56C6;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.24), 0px 0px 4px rgba(0, 0, 0, 0.12);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 34px;
+}
+
+.rotate-components .b-bar .b-search {
+    width: 98%;
+}
+
+.b-bar .b-search {
+    width: 264.5px;
+    height: 37px;
+    background: #fff;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.24), 0px 0px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 2px;
+    margin-top: 6px;
+    display: flex;
+    align-items: center;
+}
+
+.b-search .b-imgsearch {
+    margin-left: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.b-search .b-inputtext {
+    margin-left: 7px;
+    width: 205px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.38);
+    display: flex;
+    align-items: flex-end;
+}
+
+.b-bar .b-tabsbar {
+    width: inherit;
+    height: 25px;
+    display: flex;
+    margin-top: 19.5px;
+}
+
+.b-tabsbar .b-tabs-radio {
+    width: 100%;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.b-tabs-radio .material-icons.md-dark {
+    color: #ffffff8a !important;
+}
+
+.b-tabsbar input[type="radio"]:checked + .b-tabs-radio .material-icons.md-dark {
+    color: #fff !important;
+}
+
+.b-tabsbar input[type="radio"]:checked + label.b-tabs-radio {
+    border-bottom: 2px solid #fff;
+    color: #fff !important;
+}
+
+.rotate-components .b-callhistory {
+    height: 398px;
+    z-index: -1;
+    width: 99.3%;
+}
+
+.b-callhistory {
+    width: inherit;
+    height: 100%;
+    background: #000;
+    overflow: scroll;
+    display: flex;
+    flex-direction: column;
+}
+
+.title-b-hist {
+    color: #fff;
+    margin-top: 8px;
+    font-family: 'SF Pro Bold';
+    font-size: 34px;
+    padding-left: 10px;
+    padding-top: 34px;
+}
+
+.b-box-history {
+    margin-top: 10px;
+    margin-left: 6px;
+    display: flex;
+    flex-direction: column;
+}
+
+.b-box-history .c-player-contact {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    min-height: 50px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+    margin-left: 10px;
+}
+
+.b-box-player {
+    width: 100%;
+    height: 49px;
+    margin-bottom: 6px;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.24), 0px 0px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 2px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.b-img-player {
+    width: 30.75px;
+    height: 30.75px;
+    border-radius: 50%;
+    margin-left: 6px;
+}
+
+.b-info-playercall {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    padding-left: 10px;
+    padding-right: 5%;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.b-inf-name {
+    font-family: "SF Pro Semibold";
+    font-size: 14px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.b-inf-name-missed {
+    font-family: "SF Pro Semibold";
+    font-size: 14px;
+    color: #FF3B30;
+}
+
+.b-info-playercall-from {
+    color: #757575;
+    font-family: 'SF Pro Regular';
+}
+
+.b-inf-data {
+    font-family: "SF Pro Regular";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    color: #757575;
+    display: flex;
+    align-items: center;
+}
+
+.b-call {
+    margin-left: auto;
+    margin-right: 12px;
+}
+
+.c-contact-box {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 92%;
+}
+
+.c-contact-box .MuiFab-primary {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background: rgb(28, 58, 169);
+}
+
+.c-contact-box .c-player-contact {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    min-height: 50px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+    margin-left: 15%;
+}
+
+.c-contact-box .c-player-contact:hover {
+    background: #0000000f;
+}
+
+.c-player-contact .c-imgplayer {
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+
+.phonebook__search {
+    display: flex;
+    padding-left: 6%;
+    padding-right: 6%;
+    padding-top: 54px;
+    background: rgba(22, 22, 22, 0.75);
+    box-shadow: 0px -0.5px 0px rgba(255, 255, 255, 0.16);
+    backdrop-filter: blur(81.5485px);
+    padding-bottom: 12px;
+}
+
+.phonebook__search__add {
+    background: #2C2C2E;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'SF Pro Light';
+    font-size: 20px;
+    border-radius: 10px;
+    margin-left: 0.8rem;
+    width: 14%;
+}
+
+.phonebook__search__input {
+    background: #2C2C2E !important;
+    width: 80%;
+    padding: 0.5rem;
+    border-radius: 10px;
+    color: #fff;
+    font-family: 'SF Pro Regular';
+    background-image: url('../img/shape.svg') !important;
+    background-repeat: no-repeat !important;
+    background-position-x: 10px !important;
+    background-position-y: 50% !important;
+}
+
+.phonebook__search__input:focus {
+    background-image: none !important;
+}
+
+.phonebook__search__input::-webkit-input-placeholder {
+    padding-left: 26px !important;
+}
+
+
+.c-player-contact .c-nameplayer {
+    font-family: "SF Pro Semibold";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    color: #fff;
+}
+
+.his {
+    color: #000;
+}
+
+.rotate-components .p-box-img-player {
+    margin-top: 0px;
+}
+
+.p-box-img-player {
+    margin-top: -17px;
+}
+
+.box-img-pp {
+    position: relative;
+}
+
+figure {
+    width: 100%;
+    height: 224.5px;
+    margin: 0;
+    margin-top: 17px;
+    position: absolute;
+}
+
+figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.p-topbar {
+    z-index: 1;
+    margin-left: auto;
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0) 109.43%);
+}
+
+.posit-icon-topbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.ff-style-tsp-p {
+    margin-right: 10px;
+}
+
+.rotate-components .p-topbar i.material-icons.md-dark:last-child {
+    margin-right: 20px;
+}
+
+.p-nameplayer-p {
+    margin-top: 1rem;
+    font-family: "SF Pro Semibold";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    color: #FFFFFF;
+}
+
+.posit-icon-topbar__element {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.posit-icon-topbar__element__text {
+    margin-top: 0.6rem;
+    font-family: 'SF Pro Regular';
+    color: #0A84FF;
+    font-size: 0.7rem;
+}
+
+.posit-icon-topbar .posit-icon-topbar__element i {
+    padding: 0.5rem;
+    background: #0A84FF;
+    border-radius: 50%;
+}
+
+.rotate-components .p-info-player {
+    height: 264px;
+    margin-top: 20%;
+    width: 100%;
+}
+
+.p-info-player {
+    width: inherit;
+    height: 100%;
+    overflow: scroll;
+    background: #000;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.rotate-components .p-box-mob_email {
+    margin-top: 15px;
+}
+
+.rotate-components .p-box-mob_email {
+    width: 94%;
+}
+
+.p-box-mob_email {
+    width: 100%;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.24), 0px 0px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 2px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 22px;
+}
+
+.p-box-num {
+    display: flex;
+    flex-direction: column;
+    margin-right: auto;
+}
+
+.p-num-num-p {
+    font-family: "SF Pro Regular";
+    font-size: 14px;
+    color: #0A84FF;
+}
+
+.p-num-num-p-info {
+    font-family: "Roboto";
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.543846);
+}
+
+.p-box-mob_email .number {
+    width: 100%;
+    min-height: 20px;
+    border-bottom: 0.77px solid rgba(0, 0, 0, 0.12);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 6%;
+    padding-right: 6%;
+}
+
+.fraction-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.player-fraction-online {
+    width: 12px;
+    height: 12px;
+    border: 3px solid #2e2e2e;
+    border-radius: 50%;
+    position: absolute;
+    margin-top: -22px;
+    margin-left: 24px;
+}
+
+.p-f-on {
+    background: green;
+}
+
+.p-f-off {
+    background: red;
+}
+
+.main-fraction-box {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    padding-left: 5%;
+}
+
+.rotate-components .u-scrollable {
+    height: 88%;
+    width: 101%;
+    top: 22px;
+}
+
+.u-scrollable {
+    width: 88%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.38);
+    position: absolute;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.u-scrool-box {
+    width: 215px;
+    max-height: 264px;
+    background: rgb(46, 46, 46);
+    border-radius: 14px;
+    box-shadow: 0px 24px 24px rgba(0, 0, 0, 0.3), 0px 0px 24px rgba(0, 0, 0, 0.22);
+}
+
+.u-input-b-box {
+    width: 215px;
+    max-height: 264px;
+    background: rgb(46, 46, 46);
+    border-radius: 14px;
+    box-shadow: 0px 24px 24px rgba(0, 0, 0, 0.3), 0px 0px 24px rgba(0, 0, 0, 0.22);
+}
+
+.u-scroll-title {
+    font-family: "SF Pro Semibold";
+    text-align: center;
+    font-size: 17px;
+    color: #fff;
+    margin-top: 16px;
+    padding: 0 18px;
+}
+
+.box-input-u {
+    width: inherit;
+    display: flex;
+    justify-content: center;
+}
+
+.u-scroll-text {
+    font-family: "SF Pro Regular";
+    font-style: normal;
+    font-size: 14px;
+    color: #fff;
+    padding: 0 18px;
+    margin: 6px 0px 20px 0px;
+    text-align: center;
+}
+
+.u-input-text {
+    font-family: "SF Pro Regular";
+    font-style: normal;
+    font-size: 14px;
+    color: #fff;
+    margin: 16px 0;
+    width: 174px;
+    padding-left: 4px;
+    padding-right: 4px;
+    background: #000 !important; 
+    border: 0.5px solid rgba(60, 60, 67, 0.3) !important;
+    border-radius: 5px;
+}
+
+.u-selet-rang {
+    margin-top: 14px;
+    max-height: 162px;
+    overflow: scroll;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+    padding-left: 18px
+}
+
+.u-select-box {
+    width: inherit;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    font-family: "SF Pro Regular";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    color: #fff;
+}
+
+.u-select-input {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    text-align: center;
+    color: #000000;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-top: 0.5px solid rgba(60, 60, 67, 0.29);
+}
+
+.u-btn-w:first-child {
+    font-family: "SF Pro Regular";
+    border-right: 0.5px solid rgba(60, 60, 67, 0.29);
+}
+
+.u-btn-w {
+    font-family: 'SF Pro Semibold';
+    color: #007AFF;
+    transition: 0.3s;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*checkbox*/
+.u-checkbox-style {
+    display: unset !important;
+}
+
+.checkbox {
+    margin-right: 20px;
+    position: relative;
+    display: inline-block;
+    line-height: 1;
+    font-size: 0;
+    vertical-align: middle;
+}
+
+.checkbox input[type="radio"] {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.checkbox input[type="radio"] ~ .checkbox-icon {
+    position: relative;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border: 2px solid rgba(0, 0, 0, 0.54);
+    border-radius: 5px;
+}
+
+.checkbox input[type="radio"]:hover ~ .checkbox-icon,
+.checkbox input[type="radio"]:focus ~ .checkbox-icon {
+    border-color: #999;
+}
+
+.checkbox input[type="radio"]:checked ~ .checkbox-icon {
+    background: #fff;
+    border-color: #000000;;
+}
+
+.checkbox input[type="radio"]:checked ~ .checkbox-icon:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 8px;
+    height: 8px;
+    margin: -5px 0 0 -5px;
+    background: #000000;
+    border: 1px solid #000000;
+    border-radius: 50%;
+}
+
+.checkbox input[type="radio"]:disabled ~ .checkbox-icon {
+    background-color: #eee;
+    border-color: #ddd;
+    cursor: default;
+}
+
+.checkbox input[type="radio"]:disabled ~ .checkbox-icon:after {
+    border-color: #bbb;
+}
+
+.checkbox-2x input[type="radio"] ~ .checkbox-icon {
+    width: 32px;
+    height: 32px;
+    border-radius: 10px;
+    border-width: 2px;
+}
+
+.checkbox-2x input[type="radio"]:checked ~ .checkbox-icon:after {
+    margin: -8px 0 0 -10px;
+    width: 14px;
+    height: 6px;
+    border-width: 6px;
+    border-radius: 4px;
+}
+
+.checkbox-circle input[type="radio"] ~ .checkbox-icon {
+    border-radius: 50%;
+}
+
+.u-clr-violet {
+    color: #673AB7;
+}
+
+
+/*
+BankCard
+*/
+
+.bank-title {
+    font-family: "Roboto";
+    text-align: end;
+}
+
+.bank-card {
+    width: 100%;
+    height: 160px;
+    -webkit-perspective: 600px;
+    -moz-perspective: 600px;
+    perspective: 600px;
+}
+
+.bank-card__part {
+    font-family: "Roboto";
+
+    box-shadow: 1px 1px #aaa3a3;
+    top: 0;
+    position: absolute;
+    z-index: 1000;
+    left: 0;
+    display: inline-block;
+    width: 320px;
+    height: 190px;
+    background-image: url('../img/android/background/bankBg.png');
+    background-color: #000000;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 8px;
+
+    -webkit-transition: all .5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    -moz-transition: all .5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    -ms-transition: all .5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    -o-transition: all .5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition: all .5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+
+    zoom: 0.7;
+    margin: 0 19px;
+
+    animation: pulse 5s infinite;
+}
+
+.bank-card__front {
+    padding: 18px;
+    -webkit-transform: rotateY(0);
+    -moz-transform: rotateY(0);
+}
+
+.bank-card__back {
+    padding: 18px;
+    -webkit-transform: rotateY(-180deg);
+    -moz-transform: rotateY(-180deg);
+}
+
+.bank-card__black-line {
+    margin-top: 5px;
+    height: 38px;
+    background-color: #303030;
+}
+
+.bank-card__logo {
+    height: 16px;
+}
+
+.bank-card__front-logo {
+    position: absolute;
+    top: 18px;
+    right: 18px;
+}
+
+.bank-card__square {
+    border-radius: 5px;
+    height: 30px;
+}
+
+.bank-card_numer {
+    font-family: "Roboto";
+    display: block;
+    width: 100%;
+    word-spacing: 4px;
+    font-size: 20px;
+    letter-spacing: 2px;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.bank-card__space-75 {
+    width: 75%;
+    float: left;
+}
+
+.bank-card__space-25 {
+    width: 25%;
+    float: left;
+}
+
+.bank-card__label {
+    font-family: "Roboto";
+    font-size: 10px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.8);
+    letter-spacing: 1px;
+}
+
+.bank-card__info {
+    font-family: "Roboto";
+    margin-bottom: 0;
+    margin-top: 5px;
+    font-size: 16px;
+    line-height: 18px;
+    color: #fff;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.bank-card__back-content {
+    padding: 15px 15px 0;
+}
+
+.bank-card__secret--last {
+    color: #303030;
+    text-align: right;
+    margin: 0;
+    font-size: 14px;
+}
+
+.bank-card__secret {
+    padding: 5px 12px;
+    background-color: #fff;
+    position: relative;
+}
+
+.bank-card__secret:before {
+    content: '';
+    position: absolute;
+    top: -3px;
+    left: -3px;
+    height: calc(100% + 6px);
+    width: calc(100% - 42px);
+    border-radius: 4px;
+    background: repeating-linear-gradient(45deg, #ededed, #ededed 5px, #f9f9f9 5px, #f9f9f9 10px);
+}
+
+.bank-card__back-logo {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+}
+
+.bank-card__back-square {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+}
+
+.bank-card:hover .bank-card__front {
+    /*-webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);*/
+
+}
+
+.bank-card:hover .bank-card__back {
+    /*-webkit-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);*/
+}
+
+@-webkit-keyframes pulsebg {
+    0% {
+        -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.4);
+    }
+    70% {
+        -webkit-box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+    }
+    100% {
+        -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    }
+}
+
+@keyframes pulsebg {
+    0% {
+        -moz-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.4);
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.4);
+    }
+    70% {
+        -moz-box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+        box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+    }
+    100% {
+        -moz-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    }
+}
+
+.rotate-components .u-profilecontact {
+    width: 101%;
+    height: 502px;
+}
+
+.u-profilecontact {
+    width: inherit;
+    height: 100%;
+    background: #000;
+    display: flex;
+    flex-direction: column;
+}
+
+.MuiTableCell-body {
+    white-space: pre-wrap;
+}
+
+.rotate-components .messenger-main {
+    height: 502px;
+    padding-left: 60px;
+    width: calc(100% - 60px);
+}
+
+.messenger-main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    transition: 0.3s;
+    background: #2e2e2e;
+    overflow: scroll;
+    padding-top: 8px;
+    flex-direction: column;
+    position: relative;
+}
+.messenger-main .MuiFab-primary {
+    position: fixed;
+    bottom: 8%;
+    right: 12%;
+    background: #262626;
+}
+.rotate-components .messenger-main .MuiFab-primary {
+    position: fixed;
+    bottom: 11%;
+    right: 2%;
+    background: rgb(33, 45, 59);
+}
+.messenger-main .MuiFab-primary:hover {
+    background: rgb(40, 56, 74);
+}
+
+.rotate-components .clm-reverse-chat {
+    height: 78.2%;
+}
+
+.clm-reverse-chat {
+    flex-direction: column-reverse;
+}
+
+.rotate-components .m-box-messeng {
+    width: 100%;
+}
+
+.m-box-messeng {
+    width: 77%;
+    font-family: "SF Pro Regular";
+    font-style: normal;
+    font-size: 14px;
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 10px;
+    border-bottom: 0.5px solid rgb(107 106 106 / 20%);
+    margin-top: 10px;
+}
+
+.rotate-components .m-box-clm-mes {
+    width: 95%;
+}
+
+.m-box-clm-mes {
+    width: 81%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.m-box-sms {
+    width: 99%;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 8px;
+    min-height: 60px;
+}
+.m-box-sms:hover{
+    background: #0000002b;
+}
+
+.m-img-sms {
+    width: 41px;
+    height: 41px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 8px;
+    margin-right: 16px;
+    margin-top: 10px;
+}
+
+.m-img-sms-title {
+    width: 30px !important;
+    height: 30px !important;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.mes-title {
+    color: #E9EEF4;
+    margin-bottom: 6px;
+}
+
+.mes-text {
+    max-height: 30px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    color: #7D8B97;
+    margin-bottom: 4px;
+}
+
+.m-time {
+    font-family: "SF Compact Display Medium";
+    color: #7D8B97;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: right;
+}
+
+.m-crl-box {
+    width: 20px;
+    height: 20px;
+    background: #64AFE9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 12px;
+    border-radius: 10px;
+    margin-top: auto;
+    margin-left: auto;
+}
+
+.rotate-components .m-box-clm-info {
+    width: 4px;
+}
+
+.m-box-clm-info {
+    display: flex;
+    flex-direction: column;
+    width: 14%;
+}
+
+.rotate-components .dedbit-menu {
+    height: 502px;
+    margin-left: 2px;
+}
+
+.dedbit-menu {
+    width: inherit;
+    height: 620px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.dedbit-title-name {
+    font-family: "SF Compact Display Medium";
+    color: #fff;
+    font-size: 14px;
+    text-align: left;
+}
+
+.dedbit-title-text {
+    font-family: "SF Pro Semibold";
+    color: #7D8B97;
+    font-size: 11px;
+    text-align: left;
+}
+
+.dedbit-u-texttittle {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 5%;
+    width: 100%;
+}
+
+.ded-messenge {
+    max-width: 229px;
+    min-width: 138px;
+    width: 100%;
+    box-sizing: border-box;
+    /* min-height: 20px; */
+    font-family: "SF Pro Regular"; /* либо "SF Compact Display Medium"*/
+    font-size: 14px;
+    margin-bottom: 4px;
+    position: relative;
+    display: block;
+}
+
+.testmes {
+    width: fit-content;
+    min-height: 20px;
+    padding-left: 6px;
+    padding-top: 8px;
+    /*display: flex;*/
+    flex-direction: row;
+    position: relative;
+    box-sizing: border-box;
+    display: flex;
+}
+
+.block-sms-ded {
+    /* min-width: 138px; */
+    padding-bottom: 6px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    word-break: break-word;
+
+
+}
+
+.rotate-components .ded-vxod {
+    margin-left: 10px;
+}
+
+.ded-vxod {
+    background: #212D3B;
+    margin-left: 6px;
+    border-radius: 12px 12px 3px 12px;
+}
+
+.ded-isxod {
+    background: #3B628D;
+    margin-left: auto;
+    margin-right: 6px;
+    border-radius: 12px 12px 3px 12px;
+}
+
+.ded-isxod .block-sms-info-time {
+    right: 10px;
+}
+
+.ded-vxod .block-sms-info-time {
+    right: 10px;
+}
+
+.block-sms-info-time {
+    color: #ffffff2e;
+    font-size: 12px;
+    margin-top: auto;
+    margin-left: auto;
+    /* margin-bottom: 3px;
+    margin-right: 5px; */
+    font-family: 'SF Pro Semibold';
+    position: absolute;
+    bottom: 3px;
+}
+
+.rotate-components .isxod-left {
+    margin-right: 10px;
+}
+
+.isxod-left {
+    margin-left: auto;
+}
+
+.ded-isxod .block-sms-info-time {
+    color: #ffffff5e;
+}
+
+.hide-time {
+    font-size: 12px;
+    margin-left: 5px;
+    display: inline;
+    opacity: 0;
+    color: #ffffff2e;
+    margin-top: auto;
+    margin-left: auto;
+    /* margin-bottom: 3px;
+    margin-right: 5px; */
+    font-family: 'SF Pro Semibold';
+    bottom: 3px;
+}
+
+.ded-meta-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.dedmeta-text {
+    font-family: "SF Pro Semibold";
+    background: #00000033;
+    padding: 0 6px;
+    font-size: 12px;
+    line-height: normal;
+    height: 20px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ded-input-text {
+    width: 100%;
+    height: 50px;
+    background: #262626;
+    display: flex;
+    align-items: center;
+    padding-left: 6px;
+    padding-bottom: 25px;
+}
+
+.rotate-components .ded-text-ipn {
+    width: 92%;
+}
+
+.ded-text-ipn {
+    color: #e0e0e0;
+    font-size: 14px;
+    font-family: "SF Compact Display Medium";
+    margin-left: 6px;
+    width: 75%;
+    margin-right: 6px;
+}
+
+.ded-text-ipn::-webkit-input-placeholder {
+    color: #7D8B97;
+}
+
+.rotate-components .editcontact-box {
+    height: 502px;
+    margin-left: 2px;
+}
+
+.editcontact-box {
+    width: inherit;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
+    width: 100%;
+}
+
+.rotate-components .editcontact-main {
+    height: 87.3%;
+    flex-direction: row;
+}
+
+.editcontact-main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    transition: 0.3s;
+    background: #000;
+    /* overflow: scroll; */
+    flex-direction: column;
+}
+
+.rotate-components .box-img-e {
+    height: 100%;
+}
+
+.box-img-e {
+    width: inherit;
+    height: 41%;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 4%;
+    flex-direction: column;
+}
+
+.u__back__container {
+    display: flex;
+    width: 30%;
+}
+
+.img-profileeditconatact {
+    width: 50%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.rotate-components .editcontact-box-e {
+    padding-top: 24px;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+}
+
+.editcontact-box-e {
+    width: 100%;
+    height: 100%;
+    margin-top: 10px;
+    background: #000;
+}
+
+.e-boxeditor {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 12px;
+}
+
+.ios__button__container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 14%;
+}
+
+.e-clmn-ed {
+    display: flex;
+    flex-direction: column;
+}
+
+.rotate-components .e-clmn-ed {
+    width: 100%;
+}
+
+.text-filed {
+    margin-bottom: 10px !important;
+}
+
+.text_width {
+    width: 85%;
+}
+
+.MuiInputBase-input {
+    font-size: 14px !important;
+}
+
+.box-im-st {
+    margin-top: 8px;
+    margin-left: 15px;
+    margin-right: 20px;
+}
+
+.rotate-components .row-clm-e .text-filed {
+    width: 88%;
+}
+
+.rotate-components .e-clmn-ed .text-filed {
+    width: 88%;
+}
+
+.row-clm-e {
+    display: flex;
+    flex-direction: row;
+}
+
+.add-posit-btn {
+    margin-left: 4px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 3px;
+}
+
+.add-posit-btn-text {
+    color: #0A84FF;
+    font-family: 'SF Pro Regular';
+}
+
+.edit-btn-save-position {
+    display: flex;
+    margin-left: auto;
+    margin-right: 5px;
+}
+
+.edit-btn-save-position .MuiSvgIcon-root {
+    color: #FFFFFF;
+}
+
+.edit-btn-save-position .MuiIconButton-root {
+    padding: 6px;
+}
+
+.add-posit-btn .MuiIconButton-root {
+    padding: 6px;
+}
+
+.posit-icon-topbar .MuiIconButton-root {
+    padding: 6px;
+}
+
+.position-btn-icon .MuiSvgIcon-root {
+    color: #FFFFFF;
+}
+
+
+.fix-phonebook {
+    position: relative;
+    height: 100%;
+}
+
+.rotate-components .c-contact-box .MuiFab-primary {
+    right: 20px;
+}
+
+.fill-cub {
+    width: 10px;
+    height: 10px;
+    background: #fff;
+}
+
+.nonfill-cub {
+    width: 10px;
+    height: 10px;
+    background: #000;
+}
+
+.material-icons.favorite-img-style {
+    font-size: 19px;
+}
+.rotate-components .console-main {
+    height: 502px;
+    padding-left: 60px;
+    width: calc(100% - 60px);
+    padding-bottom: 50px;
+}
+
+.console-main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    transition: 0.3s;
+    padding-bottom: 12%;
+    background: #1D2733;
+    overflow: scroll;
+    flex-direction: column;
+    padding-top: 40px;
+}
+
+.iphone__app__name {
+    font-family: 'SF Pro Bold';
+    font-size: 34px;
+    padding-left: 10px;
+}
+
+.console-input {
+    width: 100%;
+    margin-top: auto;
+    width: 100%;
+    max-height: 25%;
+    min-height: 26px;
+    /* background: #212D3B; */
+    display: flex;
+    align-items: center;
+    padding-left: 6px;
+    font-family: "Inconsolata";
+    font-size: 16px;
+}
+.console-main::-webkit-scrollbar, .console-chat-ul::-webkit-scrollbar {
+    display: none;
+}
+.console-chat-ul {
+    height: 100%;
+    overflow: scroll;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-top: 0;
+    display: flex;
+    flex-direction: column-reverse;
+    font-family: "Inconsolata";
+    font-size: 14px;
+    user-select: text;
+    overflow: hidden;
+    white-space: pre-wrap;
+    word-break: break-all;
+}
+.rotate-components .c-i-style {
+    width: 95.5%;
+}
+
+.c-i-style {
+    color: #fff;
+    font-size: 16px;
+    font-family: "Inconsolata";
+    width: 85.5%;
+    max-height: 96%;
+    min-height: 17px !important;
+    outline: none;
+    background: none;
+    border: none;
+    resize: none;
+    margin-left: 5px;
+}
+/*Achiev*/
+.rotate-components .achiev-menu {
+    height: 502px;
+    margin-left: 2px;
+}
+
+.achiev-menu {
+    width: inherit;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background: #2b2b2b;
+    width: 100%;
+}
+.rotate-components .u-title-achiev {
+    height: 48px;
+}
+
+.u-title-achiev {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    padding-top: 34px;
+}
+.u-texttittle-achiev {
+    font-family: "SF Pro Semibold";
+    color: #fff;
+    font-size: 14px;
+}
+.u-l-arrow-achiev {
+    width: 16px;
+    height: 20px;
+    background-size: 20px;
+    background-position: center;
+    background: url(../img/android/icons/arrow-menu.svg) center center no-repeat;
+    transform: rotate(180deg);
+    filter: invert(100%) sepia(12%) saturate(7498%) hue-rotate(179deg) brightness(106%) contrast(98%);
+    cursor: pointer;
+}
+.ar-left-tr {
+    transform: none;
+    margin-right: auto;
+    margin-left: 20px;
+}
+.ar-right-tr {
+    margin-left: auto;
+    margin-right: 20px;
+}
+.rotate-components .achiev-main {
+    height: 502px;
+    padding-left: 60px;
+    width: calc(100% - 70px);
+}
+
+.achiev-main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;   
+    flex-direction: column;
+
+    overflow: scroll;
+    padding-top: 8px;    
+    overflow: scroll;
+}
+.achiev-main::-webkit-scrollbar {
+    display: none;
+}
+.main-achiev-box{
+    width: 100%;
+    height: 63px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5px;
+    border-bottom: 1px solid rgba(0,0,0,0.3);
+    transition: 0.3s all;
+    min-height: 55px;
+    
+}
+.achiev-box {
+    width: 100%;
+    height: 63px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: #00000000;
+    /* background: #212d3b3d; */
+    position: relative;
+}
+.img-achiev {
+    width: 41px;
+    height: 41px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 8px;
+    margin-right: 16px;
+    z-index: 1;
+    /* filter: brightness(2) saturate(0%); */
+}
+.item-achiev-1 {
+    background: url(../../inventory/img/all-items/Item_48.png) no-repeat;
+    background-size: cover;
+}
+.rotate-components .info-box-achiev {
+    width: 100%;
+}
+.info-box-achiev {
+    width: 75%;
+    min-height: 47px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 1;
+    position: relative;
+    padding-bottom: 7px;
+}
+.i-achiev-title {
+    font-family: 'SF Pro Regular';
+    font-size: 14px;
+    color: #fff;
+    margin-bottom: 5px;
+}
+.i-achiev-title-two {
+    font-family: 'SF Pro Light';
+    font-size: 13px;
+    color: rgba(255,255,255,0.6);
+}
+.i-achiev-title-three {
+    width: 92%;
+    height: 40px;
+    font-family: 'SF Pro Light';
+    font-size: 12px;
+    color: #fff;
+    margin-bottom: 5px;
+    padding: 10px;
+    overflow-x: auto;
+
+    transition: 0.3s all;
+
+    display: block;
+    opacity: 1;
+}
+.i-achiev-title-three-hide {
+    display: none;
+    opacity: 0;
+}
+.main-achiev-box:hover {
+    background: #0000006e;
+}
+.main-achiev-box:hover .i-achiev-title-three {
+    /*display: block;
+    opacity: 1;*/
+}
+
+.achiev-linear {
+    width: 50%;
+    height: 100%;
+    background: #5fc12d59;
+    position: absolute;
+    z-index: 0;
+}
+.i-achiev-result {
+    font-family: 'RobotoLight';
+    font-size: 13px;
+    color: #fff;
+    padding: 2px 8px;
+    background-color: #3d5f2c;
+    border-radius: 8px;
+    position: absolute;
+    right: 0;
+    bottom: -4px;
+    margin-right: 10px;
+}
+.testbokk {
+    width: 92%;
+    min-height: 20px;
+    font-family: 'RobotoLight';
+    font-size: 12px;
+    color: #fff;
+    margin-bottom: 5px;
+    padding: 10px;
+    display: block;
+}
+.textfor-app {
+    position: absolute;
+    bottom: -16px;
+    font-family: 'SF Pro Regular';
+    font-size: 12px;
+}
+.rotate-components .messenger-addchat {
+    height: 85.3%;
+}
+
+.messenger-addchat {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    transition: 0.3s;
+    background: #2e2e2e;
+    overflow: scroll;
+    padding-top: 8px;
+    flex-direction: column;
+    position: relative;
+}
+.m-mes-txtfield {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    color: #fff;
+    margin-left: 6%;
+}
+.m-mes-txtfield .MuiInput-root{
+    color: #fff
+}
+.m-mes-txtfield .MuiInput-underline:after {
+    border-bottom: 2px solid rgb(89, 97, 105);
+}
+.m-mes-txtfield .MuiInput-underline:hover:not(.Mui-disabled):before {
+    border-bottom: 2px solid rgb(89, 97, 105);
+}
+.m-mes-txtfield .MuiInput-underline:before {
+    border-bottom: 0.5px solid rgb(107 106 106 / 20%);
+}
+.text-place-m-mes {
+    font-family: 'SF Pro Semibold';
+    font-size: 14px;
+    color:#fff;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-left: 6%;
+}
+
+.MuiInputBase-inputMultiline {
+    font-family: 'SF Pro Regular' !important;
+}
+
+.MuiInput-input {
+    font-family: 'SF Pro Regular' !important;
+}
+
+.position-btn-addchat{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: auto;
+    margin-bottom: 18%;
+}
+
+.ios__button {
+    font-family: 'SF Pro Semibold';
+    font-size: 1rem;
+    background: rgba(118, 118, 128, 0.24);
+    border-radius: 14px;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 6%;
+    padding-right: 6%;
+}
+
+.position-btn-addchat .MuiButton-containedPrimary {
+    background-color: #212d3b;
+}
+.position-btn-addchat .MuiButton-containedPrimary:hover {
+    background-color: #2a3848;
+}
+.messenger-addchat::-webkit-scrollbar {
+    display: none;
+}
+.spiceal-ts-chat {
+
+}
+
+.dedbit__messenger__chatname {
+    margin-left: 30%;
+}
+
+.rotate-components .posit-icon-del-chat {
+    margin-right: 2%;
+}
+.posit-icon-del-chat {
+    margin-right: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.loader-style-addchat {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.loader-style-addchat .MuiCircularProgress-colorPrimary {
+    color: #213246;
+}
+.loader-style-addchat .MuiCircularProgress-root.MuiCircularProgress-colorPrimary.MuiCircularProgress-indeterminate {
+    width: 60px !important;
+    height: 60px !important;
+}
+
+.chevron {
+    margin-right: 10%;
+}
+
+.umenu-title-family .chevron {
+    color: #757575;
+}
+
+.chevron[data-hidden=true]::before {
+    border-style: solid;
+	border-width: 0.05em 0.05em 0 0;
+	content: '';
+	display: inline-block;
+	height: 0.4em;
+	position: relative;
+	vertical-align: top;
+    width: 0.4em;
+    top: 0.26em;
+    transform: rotate(135deg);
+}
+
+.chevron[data-hidden=false]::before {
+    border-style: solid;
+	border-width: 0.05em 0.05em 0 0;
+	content: '';
+	display: inline-block;
+	height: 0.4em;
+	position: relative;
+	vertical-align: top;
+    width: 0.4em;
+    top: 0.26em;
+    transform: rotate(225deg);
+}
+
+.umenu-title-name {
+    margin-right: auto;
+}

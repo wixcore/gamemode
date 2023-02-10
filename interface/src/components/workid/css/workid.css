@@ -1,0 +1,237 @@
+/* .idcard-main {
+    width: -webkit-fill-available;
+    height: -webkit-fill-available;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: -1;
+} */
+
+.workid-box {
+    width: 800px;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('../img/background-workid.png') no-repeat;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    outline-offset: -10px;
+}
+
+.pl-clm-docs-work .pl-clm-inf-docs {
+    bottom: 10%;
+    left: 4%;
+}
+
+.workid-box .pl-clm-inf-docs {
+    color: #001F3C;
+}
+
+.workid-box .pl-clm-inf-docs-num {
+    color: #001F3C;
+}
+
+.workid-box .pl-grow {
+    color: #001F3C;
+}
+
+.workid-box .pl-black {
+    color: #001F3C;
+}
+
+.workid-box .pl-idcard-subscribe-text {
+    color: #001F3C;
+}
+
+.workid-box .pl-idcard-subscribe-value {
+    color: #001F3C;
+}
+
+.pl-workid-sex {
+    margin-left: 1rem;
+}
+
+.workid-box .row-tsp {
+    margin-right: 0;
+}
+
+.workid-box .pl-row {
+    border: none;
+}
+
+
+
+.pl_work_birthday {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.pl-work-id-date-block {
+    position: absolute;
+    left: 4%;
+    bottom: 17%;
+}
+
+.workid-box .pl_inf {
+    top: 18%;
+}
+
+.pl-work-id-date {
+    margin-left: 1rem;
+}
+
+.workid-box .img-size-card {
+    border-bottom: 14px solid rgba(0, 31, 60, 0.42);
+    mix-blend-mode: multiply;
+    border-radius: 10px;
+}
+
+.pl-clm-docs-work .pl-clm-inf-docs-num {
+    bottom: 3%;
+    left: 4%;
+}
+
+.workid-box .plash_left {
+    width: 144px;
+    height: 320px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.workid-box .plash_right {
+    width: 564px;
+    height: 320px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+}
+
+
+
+.liner-shadow-card {
+    background-image: -webkit-linear-gradient(0deg, rgba(47, 47, 47, 0) 0%, rgb(25, 25, 25) 100%);
+    width: 38px;
+    height: inherit;
+    opacity: 0.6;
+}
+
+.box-for-liner {
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.liner-right-card {
+    background: url(../img/linear.png) no-repeat;
+    width: 271px;
+    height: 13px;
+    margin-top: -11px;
+    margin-left: auto;
+    display: flex;
+    justify-content: flex-end;
+    font-family: "RobotoBlack";
+    font-size: 24.72px;
+    color: rgb(45, 45, 45);
+}
+
+.liner-right-card .txt-lin {
+    margin-right: 10px;
+}
+
+.player_name-card {
+    font-family: "RobotoLight";
+    color: rgb(72, 185, 242);
+    font-size: 24px;
+}
+
+
+.pl_inf .pl-row:first-child {
+    margin-top: 5px;
+}
+
+.pl_inf .pl-row {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+}
+
+.pl_inf .pl-clm {
+    display: flex;
+    flex-direction: column;
+}
+
+.row-tsp {
+    margin-right: 10px;
+}
+
+.pl-workcard {
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+}
+
+.pl-work2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.otsp_work {
+    margin-bottom: 2px;
+}
+
+.pl_sex_2 {
+    width: 48%;
+}
+
+.pl-sex {
+    margin-right: 33px;
+}
+
+.pl-clm-inf {
+    margin-top: 14px;
+}
+
+.pl-clm-f {
+    width: 117px;
+    display: inline-flex;
+}
+
+
+.clm-1-idcard {
+    width: inherit;
+    height: 36px;
+    background: #48b9f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "RobotoBold";
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    text-shadow: 0px 2px 3.8px rgba(0, 0, 0, 0.35);
+}
+
+.name-styl-id {
+    font-family: 'RobotoLight', sans-serif;
+}
+
+.name-pff {
+    font-family: 'RobotoLight', sans-serif;
+}
+
+.tsp-topname {
+    margin-right: 13px;
+}
+
+.pl-clm-inf-n {
+    margin-top: 8px;
+}
+
+.btm-last {
+    margin-bottom: 4px;
+}

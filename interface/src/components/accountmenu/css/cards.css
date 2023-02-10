@@ -1,0 +1,8 @@
+.accountmenu__content__cards {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 1%;
+    flex-direction: row;
+    height: 91%;
+}

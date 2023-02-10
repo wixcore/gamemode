@@ -1,0 +1,27 @@
+.govmenu__content__cards__answer__text__container {
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.govmenu__jobbar__text {
+    font-family: 'RobotoMedium';
+    color: #c9c9c9;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    letter-spacing: 0.05rem;
+}
+
+.govmenu__jobbar__name {
+    font-family: 'RobotoBold';
+    text-transform: uppercase;
+    font-size: 1.3rem;
+}
+
+.govmenu__jobbar {
+    margin-top: 2%;
+    margin-bottom: 2%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}

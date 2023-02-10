@@ -1,0 +1,221 @@
+.license-main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: -1;
+}
+
+.lic-box {
+    width: 532px;
+    height: 663px;
+    background: url(../img/bg.png) no-repeat;
+    border-width: 1.5px;
+    outline-offset: -10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lic-in-box {
+    width: 330px;
+    height: 590px;
+    display: flex;
+    flex-direction: row;
+}
+
+.lic-in-box .lic-left {
+    width: 207px;
+    height: 345px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.lic-in-box .lic-right {
+    width: 330px;
+    height: 590px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+}
+
+.lic-photo_player {
+    width: 132px;
+    height: 132px;
+    z-index: 1;
+    position: absolute;
+    left: 32%;
+    top: 6%;
+    border-radius: 10px;
+}
+
+.lic-photo_player .lic-img {
+    position: absolute;
+    border-radius: 10px;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    max-height: 100%;
+    max-width: 100%;
+    display: block;
+    width: 132px;
+    height: 132px;
+    border-bottom: 10px solid rgba(0, 31, 60, 0.42);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.lic-right .lic-name {
+    font-family: 'RobotoLight';
+    font-size: 20px;
+    color: #48b9f2;
+    margin-top: 37px;
+    margin-left: 19px;
+}
+
+.lic-right .lic-info {
+    width: inherit;
+    border-top: 1px solid rgb(255, 255, 255, 0.051);
+    margin-top: 190px;
+}
+
+.pl-lic-grow {
+    line-height: 13px;
+    font-family: 'Gotham Pro Regular';
+    color: #001F3C;
+    font-size: 1.1rem;
+}
+
+.pl-lic-black {
+    line-height: 13px;
+    font-family: 'Gotham Pro Medium';
+    color: #001F3C;
+    font-size: 1.1rem;
+}
+
+.lic-clmn-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.lic-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.tsp-lic {
+    width: 100%;
+    text-align: center;
+    line-height: 11px;
+    font-size: 1rem;
+    font-family: 'Gotham Pro Regular';
+    color: #001F3C;
+}
+
+.tsp-lic-name {
+    font-size: 1.2rem;
+    line-height: 14px;
+    text-transform: uppercase;
+    color: #001F3C;
+    font-family: 'Gotham Pro Medium';
+}
+
+.tsp-fff {
+    margin-top: 35px;
+}
+
+.lic-grow {
+    font-size: 1rem;
+    line-height: 11px;
+    color: #001F3C;
+    margin-bottom: 15px;
+    font-family: 'Gotham Pro Regular';
+}
+
+.lic-grow-date {
+    margin-bottom: 8px;
+}
+
+.license__sign {
+    display: flex;
+    margin-top: 18%;
+}
+
+.license__sign__text {
+    line-height: 13px;
+    margin-left: 15%;
+    font-family: 'Gotham Pro Regular';
+    color: #001F3C;
+}
+
+.license__sign__value {
+    color: #001F3C;
+    font-family: 'Sacramento';
+    transform: rotate(-15.33deg);
+    position: absolute;
+    left: 58%;
+    font-size: 1.4rem;
+}
+
+.license__docs {
+    margin-top: 14%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-right: 5%;
+}
+
+.license__docs__text {
+    color: #001F3C;
+    font-family: 'Gotham Pro Regular';
+}
+
+.license__docs__value {
+    color: #001F3C;
+    font-family: 'Goblin One';
+}
+
+.tpc-right-ff-date {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.lic-grow-date-value {
+    line-height: 13px;
+    color: #001F3C;
+    font-size: 1.2rem;
+    font-family: 'Gotham Pro Medium';
+}
+
+.lic-white {
+    font-size: 14px;
+    color: rgb(255, 255, 255);
+}
+
+.lic-first-inf {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+    margin-top: 45px;
+}
+
+.big-letter {
+    font-family: 'RobotoBold';
+    font-size: 101.5px;
+    text-transform: uppercase;
+    color: rgba(96, 96, 96, 0.059);
+    margin-left: auto;
+    margin-top: -23px;
+    margin-right: 10px;
+}

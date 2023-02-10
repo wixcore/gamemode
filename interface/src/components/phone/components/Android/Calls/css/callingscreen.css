@@ -1,0 +1,80 @@
+.calls__screen {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.34);
+}
+
+.calls__screen__buttons {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.calls__screen__buttons__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.calls__screen__buttons__item__text {
+    margin-top: 10%;
+    font-size: 14px;
+    font-family: 'Gotham Pro Medium';
+    color: #fff;
+}
+
+.calls__screen__data {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 40%;
+}
+
+.calls__screen__data__avatar {
+    border-radius: 50%;
+    width: 60%;
+    height: 60%;
+}
+
+.calls__screen__data__name {
+    margin-top: 10%;
+    margin-bottom: 5%;
+    font-size: 1.2rem;
+    font-family: 'Gotham Pro Medium';
+    color: #fff;
+}
+
+.calls__screen__data__number {
+    font-size: 14px;
+    font-family: 'Gotham Pro Regular';
+    color: #fff;
+}
+
+/* .rotate-components */
+
+.rotate-components .calls__screen__data {
+    padding-bottom: 20%;
+}
+
+.calls {
+    margin-top: 0 !important;
+    background: #000;
+    padding-top: 20%;
+    height: 100% !important;
+}
+
+.calls__screen {
+    margin-top: 0 !important;
+    margin-left: 0px !important;
+}
+
+.rotate-components .calls__screen {
+    margin-left: 4px !important;
+}
