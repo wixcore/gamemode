@@ -26,7 +26,7 @@ class Certificate extends React.Component {
                 dep: 'AirSupport Division',
                 position: 'Специальный агент',
                 id: '25',
-                img: '',//https://a.rsg.sc//n/lendstoun
+                img: '',//https://a.rsg.sc/n/lendstoun
                 subscribe: 'testerov'
             }
         }

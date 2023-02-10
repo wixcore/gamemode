@@ -37,7 +37,7 @@ phone.getUserInfo = function(player, text) {
                 0,
                 '',
                 false,
-                'https://a.rsg.sc//n/' + row['social'].toLowerCase(),
+                'https://a.rsg.sc/n/' + row['social'].toLowerCase(),
             ));
 
             subItems.push(phone.getMenuItemButton(
@@ -442,7 +442,7 @@ phone.memberAction = function(player, id) {
                 0,
                 '',
                 false,
-                'https://a.rsg.sc//n/' + row['social'].toLowerCase(),
+                'https://a.rsg.sc/n/' + row['social'].toLowerCase(),
             ));
 
             if (!row['is_sub_leader']) {
@@ -562,7 +562,7 @@ phone.memberAction2 = function(player, id) {
                 0,
                 '',
                 false,
-                'https://a.rsg.sc//n/' + row['social'].toLowerCase(),
+                'https://a.rsg.sc/n/' + row['social'].toLowerCase(),
             ));
 
             if (!row['is_sub_leader2']) {
@@ -693,7 +693,7 @@ phone.memberActionF = function(player, id) {
                 0,
                 '',
                 false,
-                'https://a.rsg.sc//n/' + row['social'].toLowerCase(),
+                'https://a.rsg.sc/n/' + row['social'].toLowerCase(),
             ));
 
             if (!row['is_sub_leaderf']) {
@@ -1432,7 +1432,7 @@ phone.fractionList = function(player) {
                     fractionItem.leaderName + desc,
                     row['is_online'] === 1,
                     { name: 'none' },
-                    'https://a.rsg.sc//n/' + row['social'].toLowerCase(),
+                    'https://a.rsg.sc/n/' + row['social'].toLowerCase(),
                 ));
             }
             else if (row['is_sub_leader']) {
@@ -1442,7 +1442,7 @@ phone.fractionList = function(player) {
                         fractionItem.subLeaderName + desc,
                         row['is_online'] === 1,
                         { name: 'memberAction', memberId: row['id'] },
-                        'https://a.rsg.sc//n/' + row['social'].toLowerCase(),
+                        'https://a.rsg.sc/n/' + row['social'].toLowerCase(),
                         true,
                     ));
                 }
@@ -1452,7 +1452,7 @@ phone.fractionList = function(player) {
                         fractionItem.subLeaderName + 'desc',
                         row['is_online'] === 1,
                         { name: 'none' },
-                        'https://a.rsg.sc//n/' + row['social'].toLowerCase()
+                        'https://a.rsg.sc/n/' + row['social'].toLowerCase()
                     ));
                 }
 
@@ -1471,7 +1471,7 @@ phone.fractionList = function(player) {
                         fractionItem.rankList[row['rank_type']][row['rank']] + desc,
                         row['is_online'] === 1,
                         { name: 'memberAction', memberId: row['id'] },
-                        'https://a.rsg.sc//n/' + row['social'].toLowerCase(),
+                        'https://a.rsg.sc/n/' + row['social'].toLowerCase(),
                         true,
                     ));
                 }
@@ -1481,7 +1481,7 @@ phone.fractionList = function(player) {
                         fractionItem.rankList[row['rank_type']][row['rank']] + desc,
                         row['is_online'] === 1,
                         { name: 'none' },
-                        'https://a.rsg.sc//n/' + row['social'].toLowerCase()
+                        'https://a.rsg.sc/n/' + row['social'].toLowerCase()
                     ));
                 }
 
@@ -1548,7 +1548,7 @@ phone.fractionList2 = function(player, showStats = false) {
                         fractionItem.get('rank_leader') + desc,
                         row['is_online'] === 1,
                         { name: 'none' },
-                        'https://a.rsg.sc//n/' + row['social'].toLowerCase(),
+                        'https://a.rsg.sc/n/' + row['social'].toLowerCase(),
                     ));
                 }
                 else if (row['is_sub_leader2']) {
@@ -1558,7 +1558,7 @@ phone.fractionList2 = function(player, showStats = false) {
                             fractionItem.get('rank_sub_leader') + desc,
                             row['is_online'] === 1,
                             { name: 'memberAction', memberId: row['id'] },
-                            'https://a.rsg.sc//n/' + row['social'].toLowerCase(),
+                            'https://a.rsg.sc/n/' + row['social'].toLowerCase(),
                             true,
                         ));
                     }
@@ -1568,7 +1568,7 @@ phone.fractionList2 = function(player, showStats = false) {
                             fractionItem.get('rank_sub_leader') + desc,
                             row['is_online'] === 1,
                             { name: 'none' },
-                            'https://a.rsg.sc//n/' + row['social'].toLowerCase()
+                            'https://a.rsg.sc/n/' + row['social'].toLowerCase()
                         ));
                     }
 
@@ -1587,7 +1587,7 @@ phone.fractionList2 = function(player, showStats = false) {
                             fractionItemRanks[row['rank_type2']][row['rank2']] + desc,
                             row['is_online'] === 1,
                             { name: 'memberAction', memberId: row['id'] },
-                            'https://a.rsg.sc//n/' + row['social'].toLowerCase(),
+                            'https://a.rsg.sc/n/' + row['social'].toLowerCase(),
                             true,
                         ));
                     }
@@ -1597,7 +1597,7 @@ phone.fractionList2 = function(player, showStats = false) {
                             fractionItemRanks[row['rank_type2']][row['rank2']] + desc,
                             row['is_online'] === 1,
                             { name: 'none' },
-                            'https://a.rsg.sc//n/' + row['social'].toLowerCase()
+                            'https://a.rsg.sc/n/' + row['social'].toLowerCase()
                         ));
                     }
 
@@ -1674,7 +1674,7 @@ phone.fractionListF = function(player, showStats = false) {
                         fractionItem.get('rank_leader') + desc,
                         row['is_online'] === 1,
                         { name: 'none' },
-                        'https://a.rsg.sc//n/' + row['social'].toLowerCase(),
+                        'https://a.rsg.sc/n/' + row['social'].toLowerCase(),
                     ));
                 }
                 else if (row['is_sub_leaderf']) {
@@ -1684,7 +1684,7 @@ phone.fractionListF = function(player, showStats = false) {
                             fractionItem.get('rank_sub_leader') + desc,
                             row['is_online'] === 1,
                             { name: 'memberActionF', memberId: row['id'] },
-                            'https://a.rsg.sc//n/' + row['social'].toLowerCase(),
+                            'https://a.rsg.sc/n/' + row['social'].toLowerCase(),
                             true,
                         ));
                     }
@@ -1694,7 +1694,7 @@ phone.fractionListF = function(player, showStats = false) {
                             fractionItem.get('rank_sub_leader') + desc,
                             row['is_online'] === 1,
                             { name: 'none' },
-                            'https://a.rsg.sc//n/' + row['social'].toLowerCase()
+                            'https://a.rsg.sc/n/' + row['social'].toLowerCase()
                         ));
                     }
 
@@ -1713,7 +1713,7 @@ phone.fractionListF = function(player, showStats = false) {
                             fractionItemRanks[row['rank_typef']][row['rankf']] + desc,
                             row['is_online'] === 1,
                             { name: 'memberActionF', memberId: row['id'] },
-                            'https://a.rsg.sc//n/' + row['social'].toLowerCase(),
+                            'https://a.rsg.sc/n/' + row['social'].toLowerCase(),
                             true,
                         ));
                     }
@@ -1723,7 +1723,7 @@ phone.fractionListF = function(player, showStats = false) {
                             fractionItemRanks[row['rank_typef']][row['rankf']] + desc,
                             row['is_online'] === 1,
                             { name: 'none' },
-                            'https://a.rsg.sc//n/' + row['social'].toLowerCase()
+                            'https://a.rsg.sc/n/' + row['social'].toLowerCase()
                         ));
                     }
 
@@ -2634,7 +2634,7 @@ phone.updateContactList = function(player) {
                         numbers: JSON.parse(row['numbers']),
                         mail: '',
                         isFavorite: row['is_fav'] === 1,
-                        img: 'https://a.rsg.sc//n/socialclub',
+                        img: 'https://a.rsg.sc/n/socialclub',
                     }
                 );
             });

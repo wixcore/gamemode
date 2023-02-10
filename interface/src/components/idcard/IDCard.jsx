@@ -19,7 +19,7 @@ class IDCard extends React.Component {
                 regist: '',
                 idcard: '00252',
                 subscribe: 'Pojarou',
-                img: '',//https://a.rsg.sc//n/lendstoun
+                img: '',//https://a.rsg.sc/n/lendstoun
             },
             photo: '',
         }

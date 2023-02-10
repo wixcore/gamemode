@@ -19,7 +19,7 @@ class License extends React.Component {
                 date_stop: '01.01.2020',
                 birthday: '21.01.01',
                 prefix: 'G',
-                img: '',//https://a.rsg.sc//n/lendstoun
+                img: '',//https://a.rsg.sc/n/lendstoun
                 sign: 'testerov',
                 number: 'WN273716783'
             },

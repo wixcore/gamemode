@@ -48,7 +48,7 @@ class ProfileContact extends React.Component {
                     </div>
                     <div className="box-img-e">
                             <img src={this.props.data.selected_contact.img !== undefined && this.props.data.selected_contact.img !== '' ?
-                                    this.props.data.selected_contact.img : 'https://a.rsg.sc//n/socialclub'} alt="" className="img-profileeditconatact"/>
+                                    this.props.data.selected_contact.img : 'https://a.rsg.sc/n/socialclub'} alt="" className="img-profileeditconatact"/>
                             <div className="p-nameplayer-p">{this.props.data.selected_contact.name}</div>
                     </div>
                     <div className="p-topbar">

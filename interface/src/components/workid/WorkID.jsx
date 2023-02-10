@@ -22,7 +22,7 @@ class WorkID extends React.Component {
                 data: '05.02.2020',
                 idwork: 'WID10-79292724055',
                 subscribe: 'Testerov',
-                img: '',//https://a.rsg.sc//n/lendstoun
+                img: '',//https://a.rsg.sc/n/lendstoun
             },
             photo: '',
         }

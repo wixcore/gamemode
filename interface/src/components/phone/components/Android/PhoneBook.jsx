@@ -37,7 +37,7 @@ class PhoneBook extends React.Component {
                         <div className="title-b-hist">История звонков</div>
                         <div className="b-box-history">
                             <div className="b-box-player">
-                                <img src="https://a.rsg.sc//n/socialclub" alt="" className="b-img-player"/>
+                                <img src="https://a.rsg.sc/n/socialclub" alt="" className="b-img-player"/>
                                 <div className="b-info-playercall">
                                     <div className="b-inf-name">Godvil Moretti</div>
                                     <div className="b-inf-data"><MaterialIcon icon="call_received" size={12}

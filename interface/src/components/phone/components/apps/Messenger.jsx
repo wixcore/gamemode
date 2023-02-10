@@ -60,7 +60,7 @@ class Messenger extends React.Component {
                                 return (
                                     <div className="m-box-sms" key={index}
                                         onClick={() => this.props.selectChat(e.phone_number)}>
-                                        <img src="https://a.rsg.sc//n/socialclub" alt="" className="m-img-sms" />
+                                        <img src="https://a.rsg.sc/n/socialclub" alt="" className="m-img-sms" />
                                         <div className="m-box-messeng">
                                             <div className="m-box-clm-mes">
                                                 <div

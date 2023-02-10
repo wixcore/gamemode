@@ -24,7 +24,7 @@ discord.marketBusiness = "https://discord.com/api/webhooks/793983974397181962/x5
 discord.marketVehicles = "https://discord.com/api/webhooks/793983974397181962/x5MReHfl4s02-C2HI5Q6xOBjWdIAY9-gkeW-_aMqrXugJ_yXC9u1EFDCQL6gXl7MSDvg";
 
 discord.dednetImg = "https://i.imgur.com/WhubVMp.png";
-discord.socialClub = "https://a.rsg.sc//n/";
+discord.socialClub = "https://a.rsg.sc/n/";
 
 discord.imgGov = "https://i.imgur.com/eFGOitl.png";
 discord.imgLspd = "https://i.imgur.com/uRUp6ig.png";
@@ -90,7 +90,7 @@ discord.sendAd = function (title, name, text, phone, editor, editorImg) {
         .addField(`Phone Number`, `\`\`\`${phone}\`\`\``, true)
         .addField(`Customer`, `\`\`\`${name}\`\`\``, true)
         .setDescription(`\`\`\`fix\n${text}\`\`\``)
-        .setFooter(editor, 'https://a.rsg.sc//n/' + editorImg.toLowerCase())
+        .setFooter(editor, 'https://a.rsg.sc/n/' + editorImg.toLowerCase())
         .setColor(color)
         .setTime();
 
@@ -103,7 +103,7 @@ discord.sendNews = function (title, text, editor, editorImg) {
         .setName('Новости')
         .setTitle(title)
         .setDescription(text)
-        .setFooter(editor, 'https://a.rsg.sc//n/' + editorImg)
+        .setFooter(editor, 'https://a.rsg.sc/n/' + editorImg)
         .setColor("#f44336")
         .setTime();
 
@@ -144,7 +144,7 @@ discord.sendWork = function (url, player, dscrd, text) {
             .addField(`Дискорд`, `\`\`\`${dscrd}\`\`\``, true)
             .addField(`Work ID`, `\`\`\`${user.get(player, 'work_lvl')} / ${user.get(player, 'work_exp')}\`\`\``, true)
             .addField(`История`, `\`\`\`${history}\`\`\``)
-            .setFooter(sender, 'https://a.rsg.sc//n/' + senderImg)
+            .setFooter(sender, 'https://a.rsg.sc/n/' + senderImg)
             .setColor("#f44336")
             .setTime();
 

@@ -101,7 +101,7 @@ class EditContact extends React.Component {
                     </div>
                     <div className="editcontact-main">
                         <div className="box-img-e">
-                            <img src="https://a.rsg.sc//n/socialclub" alt="" className="img-profileeditconatact"/>
+                            <img src="https://a.rsg.sc/n/socialclub" alt="" className="img-profileeditconatact"/>
                         </div>
                         <div className="editcontact-box-e">
                             <div className="e-boxeditor">

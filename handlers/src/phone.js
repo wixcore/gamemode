@@ -153,7 +153,7 @@ phone.updateCallInfo = function(number, avatar, name) {
         phonecall: {
             number: number,
             name: name,
-            avatar: 'https://a.rsg.sc//n/' + avatar.toLowerCase(),
+            avatar: 'https://a.rsg.sc/n/' + avatar.toLowerCase(),
             going: true
         },
     };
@@ -394,7 +394,7 @@ phone.showAppList = function() {
                         title: user.getCache('name'),
                         text: `${user.getCache('social')}#${user.getCache('id')}`,
                         type: 0,
-                        value: 'https://a.rsg.sc//n/' + user.getCache('social').toString().toLowerCase(),
+                        value: 'https://a.rsg.sc/n/' + user.getCache('social').toString().toLowerCase(),
                         params: { name: "null" }
                     },
                     {
@@ -690,7 +690,7 @@ phone.showAppEcorp= function() {
                         title: user.getCache('name'),
                         text: `${methods.cryptoFormat(user.getCryptoMoney())}`,
                         type: 0,
-                        value: 'https://a.rsg.sc//n/' + user.getCache('social').toString().toLowerCase(),
+                        value: 'https://a.rsg.sc/n/' + user.getCache('social').toString().toLowerCase(),
                         params: { name: "null" }
                     },
                     {
@@ -783,7 +783,7 @@ phone.showAppInvader= function() {
                         title: user.getCache('name'),
                         text: `${user.getCache('social')}#${user.getCache('id')}`,
                         type: 0,
-                        value: 'https://a.rsg.sc//n/' + user.getCache('social').toString().toLowerCase(),
+                        value: 'https://a.rsg.sc/n/' + user.getCache('social').toString().toLowerCase(),
                         params: { name: "null" }
                     },
                     {

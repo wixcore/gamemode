@@ -166,31 +166,31 @@ class Android extends React.Component {
                     name: 'Godvil Moretti',
                     numbers: ['222-2346837'],
                     mail: 'godvil.moretti@ded.net',
-                    img: 'https://a.rsg.sc//n/socialclub',*/
+                    img: 'https://a.rsg.sc/n/socialclub',*/
                 },
                 history: [
 
                     {
                         number: '222-2346837',
-                        img: 'https://a.rsg.sc//n/socialclub',
+                        img: 'https://a.rsg.sc/n/socialclub',
                         type: 'call_made', // call_made - исходящий звонок \ call_received - принятый звонок
                         data: '20190212-1553'
                     },
                     {
                         number: '999-9999999',
-                        img: 'https://a.rsg.sc//n/socialclub',
+                        img: 'https://a.rsg.sc/n/socialclub',
                         type: 'call_missed', // call_made - исходящий звонок \ call_received - принятый звонок
                         data: '20190212-1553'
                     },
                     {
                         number: '222-3567347',
-                        img: 'https://a.rsg.sc//n/socialclub',
+                        img: 'https://a.rsg.sc/n/socialclub',
                         type: 'call_received',
                         data: '20190112-1453'
                     },
                     {
                         number: '222-9746753',
-                        img: 'https://a.rsg.sc//n/socialclub',
+                        img: 'https://a.rsg.sc/n/socialclub',
                         type: 'call_made',
                         data: '20190212-1453'
                     },
@@ -201,28 +201,28 @@ class Android extends React.Component {
                         numbers: ['222-1234212', '555-6347544'],
                         mail: 'wika.aretti@ded.net',
                         isFavorite: false,
-                        img: 'https://a.rsg.sc//n/socialclub',
+                        img: 'https://a.rsg.sc/n/socialclub',
                     },
                     {
                         name: 'Godvil Moretti',
                         numbers: ['222-2346837'],
                         mail: 'godvil.moretti@ded.net',
                         isFavorite: true,
-                        img: 'https://a.rsg.sc//n/socialclub',
+                        img: 'https://a.rsg.sc/n/socialclub',
                     },
                     {
                         name: 'Nika Moretti',
                         numbers: ['222-9746753', '555-7653765'],
                         mail: 'nika.moretti@ded.net',
                         isFavorite: true,
-                        img: 'https://a.rsg.sc//n/socialclub',
+                        img: 'https://a.rsg.sc/n/socialclub',
                     },
                     {
                         name: 'Aika Aretti',
                         numbers: ['222-3567347', '555-5367433'],
                         mail: 'aika.aretti@ded.net',
                         isFavorite: false,
-                        img: 'https://a.rsg.sc//n/socialclub',
+                        img: 'https://a.rsg.sc/n/socialclub',
                     },
 
                 ],
@@ -666,7 +666,7 @@ class Android extends React.Component {
 
     addContact(contact) {
         contact.numbers = contact.numbers.filter(Boolean) // Удаляет пустые элементы массива
-        if (contact.img === '' || contact.img === undefined) contact.img = 'https://a.rsg.sc//n/socialclub';
+        if (contact.img === '' || contact.img === undefined) contact.img = 'https://a.rsg.sc/n/socialclub';
         this.setState(prevState => ({
             ...prevState.phonebook.contact = [...this.state.phonebook.contact].concat([contact])
         }))

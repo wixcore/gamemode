@@ -1263,7 +1263,7 @@ mp.events.addRemoteCounted('server:user:showLic', (player, lic, playerId) => {
                         regist: user.getRegStatusName(player),
                         idcard: user.getId(player).toString(),
                         subscribe: user.getRpName(player).split(' ')[0][0] + '.' + user.getRpName(player).split(' ')[1],
-                        img: 'https://a.rsg.sc//n/' + player.socialClub.toLowerCase(),
+                        img: 'https://a.rsg.sc/n/' + player.socialClub.toLowerCase(),
                     },
                 };
                 user.callCef(remotePlayer, 'cardid', JSON.stringify(dataSend));
@@ -1296,7 +1296,7 @@ mp.events.addRemoteCounted('server:user:showLic', (player, lic, playerId) => {
                             data: user.get(player, 'work_date'),
                             idwork: user.get(player, 'work_lic'),
                             subscribe: user.getRpName(player).split(' ')[0][0] + '.' + user.getRpName(player).split(' ')[1],
-                            img: 'https://a.rsg.sc//n/' + player.socialClub.toLowerCase(),
+                            img: 'https://a.rsg.sc/n/' + player.socialClub.toLowerCase(),
                         },
                     };
                     user.callCef(remotePlayer, 'workid', JSON.stringify(dataSend));
@@ -1394,7 +1394,7 @@ mp.events.addRemoteCounted('server:user:showLic', (player, lic, playerId) => {
                             date_stop: user.get(player, lic + '_end'),
                             prefix: licPref,
                             sign: user.getRpName(player).split(' ')[0][0] + '.' + user.getRpName(player).split(' ')[1],
-                            img: 'https://a.rsg.sc//n/' + player.socialClub.toLowerCase(),
+                            img: 'https://a.rsg.sc/n/' + player.socialClub.toLowerCase(),
                             number: licPref + (user.getId(player) + 100000)
                         },
                     };
@@ -1448,7 +1448,7 @@ mp.events.addRemoteCounted('server:user:showLicGos', (player, playerId) => {
                     dob: user.get(player, 'age'),
                     id: user.getId(player),
                     subscribe: user.getRpName(player).split(' ')[0][0] + '.' + user.getRpName(player).split(' ')[1],
-                    img: 'https://a.rsg.sc//n/' + player.socialClub.toLowerCase(),
+                    img: 'https://a.rsg.sc/n/' + player.socialClub.toLowerCase(),
                 },
             };
             user.callCef(remotePlayer, 'certificate', JSON.stringify(dataSend));
@@ -1859,7 +1859,7 @@ mp.events.addRemoteCounted('server:user:getPassById', (player, targetId) => {
                 nation: user.get(pl, 'national'),
                 regist: user.getRegStatusName(pl),
                 idcard: user.getId(pl).toString(),
-                img: 'https://a.rsg.sc//n/' + pl.socialClub.toLowerCase(),
+                img: 'https://a.rsg.sc/n/' + pl.socialClub.toLowerCase(),
             },
         };
         user.callCef(player, 'cardid', JSON.stringify(dataSend));
