@@ -70,7 +70,7 @@ mp.events.add('guiReady', () => {
 });
 
 ui.create = function() {
-    uiBrowser = mp.browsers.new("package://cef/index.html");
+    uiBrowser = mp.browsers.new("http://package/cef/index.html");
     //uiBrowser.markAsChat();
     //ui.callCef('authMain','{"type": "show"}');
 };
@@ -106,7 +106,7 @@ ui.fixInterface = function() {
     catch (e) {
         methods.debug(e);
     }
-    uiBrowser = mp.browsers.new("package://cef/index.html");
+    uiBrowser = mp.browsers.new("http://package/cef/index.html");
     ui.callCef('authMain','{"type": "hide"}');
     ui.hideHud();
     mp.gui.cursor.show(false, false);
