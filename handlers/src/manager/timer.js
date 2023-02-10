@@ -246,38 +246,39 @@ timer.fourSecTimer = function() {
 };
 
 timer.twoSecTimer = function() {
-    
     try {
-
-        if (user.getCache('s_hud_keys')) {
-            ui.callCef('hudk', JSON.stringify({type: 'show'}));
-            let data = {
-                type: 'updateValues',
-                hints: [
-                    {key: 'M', text: 'Главное меню'},
-                    {key: 'F2', text: 'Курсор'},
-                    {key: bind.getKeyName(user.getCache('s_bind_phone')), text: 'Телефон'},
-                    {key: bind.getKeyName(user.getCache('s_bind_inv')), text: 'Инвентарь'},
-                    {key: bind.getKeyName(user.getCache('s_bind_inv_world')), text: 'Предметы рядом'},
-                    {key: bind.getKeyName(user.getCache('s_bind_voice')), text: 'Голосовой чат'},
-                ]
-            };
-            ui.callCef('hudk', JSON.stringify(data));
-        }
-        else {
-            ui.callCef('hudk', JSON.stringify({type: 'hide'}));
-        }
-
-        user.setLastWeapon(user.getCurrentWeapon());
+        if (user.isLogin()) {
+            if (user.getCache('s_hud_keys')) {
+                ui.callCef('hudk', JSON.stringify({type: 'show'}));
+                let data = {
+                    type: 'updateValues',
+                    hints: [
+                        {key: 'M', text: 'Главное меню'},
+                        {key: 'F2', text: 'Курсор'},
+                        {key: bind.getKeyName(user.getCache('s_bind_phone')), text: 'Телефон'},
+                        {key: bind.getKeyName(user.getCache('s_bind_inv')), text: 'Инвентарь'},
+                        {key: bind.getKeyName(user.getCache('s_bind_inv_world')), text: 'Предметы рядом'},
+                        {key: bind.getKeyName(user.getCache('s_bind_voice')), text: 'Голосовой чат'},
+                    ]
+                };
+                ui.callCef('hudk', JSON.stringify(data));
+            } else {
+                ui.callCef('hudk', JSON.stringify({type: 'hide'}));
+            }
+            user.setLastWeapon(user.getCurrentWeapon());
+        }  
+    } catch (e) {
+        methods.debug('Two Sec Timer', e);
     }
-    catch (e) {}
 
     try {
 
         if (user.isLogin()) {
 
-            if (giveTicketTimeout > 0)
+            if (giveTicketTimeout > 0) {
                 giveTicketTimeout--;
+            }
+                
             if (mp.players.local.isInAnyVehicle(true) && mp.players.local.dimension === 0 && giveTicketTimeout === 0) {
                 /*//0xDB89591E290D9182 | GET_TIME_SINCE_PLAYER_DROVE_AGAINST_TRAFFIC
                 //0xD559D2BE9E37853B | GET_TIME_SINCE_PLAYER_DROVE_ON_PAVEMENT
