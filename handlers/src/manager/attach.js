@@ -48,18 +48,13 @@ mp.attachmentMngr =
                                 , true, true, false, false, 2, true);
 
                             entity.__attachmentObjects[id] = object;
-                        }
-                        else {
+                        } else {
                             let object = mp.objects.new(attInfo.model, spawnPos, {dimension: entity.dimension});
-
-                            let boneIndex = (typeof attInfo.boneName === 'string') ?
-                                entity.getBoneIndexByName(attInfo.boneName) :
-                                entity.getBoneIndex(attInfo.boneName);
-
-                            object.attachTo(entity.handle, boneIndex,
-                                attInfo.offset.x, attInfo.offset.y, attInfo.offset.z,
-                                attInfo.rotation.x, attInfo.rotation.y, attInfo.rotation.z,
-                                false, false, attInfo.collision, false, 2, true);
+                            let boneIndex = (typeof attInfo.boneName === 'string') ? entity.getBoneIndexByName(attInfo.boneName) : entity.getBoneIndex(attInfo.boneName);
+                            
+                            setTimeout(function(){ 
+                                object.attachTo(entity.handle, boneIndex, attInfo.offset.x, attInfo.offset.y, attInfo.offset.z, attInfo.rotation.x, attInfo.rotation.y, attInfo.rotation.z, false, false, attInfo.collision, false, 2, true);
+                            }, 50);
 
                             if (attInfo.freeze) {
                                 object.freezePosition(true);
