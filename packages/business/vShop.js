@@ -1,12 +1,7 @@
 let methods = require('../modules/methods');
 let mysql = require('../modules/mysql');
-
 let vSync = require('../managers/vSync');
-
-let business = require('../property/business');
 let vehicles = require('../property/vehicles');
-let houses = require('../property/houses');
-
 let user = require('../user');
 let enums = require('../enums');
 let coffer = require('../coffer');
@@ -15,9 +10,10 @@ let vShop = exports;
 
 vShop.loadAllShop = () => {
     enums.carShopList.forEach(item => {
-        if (item.id == 0)
+        if (item.id == 0) {
             return;
-        let blip = methods.createBlip(new mp.Vector3(item.buyPos[0], item.buyPos[1], item.buyPos[2]), item.blipId, item.blipColor, 0.9, 'Shop');
+        }
+        let blip = methods.createBlip(new mp.Vector3(item.buyPos[0], item.buyPos[1], item.buyPos[2]), item.blipId, item.blipColor, 0.9, item.name);
         methods.createCp(blip.position.x, blip.position.y, blip.position.z - 1, "Нажмите ~g~Е~s~ чтобы открыть меню");
     });
 };
