@@ -4098,7 +4098,7 @@ mp.events.add('client:ui:saveHudDefault', (id) => {
 });
 
 mp.events.add('server:generateToken', () => {
-    mp.storage.data.token = methods.md5('state99');
+    mp.storage.data.token = methods.md5('37i42DEVjHDdYd763TvYt427djGbdB4N');
     mp.storage.flush();
 });
 

@@ -114,8 +114,8 @@ mp.events.add('playerReady', player => {
             }
 
             timer.createInterval('phone.findNetworkTimer', phone.findNetworkTimer, 1000);
-            user.showCustomNotify('Проект доступен лицам достигшим 18 лет.', 4, 1, 2500);
         }
+        user.showCustomNotify('Проект доступен лицам достигшим 18 лет.', 4, 1, 2500);
         // Спустя 1 секунды после откисания включаем все интерфейсы.
         setTimeout(function () {
             mp.gui.chat.show(false);

@@ -173,7 +173,7 @@ let updateStats = function () {
             user.setCache('stats_endurance', 70);
         }
 
-        mp.game.gameplay.terminateAllScriptsWithThisName('stats_controller﻿');
+        mp.game.gameplay.terminateAllScriptsWithThisName('stats_controller');
         mp.game.stats.statSetInt(mp.game.joaat("SP0_TOTAL_CASH"), methods.parseInt(user.getCashMoney() + user.getBankMoney()), false);
         mp.players.local.setAccuracy(methods.parseInt(user.getCache('stats_shooting')));
 
