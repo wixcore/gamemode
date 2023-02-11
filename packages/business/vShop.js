@@ -15,6 +15,34 @@ vShop.loadAllShop = () => {
         }
         let blip = methods.createBlip(new mp.Vector3(item.buyPos[0], item.buyPos[1], item.buyPos[2]), item.blipId, item.blipColor, 0.9, item.name);
         methods.createCp(blip.position.x, blip.position.y, blip.position.z - 1, "Нажмите ~g~Е~s~ чтобы открыть меню");
+
+        switch (item.name) {
+            case 'Plane Shop': 
+                markerType = 7; 
+            break;
+            case 'Heli Shop': 
+                markerType = 34; 
+            break;
+            case 'Boat Shop': 
+                markerType = 35; 
+            break;
+            case 'Sandres Motorcycles': 
+                markerType = 37; 
+            break;
+            case 'Vans & Trucker': 
+                markerType = 39; 
+            break;
+            default: 
+                markerType = 36; 
+            break;
+        }
+        
+        mp.markers.new(markerType, new mp.Vector3(blip.position.x, blip.position.y, blip.position.z), 0.9, {
+            dimension: 0,
+            color: [244, 67, 54, 100],
+            visible: true,
+        });
+
     });
 };
 
