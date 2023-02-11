@@ -569,15 +569,11 @@ fraction.loadAll = function() {
             fraction.set(item['id'], 'orderDrug', 0);
 
             if (item['is_war']) {
-                //fraction.isGang
-                let color = enums.fractionColor[item['id']];
-                methods.createBlip(new mp.Vector3(item['spawn_x'], item['spawn_y'], item['spawn_z']), 310, color, 0.6, 'Титульная тер.');
-            }
-            else if (item['is_mafia']) {
-                //SKIP
-            }
-            else if (item['spawn_x'] !== 0) {
-                methods.createBlip(new mp.Vector3(item['spawn_x'], item['spawn_y'], item['spawn_z']), 565, 37, 0.6, 'Spawn орг.');
+                methods.createBlip(new mp.Vector3(item['spawn_x'], item['spawn_y'], item['spawn_z']), 84, enums.fractionColor[item['id']], 0.85, item['name']);
+            } else if (item['is_mafia']) {
+                methods.createBlip(new mp.Vector3(item['spawn_x'], item['spawn_y'], item['spawn_z']), 78, enums.fractionColor[item['id']], 0.85, item['name']);
+            } else if (item['spawn_x'] !== 0) {
+                methods.createBlip(new mp.Vector3(item['spawn_x'], item['spawn_y'], item['spawn_z']), 565, 0, 0.75, item['name']);
             }
         });
         count = rows.length;
