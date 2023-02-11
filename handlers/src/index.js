@@ -48,105 +48,84 @@ import trucker from "./jobs/trucker";
 import taxi from "./jobs/taxi";
 import prolog from "./manager/prolog";
 
-try {
+mp.events.add('playerReady', player => {
+    try {
+        user.showLoadDisplay();
+        user.setVirtualWorld(mp.players.local.remoteId);
+
+        for (let i = 0; i < 50; i++) {
+            mp.gui.chat.push('');
+        }
+        if (mp.storage.data.token) {
+            mp.gui.chat.push('BlackList');
+            user.kick('BlackList');
+        } else {
+            chat.show(false);
+            chat.activate(false);
+            // enums.customIpl.forEach(item => {
+            //     object.createIpl(item[0], new mp.Vector3(item[1], item[2], item[3]), item[4]);
+            // });
+            mp.game.ped.setAiMeleeWeaponDamageModifier(1);
+            mp.game.player.setMeleeWeaponDefenseModifier(1);
+            mp.game.player.setWeaponDefenseModifier(1);
+            mp.game.player.setVehicleDefenseModifier(.1);
+            mp.game.player.setVehicleDamageModifier(.1);
             // Автоматичний парашут при виході з повітряного т/с
-            mp.game.player.setAutoGiveParachuteWhenEnterPlane(true); 
+            mp.game.player.setAutoGiveParachuteWhenEnterPlane(true);
             // Відключаємо навколишні звуки на сервері.
             mp.game.audio.startAudioScene("CHARACTER_CHANGE_IN_SKY_SCENE");
+            // Курсор
+            mp.gui.cursor.show(true, true);
+            // Таймери
+            timer.createInterval('hosp.timer', hosp.timer, 1000);
+            timer.createInterval('jail.timer', jail.timer, 1000);
+            timer.createInterval('prolog.timer', prolog.timer, 500);
+            timer.createInterval('voiceRage.timer', voiceRage.timer, 5);
 
-    user.showLoadDisplay();
-    user.setVirtualWorld(mp.players.local.remoteId);
+            user.init();
 
-    for (let i = 0; i < 50; i++)
-        mp.gui.chat.push('');
+            try {
+                methods.requestIpls();
+            } catch (e) {
+                methods.saveFile('errorIpl', e);
+            }
 
-    if (mp.storage.data.token) {
-        mp.gui.chat.push('BlackList');
-        user.kick('BlackList');
-    }
-    else {
-        mp.gui.chat.push('Добро пожаловать на State 99 🌎');
-        mp.gui.chat.push('Подождите пожалуйста, выполняется загрузка всех необходимых пакетов для комфортной игры. Это займет меньше минуты.');
-        //mp.gui.chat.push('Сервер будет доступен в 17:00 По МСК');
+            setTimeout(checkpoint.checkPosition, 10000);
+            
+            enums.loadCloth();
+            business.loadScaleform();
+            object.load();
+            npc.loadAll();
+            skill.loadAll();
+            wheel.loadAll();
+            trucker.loadAll();
+            taxi.loadAll();
+            attach.init();
+            attachItems.registerAttaches();
+            timer.loadAll();
+            vBreakLight.timer();
+            policeRadar.load();
+            weather.secSyncTimer();
 
-        chat.show(false);
-        chat.activate(false);
-        /*enums.customIpl.forEach(item => {
-            object.createIpl(item[0], new mp.Vector3(item[1], item[2], item[3]), item[4]);
-        });*/
+            try {
+                mp.game.stats.statSetProfileSetting(0, 0);
+            } catch (e) {
+                methods.saveFile('Profile Setting', e);
+            }
 
-        mp.game.ped.setAiMeleeWeaponDamageModifier(1);
-        mp.game.player.setMeleeWeaponDefenseModifier(1);
-        mp.game.player.setWeaponDefenseModifier(1);
-        mp.game.player.setVehicleDefenseModifier(.1);
-        mp.game.player.setVehicleDamageModifier(.1);
-
-        mp.gui.cursor.show(true, true);
-
-        timer.createInterval('hosp.timer', hosp.timer, 1000);
-        timer.createInterval('jail.timer', jail.timer, 1000);
-        timer.createInterval('prolog.timer', prolog.timer, 500);
-        timer.createInterval('voiceRage.timer', voiceRage.timer, 5);
-
-        user.init();
-        try {
-            methods.requestIpls();
+            timer.createInterval('phone.findNetworkTimer', phone.findNetworkTimer, 1000);
+            user.showCustomNotify('Проект доступен лицам достигшим 18 лет.', 4, 1, 2500);
         }
-        catch (e) {
-            methods.saveFile('errorIpl', e);
-        }
-        setTimeout(checkpoint.checkPosition, 10000);
-
-        enums.loadCloth();
-        business.loadScaleform();
-
-        object.load();
-        npc.loadAll();
-        skill.loadAll();
-
-        wheel.loadAll();
-
-        trucker.loadAll();
-        taxi.loadAll();
-
-        attach.init();
-        attachItems.registerAttaches();
-
-        timer.loadAll();
-        vBreakLight.timer();
-        policeRadar.load();
-
-        weather.secSyncTimer();
-
-        try {
-            mp.game.stats.statSetProfileSetting(0, 0);
-        }
-        catch (e) {
-
-        }
-
-        timer.createInterval('phone.findNetworkTimer', phone.findNetworkTimer, 1000);
-    }
-
-    /*if(!mp.game.streaming.isIplActive("int_magazel1_milo_"))
-    {
-        user.showCustomNotify('Возможно некоторые интерьеры у вас не подгрузятся, поэтому перезайдите, фикс будет в следующей версии мультиплеера', 0, 1000);
+        // Спустя 1 секунды после откисания включаем все интерфейсы.
         setTimeout(function () {
-            mp.game.invoke("0xD7C10C4A637992C9"); // _LOAD_SP_DLC_MAPS
-            mp.game.invoke("0x0888C3502DBBEEF5"); // _LOAD_MP_DLC_MAPS
-
-            //mp.game.invoke("0xD7C10C4A637992C9"); mp.game.invoke("0x0888C3502DBBEEF5"); // _LOAD_MP_DLC_MAPS
-        }, 5000);
-    }*/
-
-    /*mp.events.add('guiReady', () => {
-        ui.create();
-    });*/
-}
-catch (e) {
-    methods.debug('ERROR INIT CLIENT', e);
-    methods.debug('ERROR INIT CLIENT', e);
-    methods.debug(e);
-    methods.debug('ERROR INIT CLIENT', e);
-    methods.debug('ERROR INIT CLIENT', e);
-}
+            mp.gui.chat.show(false);
+            mp.gui.chat.activate(false);
+            for (let i = 0; i < 50; i++) {
+                mp.gui.chat.push('');
+            }
+            user.hideLoadDisplay();
+            ui.create();
+    } catch (e) {
+        methods.debug('ERROR INIT CLIENT', e);
+    }
+});

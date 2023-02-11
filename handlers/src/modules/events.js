@@ -4158,31 +4158,31 @@ mp.events.add("playerEnterCheckpoint", (checkpoint) => {
     }
 });
 
-mp.events.add("playerReadyDone", () => {
-    try {
+// mp.events.add("playerReadyDone", () => {
+//     try {
 
-        mp.gui.chat.show(false);
-        mp.gui.chat.activate(false);
-        for (let i = 0; i < 50; i++)
-            mp.gui.chat.push('');
+//         mp.gui.chat.show(false);
+//         mp.gui.chat.activate(false);
+//         for (let i = 0; i < 50; i++)
+//             mp.gui.chat.push('');
 
-        try {
-            mp.players.local.setCanRagdoll(true);
-        }
-        catch (e) {}
+//         try {
+//             mp.players.local.setCanRagdoll(true);
+//         }
+//         catch (e) {}
 
-        setTimeout(function () {
-            ui.create();
-        }, 100);
+//         setTimeout(function () {
+//             ui.create();
+//         }, 100);
 
-        setTimeout(function () {
-            user.hideLoadDisplay();
-        }, 1000);
-    }
-    catch (e) {
-        methods.error('playerReadyDone', e.toString())
-    }
-});
+//         setTimeout(function () {
+//             user.hideLoadDisplay();
+//         }, 1000);
+//     }
+//     catch (e) {
+//         methods.error('playerReadyDone', e.toString())
+//     }
+// });
 
 mp.events.add('playerWeaponShot', (targetPosition, targetEntity) => {
     try {

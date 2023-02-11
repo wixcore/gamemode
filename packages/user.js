@@ -1839,7 +1839,7 @@ user.ready = function(player) {
         catch (e) {
             methods.debug(e);
         }
-        player.call('playerReadyDone');
+        // player.call('playerReadyDone');
     }
     catch (e) {
         methods.debug('READY_ERROR', e.toString(), player.socialClub);

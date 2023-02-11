@@ -1,23 +1,19 @@
 "use strict";
 
 import methods from "./methods";
-
 import user from "../user";
 import voiceRage from "../voiceRage";
 import chat from "../chat";
 import enums from "../enums";
-
 import weather from "../manager/weather";
 import shoot from "../manager/shoot";
 import quest from "../manager/quest";
 import prolog from "../manager/prolog";
-
 import vehicles from "../property/vehicles";
 import phone from "../phone";
-import admin from "../admin";
 
 let ui = {};
-let uiBrowser = null;
+let uiBrowser = '';
 
 let _zone = 'Подключение к сети GPS';
 let _street = '...';
@@ -56,7 +52,6 @@ mp.events.add('guiReady', () => {
     mp.events.add('browserDomReady', (browser) => {
         if (browser === uiBrowser) {
             ui.hideHud();
-
             try {
                 if (mp.storage.data.name)
                     ui.callCef('authMain:2', JSON.stringify({type:'login', login: mp.storage.data.name}));
@@ -76,8 +71,9 @@ ui.create = function() {
 };
 
 ui.showDialog = function(text, title = '', icon = 'none', buttons = ['Ок'], position = ui.dialogTypes.center, dtype = 1, isShowClose = true, cursor = true) {
-    if (!mp.gui.cursor.visible)
+    if (!mp.gui.cursor.visible) {
         mp.gui.cursor.show(cursor, cursor);
+    }
     ui.callCef('dialog', JSON.stringify({type: 'updateValues', isShow: true, isShowClose: isShowClose, position: position, text: text, buttons: buttons, icon: icon, title: title, dtype: dtype}));
 };
 
