@@ -49,6 +49,8 @@ import taxi from "./jobs/taxi";
 import prolog from "./manager/prolog";
 
 try {
+            // Автоматичний парашут при виході з повітряного т/с
+            mp.game.player.setAutoGiveParachuteWhenEnterPlane(true); 
 
     user.showLoadDisplay();
     user.setVirtualWorld(mp.players.local.remoteId);
