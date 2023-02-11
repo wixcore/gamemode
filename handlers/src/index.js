@@ -31,7 +31,7 @@ import weather from "./manager/weather";
 import hosp from "./manager/hosp";
 import jail from "./manager/jail";
 import policeRadar from "./manager/policeRadar";
-
+import ui from "./modules/ui";
 import wheel from "./casino/wheel";
 
 import user from "./user";
@@ -125,6 +125,7 @@ mp.events.add('playerReady', player => {
             }
             user.hideLoadDisplay();
             ui.create();
+        }, 1000);
     } catch (e) {
         methods.debug('ERROR INIT CLIENT', e);
     }
