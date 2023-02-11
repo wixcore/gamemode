@@ -902,22 +902,27 @@ vehicles.respawn = (vehicle) => {
         setTimeout(function () {
             if (!vehicles.exists(vehicle))
                 return;
-           try {
-               methods.debug('vehicles.respawn');
-               let containerId = vehicle.getVariable('container');
-               if (containerId != undefined && vehicle.getVariable('user_id') > 0)
-                   vehicles.spawnPlayerCar(containerId);
-               let fractionId = vehicle.getVariable('fraction_id');
-               if (fractionId) {
-                   let info = vehicles.getFractionVehicleInfo(vehicle.getVariable('veh_id'));
-                   if (info.is_default || info.fraction_id < 0)
-                       vehicles.spawnFractionCar(info.id);
-               }
-               vehicle.destroy();
-           }
-           catch (e) {
-               
-           }
+            try {
+                methods.debug('vehicles.respawn');
+                let containerId = vehicle.getVariable('container');
+                if (containerId != undefined && vehicle.getVariable('user_id') > 0)
+                    vehicles.spawnPlayerCar(containerId);
+                let fractionId = vehicle.getVariable('fraction_id');
+                if (fractionId) {
+                    let info = vehicles.getFractionVehicleInfo(vehicle.getVariable('veh_id'));
+                    if (info.is_default || info.fraction_id < 0) {
+                        if (info !== undefined) {
+                            if (info.is_default || info.fraction_id < 0) {
+                                vehicles.spawnFractionCar(info.id);
+                            }
+                        }
+                    }
+                }
+                vehicle.destroy();
+            }
+            catch (e) {
+        
+            }
         }, 100)
     }
     catch (e) {
