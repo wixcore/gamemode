@@ -1,4 +1,7 @@
-"use strict";
+"use strict"; // Created by "WixCore.Net" on 12.02.2023.
+
+global.WixCore      = {};
+WixCore.Feature     = {};
 
 require('./modules/cli');
 require('./modules/data');
