@@ -13,6 +13,7 @@
     "build:handlers": "cd handlers && npm run build"
   },
   "dependencies": {
+    "mysql": "^2.18.1",
     "mysql2": "^3.1.2",
     "nodemon": "^2.0.20",
     "webhook-discord": "^3.7.8"

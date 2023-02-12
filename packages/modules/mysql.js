@@ -1,6 +1,6 @@
 "use strict";
 
-let mysql2 = require('mysql2');
+let mysql2 = require('mysql');
 let methods = require('./methods');
 let chat = require('./chat');
 let user = require('../user');
