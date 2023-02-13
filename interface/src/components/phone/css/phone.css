@@ -2893,7 +2893,7 @@ BankCard
     /* filter: brightness(2) saturate(0%); */
 }
 .item-achiev-1 {
-    background: url(../../inventory/img/all-items/Item_48.png) no-repeat;
+    background: url('//push.wixcore.net/inventory/items/48.png') no-repeat;
     background-size: cover;
 }
 .rotate-components .info-box-achiev {

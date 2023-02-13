@@ -62,12 +62,15 @@ class Notification extends React.Component {
         if (!this.state.show) {
             return null;
         }
-
+        
         return(
             <div style={styles.header} className="notification-container">
                 <div style={styles.textContainer}>
                     <div style={{height: '100%', width: '10%', backgroundColor: '#fff', display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
-                        <img src={require(`../../../../inventory/img/all-items/Item_${this.props.img}.png`)} width="80%" height="80%" style={{filter: 'brightness(0) saturate(100%) invert(50%) sepia(0%) saturate(7500%) hue-rotate(230deg) brightness(107%) contrast(100%)'}} />
+                        {/* 
+                        <img src={require(`../../../../inventory/assets/css/items/Item_${this.props.img}.png`)} width="80%" height="80%" style={{filter: 'brightness(0) saturate(100%) invert(50%) sepia(0%) saturate(7500%) hue-rotate(230deg) brightness(107%) contrast(100%)'}} />
+                        */}
+                        <img src={`https://push.wixcore.net/inventory/items/${this.props.img}.png`} width="80%" height="80%" style={{filter: 'brightness(0) saturate(100%) invert(50%) sepia(0%) saturate(7500%) hue-rotate(230deg) brightness(107%) contrast(100%)'}} />
                     </div>
                     <span style={styles.headerText}>
                         {this.props.name}

@@ -1,25 +1,17 @@
-body {
-    /*background: #352929;*/
-    
-}
-
 .bgForDrop {
     position: fixed;
     width: 100%;
     height: 100%;
     top: 0;
     left: 0;
+    background: url('//push.wixcore.net/inventory/inv-box.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 0.6;
 }
 
 .inv-box {
-    /* width: -webkit-fill-available;
-    height: -webkit-fill-available;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    flex-direction: row-reverse;
-    z-index: -1; */
     flex-direction: row-reverse;
     margin-left: auto;
     margin-top: auto;
@@ -29,8 +21,6 @@ body {
 }
 
 .inventory-main {
-    width: 1129px;
-    height: 694px;
     display: flex;
     flex-direction: column;
 }
@@ -40,40 +30,30 @@ body {
 }
 
 .player-inv {
-    width: 395px;
-    height: 694px;
-    background: rgba(0, 0, 0, 0.5);
-    border: 0.5px solid rgba(255, 255, 255, 0.5);
-    border-radius: 20px;
-    margin-right: 10px;
+    width: 43.148vh;
+    height: 65.648vh;
+    margin-right: 1.241vh;
 }
 
 .player-info {
-    width: 364px;
-    height: 694px;
-    background: rgba(0, 0, 0, 0.5);
-    border: 0.5px solid rgba(255, 255, 255, 0.5);
-    border-radius: 20px;
-    margin-right: 10px;
+    width: 27.778vh;
+    height: 62.963vh;
 }
 
 .player-craft {
-    width: 350px;
-    height: 694px;
-    background: rgba(0, 0, 0, 0.5);
-    border: 0.5px solid rgba(255, 255, 255, 0.5);
-    border-radius: 20px;
+    width: 43.148vh;
+    height: 65.648vh;
 }
 
 .title-inv {
     display: flex;
-    justify-content: flex-end;
     align-items: center;
     flex-direction: column;
-    height: 8%;
+    height: 5.370vh;
     position: relative;
-    padding: 0.8rem 1rem 0.8rem 1rem;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    align-content: space-between;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 
@@ -81,11 +61,10 @@ body {
     display: flex;
     justify-content: left;
     align-items: center;
-    height: 4%;
+    height: 5.4vh;
     text-transform: uppercase;
-    position: relative;
-    padding: 0.8rem 1rem 3rem 1rem;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    position: absolute;
+    margin-top: -5vh;
 }
 
 .liner-secondary-inv {
@@ -93,7 +72,7 @@ body {
     -webkit-transform: scaleX(-1);
     -o-transform: scaleX(-1);
     transform: scaleX(-1);
-    background: url(../img/liner-inv.png) no-repeat;
+    background: url('//push.wixcore.net/inventory/liner.png') no-repeat;
     width: 201px;
     height: 9px;
     margin-right: auto;
@@ -102,7 +81,7 @@ body {
 }
 
 .liner-inv {
-    background: url(../img/liner-inv.png) no-repeat;
+    background: url('//push.wixcore.net/inventory/liner.png') no-repeat;
     width: 201px;
     height: 9px;
     margin-left: auto;
@@ -111,7 +90,7 @@ body {
 }
 
 .liner-inv-info {
-    background: url(../img/liner-inv.png) no-repeat;
+    background: url('//push.wixcore.net/inventory/liner.png') no-repeat;
     width: 201px;
     height: 9px;
     margin-left: auto;
@@ -120,58 +99,79 @@ body {
 }
 
 .object-inv-box {
-    padding: 1.5rem 0.8rem 1rem 0.8rem;
     overflow: auto;
-    height: 82%;
+    height: 75vh;
+    width: 41.667vh;
+    display: flex;
+    flex-direction: row;
+    margin-left: 1.204vh;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain !important;
+    background: url('//push.wixcore.net/inventory/frame.png');
+    align-content: flex-start;
+    flex-wrap: wrap;
+    background-attachment: local;
 }
 
 .object-box {
-    display: flex;
-    align-items: center;
-    padding: 0.2rem 1rem 0.2rem 1rem;
-    border: 0.5px solid rgba(255, 255, 255, 0.15);
-    border-radius: 7px;
-    margin-bottom: 0.8rem;
+    width: 7.407vh;
+    height: 7.407vh;
+    background: #DADADA1A;
+    margin-bottom: 0.926vh;
+    margin-right: 0.926vh;
 }
-.linearbar-inv{
+
+.linearbar-inv {
     position: absolute;
-    /* width: 26%; */
     height: 100%;
     background: #00000042;
     transition: 1s linear;
     z-index: -1;
 }
+
 .object-box:hover {
-    background-color: rgb(255, 255, 255, 0.102);
+    background: #DC133B40 url('//push.wixcore.net/inventory/object-box.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
 }
 
 .obj-inf-box {
-    margin-left: 16px;
-    height: 41px;
+    height: 1.9vh;
+    position: relative;
+    text-align: center;
     display: flex;
-    flex-direction: column;
+    width: 7.407vh;
+    top: -0.5vh;
+    align-content: flex-start;
     justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
 }
 
 .obj-inf-title {
     font-family: "Gotham Pro Regular";
     color: rgb(255, 255, 255);
     font-weight: bold;
-    font-size: 1rem;
-    margin-bottom: 0.2rem;
+    font-size: 0.7vh;
+    width: 7.407vh;
+    text-align: center;
 }
 
 .obj-inf-weight {
     font-family: "Gotham Pro Regular";
     color: rgb(255, 255, 255, 0.5);
     font-size: 0.8rem;
+    opacity: 0;
 }
 
 .player-title-info {
     height: 60px;
     font-family: "Gotham Pro Regular";
     font-size: 1rem;
-    color: rgba(255,255,255,0.6);
+    color: rgba(255, 255, 255, 0.6);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -179,7 +179,7 @@ body {
 }
 
 .outf-cap {
-    background: url(../img/outfit/cap.png) no-repeat;
+    background: url('//push.wixcore.net/inventory/outfit/hat.png') no-repeat;
     width: 62px;
     height: 51px;
     position: absolute;
@@ -188,7 +188,7 @@ body {
 }
 
 .outf-glasses {
-    background: url(../img/outfit/glasses.png) no-repeat;
+    background: url('//push.wixcore.net/inventory/outfit/glasses.png') no-repeat;
     width: 72px;
     height: 22px;
     position: absolute;
@@ -197,7 +197,7 @@ body {
 }
 
 .outf-mask {
-    background: url(../img/outfit/hockey-mask.png) no-repeat;
+    background: url('//push.wixcore.net/inventory/outfit/mask.png') no-repeat;
     width: 52px;
     height: 64px;
     position: absolute;
@@ -206,7 +206,7 @@ body {
 }
 
 .outf-shirt {
-    background: url(../img/outfit/shirt.png) no-repeat;
+    background: url('//push.wixcore.net/inventory/outfit/shirt.png') no-repeat;
     width: 103px;
     height: 103px;
     position: absolute;
@@ -215,7 +215,7 @@ body {
 }
 
 .outf-jewerly {
-    background: url(../img/outfit/pearl-necklace.png) no-repeat;
+    background: url('//push.wixcore.net/inventory/outfit/jewerly.png') no-repeat;
     width: 63px;
     height: 63px;
     position: absolute;
@@ -224,7 +224,7 @@ body {
 }
 
 .outf-earrings {
-    background: url(../img/outfit/earrings.png) no-repeat;
+    background: url('//push.wixcore.net/inventory/outfit/earrings.png') no-repeat;
     width: 48px;
     height: 62px;
     position: absolute;
@@ -233,7 +233,7 @@ body {
 }
 
 .outf-jeans {
-    background: url(../img/outfit/jeans.png) no-repeat;
+    background: url('//push.wixcore.net/inventory/outfit/pants.png') no-repeat;
     width: 66px;
     height: 142px;
     position: absolute;
@@ -242,7 +242,7 @@ body {
 }
 
 .outf-watch {
-    background: url(../img/outfit/wristwatch.png) no-repeat;
+    background: url('//push.wixcore.net/inventory/outfit/watch.png') no-repeat;
     width: 36px;
     height: 72px;
     position: absolute;
@@ -251,7 +251,7 @@ body {
 }
 
 .outf-bracelet {
-    background: url(../img/outfit/bracelet.png) no-repeat;
+    background: url('//push.wixcore.net/inventory/outfit/bracelet.png') no-repeat;
     width: 34px;
     height: 56px;
     position: absolute;
@@ -260,7 +260,7 @@ body {
 }
 
 .outf-bag {
-    background: url(../img/outfit/handbag.png) no-repeat;
+    background: url('//push.wixcore.net/inventory/outfit/bag.png') no-repeat;
     width: 63px;
     height: 63px;
     position: absolute;
@@ -270,7 +270,7 @@ body {
 }
 
 .outf-boot {
-    background: url(../img/outfit/boot.png) no-repeat;
+    background: url('//push.wixcore.net/inventory/outfit/shoes.png') no-repeat;
     width: 75px;
     height: 53px;
     position: absolute;
@@ -278,15 +278,15 @@ body {
     margin-left: 146px;
 }
 
-.outf-clock {
-    background: url(../img/outfit/circular-clock-tool.png) no-repeat;
+/* .outf-clock {
+    background: url(../img/outfit/circular-clock-tool.png) no-repeat;   || https://push.wixcore.net/inventory/outfit/
     width: 51px;
     height: 51px;
     margin-left: 18px;
-}
+} */
 
 .outf-armour {
-    background: url(../img/outfit/armour.png)  no-repeat;
+    background: url('//push.wixcore.net/inventory/outfit/armour.png') no-repeat;
     width: 51px;
     height: 51px;
     margin-left: 18px;
@@ -294,21 +294,21 @@ body {
 }
 
 .outf-phone {
-    background: url(../img/outfit/smartphone.png) no-repeat;
+    background: url('//push.wixcore.net/inventory/outfit/phone.png') no-repeat;
     width: 31px;
     height: 55px;
     margin-left: 47px;
 }
 
 .outf-money {
-    background: url(../img/outfit/notes.png) no-repeat;
+    background: url('//push.wixcore.net/inventory/outfit/notes.png') no-repeat;
     width: 55px;
     height: 41px;
     margin-left: 48px;
 }
 
 .outf-card {
-    background: url(../img/outfit/credit-card.png) no-repeat;
+    background: url('//push.wixcore.net/inventory/outfit/card.png') no-repeat;
     width: 55px;
     height: 41px;
     margin-left: 41px;
@@ -316,105 +316,126 @@ body {
 
 .outfit-player-box {
     display: flex;
-    height: 540px;
-    background: url(../img/person.png) no-repeat;
+    height: 50.000vh;
     background-position: center;
     flex-direction: column;
-    margin-left: -5px;
 }
 
 .item__background {
-    background: rgba(0, 0, 0, 0.2);
-    border-radius: 10px;
-    height: 64px;
-    width: 64px;
+    background: #DADADA1A;
+    height: 7.407vh;
+    width: 7.407vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .item__background img {
-    width: 50px;
-    height: 50px;
+    width: 5.926vh;
+    height: 5.926vh;
 }
 
 .outfit-pos-outfit-hat {
     position: absolute;
-    margin-left: 152px;
+    margin-left: 10.602vh;
 }
 
 .outfit-pos-outfit-glasses {
     position: absolute;
-    margin-left: 276px;
+    margin-left: 0.926vh;
 }
 
 .outfit-pos-outfit-earrings {
     position: absolute;
-    margin-left: 28px;
-    margin-top: 104px;
+    margin-left: 10.602vh;
+    margin-top: 37.037vh;
 }
 
 .outfit-pos-outfit-pants {
     position: absolute;
-    margin-left: 152px;
-    margin-top: 280px;
+    margin-left: 10.602vh;
+    margin-top: 18.519vh;
 }
 
-.outfit-pos-outfit-case {
+.outfit-pos-outfit-bag {
     position: absolute;
-    margin-left: 276px;
-    margin-top: 312px;
+    margin-left: 20.370vh;
+    margin-top: 27.778vh;
 }
 
 .outfit-pos-outfit-gloves {
     position: absolute;
-    margin-left: 28px;
-    margin-top: 312px;
+    margin-left: 0.926vh;
+    margin-top: 37.037vh;
 }
 
 
 .outfit-pos-outfit-watch {
     position: absolute;
-    margin-left: 276px;
-    margin-top: 208px;
+    margin-top: 27.778vh;
+    margin-left: 0.926vh;
 }
 
 .outfit-pos-outfit-bracelet {
     position: absolute;
-    margin-left: 28px;
-    margin-top: 208px;
+    margin-left: 0.926vh;
+    margin-top: 18.519vh;
 }
 
 .outfit-pos-outfit-shoes {
     position: absolute;
-    margin-left: 152px;
-    margin-top: 380px;
+    margin-left: 10.602vh;
+    margin-top: 27.778vh;
 }
 
 .outfit-pos-outfit-jewerly {
     position: absolute;
-    margin-left: 276px;
-    margin-top: 104px;
+    margin-left: 0.926vh;
+    margin-top: 9.259vh;
 }
 
 .outfit-pos-outfit-mask {
     position: absolute;
-    margin-left: 28px;
+    margin-left: 20.370vh;
 }
 
-.outfit-pos-outfit-tshirt {
+.outfit-pos-outfit-shirt {
     position: absolute;
-    margin-left: 152px;
-    margin-top: 180px;
+    margin-left: 10.602vh;
+    margin-top: 9.259vh;
+}
+
+.outfit-pos-outfit-armour {
+    position: absolute;
+    margin-left: 17.778vh;
+    margin-top: -37.037vh;
+}
+
+.outfit-pos-outfit-phone {
+    position: absolute;
+    margin-left: 10.185vh;
+    margin-top: -27.778vh;
+}
+
+.outfit-pos-outfit-notes {
+    position: absolute;
+    margin-left: -7.315vh;
+    margin-top: 0px;
+}
+
+.outfit-pos-outfit-card {
+    position: absolute;
+    margin-left: -5.000vh;
+    margin-top: -9.259vh;
 }
 
 .bottom-otf-box {
     margin-top: auto;
-    height: 80px;
+    height: 7.407vh;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 25px 0 28px;
+    padding: 0 2.315vh 0 2.593vh;
 }
 
 .use-outfit {
@@ -445,115 +466,120 @@ body {
 
 .menu-craft-change {
     display: flex;
-    margin-top: 1.5rem;
-    justify-content: space-between;
-    padding: 0rem 20px 0rem 20px;
+    margin-top: 1.5vh;
+    justify-content: space-around;
+    padding: 0vh 2vh 0vh 2vh;
 }
 
 .btn-craft {
-    width: 45%;
-    height: 50px;
+    width: 16.519vh;
+    height: 4.630vh;
     display: flex;
     justify-content: center;
+    background: #afafaf73;
     align-items: center;
     cursor: pointer;
-    border: 0.5px solid rgba(255, 255, 255, 0.5);
-    border-radius: 10px;
+    border-radius: 0.5vh;
 }
 
 .btn-craft__text {
     font-family: 'Gotham Pro Regular';
-    font-size: 0.8rem;
+    font-size: 1vh;
 }
 
-input[type="radio"]:checked + label.btn-craft {
-    background: rgba(0, 0, 0, 0.5);
+input[type="radio"]:checked+label.btn-craft {
+    background: rgba(0, 0, 0, 0.4);
+    border-bottom: 0.2vh solid #DC133B;
 }
 
-input[type="radio"]:checked + label .bg-color-craft-block {
+input[type="radio"]:checked+label .bg-color-craft-block {
     filter: brightness(0) saturate(100%);
 }
 
 .img-btn-weapon {
-    background: url(../img/gun.png) no-repeat;
+    background: url('//push.wixcore.net/inventory/gun.png') no-repeat;
     width: 60px;
     height: 42px;
 }
 
 .img-btn-cutter {
-    background: url(../img/cutter.png) no-repeat;
+    background: url('//push.wixcore.net/inventory/cutter.png') no-repeat;
     width: 44px;
     height: 44px;
 }
 
 .weapon-player-equip {
-    height: 350px;
-    width: inherit;
-    margin-top: 27px;
-    font-size: 20px;
+    height: 28.37vh;
+    width: 43.148vh;
+    margin-top: 2vh;
+    font-size: 2vh;
     color: #fff;
     overflow: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
 }
 
 .style-serial-weapon {
     font-family: "Gotham Pro Regular";
     color: rgba(255, 255, 255, 0.5);
-    font-size: 0.8rem;
-    margin-top: 5px;
+    font-size: 0.8vh;
+    margin-top: 6.3vh;
 }
 
 .craft-player-sp .style-weapon-txt-craft {
     margin-bottom: 33px;
-    height: 52px;
+    height: 4.815vh;
     display: flex;
     justify-content: center;
     flex-direction: column;
-    margin-bottom: 9px;
+    margin-bottom: 0.7vh;
     width: inherit;
     margin-left: auto;
-    border: 0.5px solid rgba(255, 255, 255, 0.15);
-    border-radius: 7px;
-    padding: 0.4rem 0.8rem 0.4rem 0.8rem;
+    border: 0.1vh solid rgba(255, 255, 255, 0.15);
+    border-radius: 0.6vh;
+    padding: 0.4vh 0.8vh 0.4vh 0.8vh;
 }
 
 .style-weapon-txt-craft__wname {
     font-family: 'Gotham Pro Medium';
-    font-size: 0.9rem;
+    font-size: 0.9vh;
+    position: absolute;
+    margin-top: -3.2vh;
 }
 
 .style-weapon-txt-craft {
-    height: 52px;
+    height: 7.407vh;
     display: flex;
+    background-color: #DADADA1A !important;
     justify-content: center;
     flex-direction: column;
-    width: 80%;
-    margin-left: auto;
-    border: 0.5px solid rgba(255, 255, 255, 0.15);
-    border-radius: 7px;
-    background-position: 94% !important;
-    background-size: 45% !important;
-    padding: 0.4rem 0.8rem 0.4rem 0.8rem;
+    width: 15.833vh;
+    border-radius: 0.4vh;
+    background-position: center !important;
+    background-size: 15vh !important;
+    padding: 0.4vh 0.8vh 0.4vh 0.8vh;
 }
 
 .style-weapon-txt-craft__name {
     font-family: 'Gotham Pro Medium';
-    font-size: 1.05rem;
-    margin-bottom: 8px;
+    font-size: 1.2vh;
+    margin-bottom: 0.5vh;
 }
 
 .style-weapon-txt-craft:hover {
     background-color: rgb(255, 255, 255, 0.102);
 }
 
-.style-weapon-txt-craft-selected {
-}
-
 .weapon-player-equip__container {
     display: flex;
     flex-direction: row;
-    padding: 0 20px 0 20px;
+    padding: 0 2vh 0 2vh;
     align-items: center;
-    margin-bottom: 10px;
+    margin-bottom: 1vh;
 }
 
 .weapon-player-equip__select {
@@ -564,16 +590,18 @@ input[type="radio"]:checked + label .bg-color-craft-block {
     box-sizing: border-box;
     border-radius: 50%;
     background: transparent;
+    opacity: 0;
+    position: absolute;
 }
 
 .weapon-player-equip__select_selected {
     display: block;
-    width: 11px;
-    height: 11px;
-    border: 0.5px solid rgba(255, 255, 255, 0.5);
-    box-sizing: border-box;
+    width: 1vh;
+    height: 1vh;
     border-radius: 50%;
-    background: #FFFFFF;
+    background: #DC133B;
+    position: absolute;
+    margin: 0 0 5.5vh 15.5vh;
 }
 
 .liner-weapon-crafting {
@@ -603,7 +631,7 @@ input[type="radio"]:checked + label .bg-color-craft-block {
 }
 
 .weapon-m41 {
-    background: url("../img/weapon/m41.png") no-repeat;
+    background: url('//push.wixcore.net/inventory/weapons/m41.png') no-repeat;
     width: 252px;
     height: 79px;
 }
@@ -617,25 +645,27 @@ input[type="radio"]:checked + label .bg-color-craft-block {
     height: 100%;
     background-size: 190px !important;
     background-position: center !important;
-    /* filter: brightness(0) saturate(100%) invert(100%) sepia(2%) saturate(590%) hue-rotate(205deg) brightness(118%) contrast(100%); */
 }
 
 .main-box-craft-weapon {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
     flex-direction: row;
+    align-items: center;
+    padding-left: 2vh;
 }
 
 .square-box-craft-weapon {
-    width: 58px;
-    height: 58px;
+    width: 6.5vh;
+    height: 6.5vh;
     background: rgba(0, 0, 0, 0.2);
-    border: 0.5px solid rgba(255, 255, 255, 0.2);
-    border-radius: 10px;
-    margin-right: 20px;
+    border: 0.01vh solid rgba(255, 255, 255, 0.2);
+    border-radius: 0.5vh;
+    margin-right: 2vh;
     display: flex;
     justify-content: center;
-    align-items: center;
 }
 
 .weapon-mod-active {
@@ -643,11 +673,10 @@ input[type="radio"]:checked + label .bg-color-craft-block {
     -webkit-transform: scaleX(-1);
     -o-transform: scaleX(-1);
     transform: scaleX(-1);
-    width: 62px;
-    height: 62px;
-    background-size: 54px !important;
+    width: 6.5vh;
+    height: 6.5vh;
+    background-size: 5vh !important;
     background-position: center !important;
-    /*filter: brightness(400%) contrast(20%);*/
     transition: 1s;
 }
 
@@ -656,46 +685,37 @@ input[type="radio"]:checked + label .bg-color-craft-block {
     -webkit-transform: scaleX(-1);
     -o-transform: scaleX(-1);
     transform: scaleX(-1);
-    width: 62px;
-    height: 62px;
-    background-size: 54px !important;
+    width: 6.5vh;
+    height: 6.5vh;
+    background-size: 5vh !important;
     background-position: center !important;
     filter: brightness(400%) contrast(20%);
     opacity: 0.3;
 }
 
 .weapon-mod-active:hover {
-    /*filter: brightness(0) saturate(100%) invert(59%) sepia(82%) saturate(454%) hue-rotate(169deg) brightness(97%) contrast(96%);*/
     transform: scale(1.1);
 }
 
 .weapon-supressor {
-    background: url("../img/weapon/supressor.png") no-repeat;
+    background: url('//push.wixcore.net/inventory/weapons/supressor.png') no-repeat;
 }
 
 .weapon-flashlight {
-    background: url("../img/weapon/flashlight.png") no-repeat;
+    background: url('//push.wixcore.net/inventory/weapons/flashlight.png') no-repeat;
 }
 
 .weapon-grip {
-    background: url("../img/weapon/grip.png") no-repeat;
+    background: url('//push.wixcore.net/inventory/weapons/grip.png') no-repeat;
 }
 
 .weapon-scope {
-    background: url("../img/weapon/scope.png") no-repeat;
-}
-
-.square-box-craft-weapon:first-child {
-    margin-left: 21px;
-}
-
-.sqr-wp-left {
-    margin-left: 21px;
+    background: url('//push.wixcore.net/inventory/weapons/scope.png') no-repeat;
 }
 
 .sqr-wp-top {
-    margin-top: 19px;
-    margin-bottom: 21px;
+    margin-top: 1.759vh;
+    margin-bottom: 1.759vh;
 }
 
 .cheked-crafting {
@@ -709,73 +729,71 @@ input[type="radio"]:checked + label .bg-color-craft-block {
 }
 
 .img-fail {
-    background: url("../img/fail.png") no-repeat;
+    background: url('//push.wixcore.net/inventory/fail.png') no-repeat;
     width: 71px;
     height: 72px;
 }
 
 .img-succes {
-    background: url("../img/succes.png") no-repeat;
+    background: url('//push.wixcore.net/inventory/succes.png') no-repeat;
     width: 71px;
     height: 71px;
 }
 
 .crafting-object-main {
     width: inherit;
-    margin-top: 10%;
+    margin-top: 10vh;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
 }
 
 .liner-crafting-obj {
     width: 0%;
     margin-right: auto;
-    height: 4px;
-    background: #fff;
+    height: 0.5vh;
+    background: #DC133B;
     transition: 2s;
     z-index: 5;
-    border-radius: 16%;
+    border-radius: 0.2vh;
 }
 
 .liner-crafting-obj-bg {
-    height: 4px;
-    margin-left: 21px;
-    margin-right: 27px;
-    border-radius: 16%;
-    background: rgba(255, 255, 255, 0.5);
-}
-
-.sqr-wp-bottom {
-    margin-bottom: 21px;
+    height: 0.5vh;
+    width: 32.5vh;
+    position: absolute;
+    background: #DADADA1A;
+    margin-left: 5.35vh;
+    border-radius: 0.2vh;
 }
 
 .craft-btn-obj {
-    padding: 0.9rem 1.6rem 0.9rem 1.6rem;
+    padding: 0.9vh 1.6vh 0.9vh 1.6vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1rem;
+    font-size: 1.2vh;
     color: #fff;
     transition: 0.3s;
-    border: 1px solid rgba(255, 255, 255, 0.25);
-    border-radius: 10px;
+    background: #afafaf73;
+    border-radius: 0.5vh;
     font-family: 'Gotham Pro Regular';
 }
 
 .craft-btn-obj:hover {
-    background-color: rgba(255, 255, 255, 0.102);
+    background: rgba(0, 0, 0, 0.4);
+    border-bottom: 0.2vh solid #DC133B;
 }
 
 .craft-btn-main {
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
-    padding: 0 20px 0 20px;
+    padding: 2vh 2vh 0 2vh;
 }
 
 .craft-btn-obj:first-child {
-    margin-right: 10px;
+    margin-right: 2vh;
 }
 
 .craft-help-menu {
@@ -806,6 +824,7 @@ input[type="radio"]:checked + label .bg-color-craft-block {
     background: rgba(126, 126, 126, 0.28);
     border: 0.5px solid rgba(255, 255, 255, 0.5);
     border-radius: 7px;
+    opacity: 0;
 }
 
 .close-window-craft:hover {
@@ -836,8 +855,13 @@ input[type="radio"]:checked + label .bg-color-craft-block {
 }
 
 .invetory-trunk {
-    height: 694px;
-    margin-right: 15px;
+    height: 64.259vh;
+    margin-right: 0.5vh;
+}
+
+.invetory-trunk .weight-title-inv {
+    margin-left: 9vh;
+    margin-top: 0.2vh;
 }
 
 .content-inventory {
@@ -845,35 +869,43 @@ input[type="radio"]:checked + label .bg-color-craft-block {
     flex-direction: row-reverse;
 }
 
-.invetory-trunk {
-    background: rgba(0, 0, 0, 0.5);
-    border: 0.5px solid rgba(255, 255, 255, 0.5);
-    border-radius: 20px;
-}
-
 .trunk-info-menu {
-    width: 330px;
-    height: 694px;
-    /* display: flex;
-    flex-direction: column; */
+    width: 43.148vh;
+    height: 66.259vh;
     overflow: auto;
+    margin-top: 5.5vh;
 }
 
 .inventory__trunk__list {
-    padding: 1.5rem 0.8rem 1rem 0.8rem;
+    overflow: auto;
+    height: 75vh;
+    width: 41.667vh;
+    display: flex;
+    margin-left: 1.204vh;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain !important;
+    background: url('//push.wixcore.net/inventory/frame.png');
+    flex-wrap: wrap;
+    background-attachment: local;
+    align-content: flex-start;
+    justify-content: flex-start;
+    flex-direction: row;
 }
 
 .object-box-trunk {
-    display: flex;
-    align-items: center;
-    padding: 0.2rem 1rem 0.2rem 1rem;
-    border: 0.5px solid rgba(255, 255, 255, 0.15);
-    border-radius: 7px;
-    margin-bottom: 0.8rem;
+    width: 7.407vh;
+    height: 7.407vh;
+    background: #DADADA1A;
+    margin-bottom: 0.926vh;
+    margin-right: 0.926vh;
 }
 
 .object-box-trunk:hover {
-    background: rgba(126, 126, 126, 0.28);
+    background: #DC133B40 url('//push.wixcore.net/inventory/object-box.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
 }
 
 .color-blue-btn {
@@ -903,29 +935,99 @@ input[type="radio"]:checked + label .bg-color-craft-block {
 }
 
 .obj-inf-count {
-    margin-left: auto;
     font-family: "Gotham Pro Regular";
-    color: rgb(255, 255, 255);
-    font-size: 1rem;
+    color: #ffffff;
+    font-size: 0.8vh;
+    width: 2vh;
+    display: flex;
+    height: 2vh;
+    align-content: center;
+    align-items: center;
+    position: relative;
+    top: -7.8vh;
+    left: 5.4vh;
+    justify-content: center;
 }
 
 .weight-title-inv {
     display: flex;
     justify-content: flex-start;
-    font-size: 1rem;
     font-family: 'Gotham Pro Regular';
-    width: 100%;
+    position: relative;
+    margin-top: 0.944vh;
+}
+
+.weight-title-inv h1 {
+    opacity: 0.1;
+    font-size: 4.444vh;
+}
+
+.weight-title-inv span.kg {
+    position: absolute;
+    width: 10vh;
+    display: flex;
+    margin-top: 1.5vh;
+    font-size: 2.037vh;
+    justify-content: center;
+    margin-left: -0.2vh;
+}
+
+.weight-title-inv p.yellow {
+    color: #DC133B;
+    font-weight: 600;
 }
 
 .title-inv__name {
-    font-family: "Gotham Pro Medium";
-    font-size: 1.1rem;
+    font-family: 'Roboto', sans-serif;
     color: #fff;
-    margin-top: 1rem;
+    margin-bottom: 1.204vh;
+    margin-left: 0.537vh;
+    position: relative;
+    font-weight: 700;
+}
+
+.player-craft .title-inv__name {
+    margin-right: 7.8vh;
+}
+
+.invetory-trunk .title-inv__name {
+    margin-bottom: 2.3vh;
+}
+
+.title-inv__name h1 {
+    opacity: 0.1;
+    font-size: 4.444vh;
+}
+
+.title-inv__name p {
+    position: absolute;
+    font-size: 2.222vh;
+    margin-top: -4.2vh;
+    margin-left: 0.5vh;
+    border-bottom: 0.185vh solid #DC133B;
+    white-space: nowrap;
+}
+
+.headinv .title-inv__name p {
+    color: #fff;
+    font-size: 2.222vh;
+}
+
+.headinv p {
+    color: #FFFFFF4D;
+    font-size: 1.2vh;
+}
+
+.headinv {
+    position: absolute;
+    font-family: 'Roboto', sans-serif;
+    width: 25.833vh;
+    left: 5vh;
+    top: 2vh;
 }
 
 .moveall_left {
-    background: url(../img/moveall.svg) no-repeat;
+    background: url('//push.wixcore.net/inventory/moveall.svg') no-repeat;
     width: 20px;
     height: 20px;
     background-size: cover;
@@ -933,8 +1035,9 @@ input[type="radio"]:checked + label .bg-color-craft-block {
     position: absolute;
     left: 10px;
 }
-.moveall_right{
-    background: url(../img/moveall.svg) no-repeat;
+
+.moveall_right {
+    background: url('//push.wixcore.net/inventory/moveall.svg') no-repeat;
     width: 15px;
     height: 15px;
     background-size: cover;
@@ -942,32 +1045,39 @@ input[type="radio"]:checked + label .bg-color-craft-block {
     right: 5px;
     display: none;
 }
-.moveall_right:hover, .moveall_left:hover {
+
+.moveall_right:hover,
+.moveall_left:hover {
     filter: brightness(0) saturate(100%) invert(59%) sepia(82%) saturate(454%) hue-rotate(169deg) brightness(97%) contrast(96%);
 }
+
 .craft-player-sp {
-    padding: 1.8rem 20px 1rem 20px;
+    padding: 1.8vh 3.6vh 1vh 4vh;
     font-family: "Gotham Pro Regular";
-    font-size: 20px;
+    font-size: 2vh;
     color: #fff;
     overflow: auto;
-    height: 480px;
+    height: 44.444vh;
 }
+
 .craft-one-sp {
-    height: 235px;
+    height: 20vh;
     width: inherit;
     font-family: "RobotoBold";
-    font-size: 20px;
+    font-size: 2vh;
     color: #fff;
     overflow: auto;
+    text-align: center;
 
 }
+
 .style-for-craft-btn {
     margin-top: 0px;
 }
+
 .style-recipes-txt-craft {
-    padding: 0 20px 0 20px;
-    height: 200px;
+    padding: 0 2vh 0 2vh;
+    height: 18.519vh;
     display: flex;
     overflow-x: auto;
     flex-direction: column;
@@ -975,8 +1085,8 @@ input[type="radio"]:checked + label .bg-color-craft-block {
 
 .style-recipes-txt-craft__name {
     font-family: 'Gotham Pro Medium';
-    font-size: 1rem;
-    margin-top: 1.8rem;
+    font-size: 1.8vh;
+    margin-top: 1.8vh;
 }
 
 .text-dd-ss-kk {
@@ -988,23 +1098,25 @@ input[type="radio"]:checked + label .bg-color-craft-block {
     display: flex;
     justify-content: center;
 }
+
 .style-serial-recipes {
     font-family: "Gotham Pro Regular";
     color: #fff;
-    font-size: 12px;
-    margin-top: 6px;    
+    font-size: 1.2vh;
+    margin-top: 0.5vh;
     white-space: pre-line;
 }
-.style-serial-rec-o{
+
+.style-serial-rec-o {
     font-family: "Gotham Pro Regular";
-    color:#fff;
-    font-size: 0.9rem;
+    color: #fff;
+    font-size: 0.9vh;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
 }
+
 .select-craft {
-    /*filter: brightness(0) saturate(100%) invert(59%) sepia(82%) saturate(454%) hue-rotate(169deg) brightness(97%) contrast(96%) !important;*/
     opacity: 1;
 }
 

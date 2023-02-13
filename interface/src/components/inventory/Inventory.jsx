@@ -1,57 +1,36 @@
 /* eslint-disable */ // Должно быть тут :)
 import React from 'react';
-import './css/inventory.css';
-import './css/img-items.css';
+import './assets/css/default.css';
+import './assets/css/items.css';
 import { Animated } from 'react-animated-css';
 import InteractionMenu from '../interaction/InteractionMenu';
 import EventManager from "../../EventManager";
-import OutfitHat from './img/outfit/outfit-hat.png'
-import OutfitArmour from './img/outfit/outfit-armour.png'
-import OutfitBracelet from './img/outfit/outfit-bracelet.png'
-import OutfitBag from './img/outfit/outfit-bag.png'
-import OutfitCard from './img/outfit/outfit-card.png'
-import OutfitCase from './img/outfit/outfit-case.png'
-import OutfitEarrings from './img/outfit/outfit-earrings.png'
-import OutfitGlasses from './img/outfit/outfit-glasses.png'
-import OutfitGloves from './img/outfit/outfit-gloves.png'
-import OutfitJewerly from './img/outfit/outfit-jewerly.png'
-import OutfitMask from './img/outfit/outfit-mask.png'
-import OutfitNotes from './img/outfit/outfit-notes.png'
-import OutfitPants from './img/outfit/outfit-pants.png'
-import OutfitPhone from './img/outfit/outfit-phone.png'
-import OutfitShoes from './img/outfit/outfit-shoes.png'
-import OutfitTshirt from './img/outfit/outfit-tshirt.png'
-import OutfitWatch from './img/outfit/outfit-watch.png'
-
-// Drag & Drop components
-import {Draggable, Droppable} from './Dnd'
+import { Draggable, Droppable } from './includes';              // Компоненти Drag & Drop
 
 class Inventory extends React.Component {
     constructor(props) {
         super(props)
         this.state = {
-            show: false, // Инвентарь открыт/закрыт
-            player_name: "Nika Kondr",
-            player_id: 456,
+            show: false,
+            player_name: "WixCore Group",
+            player_id: 1,
             craft: true,
-            secondary_inv_open: false, // Багажник открыт/закрыт
+            secondary_inv_open: false,
             crafting_succes: false,
             x: '',
             y: '',
             inter_show: false,
-            inter_menu_selected: { item: {}, source: '' }, // Сюда автоматически записывается выбранный предмет для взаимодействия через меню
+            inter_menu_selected: { item: {}, source: '' },  // Сюда автоматически записывается выбранный предмет для взаимодействия через меню
             weight_now: 20,
             weight_max: 70000,
             secondary_weight_now: 20,
             secondary_weight_max: 1000000,
-            trade_ids: [], // Сюда записываются ID ближайших игроков для торговли
-            loadw_ids: [{ name: "P90", id: 28 }], // Сюда записываются данные оружия в экипировке которое можно зарядить выбранными патронами
-            upgradew_ids: [{ name: "P90", id: 28 }], // Сюда записываются данные оружия в экипировке которое можно зарядить выбранными патронами
-
-            inter_menu: [ // Пункты меню (генерируются динамично, в зависимости от выбранного предмета)
+            trade_ids: [],                                  // Сюда записываются ID ближайших игроков для торговли
+            loadw_ids: [{ name: "P90", id: 28 }],           // Сюда записываются данные оружия в экипировке которое можно зарядить выбранными патронами
+            upgradew_ids: [{ name: "P90", id: 28 }],        // Сюда записываются данные оружия в экипировке которое можно зарядить выбранными патронами
+            inter_menu: [                                   // Пункты меню (генерируются динамично, в зависимости от выбранного предмета)
                 { name: "Выбрать", action: "select", show: false, color: '#4CAF50' },
                 { name: "Разрядить", action: "unloadW", show: false },
-
                 { name: "Надеть", action: "put_on", show: false, color: '#4CAF50' },
                 { name: "Модифицировать", action: "put_on_gun", show: false, color: '#4CAF50' },
                 { name: "Использовать", action: "use", show: false, color: '#4CAF50' },
@@ -66,186 +45,98 @@ class Inventory extends React.Component {
                 { name: "Зарядить", action: "loadw", show: false, color: '#4CAF50' },
                 { name: "Разделить", action: "split", show: false, color: '#4CAF50' },
                 { name: "Открыть", action: "weightGr", show: false, color: '#4CAF50' },
-
                 { name: "Информация о билете", action: "infoLoto", show: false },
-
                 { name: "Взять 1гр.", action: "take1gr", show: false },
                 { name: "Взять 10гр.", action: "take10gr", show: false },
                 { name: "Взять 50гр.", action: "take50gr", show: false },
-
                 { name: "Взять 1шт.", action: "take1", show: false },
-
                 { name: "Посчитать", action: "countItems", show: false },
                 { name: "Посчитать", action: "countMoney", show: false },
                 { name: "Посчитать", action: "countPt", show: false },
-
                 { name: "Передать", action: "give", show: true },
-
                 { name: "Открыть сумку", action: "openBag", show: false, color: '#2196F3' },
                 { name: "Переложить", action: "move", show: false, color: '#2196F3' },
                 { name: "Переложить все", action: "move_all", show: false, color: '#2196F3' },
                 { name: "Взять", action: "take", show: false, color: '#2196F3' },
                 { name: "Взять все", action: "take_all", show: false, color: '#2196F3' },
                 { name: "Переименовать", action: "rename", show: false, color: '#2196F3' },
-
                 { name: "Информация о предмете", action: "infoItem", show: false },
-
                 { name: "Снять", action: "take_off", show: false },
                 { name: "Убрать в инвентарь", action: "unequip", show: false },
-
                 { name: "Выбросить", action: "drop", show: false, color: '#FF9800' },
                 { name: "Закрыть", action: "close", show: false, color: '#f44336' },
             ],
-
-            items: [ // Инвентарь
-                /*{ id: 1, item_id: 14, name: "Бургер", volume: 15, desc: "Редкость: мистическая", counti: 0, params: {} }, // айди предмета из базы
-                { id: 2, item_id: 14, name: "Бургер", volume: 15, desc: "", counti: 0, params: {} }, // айди предмета из базы
-                { id: 3, item_id: 14, name: "Бургер", volume: 15, desc: "", counti: 0, params: {} }, // айди предмета из базы
-                { id: 4, item_id: 14, name: "Бургер", volume: 15, desc: "", counti: 0, params: {} }, // айди предмета из базы
-                { id: 5, item_id: 279, name: "Патроны", volume: 15, desc: "", counti: 0, params: {} },
-                { id: 6, item_id: 1, name: "Что то там", volume: 15, desc: "", counti: 0, params: {} },
-                { id: 7, item_id: 3, name: "Еще что то", volume: 15, desc: "", counti: 0, params: {} },
-                { id: 10, item_id: 3, name: "Еще что то", volume: 15, desc: "", counti: 0, params: {} },
-                { id: 8, item_id: 2, name: "И тут еще что то", volume: 15, desc: "", counti: 0, params: {} },
-                {
-                    id: 27,
-                    item_id: 95,
-                    name: "HK-416",
-                    volume: 15,
-                    desc: "AR-0001244",
-                    counti: 0,
-                    params: { slot1: true, slot2: false, slot3: true, slot4: false }
-                },
-                {
-                    id: 28,
-                    item_id: 109,
-                    name: "P90",
-                    volume: 15,
-                    desc: "SM-0001244",
-                    counti: 0,
-                    params: { slot1: false, slot2: true, slot3: true, slot4: true }
-                },
-                {
-                    id: 29,
-                    item_id: 115,
-                    name: "Пушка шаталка",
-                    volume: 15,
-                    desc: "AR-0001244",
-                    counti: 0,
-                    params: { slot1: false, slot2: false, slot3: false, slot4: false }
-                },
-                {
-                    id: 30,
-                    item_id: 116,
-                    name: "Чёткая снайпа",
-                    volume: 15,
-                    desc: "SM-0001244",
-                    counti: 0,
-                    params: { slot1: true, slot2: true, slot3: true, slot4: true }
-                },
-                {
-                    id: 31,
-                    item_id: 117,
-                    name: "Выбор твоей бабушки",
-                    volume: 15,
-                    desc: "AR-0001244",
-                    counti: 0,
-                    params: {}
-                },
-                { id: 32, item_id: 118, name: "Какая то хрень", volume: 15, desc: "SM-0001244", counti: 0, params: {} },
-                { id: 33, item_id: 119, name: "Похоже на AWP", volume: 15, desc: "AR-0001244", counti: 0, params: {} },
-                { id: 34, item_id: 120, name: "Пистолет-обрез?", volume: 15, desc: "SM-0001244", counti: 0, params: {} },
-                { id: 35, item_id: 121, name: "Ракетница", volume: 15, desc: "AR-0001244", counti: 0, params: {} },
-                { id: 36, item_id: 122, name: "Гранатомёт", volume: 15, desc: "SM-0001244", counti: 0, params: {} },
-                { id: 37, item_id: 264, name: "Сумка", volume: 15, desc: "SM-0001244", counti: 0, params: {} },
-                { id: 38, item_id: 264, name: "Сумка", volume: 15, desc: "SM-0001244", counti: 0, params: {} },
-                { id: 39, item_id: 265, name: "Футболка", volume: 15, desc: "SM-0001244", counti: 0, params: {} },
-                { id: 40, item_id: 269, name: "Кепка", volume: 15, desc: "SM-0001244", counti: 0, params: {} },
-                { id: 41, item_id: 48, name: "Деньги", volume: 15, desc: "SM-0001244", counti: 0, params: {} },
-                { id: 41, item_id: 275, name: "Перчатки", volume: 15, desc: "SM-0001244", counti: 0, params: {} }*/
-
-            ],
-            itemsCounted: [ // Сюда переписываются все предметы которые стакаются при обновлении инвентаря для правильного отображения
-            ],
-
-            secondary_items: [ // Багажник
-                //{ id: 15, item_id: 14, name: "Бургер", volume: 15, desc: "", counti: 0, params: {} }, // secondary_items.id Уникальный id предмета из базы (не должны повторяться)
-            ],
-            secondary_itemsCounted: [ // Сюда переписываются все предметы которые стакаются при обновлении инвентаря для правильного отображения
-            ],
+            items: [],
+            itemsCounted: [],                   // Сюда переписываются все предметы которые стакаются при обновлении инвентаря для правильного отображения
+            secondary_items: [],                // Багажник
+            secondary_itemsCounted: [],         // Сюда переписываются все предметы которые стакаются при обновлении инвентаря для правильного отображения
             secondary_items_owner_id: 0,
             secondary_items_owner_type: 0,
-
             selected_item: {},
-
-            // Надетые на персонажа предметы
-            equipment_outfit: [ // equipment_outfit.id Уникальный id предмета из базы (не должны повторяться)
-                //{ id: 15, item_id: 254, name: "Бургер", volume: 15, desc: "", counti: 0, params: {} }
-            ],
-
-            itemsById: { // В массивах должны быть айди всех предметов разного типа
-                countItems: [26], // Посчитать
-                weightGr: [142, 143, 144, 145, 154, 155, 156, 157, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180], // Взвесить
-                take1gr: [/*142, 143, 144, 145, 154, 155, 156, 157, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180*/], // Взять 1гр
-                take10gr: [/*142, 143, 144, 145, 156, 157, 163, 164, 165, 166, 167, 168, 169, 170, 176, 177, 178, 179, 180*/], // Взять 10гр
+            equipment_outfit: [],               // Надетые на персонажа предметы
+            itemsById: {                        // В массивах должны быть айди всех предметов разного типа
+                countItems: [26],               // Посчитать
+                weightGr: [142, 143, 144, 145, 154, 155, 156, 157, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180],       // Взвесить
+                take1gr: [/*142, 143, 144, 145, 154, 155, 156, 157, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180*/],    // Взять 1гр
+                take10gr: [/*142, 143, 144, 145, 156, 157, 163, 164, 165, 166, 167, 168, 169, 170, 176, 177, 178, 179, 180*/],                                      // Взять 10гр
                 take50gr: [/*142, 143, 144, 145, 163, 164, 165, 166, 167, 168, 169, 170*/], // Взять 50гр
-                food: [11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 232, 233, 234, 235, 236, 237, 238, 239, 240], // Можно "съесть"
+                food: [11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 232, 233, 234, 235, 236, 237, 238, 239, 240],                                    // Можно "съесть"
                 drinks: [241, 242, 243, 244, 245, 246, 247, 248, 249, 250], // Можно "выпить"
-                usable: [4, 5, 6, 8, 9, 10, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 47, 49, 216, 0, 277, 278, 215, 221, 262, 474, 477], // Можно "использовать"
-                usablePlayer: [277, 278, 215, 221, 216], // Можно "использовать"
-                fish: [251], // Можно "Рыбачить"
-                smoke: [26, 3], // Можно "курить"
-                play: [253], // Можно "Играть"
-                consumable: [2, 158, 159, 160, 161, 162], // Можно "употребить"
-                bag: [264, 263, 252], // Открыть сумку
-                rename: [264, 263, 252], // Переименовать
+                usable: [4, 5, 6, 8, 9, 10, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 47, 49, 216, 0, 277, 278, 215, 221, 262, 474, 477],                             // Можно "использовать"
+                usablePlayer: [277, 278, 215, 221, 216],            // Можно "использовать"
+                fish: [251],                                        // Можно "Рыбачить"
+                smoke: [26, 3],                                     // Можно "курить"
+                play: [253],                                        // Можно "Играть"
+                consumable: [2, 158, 159, 160, 161, 162],           // Можно "употребить"
+                bag: [264, 263, 252],                               // Открыть сумку
+                rename: [264, 263, 252],                            // Переименовать
                 equipable: [54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 146, 147], // Можно "экипировать"
-                ammo: [279, 280, 281, 282, 283, 284, 285, 286, 287, 288, 289, 290, 291, 292], // Предметы которыми можно зарядить оружие (патроны)
-                countPt: [279, 280, 281, 282, 283, 284, 285, 286, 287, 288, 289, 290, 291, 292], // Предметы которыми можно зарядить оружие (патроны)
+                ammo: [279, 280, 281, 282, 283, 284, 285, 286, 287, 288, 289, 290, 291, 292],       // Предметы которыми можно зарядить оружие (патроны)
+                countPt: [279, 280, 281, 282, 283, 284, 285, 286, 287, 288, 289, 290, 291, 292],    // Предметы которыми можно зарядить оружие (патроны)
                 putOnGun: [293, 294, 295, 296, 297, 298, 299, 300, 301, 302, 303, 304, 305, 306, 307, 308, 309, 310, 311, 312, 313, 314, 315, 316, 317, 318, 319, 320, 321, 322, 323, 324, 325, 326, 327, 328, 329, 330, 331, 332, 333, 334, 335, 336, 337, 338, 339, 340, 341, 342, 343, 344, 345, 346, 347, 348, 349, 350, 351, 352, 353, 354, 355, 356, 357, 358, 359, 360, 361, 362, 363, 364, 365, 366, 367, 368, 369, 370, 371, 372, 373, 374, 375, 376, 377, 378, 379, 380, 381, 382, 383, 384, 385, 386, 387, 388, 389, 390, 391, 392, 393, 394, 395, 396, 397, 398, 399, 400, 401, 402, 403, 404, 405, 406, 407, 408, 409, 410, 411, 412, 413, 414, 415, 416, 417, 418, 419, 420, 421, 422, 423, 424, 425, 426, 427, 428, 429, 430, 431, 432, 433, 434, 435, 436, 437, 438, 439, 440, 441, 442, 443, 444, 445, 446, 447, 448, 449, 450, 451, 452, 453, 454, 455, 456, 457, 458, 459, 460, 461, 462, 463, 464, 465, 466, 467, 468, 469, 470, 471, 472, 473], // Предметы которыми можно зарядить оружие (патроны)
             },
 
             // !!! Ключи объекта outfitById нельзя менять местами !!!
-            outfitById: { // В массивах должны быть айди всех outfit-предметов разного типа
-                cap: [269], // Кепки
-                glasses: [270], // Очки
-                mask: [274], // Маски
-                shirt: [265], // Футболки
-                jewerly: [268], // Аксессуар (ожерелья?)
-                earrings: [271], // Серьги
-                jeans: [266], // Штаны
-                watch: [272], // Часы
-                bracelet: [273], // Браслеты
-                boot: [267], // Обувь
-                bag: [264, 263], // Сумка
-                gloves: [275], // Перчатки
-                armour: [252], // Броня
-                phone: [27, 28, 29, 30], // Телефоны
+            outfitById: {                       // В массивах должны быть айди всех outfit-предметов разного типа
+                cap: [269],              // Кепки
+                glasses: [270],              // Очки
+                mask: [274],              // Маски
+                shirt: [265],              // Футболки
+                jewerly: [268],              // Аксессуар (ожерелья?)
+                earrings: [271],              // Серьги
+                jeans: [266],              // Штаны
+                watch: [272],              // Часы
+                bracelet: [273],              // Браслеты
+                boot: [267],              // Обувь
+                bag: [264, 263],         // Сумка
+                gloves: [275],              // Перчатки
+                armour: [252],              // Броня
+                phone: [27, 28, 29, 30],                   // Телефоны
                 money: [254, 255, 256, 257, 258, 259, 260], // Деньги?
-                card: [50], // Карточки
+                card: [50],                               // Карточки
             },
 
             // !!! Элементы массива outfit нельзя менять местами !!!
             outfit: [
                 [
-                    { slot: "outf-cap", equipped: false, type: 'cap', icon: OutfitHat, iconName: 'outfit-hat' },
-                    { slot: "outf-glasses", equipped: false, type: 'glasses', icon: OutfitGlasses, iconName: 'outfit-glasses' },
-                    { slot: "outf-mask", equipped: false, type: 'mask', icon: OutfitMask, iconName: 'outfit-mask' },
-                    { slot: "outf-shirt", equipped: false, type: 'shirt', icon: OutfitTshirt, iconName: 'outfit-tshirt' },
-                    { slot: "outf-jewerly", equipped: false, type: 'jewerly', icon: OutfitJewerly, iconName: 'outfit-jewerly' },
-                    { slot: "outf-earrings", equipped: false, type: 'earrings', icon: OutfitEarrings, iconName: 'outfit-earrings' },
-                    { slot: "outf-jeans", equipped: false, type: 'jeans', icon: OutfitPants, iconName: 'outfit-pants' },
-                    { slot: "outf-watch", equipped: false, type: 'watch', icon: OutfitWatch, iconName: 'outfit-watch' },
-                    { slot: "outf-bracelet", equipped: false, type: 'bracelet', icon: OutfitBracelet, iconName: 'outfit-bracelet' },
-                    { slot: "outf-boot", equipped: false, type: 'boot', icon: OutfitShoes, iconName: 'outfit-shoes' },
-                    { slot: "outf-bag", equipped: false, type: 'bag', icon: OutfitBag, iconName: 'outfit-case' },
-                    { slot: "outf-gloves", equipped: false, type: 'gloves', icon: OutfitGloves, iconName: 'outfit-gloves'},
+                    { slot: "outf-cap", equipped: false, type: 'cap', icon: '//push.wixcore.net/inventory/outfit/hat.svg', iconName: 'hat' },
+                    { slot: "outf-glasses", equipped: false, type: 'glasses', icon: '//push.wixcore.net/inventory/outfit/glasses.svg', iconName: 'glasses' },
+                    { slot: "outf-mask", equipped: false, type: 'mask', icon: '//push.wixcore.net/inventory/outfit/mask.svg', iconName: 'mask' },
+                    { slot: "outf-shirt", equipped: false, type: 'shirt', icon: '//push.wixcore.net/inventory/outfit/shirt.svg', iconName: 'shirt' },
+                    { slot: "outf-jewerly", equipped: false, type: 'jewerly', icon: '//push.wixcore.net/inventory/outfit/jewerly.svg', iconName: 'jewerly' },
+                    { slot: "outf-earrings", equipped: false, type: 'earrings', icon: '//push.wixcore.net/inventory/outfit/earrings.svg', iconName: 'earrings' },
+                    { slot: "outf-jeans", equipped: false, type: 'jeans', icon: '//push.wixcore.net/inventory/outfit/pants.svg', iconName: 'pants' },
+                    { slot: "outf-watch", equipped: false, type: 'watch', icon: '//push.wixcore.net/inventory/outfit/watch.svg', iconName: 'watch' },
+                    { slot: "outf-bracelet", equipped: false, type: 'bracelet', icon: '//push.wixcore.net/inventory/outfit/bracelet.svg', iconName: 'bracelet' },
+                    { slot: "outf-boot", equipped: false, type: 'boot', icon: '//push.wixcore.net/inventory/outfit/shoes.svg', iconName: 'shoes' },
+                    { slot: "outf-bag", equipped: false, type: 'bag', icon: '//push.wixcore.net/inventory/outfit/bag.svg', iconName: 'bag' },
+                    { slot: "outf-gloves", equipped: false, type: 'gloves', icon: '//push.wixcore.net/inventory/outfit/gloves.svg', iconName: 'gloves' },
                 ],
                 [
-                    { slot: "outf-armour", equipped: false, type: 'armour', icon: OutfitArmour, iconName: 'outfit-armour'},
-                    { slot: "outf-phone", equipped: false, type: 'phone', icon: OutfitPhone, iconName: 'outfit-phone'},
-                    { slot: "outf-money", equipped: false, type: 'money', icon: OutfitNotes, iconName: 'outfit-notes'},
-                    { slot: "outf-card", equipped: false, type: 'card', icon: OutfitCard, iconName: 'outfit-card'},
+                    { slot: "outf-armour", equipped: false, type: 'armour', icon: '//push.wixcore.net/inventory/outfit/armour.svg', iconName: 'armour' },
+                    { slot: "outf-phone", equipped: false, type: 'phone', icon: '//push.wixcore.net/inventory/outfit/phone.svg', iconName: 'phone' },
+                    { slot: "outf-money", equipped: false, type: 'money', icon: '//push.wixcore.net/inventory/outfit/notes.svg', iconName: 'notes' },
+                    { slot: "outf-card", equipped: false, type: 'card', icon: '//push.wixcore.net/inventory/outfit/card.svg', iconName: 'card' },
                 ],
             ],
 
@@ -273,45 +164,46 @@ class Inventory extends React.Component {
         }
     }
 
-    isCooldownActive(item_id){ // returns true/false
+    isCooldownActive(item_id) { // returns true/false
         let cdArray = this.state.itemCooldown.filter(function (el) {
             return el.item_id === item_id && el.cooldown > -1
-          });
-          if(cdArray.length !== 0) return true;
-          else return false;
+        });
+        if (cdArray.length !== 0) return true;
+        else return false;
     }
 
     setCooldown(item_id, time = 5) {
-        this.setState({itemCooldown: this.state.itemCooldown.concat({item_id: item_id, cooldown: time})})
+        this.setState({ itemCooldown: this.state.itemCooldown.concat({ item_id: item_id, cooldown: time }) })
     }
 
-    cooldownTick(){
-        for(let i = 0; i < this.state.itemCooldown.length; i++){
-            if(this.state.itemCooldown[i].cooldown > 0){
-                this.setState(prevState => ({...prevState.itemCooldown[i].cooldown = this.state.itemCooldown[i].cooldown-1}))
+    cooldownTick() {
+        for (let i = 0; i < this.state.itemCooldown.length; i++) {
+            if (this.state.itemCooldown[i].cooldown > 0) {
+                this.setState(prevState => ({ ...prevState.itemCooldown[i].cooldown = this.state.itemCooldown[i].cooldown - 1 }))
             } else {
-                this.setState({itemCooldown: this.state.itemCooldown.filter(function (el) {
-                    return el.cooldown > 0
-                  })
+                this.setState({
+                    itemCooldown: this.state.itemCooldown.filter(function (el) {
+                        return el.cooldown > 0
+                    })
                 });
             }
         }
     }
 
-    getItemCooldown(item_id){
-        for(let i = 0; i < this.state.itemCooldown.length; i++){
-            if(this.state.itemCooldown[i].item_id === item_id){
+    getItemCooldown(item_id) {
+        for (let i = 0; i < this.state.itemCooldown.length; i++) {
+            if (this.state.itemCooldown[i].item_id === item_id) {
                 return this.state.itemCooldown[i].cooldown;
             }
         }
         return 0;
     }
 
-    escapeRegExp = function(str) {
+    escapeRegExp = function (str) {
         return str.toString().replace(/([.*+?^=!:${}()|\[\]\/\\])/g, "\\$1");
     };
 
-    replaceAll(str, find, replace){
+    replaceAll(str, find, replace) {
         //return str.toString().split(find).join(replace);
         return str.toString().replace(new RegExp(this.escapeRegExp(find), 'g'), replace);
     };
@@ -329,7 +221,7 @@ class Inventory extends React.Component {
         var cooldownTick = setInterval(() => {
             this.cooldownTick();
         }, 1000);
-        this.setState({cooldownTick: cooldownTick});
+        this.setState({ cooldownTick: cooldownTick });
 
         EventManager.addHandler('inventory', value => {
             if (value.type === 'show') {
@@ -725,7 +617,7 @@ class Inventory extends React.Component {
         if (this.isCooldownActive(item.item_id)) return;
 
         let actions = [];
-        if(source === 'weapon' || source === 'outfit') actions = ["drop", "close"];
+        if (source === 'weapon' || source === 'outfit') actions = ["drop", "close"];
         else actions = ["give", "drop", "close"]; // Стандартные действия для всех предметов (передать, выбросить, закрыть)
         if (source === 'weapon') { // По айди предмета (item_id) определяет какие действия можно совершить с предметом
             actions.push('select') // Выбрать оружие
@@ -852,7 +744,7 @@ class Inventory extends React.Component {
         }
         let menu = this.state.inter_menu
         let actions = [];
-        if(source === 'weapon' || source === 'outfit') actions = ["drop", "close"];
+        if (source === 'weapon' || source === 'outfit') actions = ["drop", "close"];
         else actions = ["give", "drop", "close"]; // Стандартные действия для всех предметов (передать, выбросить, закрыть)
         if (source === 'weapon') { // По айди предмета (item_id) определяет какие действия можно совершить с предметом
             actions.push('select') // Выбрать оружие
@@ -1324,9 +1216,9 @@ class Inventory extends React.Component {
         }
     }
 
-    deleteItemById(item_id){
+    deleteItemById(item_id) {
         let item = this.getItemById(item_id, 'secondary_inv');
-        if(item !== null) {
+        if (item !== null) {
             if (this.checkItem(item, 'secondary_inv') !== null) {
                 item = this.checkItem(item, 'secondary_inv');
                 this.setState({ secondary_items: this.arrayRemove(this.state.secondary_items, item) }) // Возможно не каждый предмет нужно удалять, тогда нужна проверка по item_id
@@ -1335,7 +1227,7 @@ class Inventory extends React.Component {
         }
 
         item = this.getItemById(item_id, 'inventory');
-        if(item !== null) {
+        if (item !== null) {
             if (this.checkItem(item, 'inventory') !== null) {
                 item = this.checkItem(item, 'inventory');
                 this.setState({ secondary_items: this.arrayRemove(this.state.secondary_items, item) }) // Возможно не каждый предмет нужно удалять, тогда нужна проверка по item_id
@@ -1360,7 +1252,7 @@ class Inventory extends React.Component {
         }*/
     }
 
-    getItemById(item_id, source){
+    getItemById(item_id, source) {
         let item = null;
         switch (source) {
             case 'inventory':
@@ -2046,7 +1938,7 @@ class Inventory extends React.Component {
         try {
             mp.trigger('client:inventory:statusSecondary', false);
         }
-        catch (e) {}
+        catch (e) { }
     }
 
     closeInventory() {
@@ -2067,7 +1959,7 @@ class Inventory extends React.Component {
     }
     craftItem() {
         console.log(this.state.craft_process)
-        if (this.state.craft_process > -1) {            
+        if (this.state.craft_process > -1) {
             console.log('Откат на крафт ' + this.state.selected_recipe.craft_time + 'ms')
             this.notifyToClient('~r~Крафт в процессе!');
             return;
@@ -2153,36 +2045,37 @@ class Inventory extends React.Component {
                     inter_menu={this.state.inter_menu}
                     closeInterMenu={this.closeInterMenu.bind(this)}
                 />
-                <Droppable that={this} className="bgForDrop droppable" id="drop"/>
+                <Droppable that={this} className="bgForDrop droppable" id="drop" />
+                <div className="headinv">
+                    <span className="title-inv__name"><h1>ИНВЕНТАРЬ</h1><p>ИНВЕНТАРЬ</p></span>
+                    <p>Для взаимодействия с ивентарем используйте клавиши мышки  <b>ЛКМ</b> и <b>ПКМ</b></p>
+                </div>
                 <div className="inv-box animated fadeIn" onContextMenu={(e) => e.preventDefault()}>
                     <div className="content-inventory">
                         <div className="inventory-main">
                             <div className="inv-row-main">
                                 <div className="player-inv">
                                     <div className="title-inv">
+                                        <span className="title-inv__name"><h1>КАРМАНЫ</h1><p>КАРМАНЫ</p></span>
                                         <span className="weight-title-inv">
-                                            ({this.numberToK(this.state.weight_now)}/{this.numberToK(this.state.weight_max)})
+                                            <h1>ВЕС</h1>
+                                            <span class="kg"><p class="yellow">{this.numberToK(this.state.weight_now)}</p>|<p>{this.numberToK(this.state.weight_max)}</p></span>
                                         </span>
-                                        <span className="title-inv__name">Инвентарь</span>
                                     </div>
 
                                     <Droppable className="object-inv-box droppable" id="take_off" that={this}>
-                                        {/* Список предметов: */}
                                         {this.state.itemsCounted.map((item, i) => {
                                             const index = `item${i}`
-
                                             const actions = this.getActions(item, 'inventory') ? this.getActions(item, 'inventory').join(' ') : ''
-
                                             return (
                                                 <Draggable that={this} id={`${index}_inv`} type={actions} item={item} key={index}>
                                                     <Droppable className="droppable" id="take_off" that={this}>
-                                                        <div className="object-box" style={this.isCooldownActive(item.item_id) ? {opacity: 0.2} : {opacity:1}}
+                                                        <div className="object-box" style={this.isCooldownActive(item.item_id) ? { opacity: 0.2 } : { opacity: 1 }}
                                                             onContextMenu={(e) => this.handlePos(e, item, 'inventory')}>
-                                                                
+
                                                             <div className={`img-inv-box ${item.icon}`}></div>
                                                             <div className="obj-inf-box">
                                                                 <span className="obj-inf-title">{item.name}</span>
-                                                                <span className="obj-inf-weight">{item.desc}</span>
                                                             </div>
                                                             {item.count > 1 ?
                                                                 <div className="obj-inf-count">{item.count}</div> : null}
@@ -2192,31 +2085,46 @@ class Inventory extends React.Component {
                                                 </Draggable>
                                             )
                                         })}
-                                        {/* ---------------- */}
                                     </Droppable>
 
                                 </div>
                                 <div className="player-info">
                                     <div className="title-inv">
-                                        <span className="title-inv__name">
-                                            Экипировка
-                                        </span>
-                                    </div>
-                                    <div className="player-title-info">
-                                        <div className="player-inv-old">
-                                            <span>{this.state.player_name}</span>
-                                        </div>
+                                        <span className="title-inv__name"><h1>Персонаж</h1><p>{this.state.player_name}</p></span>
                                     </div>
                                     <Droppable className="outfit-player-box droppable" id="put_on" that={this}>
-                                            {this.state.outfit[0].map((item, i) => {
-                                                const index = `item-outf${i}`
-                                                console.log(item)
+                                        {this.state.outfit[0].map((item, i) => {
+                                            const index = `item-outf${i}`
+                                            console.log(item)
+                                            if (item.equipped) {
+                                                return (
+                                                    <Draggable that={this} id={index} type="take_off drop" item={item} key={index}>
+                                                        <Droppable className="droppable" id="put_on" that={this}>
+                                                            <div onContextMenu={(e) => this.handlePos(e, item, 'outfit')} className={`item__background outfit-pos-outfit-${item.iconName}`} key={index}>
+                                                                <img src={`//push.wixcore.net/inventory/outfit/${item.iconName}.png`} alt={`${item.iconName}.png`} />
+                                                            </div>
+                                                        </Droppable>
+                                                    </Draggable>
+                                                )
+                                            }
+
+                                            return (
+                                                <Droppable className="droppable" key={index} id="put_on" that={this}>
+                                                    <div onContextMenu={(e) => this.handlePos(e, item, 'outfit')} className={`item__background outfit-pos-outfit-${item.iconName}`} key={index}>
+                                                        <img src={`//push.wixcore.net/inventory/outfit/${item.iconName}.png`} style={{ filter: 'grayscale(100%)', opacity: '0.7' }} alt={`${item.iconName}.png`} />
+                                                    </div>
+                                                </Droppable>
+                                            )
+                                        })}
+                                        <div className="bottom-otf-box">
+                                            {this.state.outfit[1].map((item, i) => {
+                                                const index = `items-outf${i}`
                                                 if (item.equipped) {
                                                     return (
                                                         <Draggable that={this} id={index} type="take_off drop" item={item} key={index}>
                                                             <Droppable className="droppable" id="put_on" that={this}>
-                                                                <div onContextMenu={(e) => this.handlePos(e, item, 'outfit')} className={`item__background outfit-pos-${item.iconName}`} key={index}>
-                                                                    <img src={`https://state-99.com/client/images/icons/components/inventory/img/outfit/${item.iconName}.png`} />
+                                                                <div onContextMenu={(e) => this.handlePos(e, item, 'outfit')} className={`item__background outfit-pos-outfit-${item.iconName}`} key={index}>
+                                                                    <img src={`//push.wixcore.net/inventory/outfit/${item.iconName}.png`} alt={`${item.iconName}.png`} />
                                                                 </div>
                                                             </Droppable>
                                                         </Draggable>
@@ -2225,36 +2133,13 @@ class Inventory extends React.Component {
 
                                                 return (
                                                     <Droppable className="droppable" key={index} id="put_on" that={this}>
-                                                        <div onContextMenu={(e) => this.handlePos(e, item, 'outfit')} className={`item__background outfit-pos-${item.iconName}`} key={index}>
-                                                            <img src={`https://state-99.com/client/images/icons/components/inventory/img/outfit/${item.iconName}.png`} style={{filter: 'grayscale(100%)', opacity: '0.7'}} />
+                                                        <div onContextMenu={(e) => this.handlePos(e, item, 'outfit')} className={`item__background outfit-pos-outfit-${item.iconName}`} key={index}>
+                                                            <img src={`//push.wixcore.net/inventory/outfit/${item.iconName}.png`} style={{ filter: 'grayscale(100%)', opacity: '0.7' }} alt={`${item.iconName}.png`} />
                                                         </div>
                                                     </Droppable>
                                                 )
                                             })}
-                                            <div className="bottom-otf-box">
-                                                {this.state.outfit[1].map((item, i) => {
-                                                    const index = `items-outf${i}`
-                                                    if (item.equipped) {
-                                                        return (
-                                                            <Draggable that={this} id={index} type="take_off drop" item={item} key={index}>
-                                                                <Droppable className="droppable" id="put_on" that={this}>
-                                                                    <div onContextMenu={(e) => this.handlePos(e, item, 'outfit')} className={`item__background outfit-pos-${item.iconName}`} key={index}>
-                                                                        <img src={`https://state-99.com/client/images/icons/components/inventory/img/outfit/${item.iconName}.png`} />
-                                                                    </div>
-                                                                </Droppable>
-                                                            </Draggable>
-                                                        )
-                                                    }
-    
-                                                    return (
-                                                        <Droppable className="droppable" key={index} id="put_on" that={this}>
-                                                            <div onContextMenu={(e) => this.handlePos(e, item, 'outfit')} className={`item__background outfit-pos-${item.iconName}`} key={index}>
-                                                                <img src={`https://state-99.com/client/images/icons/components/inventory/img/outfit/${item.iconName}.png`} style={{filter: 'grayscale(100%)', opacity: '0.7'}} />
-                                                            </div>
-                                                        </Droppable>
-                                                    )
-                                                })}
-                                            </div>
+                                        </div>
                                     </Droppable>
                                 </div>
                                 <div className="player-craft">
@@ -2263,11 +2148,9 @@ class Inventory extends React.Component {
                                             className="close-window-craft"
                                             onClick={() => this.closeInventory()}
                                         >
-                                            <img src={`https://state-99.com/client/images/icons/components/inventory/img/close.svg`} width="40%" className="close-window-craft__img" />
+                                            <img src={`//push.wixcore.net/inventory/close.svg`} width="40%" className="close-window-craft__img" />
                                         </div>
-                                        <span className="title-inv__name">
-                                            {this.state.craft ? 'Крафт' : 'Оружие'}
-                                        </span>
+                                        <span className="title-inv__name"><h1>Дополнительно</h1><p>Дополнительно</p></span>
                                     </div>
                                     <div className="menu-craft-change">
                                         {this.state.selected_weapon_id !== 0 ?
@@ -2307,8 +2190,8 @@ class Inventory extends React.Component {
                                                     </div>
                                                     <div className="crafting-object-main">
                                                         <div className="liner-crafting-obj-bg">
-                                                            <div className="liner-crafting-obj" style={{ width: this.state.craft_process + "%", transition: this.state.selected_recipe.craft_time/2+'ms'}}>
-                                                            
+                                                            <div className="liner-crafting-obj" style={{ width: this.state.craft_process + "%", transition: this.state.selected_recipe.craft_time / 2 + 'ms' }}>
+
                                                             </div>
                                                         </div>
                                                         <div className="main-box-craft-weapon">
@@ -2457,21 +2340,23 @@ class Inventory extends React.Component {
                         </div>
                         {this.state.secondary_inv_open &&
                             <div className="invetory-trunk">
-                                    <div>
-                                        <Droppable className="trunk-info-menu droppable" id="move" that={this}>
-                                            <div className="title-secondary-inv">
-                                                <span className="weight-title-inv">
-                                                    ({this.numberToK(this.state.secondary_weight_now)}/{this.numberToK(this.state.secondary_weight_max)})
-                                                </span>
-                                                {this.state.secondary_inv_open && this.state.secondary_items.length > 0 ? <div className="moveall_right" onClick={() => this.moveAllToInventory(true)}></div> : null}
-                                                <div
-                                                    className="close-window-craft"
-                                                    onClick={() => this.closeSecondaryInventory()}
-                                                >
-                                                    <img src={`https://state-99.com/client/images/icons/components/inventory/img/close.svg`} width="40%" className="close-window-craft__img" />
-                                                </div>
+                                <div>
+                                    <Droppable className="trunk-info-menu droppable" id="move" that={this}>
+                                        <div className="title-secondary-inv">
+                                            <span className="title-inv__name"><h1>ВНЕШНИЙ</h1><p>ВНЕШНИЙ</p></span>
+                                            <span className="weight-title-inv">
+                                                <h1>ВЕС</h1>
+                                                <span class="kg"><p class="yellow">{this.numberToK(this.state.secondary_weight_now)}</p>|<p>{this.numberToK(this.state.secondary_weight_max)}</p></span>
+                                            </span>
+                                            {this.state.secondary_inv_open && this.state.secondary_items.length > 0 ? <div className="moveall_right" onClick={() => this.moveAllToInventory(true)}></div> : null}
+                                            <div
+                                                className="close-window-craft"
+                                                onClick={() => this.closeSecondaryInventory()}
+                                            >
+                                                <img src={`//push.wixcore.net/inventory/close.svg`} width="40%" className="close-window-craft__img" />
                                             </div>
-                                            <div className="inventory__trunk__list">
+                                        </div>
+                                        <div className="inventory__trunk__list">
                                             {this.state.secondary_itemsCounted.map((item, i) => {
                                                 const index = `item${i}`
 
@@ -2480,7 +2365,7 @@ class Inventory extends React.Component {
                                                 return (
                                                     <Draggable that={this} id={index} type={actions} item={item} key={index}>
                                                         <Droppable className="droppable" id="move" that={this}>
-                                                            <div className="object-box-trunk" key={index} style={this.isCooldownActive(item.item_id) ? {opacity: 0.2} : {opacity:1}}
+                                                            <div className="object-box-trunk" key={index} style={this.isCooldownActive(item.item_id) ? { opacity: 0.2 } : { opacity: 1 }}
                                                                 onContextMenu={(e) => this.handlePos(e, item, 'secondary_inv')}>
                                                                 <div className={`img-inv-box ${item.icon}`}></div>
                                                                 <div className="obj-inf-box">
@@ -2494,9 +2379,9 @@ class Inventory extends React.Component {
                                                     </Draggable>
                                                 )
                                             })}
-                                            </div>
-                                        </Droppable>
-                                    </div>
+                                        </div>
+                                    </Droppable>
+                                </div>
                             </div>
                         }
                     </div>
