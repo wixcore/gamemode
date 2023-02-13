@@ -1,0 +1,27 @@
+.inter-menu {
+    background: #6C6C6C66;
+    width: 17.870vh;
+    border: 0.093vh solid #ffffff3d;
+    position: absolute;
+    backdrop-filter: blur(2.315vh);
+    z-index: 1;
+}
+
+.inter-box {
+    width: 17.870vh;
+    height: 3.704vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: "Gotham Pro Regular";
+    font-size: 1.281vh;
+    color: #fff;
+    box-sizing: border-box;
+    padding-left: 1.389vh;
+}
+
+.inter-box:hover {
+    background: #AFAFAF40;
+    color: #fff !important;
+    border-bottom: 0.1vh solid #DC133B;
+}

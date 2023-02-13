@@ -3,9 +3,8 @@ import React from 'react';
 import './css/inventory.css';
 import './css/img-items.css';
 import { Animated } from 'react-animated-css';
-import InteractionMenu from '../interactionmenu/InteractionMenu';
+import InteractionMenu from '../interaction/InteractionMenu';
 import EventManager from "../../EventManager";
-
 import OutfitHat from './img/outfit/outfit-hat.png'
 import OutfitArmour from './img/outfit/outfit-armour.png'
 import OutfitBracelet from './img/outfit/outfit-bracelet.png'

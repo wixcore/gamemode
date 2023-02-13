@@ -1,5 +1,5 @@
 import React from 'react';
-import './css/interactionmenu.css'
+import './assets/css/default.css';
 
 class InteractionMenu extends React.Component {
     constructor(props) {
@@ -17,15 +17,14 @@ class InteractionMenu extends React.Component {
         }
         return (
             <React.Fragment>
-                <div className="inter-menu" style={{left: this.props.x + "%", top: this.props.y + "%"}}>
+                <div className="inter-menu" style={{ left: this.props.x + "%", top: this.props.y + "%" }}>
                     {this.props.inter_menu.map((button, i) => {
                         if (!button.show) {
                             return
                         }
                         const index = `intermenu${i}`
                         return (
-                            <div key={index} className="inter-box" style={{color: button.color}}
-                                 onClick={(e) => this.props.closeInterMenu(e, button)}><span>{button.name}</span></div>
+                            <div key={index} className="inter-box" onClick={(e) => this.props.closeInterMenu(e, button)}><span>{button.name}</span></div>
                         )
                     })}
                 </div>
