@@ -1,45 +1,31 @@
--- phpMyAdmin SQL Dump
--- version 4.5.4.1deb2ubuntu2
--- http://www.phpmyadmin.net
---
--- Хост: localhost
--- Время создания: Май 27 2021 г., 10:42
--- Версия сервера: 5.7.21-0ubuntu0.16.04.1
--- Версия PHP: 7.0.33-11+ubuntu16.04.1+deb.sury.org+1
-
-SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET time_zone = "+00:00";
-
-
-/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
-/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
-/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8mb4 */;
-
---
--- База данных: `admin_rage`
---
-
--- --------------------------------------------------------
-
---
--- Структура таблицы `accounts`
---
-
-CREATE TABLE `accounts` (
-  `id` int(11) NOT NULL,
+CREATE TABLE IF NOT EXISTS `accounts` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
   `login` varchar(64) NOT NULL DEFAULT '',
   `email` varchar(256) NOT NULL DEFAULT '',
   `social` varchar(128) NOT NULL DEFAULT '',
   `serial` varchar(256) NOT NULL DEFAULT '',
   `password` varchar(256) NOT NULL DEFAULT '',
-  `allow_stats` tinyint(1) NOT NULL DEFAULT '0',
-  `allow_acc` tinyint(1) NOT NULL DEFAULT '0',
-  `allow_acc_edit` tinyint(1) NOT NULL DEFAULT '0',
-  `admin_level` int(11) NOT NULL DEFAULT '0',
+  `allow_stats` tinyint(1) NOT NULL DEFAULT 0,
+  `allow_acc` tinyint(1) NOT NULL DEFAULT 0,
+  `allow_acc_edit` tinyint(1) NOT NULL DEFAULT 0,
+  `admin_level` int(11) NOT NULL DEFAULT 0,
   `reg_ip` varchar(128) NOT NULL DEFAULT '',
-  `reg_timestamp` int(11) NOT NULL DEFAULT '0',
-  `token` varchar(64) NOT NULL DEFAULT ''
+  `reg_timestamp` int(11) NOT NULL DEFAULT 0,
+  `token` varchar(64) NOT NULL DEFAULT '',
+  `discord_email` varchar(256) NOT NULL DEFAULT '',
+  `donate_active` tinyint(1) NOT NULL DEFAULT 0,
+  `donate_wallet_1` varchar(128) NOT NULL DEFAULT '',
+  `donate_wallet_2` varchar(128) NOT NULL DEFAULT '',
+  `donate_wallet_3` varchar(128) NOT NULL DEFAULT '',
+  `wallet_card` varchar(64) NOT NULL DEFAULT '',
+  `wallet_qiwi` varchar(64) NOT NULL DEFAULT '',
+  `wallet_paypal` varchar(64) NOT NULL DEFAULT '',
+  `wallet_yandex` varchar(64) NOT NULL DEFAULT '',
+  `wallet_webmoneyWmr` varchar(64) NOT NULL DEFAULT '',
+  `wallet_webmoney` varchar(64) NOT NULL DEFAULT '',
+  `trade_block` tinyint(1) NOT NULL DEFAULT 0,
+  `hash_acc` varchar(256) NOT NULL DEFAULT '0',
+  PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
