@@ -16,7 +16,7 @@ const StatsPanel = ({ catalog, selected, selectedCatalog, btncolor, img }) => {
                 </div>
                 <div className="hmenu__gunshop__stats__price">
                     <div className="hmenu__gunshop__catalog__item__img__container">
-                        <img src={`https://state-99.com/client/images/items-cl/${catalog[selected].items[selectedCatalog].img}`} className="hmenu__gunshop__catalog__item__img" />
+                    <img src={`//push.wixcore.net/inventory/items/${catalog[selected].items[selectedCatalog].img}`} className="hmenu__gunshop__catalog__item__img" />       
                     </div>
                     <div className={(catalog[selected].items[selectedCatalog].price !== '' ? 'hmenu__gunshop__stats__price__text' : 'hmenu__gunshop__hide')}>
                         <span className="hmenu__gunshop__stats__price__gtext">

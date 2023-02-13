@@ -7348,7 +7348,7 @@ menuList.showTradeMenu = function(data, ownerId, ownerType) {
                         desc2: '',
                         desc2t: '',
                         sale: sale,
-                        img: `Item_${item.item_id}.png`,
+                        img: `${item.item_id}.png`,
                         price: methods.moneyFormat(price),
                         params: {t: 'tm', id: item.id, price: price, name: itemName, ownerId: ownerId}
                     })
@@ -8589,7 +8589,7 @@ menuList.showShopMenu = function(shopId, price = 2, type = 0)
                 desc2: '',
                 desc2t: '',
                 sale: sale,
-                img: `Item_${itemId}.png`,
+                img: `${itemId}.png`,
                 price: methods.moneyFormat(itemPrice),
                 params: {id: itemId, price: itemPrice, shop: shopId}
             })
@@ -8705,7 +8705,7 @@ menuList.showShopTacoMenu = function(shopId, price = 2)
                 desc2: '',
                 desc2t: '',
                 sale: sale,
-                img: `Item_${itemId}.png`,
+                img: `${itemId}.png`,
                 price: methods.moneyFormat(itemPrice),
                 params: {id: itemId, price: itemPrice, shop: shopId}
             })
@@ -8756,7 +8756,7 @@ menuList.showShopAlcMenu = function(shopId, price = 2, type = 0)
                 desc2: '',
                 desc2t: '',
                 sale: sale,
-                img: `Item_${itemId}.png`,
+                img: `${itemId}.png`,
                 price: methods.moneyFormat(itemPrice),
                 params: {id: itemId, price: itemPrice, shop: shopId}
             })
@@ -8796,7 +8796,7 @@ menuList.showShopElMenu = function(shopId, price = 2)
                 desc2: '',
                 desc2t: '',
                 sale: sale,
-                img: `Item_${itemId}.png`,
+                img: `${itemId}.png`,
                 price: methods.moneyFormat(itemPrice),
                 params: {id: itemId, price: itemPrice, shop: shopId}
             })
@@ -8895,7 +8895,7 @@ menuList.showShopMedMenu = function(shopId, price = 2)
                 desc2: '',
                 desc2t: '',
                 sale: sale,
-                img: `Item_${itemId}.png`,
+                img: `${itemId}.png`,
                 price: methods.moneyFormat(itemPrice),
                 params: {id: itemId, price: itemPrice, shop: shopId}
             })
@@ -8948,7 +8948,7 @@ menuList.showShopFishMenu = function(shopId, price = 2)
                 desc2: '',
                 desc2t: '',
                 sale: sale,
-                img: `Item_${itemId}.png`,
+                img: `${itemId}.png`,
                 price: methods.moneyFormat(itemPrice),
                 params: {id: itemId, price: itemPrice, shop: shopId}
             })
@@ -8986,7 +8986,7 @@ menuList.showShopHuntMenu = function(shopId, price = 2)
                 desc2: '',
                 desc2t: '',
                 sale: sale,
-                img: `Item_${itemId}.png`,
+                img: `${itemId}.png`,
                 price: methods.moneyFormat(itemPrice),
                 params: {id: itemId, price: itemPrice, shop: shopId}
             })
@@ -11382,7 +11382,7 @@ menuList.showGunShopMenu = function(shopId, price = 1)
                     desc2: '',
                     desc2t: '',
                     sale: sale,
-                    img: `Item_${itemId}.png`,
+                    img: `${itemId}.png`,
                     price: methods.moneyFormat(itemPrice),
                     params: {id: itemId, price: itemPrice, shop: shopId}
                 }
@@ -11398,7 +11398,7 @@ menuList.showGunShopMenu = function(shopId, price = 1)
                     desc2: '',
                     desc2t: '',
                     sale: sale,
-                    img: `Item_${ammoId}.png`,
+                    img: `${ammoId}.png`,
                     price: methods.moneyFormat(itemPrice),
                     params: {id: ammoId, price: itemPrice, shop: shopId}
                 }
@@ -11418,7 +11418,7 @@ menuList.showGunShopMenu = function(shopId, price = 1)
                                 desc2: item,
                                 desc2t: '',
                                 sale: sale,
-                                img: `Item_${itemId}.png`,
+                                img: `${itemId}.png`,
                                 price: methods.moneyFormat(itemPrice),
                                 params: {id: itemId, price: itemPrice, tint: idx, shop: shopId}
                             }
@@ -11442,7 +11442,7 @@ menuList.showGunShopMenu = function(shopId, price = 1)
                                 desc2: item[1],
                                 desc2t: '',
                                 sale: sale,
-                                img: `Item_${itemId}.png`,
+                                img: `${itemId}.png`,
                                 price: methods.moneyFormat(itemPrice),
                                 params: {id: itemId, price: itemPrice, superTint: item[2].toString(), shop: shopId}
                             }
@@ -11475,7 +11475,7 @@ menuList.showGunShopMenu = function(shopId, price = 1)
                             desc2: '',
                             desc2t: '',
                             sale: sale,
-                            img: `Item_${wpcId}.png`,
+                            img: `${wpcId}.png`,
                             price: methods.moneyFormat(itemPrice),
                             params: {id: wpcId, price: itemPrice, shop: shopId}
                         }
@@ -11502,7 +11502,7 @@ menuList.showGunShopMenu = function(shopId, price = 1)
                 desc2: '',
                 desc2t: '',
                 sale: sale,
-                img: `Item_${itemId}.png`,
+                img: `${itemId}.png`,
                 price: methods.moneyFormat(itemPrice),
                 params: {id: itemId, price: itemPrice, shop: shopId}
             })
@@ -11518,7 +11518,7 @@ menuList.showGunShopMenu = function(shopId, price = 1)
             desc2: '',
             desc2t: '',
             sale: 0,
-            img: `Item_252.png`,
+            img: `252.png`,
             price: methods.moneyFormat(400 * price),
             params: {doName: 'armour', price: 400 * price, count: 30, shop: shopId}
         }, { //Если кликаем сюда, то открывается меню справа (Там где покупка)
@@ -11527,7 +11527,7 @@ menuList.showGunShopMenu = function(shopId, price = 1)
             desc2: '',
             desc2t: '',
             sale: 0,
-            img: `Item_252.png`,
+            img: `252.png`,
             price: methods.moneyFormat(800 * price),
             params: {doName: 'armour', price: 800 * price, count: 60, shop: shopId}
         }]

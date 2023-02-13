@@ -20,7 +20,7 @@ const CatalogPanel = ({ catalog, selected, selectedCatalog, setActiveCatalog, ba
                         </span>
                     </div>
                     <div className="hmenu__gunshop__catalog__item__img__container">
-                        <img src={`https://state-99.com/client/images/items-cl/${item.img}`} className="hmenu__gunshop__catalog__item__img" />
+                        <img src={`//push.wixcore.net/inventory/items/${item.img}`} className="hmenu__gunshop__catalog__item__img" />
                     </div>
                     <div className="hmenu__gunshop__catalog__item__info">
                        <span className="hmenu__gunshop__catalog__item__price">
