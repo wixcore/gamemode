@@ -105,8 +105,12 @@ phone.showOrHide = function() {
         mp.game.ui.notifications.show("~r~У Вас нет телефона");
         return;
     }
-    if (!phone.isHide() && mp.gui.cursor.visible) //TODO 1.1 Возможно придется исрпавить в 1.1
+
+    /* Возможно придется исрпавить в 1.1
+    if (!phone.isHide() && mp.gui.cursor.visible) {
         return;
+    }  
+    */
 
     ui.callCef('phone', '{"type": "showOrHide"}');
 };
@@ -190,12 +194,15 @@ phone.updateAppAchiev = function(value = []) {
 };
 
 phone.timer = function() {
+    if(!user.isLogin()) {
+        return;
+    }
+
     let pType = phone.getType();
     if (!hidden && pType == 0) {
         phone.hide();
         return;
-    }
-    else if ( pType == 0) {
+    } else if ( pType == 0) {
         return;
     }
 
@@ -5634,8 +5641,14 @@ phone.callBackModal = function(paramsJson) {
 
 phone.callBackModalInput = async function(paramsJson, text) {
     try {
+        if (Container.Data.HasLocally(mp.players.local.remoteId, "isModalInputTimeout")) {
+            user.showCustomNotify('Нельзя нажимать так часто');
+            return;
+        }
+
         mp.events.call('client:phone:inputModal', false);
-        methods.debug(text);
+        methods.debug(`phone.callBackModalInput: ${text}`);
+
         let params = JSON.parse(paramsJson);
         if (params.name == 'giveWanted') {
             let args = text.split(',');
@@ -5757,7 +5770,6 @@ phone.callBackModalInput = async function(paramsJson, text) {
         }
         if (params.name == 'fractionBenefit') {
             let price = methods.parseFloat(text);
-О
             if (price < 0) {
                 mp.game.ui.notifications.show(`~r~Значение не может быть меньше нуля`);
                 return;
@@ -5782,6 +5794,12 @@ phone.callBackModalInput = async function(paramsJson, text) {
             }
             if (price > 250000) {
                 mp.game.ui.notifications.show(`~r~Значение не может быть больше 250000`);
+                return;
+            }
+
+            let money = await coffer.getMoney(coffer.getIdByFraction(user.getCache('fraction_id')));
+            if (money < price) {
+                mp.game.ui.notifications.show('~r~В бюджете организации недостаточно средств!');
                 return;
             }
 
@@ -6135,6 +6153,11 @@ phone.callBackModalInput = async function(paramsJson, text) {
                     break;
             }
         }
+
+        Container.Data.SetLocally(mp.players.local.remoteId, "isModalInputTimeout", true);
+        setTimeout(function () {
+            Container.Data.ResetLocally(mp.players.local.remoteId, "isModalInputTimeout");
+        }, 3000);
     }
     catch(e) {
         methods.debug(e);
