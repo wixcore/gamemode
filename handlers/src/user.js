@@ -1736,7 +1736,9 @@ user.isCanFishingPearceAlamo = function() {
 };
 
 user.isCanFishing = function() {
-    return user.isInOcean() || mp.players.local.isInWater() || user.isCanFishingPearceOcean() || user.isCanFishingPearceAlamo();
+    let pos = mp.players.local.position;
+    let waterHeight = mp.game.water.getWaterHeight(pos.x, pos.y, pos.z, mp.players.local.getHeightAboveGround());
+    return user.isInOcean() || (mp.players.local.isInWater() && waterHeight != undefined) || user.isCanFishingPearceOcean() || user.isCanFishingPearceAlamo();
 };
 
 user.isJobMail = function() {
@@ -1985,25 +1987,22 @@ user.setRagdoll = function(timeout = 1000) {
 };
 
 user.stopAllAnimation = function() {
-
-    if (methods.isBlockKeys())
+    if (methods.isBlockKeys()) {
         return;
-
+    }
     if (mp.game.player.isFreeAiming()) {
         return;
     }
-
     if (currentScenario !== '') {
         enums.scenariosAll.forEach(function (item, i, arr) {
             mp.attachmentMngr.removeLocal(item[1]);
         });
         currentScenario = '';
     }
-
     if (!mp.players.local.getVariable("isBlockAnimation")) {
-        //mp.players.local.clearTasks();
-        //mp.players.local.clearSecondaryTask();
         mp.events.callRemote('server:stopAllAnimation');
+        user.lastAnim = { a: '', d: '', f: 0 };
+        lastFlag = 0;
     }
 };
 
