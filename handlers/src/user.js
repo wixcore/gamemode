@@ -2089,10 +2089,8 @@ user.isOpenPhone = function() {
 };
 
 user.hidePhone = function() {
-    mp.attachmentMngr.removeLocal('phone1');
-    mp.attachmentMngr.removeLocal('phone2');
-    mp.attachmentMngr.removeLocal('phone3');
-    //user.playAnimation("cellphone@female", "cellphone_text_out", 48);
+    let pType = phone.getType();
+    mp.attachmentMngr.removeLocal('phone' + pType);
     user.stopAllAnimation();
     isOpenPhone = false;
 };
