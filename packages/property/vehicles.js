@@ -877,55 +877,46 @@ vehicles.updatePrice = function(id, newPrice) {
     }
 };
 
-vehicles.respawn = (vehicle) => {
-    if (!vehicles.exists(vehicle))
+vehicles.removeAllPasengers = function(vehicle) {
+    if (!vehicles.exists(vehicle)) {
         return;
-
-    try {
-        if (vehicle.getVariable('useless'))
-            return;
-
-        try {
-            vehicle._attachments.forEach(attach => {
-                try {
-                    vehicle.addAttachment(attach, true);
-                }
-                catch (e) {
-                    
-                }
-            });
-        }
-        catch (e) {
-            
-        }
-        
-        setTimeout(function () {
-            if (!vehicles.exists(vehicle))
-                return;
-            try {
-                methods.debug('vehicles.respawn');
-                let containerId = vehicle.getVariable('container');
-                if (containerId != undefined && vehicle.getVariable('user_id') > 0)
-                    vehicles.spawnPlayerCar(containerId);
-                let fractionId = vehicle.getVariable('fraction_id');
-                if (fractionId) {
-                    let info = vehicles.getFractionVehicleInfo(vehicle.getVariable('veh_id'));
-                    if (info.is_default || info.fraction_id < 0) {
-                        if (info !== undefined) {
-                            if (info.is_default || info.fraction_id < 0) {
-                                vehicles.spawnFractionCar(info.id);
-                            }
-                        }
-                    }
-                }
-                vehicle.destroy();
-            }
-            catch (e) {
-        
-            }
-        }, 100)
     }
-    catch (e) {
+    for(let veh of vehicles.getOccupants(vehicle)) {
+        veh.removeFromVehicle();
+    }
+};
+
+vehicles.respawn = (vehicle) => {
+    if (!vehicles.exists(vehicle)) {
+        return;
+    }
+    try {
+        if (vehicle.getVariable('useless')) {
+            return;
+        }
+        vehicles.removeAllPasengers(vehicle);   
+        
+        vehicle._attachments.forEach(attach => {
+            vehicle.addAttachment(attach, true);
+        });
+
+        setTimeout(function () {
+            if (!vehicles.exists(vehicle)) {
+                return;
+            }
+            methods.debug('vehicles.respawn');
+            let containerId = vehicle.getVariable('container');
+            if (containerId != undefined && vehicle.getVariable('user_id') > 0)
+                vehicles.spawnPlayerCar(containerId);
+            let fractionId = vehicle.getVariable('fraction_id');
+            if (fractionId) {
+                let info = vehicles.getFractionVehicleInfo(vehicle.getVariable('veh_id'));
+                if (info.is_default || info.fraction_id < 0)
+                    vehicles.spawnFractionCar(info.id);
+            }
+            vehicle.destroy();
+        }, 500); 
+    } catch (e) {
         methods.debug(e);
     }
 };
