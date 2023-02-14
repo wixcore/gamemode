@@ -396,12 +396,14 @@ mp.events.add('voice.toggleMicrophone', async (playerId, isEnabled) => {
     const player = mp.players.atRemoteId(playerId);
 
     mp.game.streaming.requestAnimDict("mp_facial");
-    while (!mp.game.streaming.hasAnimDictLoaded("mp_facial"))
-        await methods.debug(10);
+    while (!mp.game.streaming.hasAnimDictLoaded("mp_facial")) {
+        await methods.sleep(10);
+    }
 
     mp.game.streaming.requestAnimDict("facials@gen_male@variations@normal");
-    while (!mp.game.streaming.hasAnimDictLoaded("facials@gen_male@variations@normal"))
-        await methods.debug(10);
+    while (!mp.game.streaming.hasAnimDictLoaded("facials@gen_male@variations@normal")) {
+        await methods.sleep(10);
+    }
 
     if (player && mp.players.exists(player)) {
 
