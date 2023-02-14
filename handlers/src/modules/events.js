@@ -4539,12 +4539,28 @@ mp.keys.bind(70, true, function() {
     let vehicle = methods.getNearestVehicleWithCoords(position, 6);
 
     if (vehicle && mp.vehicles.exists(vehicle) && 5 > vehicle.getSpeed()) {
-        if (vehicle.isSeatFree(-1) || vehicle.getPedInSeat(-1) === player.handle || 0 === vehicle.getPedInSeat(-1))
-            return void player.taskEnterVehicle(vehicle.handle, 2500, -1, 1, 1, 0);
+        if ((methods.distanceToPos(vehicle.position, position) > 3 || user.getLastFlag() != 0) && vehicle.getVariable('locked') === true) {
+            return;
+        }
+        
+        if (vehicle.isSeatFree(-1) || vehicle.getPedInSeat(-1) === player.handle || 0 === vehicle.getPedInSeat(-1)) {
+            setTimeout(function () {
+                mp.players.local.clearTasks();
+            }, 3500);
+            return void player.taskEnterVehicle(vehicle.handle, 5000, -1, 1, 1, 0);
+        }
+            
 
-        for (let i = 0; i < vehicle.getMaxNumberOfPassengers(); i++)
-            if (vehicle.isSeatFree(i))
+        for (let i = 0; i < vehicle.getMaxNumberOfPassengers(); i++) {
+            if (vehicle.isSeatFree(i)) {
+                setTimeout(function () {
+                    mp.players.local.clearTasks();
+                }, 3500);
                 return void player.taskEnterVehicle(vehicle.handle, 5000, i, 1, 1, 0)
+            }
+                
+        }
+            
     }
 });
 
