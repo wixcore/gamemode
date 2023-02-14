@@ -5148,7 +5148,9 @@ mp.events.addRemoteCounted("onKeyPress:E", (player) => {
 
             if (methods.distanceToPos(player.position, new mp.Vector3(x, y, z)) < 1.5) {
                 let houseData = houses.getHouseData(player.dimension);
-                player.call('client:showHouseInMenu', [Array.from(houseData)]);
+                if(houseData != null) {
+                    player.call('client:showHouseInMenu', [Array.from(houseData)]);
+                }
             }
         });
 
@@ -8949,15 +8951,7 @@ mp.events.addRemoteCounted("server:activatePromocode", (player, promocode) => {
 
 mp.events.add('playerJoin', player => {
 
-
-    /*if (!enums.whiteList.includes(player.socialClub)) { //TODO Убрать на открытии
-        player.outputChatBox("Сервер будет доступен в 17:00 По МСК");
-        player.kick();
-        return;
-    }*/
-
     player.dimension = player.id + 1;
-
     player.countedTriggers = 0;
     player.countedTriggersSwap = 0;
 
