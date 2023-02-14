@@ -209,8 +209,8 @@ mp.events.addRemoteCounted('modules:server:data:Has', (player, promiseId, id, ke
 
 mp.events.add('server:clientDebug', (player, message) => {
     try {
-        console.log(`[DEBUG-CLIENT][${player.socialClub}]: ${message}`);
-        //methods.saveFile('log', `[DEBUG-CLIENT][${player.socialClub}]: ${message}`);
+        // console.log(`[DEBUG-CLIENT][${player.socialClub}]: ${message}`);
+        // methods.saveFile('log', `[DEBUG-CLIENT][${player.socialClub}]: ${message}`);
     } catch (e) {
         console.log(e);
     }
@@ -3138,16 +3138,20 @@ mp.events.addRemoteCounted('server:business:save', (player, id) => {
 });
 
 mp.events.addRemoteCounted('server:changeWaypointPos', (player, x, y) => {
-    if (!user.isLogin(player))
+    if (!user.isLogin(player)) {
         return;
-    if (!vehicles.exists(player.vehicle))
+    }
+        
+    if (!vehicles.exists(player.vehicle)) {
         return;
-
-    player.vehicle.getOccupants().forEach((p) => {
-        if (!user.isLogin(p))
+    }
+        
+    for(let p of vehicles.getOccupants(player.vehicle)) {
+        if (!user.isLogin(p)) {
             return;
+        }
         user.setWaypoint(p, x, y);
-    });
+    };
 });
 
 mp.events.addRemoteCounted('server:uniform:gr6', (player) => {
@@ -3166,12 +3170,11 @@ mp.events.addRemoteCounted('server:gr6:findPickup', (player, x, y, z) => {
                 return;
             }
 
-            if (player.vehicle.getOccupants().length == 1) {
+            if (vehicles.getOccupants(player.vehicle).length == 1) {
                 player.notify('~b~Работать можно только с напарниками!');
-            }
-            else {
+            } else {
                 let isStart = false;
-                player.vehicle.getOccupants().forEach(function (p) {
+                for(let p of vehicles.getOccupants(player.vehicle)) {
                     try {
                         if (!user.isLogin(p))
                             return;
@@ -3195,7 +3198,7 @@ mp.events.addRemoteCounted('server:gr6:findPickup', (player, x, y, z) => {
                     catch (e) {
                         methods.debug(e);
                     }
-                })
+                }
             }
         }
     }
@@ -3211,7 +3214,7 @@ mp.events.addRemoteCounted('server:gr6:dropCar', (player, money, vId) => {
         try {
             if (vehicles.exists(v) && v.id == vId) {
                 v.setVariable('isStartDuty', undefined);
-                v.getOccupants().forEach(function (p) {
+                for(let p of vehicles.getOccupants(v)) {
                     try {
                         if (!user.isLogin(p) || user.get(p, 'job') != 10)
                             return;
@@ -3222,11 +3225,10 @@ mp.events.addRemoteCounted('server:gr6:dropCar', (player, money, vId) => {
                     catch (e) {
                         methods.debug(e);
                     }
-                });
+                };
                 v.setVariable('gr6Money', methods.parseFloat(v.getVariable('gr6Money') + money));
             }
-        }
-        catch (e) {
+        } catch (e) {
             methods.debug(e);
         }
     });
@@ -3247,9 +3249,9 @@ mp.events.addRemoteCounted('server:gr6:unload', (player) => {
                 }
 
                 let money = methods.parseFloat(v.getVariable('gr6Money') / 100);
-                let countOcc = v.getOccupants().length;
+                let countOcc = vehicles.getOccupants(v).length;
 
-                v.getOccupants().forEach(function (p) {
+                for(let p of vehicles.getOccupants(v)) {
                     try {
                         if (!user.isLogin(p) || user.get(p, 'job') != 10)
                             return;
@@ -3298,7 +3300,7 @@ mp.events.addRemoteCounted('server:gr6:unload', (player) => {
                     catch (e) {
                         methods.debug(e);
                     }
-                });
+                };
                 v.setVariable('gr6Money', 0);
             }
         }
