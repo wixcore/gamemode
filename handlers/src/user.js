@@ -2066,22 +2066,30 @@ user.stopScenario = function() {
 let isOpenPhone = false;
 
 user.openPhone = function(type) {
-    user.playAnimation("cellphone@female", "cellphone_text_read_base", 49);
-    mp.attachmentMngr.addLocal('phone' + type);
+    if (!mp.players.local.isInAnyVehicle(false)) {
+        user.playAnimation("cellphone@female", "cellphone_text_read_base", 49);
+        mp.attachmentMngr.addLocal('phone' + type);
+    }
     isOpenPhone = true;
     user.setCurrentWeapon('weapon_unarmed');
 };
 
 user.rotatePhoneV = function() {
-    user.playAnimation("cellphone@female", "cellphone_text_read_base", 49);
+    if (!mp.players.local.isInAnyVehicle(false)) {
+        user.playAnimation("cellphone@female", "cellphone_text_read_base", 49);
+    }
 };
 
 user.rotatePhoneH = function() {
-    user.playAnimation("cellphone@in_car@ds@first_person", "cellphone_horizontal_base", 49);
+    if (!mp.players.local.isInAnyVehicle(false)) {
+        user.playAnimation("cellphone@in_car@ds@first_person", "cellphone_horizontal_base", 49);
+    }
 };
 
 user.callPhone = function() {
-    user.playAnimation("cellphone@female", "cellphone_call_listen_base", 49);
+    if (!mp.players.local.isInAnyVehicle(false)) {
+        user.playAnimation("cellphone@female", "cellphone_call_listen_base", 49);
+    }
 };
 
 user.isOpenPhone = function() {
