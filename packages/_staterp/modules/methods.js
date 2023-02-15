@@ -381,8 +381,8 @@ methods.replaceAllGtaSymb = function(str) {
 
 methods.debug = function (message, ...args) {
     try {
-        console.log(`[DEBUG-SERVER] [${methods.getTime()}]: ${message}`, args);
-        //methods.saveFile('log', `[DEBUG-SERVER] [${methods.getTime()}]: ${message} | ${JSON.stringify(args)}`);
+        // console.log(`[DEBUG-SERVER] [${methods.getTime()}]: ${message}`, args);
+        // methods.saveFile('log', `[DEBUG-SERVER] [${methods.getTime()}]: ${message} | ${JSON.stringify(args)}`);
     } catch (e) {
         console.log(e)
     }

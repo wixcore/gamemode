@@ -23,7 +23,6 @@ const pool = mysql2.createPool({
 
 pool.on('connection', function (connection) {
     connection.query('SET SESSION sql_mode=\'\'');
-    console.log('New MySQL connection id: ' + connection.threadId);
 });
 
 pool.on('enqueue', function (connection) {

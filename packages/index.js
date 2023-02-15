@@ -1,69 +1,68 @@
 "use strict"; // Created by "WixCore.Net" on 12.02.2023.
-
 global.WixCore      = {};
 WixCore.Feature     = {};
 
-require('./modules/cli');
-require('./modules/data');
-require('./modules/events');
-require('./modules/chat');
-require('./voice/voice');
-require('./managers/vSync');
-require('./managers/wpSync');
-require('./managers/attach');
-require('./managers/attachWeapons');
-require('./managers/dispatcher');
+require('./_staterp/modules/cli');
+require('./_staterp/modules/data');
+require('./_staterp/modules/events');
+require('./_staterp/modules/chat');
+require('./_staterp/voice/voice');
+require('./_staterp/managers/vSync');
+require('./_staterp/managers/wpSync');
+require('./_staterp/managers/attach');
+require('./_staterp/managers/attachWeapons');
+require('./_staterp/managers/dispatcher');
 
-require('./casino/wheel');
+require('./_staterp/casino/wheel');
 
-let mysql = require('./modules/mysql');
-let methods = require('./modules/methods');
-let vehicleInfo = require('./modules/vehicleInfo');
-let ctos = require('./modules/ctos');
+let mysql = require('./_staterp/modules/mysql');
+let methods = require('./_staterp/modules/methods');
+let vehicleInfo = require('./_staterp/modules/vehicleInfo');
+let ctos = require('./_staterp/modules/ctos');
 
-let cloth = require('./business/cloth');
-let tattoo = require('./business/tattoo');
-let lsc = require('./business/lsc');
-let gun = require('./business/gun');
-let vShop = require('./business/vShop');
-let carWash = require('./business/carWash');
-let rent = require('./business/rent');
-let bar = require('./business/bar');
-let barberShop = require('./business/barberShop');
-let bank = require('./business/bank');
-let fuel = require('./business/fuel');
-let shop = require('./business/shop');
-let tradeMarket = require('./business/tradeMarket');
+let cloth = require('./_staterp/business/cloth');
+let tattoo = require('./_staterp/business/tattoo');
+let lsc = require('./_staterp/business/lsc');
+let gun = require('./_staterp/business/gun');
+let vShop = require('./_staterp/business/vShop');
+let carWash = require('./_staterp/business/carWash');
+let rent = require('./_staterp/business/rent');
+let bar = require('./_staterp/business/bar');
+let barberShop = require('./_staterp/business/barberShop');
+let bank = require('./_staterp/business/bank');
+let fuel = require('./_staterp/business/fuel');
+let shop = require('./_staterp/business/shop');
+let tradeMarket = require('./_staterp/business/tradeMarket');
 
-let houses = require('./property/houses');
-let condos = require('./property/condos');
-let business = require('./property/business');
-let vehicles = require('./property/vehicles');
-let stocks = require('./property/stocks');
-let fraction = require('./property/fraction');
-let family = require('./property/family');
-let yachts = require('./property/yachts');
+let houses = require('./_staterp/property/houses');
+let condos = require('./_staterp/property/condos');
+let business = require('./_staterp/property/business');
+let vehicles = require('./_staterp/property/vehicles');
+let stocks = require('./_staterp/property/stocks');
+let fraction = require('./_staterp/property/fraction');
+let family = require('./_staterp/property/family');
+let yachts = require('./_staterp/property/yachts');
 
-let weather = require('./managers/weather');
-let pickups = require('./managers/pickups');
-let gangWar = require('./managers/gangWar');
-let canabisWar = require('./managers/canabisWar');
-let gangZone = require('./managers/gangZone');
-let copsRacer = require('./managers/copsRacer');
-let mafiaWar = require('./managers/mafiaWar');
-let timer = require('./managers/timer');
-let ems = require('./managers/ems');
-let tax = require('./managers/tax');
-let discord = require('./managers/discord');
-let racer = require('./managers/racer');
-let trucker = require('./managers/trucker');
-let graffiti = require('./managers/graffiti');
-let fishing = require('./managers/fishing');
+let weather = require('./_staterp/managers/weather');
+let pickups = require('./_staterp/managers/pickups');
+let gangWar = require('./_staterp/managers/gangWar');
+let canabisWar = require('./_staterp/managers/canabisWar');
+let gangZone = require('./_staterp/managers/gangZone');
+let copsRacer = require('./_staterp/managers/copsRacer');
+let mafiaWar = require('./_staterp/managers/mafiaWar');
+let timer = require('./_staterp/managers/timer');
+let ems = require('./_staterp/managers/ems');
+let tax = require('./_staterp/managers/tax');
+let discord = require('./_staterp/managers/discord');
+let racer = require('./_staterp/managers/racer');
+let trucker = require('./_staterp/managers/trucker');
+let graffiti = require('./_staterp/managers/graffiti');
+let fishing = require('./_staterp/managers/fishing');
 
-let coffer = require('./coffer');
-let inventory = require('./inventory');
-let weapons = require('./weapons');
-let enums = require('./enums');
+let coffer = require('./_staterp/coffer');
+let inventory = require('./_staterp/inventory');
+let weapons = require('./_staterp/weapons');
+let enums = require('./_staterp/enums');
 
 function init() {
     try {
