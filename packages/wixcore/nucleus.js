@@ -3,11 +3,8 @@ module.exports = async () => {
         //#region Global
         global.fs = require('fs');
         global.path = require('path');
-        global.Sequelize = require('sequelize');
-        global.Op = Sequelize.Op;
-        global.WixCore = {};
+        global.WixCore = new Map();
         //#endregion
-
     } catch (error) {
         console.log('[ERROR] Ініціалізація "Nucleus"', '\n', error);
     }
