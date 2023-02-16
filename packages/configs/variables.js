@@ -2,7 +2,7 @@
 
 let config = {
   'TypeMode': 'Development',  // Development | Testing | Production
-  'database': "mysql",
+  'DataBase': "mysql",
   'MySQL Connect': {
     "Development": {
       Connect: ['127.0.0.1', 3306, 'database_devs', 'username', 'password'],

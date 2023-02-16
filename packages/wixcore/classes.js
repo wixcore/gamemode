@@ -1,10 +1,10 @@
-'use strict'; // Created by ua.lifesheets on 15.02.2023.
-
 module.exports = async () => {
     try {
-        WixCore.MySql = require('../classes/mysql');
-        await WixCore.MySql.Connect()
-        // Todo
+        //#region Global
+        WixCore.Class = {};
+        //#endregion
+
+        WixCore.Class.Example = require('../classes/example');
     } catch (error) {
         console.log('[ERROR] Ініціалізація "Classes"', '\n', error);
     }
