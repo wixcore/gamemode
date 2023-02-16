@@ -7,11 +7,10 @@
   */
 
 (async () => {
-    await require('./wixcore/nucleus')();
-    await require('./wixcore/configs')();
-    await require('./wixcore/classes')(); 
-    await require('./wixcore/modules')();
-    await require('./wixcore/plugins')();
-    await require('./wixcore/staterp')();
-    console.log(WixCore);
+  await require('./wixcore/nucleus')();
+  await require('./wixcore/configs')();
+  await require('./wixcore/classes')();
+  await require('./wixcore/modules')();
+  await require('./wixcore/plugins')();
+  await require('./wixcore/staterp')();
 })();

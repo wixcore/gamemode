@@ -4,7 +4,7 @@ module.exports = async () => {
         WixCore.Class = {};
         //#endregion
 
-        WixCore.Class.Example = require('../classes/example');
+        WixCore.Class.TypeMode = require('../classes/typemode');
     } catch (error) {
         console.log('[ERROR] Ініціалізація "Classes"', '\n', error);
     }
