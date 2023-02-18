@@ -1427,14 +1427,9 @@ mp.events.add('client:menuList:showInvaderShopMenu', () => {
     }
 });
 
-mp.events.add('client:menuList:showBotEmsMenu', (idx, canFree) => {
-    try {
-       methods.debug('Event: client:menuList:showBotEmsMenu');
-       menuList.showBotEmsMenu(idx, canFree);
-    }
-    catch (e) {
-        methods.debug(e);
-    }
+// СКОРО УДАЛЕНИЯ..
+mp.events.add('wixcore::security:feature:factions:menu:list:reception', (idx, canFree) => {
+    menuList.showBotEmsMenu(idx, canFree);
 });
 
 mp.events.add('client:menuList:showBotUsmcMenu', () => {
@@ -2271,13 +2266,11 @@ mp.events.add('client:menuList:showMazeOfficeMenu', async () => {
     menuList.showBankMenu(1, await business.getPrice(1));
 });
 
-mp.events.add('client:menuList:showFractionKeyMenu', (data) => {
-    methods.debug('Event: client:menuList:showFractionKeyMenu', data);
+mp.events.add('wixcore::security:feature:factions:menu:list:vehicles', (data) => {
     menuList.showFractionKeyMenu(data);
 });
 
-mp.events.add('client:menuList:showFractionInfoMenu', () => {
-    methods.debug('Event: client:menuList:showFractionInfoMenu');
+mp.events.add('wixcore::security:feature:factions:menu:list:organization', () => {
     menuList.showFractionInfoMenu();
 });
 
@@ -2361,18 +2354,15 @@ mp.events.add('client:menuList:showSapdClearMenu', () => {
     //menuList.showSapdClearMenu();
 });
 
-mp.events.add('client:menuList:showEmsGarderobMenu', () => {
-    methods.debug('Event: client:menuList:showEmsGarderobMenu');
+mp.events.add('wixcore::security:feature:factions:menu:list:garderob', () => {
     menuList.showEmsGarderobMenu();
 });
 
-mp.events.add('client:menuList:showEmsArsenalMenu', () => {
-    methods.debug('Event: client:menuList:showEmsArsenalMenu');
+mp.events.add('wixcore::security:feature:factions:menu:list:arsenal', () => {
     menuList.showEmsArsenalMenu();
 });
 
-mp.events.add('client:menuList:showEmsFreeMenu', () => {
-    methods.debug('Event: client:menuList:showEmsFreeMenu');
+mp.events.add('wixcore::security:feature:factions:menu:list:medpanel', () => {
     menuList.showEmsFreeMenu();
 });
 

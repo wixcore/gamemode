@@ -129,16 +129,11 @@ pickups.UsmcPickupPos2 = new mp.Vector3(556.9027709960938, -3120.732177734375, 1
 pickups.UsmcPickupPos11 = new mp.Vector3(581.3382568359375, -3119.184814453125, 17.76858901977539);
 pickups.UsmcPickupPos12 = new mp.Vector3(581.3219604492188, -3120.65625, 17.768583297729492);
 
-pickups.EmsPickupPos1 = new mp.Vector3(321.07550048828125, -558.7384033203125, 27.743440628051758);
-pickups.EmsPickupPos2 = new mp.Vector3(329.96148681640625, -600.9091796875, 42.284019470214844);
 
 pickups.CartelPickupPos1 = new mp.Vector3(5012.4287109375, -5748.9794921875, 27.945148468017578);
 pickups.CartelPickupPos2 = new mp.Vector3(5012.4775390625, -5746.83056640625, 14.484434127807617);
 
 pickups.LifeInvaderShopPos = new mp.Vector3(-1083.074, -248.3521, 36.76329);
-pickups.EmsBotPos1 = new mp.Vector3(308.7605895996094, -592.1345825195312, 42.28398895263672);
-pickups.EmsBotPos2 = new mp.Vector3(1837.709716796875, 3680.10400390625, 33.27006912231445);
-pickups.EmsBotPos3 = new mp.Vector3(-245.52569580078125, 6321.423828125, 31.420696258544922);
 pickups.UsmcBotPos = new mp.Vector3(487.7861022949219, -3027.18505859375, 5.01339435577392);
 
 pickups.MeriaUpPos = new mp.Vector3(-1395.997, -479.8439, 71.04215);
@@ -221,12 +216,6 @@ pickups.SheriffArrestPos3 = new mp.Vector3(360.8938293457031, -1597.596313476562
 
 pickups.PrisonArrestPos = new mp.Vector3(1690.606, 2591.926, 44.83793);
 
-pickups.EmsArsenalPos = new mp.Vector3(311.363037109375, -563.9005737304688, 42.28398895263672);
-pickups.EmsArsenalPos2 = new mp.Vector3(-258.50933837890625, 6308.8623046875, 31.426040649414062);
-pickups.EmsArsenalPos3 = new mp.Vector3(1206.7628173828125, -1478.664794921875, 33.85951614379883);
-pickups.EmsArsenalPos4 = new mp.Vector3(1822.641357421875, 3676.248046875, 33.270057678222656);
-pickups.EmsArsenalPos5 = new mp.Vector3(-377.16534423828125, 6110.66552734375, 30.44953155517578);
-
 pickups.CartelArsenalPos = new mp.Vector3(5011.41455078125, -5742.89453125, 14.484437942504883);
 
 /*Keys*/
@@ -234,7 +223,6 @@ pickups.GovKeyPos = new mp.Vector3(-1312.9268798828125, -550.072265625, 19.80277
 pickups.SapdKeyPos = new mp.Vector3(-1078.491943359375, -856.7177734375, 4.042818546295166);
 pickups.SheriffKeyPos = new mp.Vector3(-453.48065185546875, 6031.2314453125, 30.340538024902344);
 pickups.InvaderKeyPos = new mp.Vector3(-1095.8746337890625, -254.6504669189453, 36.68137741088867);
-pickups.EmsKeyPos = new mp.Vector3(319.167236328125, -559.7047119140625, 27.743427276611328);
 pickups.UsmcKeyPos = new mp.Vector3(468.67388916015625, -3205.725830078125, 5.069557189941406);
 pickups.FibKeyPos = new mp.Vector3(127.6114273071289, -742.7451782226562, 32.133235931396484);
 pickups.CartelKeyPos = new mp.Vector3(4976.3662109375, -5723.76611328125, 18.88021469116211);
@@ -251,8 +239,6 @@ pickups.SapdInfoPos3 = new mp.Vector3( -1084.4210205078125, -822.102294921875, 1
 pickups.SheriffInfo1Pos = new mp.Vector3(-447.1171569824219, 6014.25732421875, 35.50706481933594);
 pickups.SheriffInfo2Pos = new mp.Vector3(1861.929931640625, 3689.359375, 33.26704788208008);
 pickups.InvaderInfoPos = new mp.Vector3(-1082.346923828125, -245.2889404296875, 36.763282775878906);
-pickups.EmsInfo1Pos = new mp.Vector3(334.723876953125, -594.0081176757812, 42.28398895263672);
-pickups.EmsInfo2Pos = new mp.Vector3(-268.90997314453125, 6321.72802734375, 31.47595977783203);
 pickups.FibInfoPos = new mp.Vector3(155.91026306152344, -738.9337768554688, 241.15208435058594);
 pickups.UsmcInfoPos = new mp.Vector3(562.8510131835938, -3124.137939453125, 17.768630981445312);
 
@@ -261,24 +247,6 @@ pickups.InvaderWorkPos1 = new mp.Vector3(-1055.5491943359375, -242.5165100097656
 pickups.InvaderWorkPos2 = new mp.Vector3(-1050.10302734375, -242.052734375, 43.02106475830078);
 pickups.InvaderWorkPos3 = new mp.Vector3(-1059.9254150390625, -246.7880096435547, 43.021060943603516);
 pickups.InvaderWorkPos4 = new mp.Vector3(-1056.6370849609375, -245.4740447998047, 43.021060943603516);
-
-/*EMS*/
-pickups.EmsGarderobPos1 = new mp.Vector3(299.0457458496094, -598.6067504882812, 42.28403091430664);
-pickups.EmsGarderobPos2 = new mp.Vector3(-244.68588256835938, 6318.1396484375, 31.44457244873047);
-pickups.EmsGarderobPos3 = new mp.Vector3(1206.7554931640625, -1465.3013916015625, 33.85951614379883);
-pickups.EmsGarderobPos4 = new mp.Vector3(1838.8011474609375, 3689.89111328125, 33.27003479003906);
-pickups.EmsGarderobPos5 = new mp.Vector3(-372.43133544921875, 6106.17626953125, 30.449552536010742);
-
-pickups.EmsFreePos1 = new mp.Vector3(1835.09423828125, 3683.8740234375, 33.2700309753418);
-pickups.EmsFreePos2 = new mp.Vector3(-248.40432739257812, 6321.85546875, 31.420692443847656);
-pickups.EmsFreePos3 = new mp.Vector3(308.6158752441406, -595.1431274414062, 42.28403091430664);
-
-pickups.EmsElevatorRoofPos = new mp.Vector3(334.7327, -1432.775, 45.51179);
-pickups.EmsElevatorParkPos = new mp.Vector3(406.5373, -1347.918, 40.05356);
-pickups.EmsElevatorPos = new mp.Vector3(247.0811, -1371.92, 23.53779);
-
-pickups.EmsRoofPos1 = new mp.Vector3(338.9745788574219, -584.0857543945312, 73.16557312011719);
-pickups.EmsRoofPos2 = new mp.Vector3(327.2897644042969, -603.27734375, 42.28400802612305);
 
 pickups.BahamaPos1 = new mp.Vector3(-1387.69, -588.719, 29.3198);
 pickups.BahamaPos2 = new mp.Vector3(-1388.88, -586.291, 29.2198);
@@ -449,7 +417,6 @@ pickups.checkPressLAlt = function(player) {
     methods.checkTeleport(player, pickups.BahamaPos1, pickups.BahamaPos2);
     methods.checkTeleport(player, pickups.Builder1Pos1, pickups.Builder1Pos2);
     methods.checkTeleport(player, pickups.Builder2Pos1, pickups.Builder2Pos2);
-    methods.checkTeleport(player, pickups.EmsRoofPos1, pickups.EmsRoofPos2);
     methods.checkTeleport(player, pickups.InvaderPos2, pickups.InvaderPos1);
     methods.checkTeleport(player, pickups.InvaderPos22, pickups.InvaderPos11);
 
@@ -458,7 +425,6 @@ pickups.checkPressLAlt = function(player) {
 
     methods.checkTeleport(player, pickups.UsmcPickupPos1, pickups.UsmcPickupPos2);
     methods.checkTeleport(player, pickups.UsmcPickupPos11, pickups.UsmcPickupPos12);
-    methods.checkTeleport(player, pickups.EmsPickupPos1, pickups.EmsPickupPos2);
 
     if (user.isCartel(player))
         methods.checkTeleport(player, pickups.CartelPickupPos1, pickups.CartelPickupPos2);
@@ -622,15 +588,8 @@ pickups.checkPressE = function(player) {
 
     if (methods.distanceToPos(pickups.LifeInvaderShopPos, playerPos) < distanceCheck)
         player.call('client:menuList:showInvaderShopMenu');
-    if (methods.distanceToPos(pickups.EmsBotPos1, playerPos) < distanceCheck)
-        player.call('client:menuList:showBotEmsMenu', [0, methods.getCurrentOnlineFraction(6) < 6]);
-    if (methods.distanceToPos(pickups.EmsBotPos2, playerPos) < distanceCheck)
-        player.call('client:menuList:showBotEmsMenu', [1, methods.getCurrentOnlineFraction(6) < 10]);
-    if (methods.distanceToPos(pickups.EmsBotPos3, playerPos) < distanceCheck)
-        player.call('client:menuList:showBotEmsMenu', [2, methods.getCurrentOnlineFraction(6) < 10]);
     if (methods.distanceToPos(pickups.UsmcBotPos, playerPos) < distanceCheck)
         player.call('client:menuList:showBotUsmcMenu');
-
     if (methods.distanceToPos(pickups.PrintShopPos, playerPos) < distanceCheck)
         player.call('client:menuList:showPrintShopMenu');
     if (methods.distanceToPos(pickups.SellVehicle, playerPos) < distanceCheck)
@@ -743,33 +702,29 @@ pickups.checkPressE = function(player) {
 
     if (user.isLeader(player) || user.isSubLeader(player) || user.isDepLeader(player) || user.isDepSubLeader(player)) {
         if (methods.distanceToPos(pickups.GovInfoPos1, playerPos) < distanceCheck)
-            player.call('client:menuList:showFractionInfoMenu');
+            player.call('wixcore::security:feature:factions:menu:list:organization');
         if (methods.distanceToPos(pickups.GovInfoPos2, playerPos) < distanceCheck)
-            player.call('client:menuList:showFractionInfoMenu');
+            player.call('wixcore::security:feature:factions:menu:list:organization');
         if (methods.distanceToPos(pickups.GovInfoPos3, playerPos) < distanceCheck)
-            player.call('client:menuList:showFractionInfoMenu');
+            player.call('wixcore::security:feature:factions:menu:list:organization');
         if (methods.distanceToPos(pickups.CartelInfoPos, playerPos) < distanceCheck)
-            player.call('client:menuList:showFractionInfoMenu');
+            player.call('wixcore::security:feature:factions:menu:list:organization');
         if (methods.distanceToPos(pickups.SapdInfoPos, playerPos) < distanceCheck)
-            player.call('client:menuList:showFractionInfoMenu');
+            player.call('wixcore::security:feature:factions:menu:list:organization');
         if (methods.distanceToPos(pickups.SapdInfoPos2, playerPos) < distanceCheck)
-            player.call('client:menuList:showFractionInfoMenu');
+            player.call('wixcore::security:feature:factions:menu:list:organization');
         if (methods.distanceToPos(pickups.SapdInfoPos3, playerPos) < distanceCheck)
-            player.call('client:menuList:showFractionInfoMenu');
+            player.call('wixcore::security:feature:factions:menu:list:organization');
         if (methods.distanceToPos(pickups.SheriffInfo1Pos, playerPos) < distanceCheck)
-            player.call('client:menuList:showFractionInfoMenu');
+            player.call('wixcore::security:feature:factions:menu:list:organization');
         if (methods.distanceToPos(pickups.SheriffInfo2Pos, playerPos) < distanceCheck)
-            player.call('client:menuList:showFractionInfoMenu');
+            player.call('wixcore::security:feature:factions:menu:list:organization');
         if (methods.distanceToPos(pickups.InvaderInfoPos, playerPos) < distanceCheck)
-            player.call('client:menuList:showFractionInfoMenu');
-        if (methods.distanceToPos(pickups.EmsInfo1Pos, playerPos) < distanceCheck)
-            player.call('client:menuList:showFractionInfoMenu');
-        if (methods.distanceToPos(pickups.EmsInfo2Pos, playerPos) < distanceCheck)
-            player.call('client:menuList:showFractionInfoMenu');
+            player.call('wixcore::security:feature:factions:menu:list:organization');
         if (methods.distanceToPos(pickups.UsmcInfoPos, playerPos) < distanceCheck)
-            player.call('client:menuList:showFractionInfoMenu');
+            player.call('wixcore::security:feature:factions:menu:list:organization');
         if (methods.distanceToPos(pickups.FibInfoPos, playerPos) < distanceCheck)
-            player.call('client:menuList:showFractionInfoMenu');
+            player.call('wixcore::security:feature:factions:menu:list:organization');
     }
 
     if (user.isNews(player)) {
@@ -784,28 +739,25 @@ pickups.checkPressE = function(player) {
     }
 
     if (methods.distanceToPos(pickups.GovKeyPos, playerPos) < distanceCheck && user.isGov(player))
-        player.call('client:menuList:showFractionKeyMenu', [vehicles.getFractionAllowCarList(1, user.isLeader(player) || user.isSubLeader(player) || user.isDepLeader(player) || user.isSubLeader(player) ? -1 : user.get(player, 'rank_type'))]);
+        player.call('wixcore::security:feature:factions:menu:list:vehicles', [vehicles.getFractionAllowCarList(1, user.isLeader(player) || user.isSubLeader(player) || user.isDepLeader(player) || user.isSubLeader(player) ? -1 : user.get(player, 'rank_type'))]);
 
     else if (methods.distanceToPos(pickups.SapdKeyPos, playerPos) < distanceCheck && user.isSapd(player))
-        player.call('client:menuList:showFractionKeyMenu', [vehicles.getFractionAllowCarList(2, user.isLeader(player) || user.isSubLeader(player) || user.isDepLeader(player) || user.isSubLeader(player) ? -1 : user.get(player, 'rank_type'))]);
+        player.call('wixcore::security:feature:factions:menu:list:vehicles', [vehicles.getFractionAllowCarList(2, user.isLeader(player) || user.isSubLeader(player) || user.isDepLeader(player) || user.isSubLeader(player) ? -1 : user.get(player, 'rank_type'))]);
 
     else if (methods.distanceToPos(pickups.UsmcKeyPos, playerPos) < distanceCheck && user.isUsmc(player))
-        player.call('client:menuList:showFractionKeyMenu', [vehicles.getFractionAllowCarList(4, user.isLeader(player) || user.isSubLeader(player) || user.isDepLeader(player) || user.isSubLeader(player) ? -1 : user.get(player, 'rank_type'))]);
+        player.call('wixcore::security:feature:factions:menu:list:vehicles', [vehicles.getFractionAllowCarList(4, user.isLeader(player) || user.isSubLeader(player) || user.isDepLeader(player) || user.isSubLeader(player) ? -1 : user.get(player, 'rank_type'))]);
 
     else if (methods.distanceToPos(pickups.SheriffKeyPos, playerPos) < distanceCheck && user.isSheriff(player))
-        player.call('client:menuList:showFractionKeyMenu', [vehicles.getFractionAllowCarList(5, user.isLeader(player) || user.isSubLeader(player) || user.isDepLeader(player) || user.isSubLeader(player) ? -1 : user.get(player, 'rank_type'))]);
-
-    else if (methods.distanceToPos(pickups.EmsKeyPos, playerPos) < distanceCheck && user.isEms(player))
-        player.call('client:menuList:showFractionKeyMenu', [vehicles.getFractionAllowCarList(6, user.isLeader(player) || user.isSubLeader(player) || user.isDepLeader(player) || user.isSubLeader(player) ? -1 : user.get(player, 'rank_type'))]);
+        player.call('wixcore::security:feature:factions:menu:list:vehicles', [vehicles.getFractionAllowCarList(5, user.isLeader(player) || user.isSubLeader(player) || user.isDepLeader(player) || user.isSubLeader(player) ? -1 : user.get(player, 'rank_type'))]);
 
     else if (methods.distanceToPos(pickups.FibKeyPos, playerPos) < distanceCheck && user.isFib(player))
-        player.call('client:menuList:showFractionKeyMenu', [vehicles.getFractionAllowCarList(3, user.isLeader(player) || user.isSubLeader(player) || user.isDepLeader(player) || user.isSubLeader(player) ? -1 : user.get(player, 'rank_type'))]);
+        player.call('wixcore::security:feature:factions:menu:list:vehicles', [vehicles.getFractionAllowCarList(3, user.isLeader(player) || user.isSubLeader(player) || user.isDepLeader(player) || user.isSubLeader(player) ? -1 : user.get(player, 'rank_type'))]);
 
     else if (methods.distanceToPos(pickups.CartelKeyPos, playerPos) < distanceCheck && user.isCartel(player))
-        player.call('client:menuList:showFractionKeyMenu', [vehicles.getFractionAllowCarList(8, user.isLeader(player) || user.isSubLeader(player) || user.isDepLeader(player) || user.isSubLeader(player) ? -1 : user.get(player, 'rank_type'))]);
+        player.call('wixcore::security:feature:factions:menu:list:vehicles', [vehicles.getFractionAllowCarList(8, user.isLeader(player) || user.isSubLeader(player) || user.isDepLeader(player) || user.isSubLeader(player) ? -1 : user.get(player, 'rank_type'))]);
 
     else if (methods.distanceToPos(pickups.InvaderKeyPos, playerPos) < distanceCheck && user.isNews(player))
-        player.call('client:menuList:showFractionKeyMenu', [vehicles.getFractionAllowCarList(7, user.isLeader(player) || user.isSubLeader(player) || user.isDepLeader(player) || user.isSubLeader(player) ? -1 : user.get(player, 'rank_type'))]);
+        player.call('wixcore::security:feature:factions:menu:list:vehicles', [vehicles.getFractionAllowCarList(7, user.isLeader(player) || user.isSubLeader(player) || user.isDepLeader(player) || user.isSubLeader(player) ? -1 : user.get(player, 'rank_type'))]);
 
     if (player.dimension > 0) {
         if (methods.distanceToPos(business.BusinessBotPos, playerPos) < distanceCheck)
@@ -844,34 +796,7 @@ pickups.checkPressE = function(player) {
         if (methods.distanceToPos(pickups.SapdArsenalPos3, playerPos) < distanceCheck)
             player.call('client:menuList:showSapdArsenalMenu');
     }
-    if (user.isEms(player)) {
-        if (methods.distanceToPos(pickups.EmsGarderobPos1, playerPos) < distanceCheck)
-            player.call('client:menuList:showEmsGarderobMenu');
-        if (methods.distanceToPos(pickups.EmsGarderobPos2, playerPos) < distanceCheck)
-            player.call('client:menuList:showEmsGarderobMenu');
-        if (methods.distanceToPos(pickups.EmsGarderobPos3, playerPos) < distanceCheck)
-            player.call('client:menuList:showEmsGarderobMenu');
-        if (methods.distanceToPos(pickups.EmsGarderobPos4, playerPos) < distanceCheck)
-            player.call('client:menuList:showEmsGarderobMenu');
-        if (methods.distanceToPos(pickups.EmsGarderobPos5, playerPos) < distanceCheck)
-            player.call('client:menuList:showEmsGarderobMenu');
-        if (methods.distanceToPos(pickups.EmsArsenalPos, playerPos) < distanceCheck)
-            player.call('client:menuList:showEmsArsenalMenu');
-        if (methods.distanceToPos(pickups.EmsArsenalPos2, playerPos) < distanceCheck)
-            player.call('client:menuList:showEmsArsenalMenu');
-        if (methods.distanceToPos(pickups.EmsArsenalPos3, playerPos) < distanceCheck)
-            player.call('client:menuList:showEmsArsenalMenu');
-        if (methods.distanceToPos(pickups.EmsArsenalPos4, playerPos) < distanceCheck)
-            player.call('client:menuList:showEmsArsenalMenu');
-        if (methods.distanceToPos(pickups.EmsArsenalPos5, playerPos) < distanceCheck)
-            player.call('client:menuList:showEmsArsenalMenu');
-        if (methods.distanceToPos(pickups.EmsFreePos1, playerPos) < distanceCheck)
-            player.call('client:menuList:showEmsFreeMenu');
-        if (methods.distanceToPos(pickups.EmsFreePos2, playerPos) < distanceCheck)
-            player.call('client:menuList:showEmsFreeMenu');
-        if (methods.distanceToPos(pickups.EmsFreePos3, playerPos) < distanceCheck)
-            player.call('client:menuList:showEmsFreeMenu');
-    }
+
     if (user.isSheriff(player)) {
         if (methods.distanceToPos(pickups.SheriffGarderobPos, playerPos) < distanceCheck)
             player.call('client:menuList:showSheriffGarderobMenu');
@@ -1035,21 +960,10 @@ pickups.checkPressE = function(player) {
 pickups.createAll = function() {
     methods.debug('pickups.createPickups');
 
-    methods.createCpVector(pickups.EmsGarderobPos1, 'Нажмите ~g~E~s~ чтобы открыть меню', 1, -1, pickups.Blue);
-    methods.createCpVector(pickups.EmsGarderobPos2, 'Нажмите ~g~E~s~ чтобы открыть меню', 1, -1, pickups.Blue);
-    methods.createCpVector(pickups.EmsGarderobPos3, 'Нажмите ~g~E~s~ чтобы открыть меню', 1, -1, pickups.Blue);
-    methods.createCpVector(pickups.EmsGarderobPos4, 'Нажмите ~g~E~s~ чтобы открыть меню', 1, -1, pickups.Blue);
-    methods.createCpVector(pickups.EmsGarderobPos5, 'Нажмите ~g~E~s~ чтобы открыть меню', 1, -1, pickups.Blue);
-
-    methods.createCpVector(pickups.EmsFreePos1, 'Нажмите ~g~E~s~ чтобы открыть меню', 1, -1, pickups.Blue);
-    methods.createCpVector(pickups.EmsFreePos2, 'Нажмите ~g~E~s~ чтобы открыть меню', 1, -1, pickups.Blue);
-    methods.createCpVector(pickups.EmsFreePos3, 'Нажмите ~g~E~s~ чтобы открыть меню', 1, -1, pickups.Blue);
-
     //methods.createStaticCheckpointV(pickups.TheLostPos1, 'Нажмите ~g~Left Alt~s~ чтобы воспользоваться пикапом', 1, -1, pickups.Blue100);
     //methods.createStaticCheckpointV(pickups.TheLostPos2, 'Нажмите ~g~Left Alt~s~ чтобы воспользоваться пикапом', 1, -1, pickups.Blue100);
     methods.createCpVector(pickups.BahamaPos1, 'Нажмите ~g~Left Alt~s~ чтобы воспользоваться пикапом', 1, -1, pickups.Blue100);
     methods.createCpVector(pickups.BahamaPos2, 'Нажмите ~g~Left Alt~s~ чтобы воспользоваться пикапом', 1, -1, pickups.Blue100);
-
     methods.createCpVector(pickups.SapdToInterrogationPos, 'Нажмите ~g~Left Alt~s~ чтобы воспользоваться пикапом', 1, -1, pickups.Blue100);
     methods.createCpVector(pickups.SapdFromInterrogationPos, 'Нажмите ~g~Left Alt~s~ чтобы воспользоваться пикапом', 1, -1, pickups.Blue100);
     methods.createCpVector(pickups.SapdToVespucci1Pos, 'Нажмите ~g~Left Alt~s~ чтобы воспользоваться пикапом', 1, -1, pickups.Blue100);
@@ -1060,21 +974,13 @@ pickups.createAll = function() {
     methods.createCpVector(pickups.SapdFromBalconPos, 'Нажмите ~g~Left Alt~s~ чтобы воспользоваться пикапом', 1, -1, pickups.Blue100);
     methods.createCpVector(pickups.SapdToBalcon2Pos, 'Нажмите ~g~Left Alt~s~ чтобы воспользоваться пикапом', 1, -1, pickups.Blue100);
     methods.createCpVector(pickups.SapdFromBalcon2Pos, 'Нажмите ~g~Left Alt~s~ чтобы воспользоваться пикапом', 1, -1, pickups.Blue100);
-
     methods.createCpVector(pickups.Builder1Pos1, 'Нажмите ~g~Left Alt~s~ чтобы воспользоваться пикапом', 1, -1, pickups.Blue100);
     methods.createCpVector(pickups.Builder1Pos2, 'Нажмите ~g~Left Alt~s~ чтобы воспользоваться пикапом', 1, -1, pickups.Blue100);
-
     methods.createCpVector(pickups.Builder2Pos1, 'Нажмите ~g~Left Alt~s~ чтобы воспользоваться пикапом', 1, -1, pickups.Blue100);
     methods.createCpVector(pickups.Builder2Pos2, 'Нажмите ~g~Left Alt~s~ чтобы воспользоваться пикапом', 1, -1, pickups.Blue100);
-
-    methods.createCpVector(pickups.EmsRoofPos1, 'Нажмите ~g~Left Alt~s~ чтобы воспользоваться пикапом', 1, -1, pickups.Blue100);
-    methods.createCpVector(pickups.EmsRoofPos2, 'Нажмите ~g~Left Alt~s~ чтобы воспользоваться пикапом', 1, -1, pickups.Blue100);
-
-    methods.createCpVector(pickups.EmsKeyPos, 'Нажмите ~g~E~s~ чтобы открыть меню', 1, -1, pickups.Blue);
     methods.createCpVector(pickups.GovKeyPos, 'Нажмите ~g~E~s~ чтобы открыть меню', 1, -1, pickups.Blue);
     methods.createCpVector(pickups.UsmcKeyPos, 'Нажмите ~g~E~s~ чтобы открыть меню', 1, -1, pickups.Blue);
     methods.createCpVector(pickups.CartelKeyPos, 'Нажмите ~g~E~s~ чтобы открыть меню', 1, -1, pickups.Blue);
-
     methods.createCpVector(pickups.FibInfoPos, 'Нажмите ~g~E~s~ чтобы открыть меню руководства', 1, -1, pickups.Blue);
     methods.createCpVector(pickups.UsmcInfoPos, 'Нажмите ~g~E~s~ чтобы открыть меню руководства', 1, -1, pickups.Blue);
     methods.createCpVector(pickups.GovInfoPos1, 'Нажмите ~g~E~s~ чтобы открыть меню руководства', 1, -1, pickups.Blue);
@@ -1086,14 +992,10 @@ pickups.createAll = function() {
     methods.createCpVector(pickups.SheriffInfo1Pos, 'Нажмите ~g~E~s~ чтобы открыть меню руководства', 1, -1, pickups.Blue);
     methods.createCpVector(pickups.SheriffInfo2Pos, 'Нажмите ~g~E~s~ чтобы открыть меню руководства', 1, -1, pickups.Blue);
     methods.createCpVector(pickups.InvaderInfoPos, 'Нажмите ~g~E~s~ чтобы открыть меню руководства', 1, -1, pickups.Blue);
-    methods.createCpVector(pickups.EmsInfo1Pos, 'Нажмите ~g~E~s~ чтобы открыть меню руководства', 1, -1, pickups.Blue);
-    methods.createCpVector(pickups.EmsInfo2Pos, 'Нажмите ~g~E~s~ чтобы открыть меню руководства', 1, -1, pickups.Blue);
-
     methods.createCpVector(pickups.InvaderWorkPos1, 'Нажмите ~g~E~s~ чтобы открыть меню', 1, -1, pickups.Blue);
     methods.createCpVector(pickups.InvaderWorkPos2, 'Нажмите ~g~E~s~ чтобы открыть меню', 1, -1, pickups.Blue);
     methods.createCpVector(pickups.InvaderWorkPos3, 'Нажмите ~g~E~s~ чтобы открыть меню', 1, -1, pickups.Blue);
     methods.createCpVector(pickups.InvaderWorkPos4, 'Нажмите ~g~E~s~ чтобы открыть меню', 1, -1, pickups.Blue);
-
     methods.createCpVector(pickups.BotSellGun, 'Нажмите ~g~E~s~ чтобы взаимодействовать с NPC', 1, -1, pickups.Yellow);
     methods.createCpVector(pickups.BotSellCloth, 'Нажмите ~g~E~s~ чтобы взаимодействовать с NPC', 1, -1, pickups.Yellow);
     methods.createCpVector(pickups.BotSellGun1, 'Нажмите ~g~E~s~ чтобы взаимодействовать с NPC', 1, -1, pickups.Yellow);
@@ -1103,12 +1005,10 @@ pickups.createAll = function() {
     methods.createCpVector(pickups.BotRoleAll1, 'Нажмите ~g~E~s~ чтобы взаимодействовать с NPC', 1, -1, pickups.Yellow);
     methods.createCpVector(pickups.QuestBotGang, 'Нажмите ~g~E~s~ чтобы взаимодействовать с NPC', 1, -1, pickups.Yellow);
     methods.createCpVector(pickups.BotJail, 'Нажмите ~g~E~s~ чтобы взаимодействовать с NPC', 1, -1, pickups.Yellow);
-
     methods.createCpVector(pickups.BotLspd1, 'Нажмите ~g~E~s~ чтобы взаимодействовать с NPC', 1, -1, pickups.Yellow);
     methods.createCpVector(pickups.BotLspd2, 'Нажмите ~g~E~s~ чтобы взаимодействовать с NPC', 1, -1, pickups.Yellow);
     methods.createCpVector(pickups.BotLspd3, 'Нажмите ~g~E~s~ чтобы взаимодействовать с NPC', 1, -1, pickups.Yellow);
     methods.createCpVector(pickups.BotLspd4, 'Нажмите ~g~E~s~ чтобы взаимодействовать с NPC', 1, -1, pickups.Yellow);
-
     methods.createCpVector(pickups.BotLspdCar1, 'Нажмите ~g~E~s~ чтобы взаимодействовать с NPC', 1, -1, pickups.Yellow);
     methods.createCpVector(pickups.BotLspdCar2, 'Нажмите ~g~E~s~ чтобы взаимодействовать с NPC', 1, -1, pickups.Yellow);
     methods.createCpVector(pickups.BotLspdCar3, 'Нажмите ~g~E~s~ чтобы взаимодействовать с NPC', 1, -1, pickups.Yellow);
@@ -1119,86 +1019,62 @@ pickups.createAll = function() {
     methods.createCpVector(pickups.BotLspdBoat, 'Нажмите ~g~E~s~ чтобы взаимодействовать с NPC', 1, -1, pickups.Yellow);
     methods.createCpVector(pickups.BotLspdHeli, 'Нажмите ~g~E~s~ чтобы взаимодействовать с NPC', 1, -1, pickups.Yellow);
     methods.createCpVector(pickups.BotLspdPlane, 'Нажмите ~g~E~s~ чтобы взаимодействовать с NPC', 1, -1, pickups.Yellow);
-
     methods.createCpVector(pickups.MazeBankLobby, 'Нажмите ~g~E~s~ чтобы открыть меню', 1, -1, pickups.Blue);
     methods.createCpVector(pickups.WheelLuckyPos, 'Нажмите ~g~E~s~ чтобы крутить колесо', 1, -1, [33, 150, 243, 0]);
-
     methods.createCpVector(pickups.LifeInvaderShopPos, 'Нажмите ~g~E~s~ чтобы открыть меню', 1, -1, pickups.Yellow);
-    methods.createCpVector(pickups.EmsBotPos1, 'Нажмите ~g~E~s~ чтобы открыть меню', 1, -1, pickups.Yellow);
-    methods.createCpVector(pickups.EmsBotPos2, 'Нажмите ~g~E~s~ чтобы открыть меню', 1, -1, pickups.Yellow);
-    methods.createCpVector(pickups.EmsBotPos3, 'Нажмите ~g~E~s~ чтобы открыть меню', 1, -1, pickups.Yellow);
     methods.createCpVector(pickups.UsmcBotPos, 'Нажмите ~g~E~s~ чтобы открыть меню', 1, -1, pickups.Yellow);
     methods.createCpVector(pickups.SellVehicle, 'Нажмите ~g~E~s~ чтобы открыть меню', 1, -1, pickups.Blue);
-
     methods.createCpVector(pickups.ColorWeapon1, 'Нажмите ~g~E~s~ чтобы открыть меню', 1, -1, pickups.Blue);
     methods.createCpVector(pickups.FixWeapon1, 'Нажмите ~g~E~s~ чтобы открыть меню', 1, -1, pickups.Blue);
     methods.createCpVector(pickups.FixWeapon2, 'Нажмите ~g~E~s~ чтобы открыть меню', 1, -1, pickups.Blue);
     methods.createCpVector(pickups.FixWeapon3, 'Нажмите ~g~E~s~ чтобы открыть меню', 1, -1, pickups.Blue);
     methods.createCpVector(pickups.StockLab, 'Нажмите ~g~E~s~ чтобы открыть меню', 1, -1, pickups.Blue);
     methods.createCpVector(pickups.StockBunk, 'Нажмите ~g~E~s~ чтобы открыть меню', 1, -1, pickups.Blue);
-
-    methods.createCpVector(pickups.EmsElevatorPos, 'Нажмите ~g~Left Alt~s~ чтобы воспользоваться пикапом', 1, -1, pickups.Blue100);
-    methods.createCpVector(pickups.EmsElevatorParkPos, 'Нажмите ~g~Left Alt~s~ чтобы воспользоваться пикапом', 1, -1, pickups.Blue100);
-    methods.createCpVector(pickups.EmsElevatorRoofPos, 'Нажмите ~g~Left Alt~s~ чтобы воспользоваться пикапом', 1, -1, pickups.Blue100);
-
     methods.createCpVector(pickups.BankMazeLiftOfficePos, 'Нажмите ~g~Left Alt~s~ чтобы воспользоваться пикапом', 1, -1, pickups.Blue100);
     methods.createCpVector(pickups.BankMazeLiftStreetPos, 'Нажмите ~g~Left Alt~s~ чтобы воспользоваться пикапом', 1, -1, pickups.Blue100);
     methods.createCpVector(pickups.BankMazeLiftRoofPos, 'Нажмите ~g~Left Alt~s~ чтобы воспользоваться пикапом', 1, -1, pickups.Blue100);
     methods.createCpVector(pickups.BankMazeLiftGaragePos, 'Нажмите ~g~Left Alt~s~ чтобы воспользоваться пикапом', 1, -1, pickups.Blue100);
     methods.createCpVector(pickups.BankMazeOfficePos1, 'Нажмите ~g~E~s~ чтобы открыть меню', 1, -1, pickups.Blue);
     methods.createCpVector(pickups.BankMazeOfficePos2, 'Нажмите ~g~E~s~ чтобы открыть меню', 1, -1, pickups.Blue);
-
     methods.createCpVector(pickups.Gov1LiftPos1, 'Нажмите ~g~Left Alt~s~ чтобы воспользоваться пикапом', 1, -1, pickups.Blue100);
     methods.createCpVector(pickups.Gov1LiftPos2, 'Нажмите ~g~Left Alt~s~ чтобы воспользоваться пикапом', 1, -1, pickups.Blue100);
     methods.createCpVector(pickups.Gov1LiftPos3, 'Нажмите ~g~Left Alt~s~ чтобы воспользоваться пикапом', 1, -1, pickups.Blue100);
     methods.createCpVector(pickups.Gov1LiftPos4, 'Нажмите ~g~Left Alt~s~ чтобы воспользоваться пикапом', 1, -1, pickups.Blue100);
-
     methods.createCpVector(pickups.Gov2LiftPos1, 'Нажмите ~g~Left Alt~s~ чтобы воспользоваться пикапом', 1, -1, pickups.Blue100);
     methods.createCpVector(pickups.Gov2LiftPos2, 'Нажмите ~g~Left Alt~s~ чтобы воспользоваться пикапом', 1, -1, pickups.Blue100);
     methods.createCpVector(pickups.Gov2LiftPos3, 'Нажмите ~g~Left Alt~s~ чтобы воспользоваться пикапом', 1, -1, pickups.Blue100);
     methods.createCpVector(pickups.Gov2LiftPos4, 'Нажмите ~g~Left Alt~s~ чтобы воспользоваться пикапом', 1, -1, pickups.Blue100);
     methods.createCpVector(pickups.Gov2LiftPos5, 'Нажмите ~g~Left Alt~s~ чтобы воспользоваться пикапом', 1, -1, pickups.Blue100);
-
     methods.createCpVector(pickups.CasinoLiftStreetPos, 'Нажмите ~g~Left Alt~s~ чтобы воспользоваться пикапом', 1, -1, pickups.Blue100);
     methods.createCpVector(pickups.CasinoLiftBalconPos, 'Нажмите ~g~Left Alt~s~ чтобы воспользоваться пикапом', 1, -1, pickups.Blue100);
     methods.createCpVector(pickups.CasinoLiftRoofPos, 'Нажмите ~g~Left Alt~s~ чтобы воспользоваться пикапом', 1, -1, pickups.Blue100);
     methods.createCpVector(pickups.CasinoLiftCondoPos, 'Нажмите ~g~Left Alt~s~ чтобы воспользоваться пикапом', 1, -1, pickups.Blue100);
     methods.createCpVector(pickups.CasinoLiftInPos, 'Нажмите ~g~Left Alt~s~ чтобы воспользоваться пикапом', 1, -1, pickups.Blue100);
-
     methods.createCpVector(pickups.Builder4Pos1, 'Нажмите ~g~Left Alt~s~ чтобы воспользоваться пикапом', 1, -1, pickups.Blue100);
     methods.createCpVector(pickups.Builder4Pos2, 'Нажмите ~g~Left Alt~s~ чтобы воспользоваться пикапом', 1, -1, pickups.Blue100);
     methods.createCpVector(pickups.Builder4Pos3, 'Нажмите ~g~Left Alt~s~ чтобы воспользоваться пикапом', 1, -1, pickups.Blue100);
     methods.createCpVector(pickups.Builder3Pos1, 'Нажмите ~g~Left Alt~s~ чтобы воспользоваться пикапом', 1, -1, pickups.Blue100);
     methods.createCpVector(pickups.Builder3Pos2, 'Нажмите ~g~Left Alt~s~ чтобы воспользоваться пикапом', 1, -1, pickups.Blue100);
     methods.createCpVector(pickups.Builder3Pos3, 'Нажмите ~g~Left Alt~s~ чтобы воспользоваться пикапом', 1, -1, pickups.Blue100);
-
     methods.createCpVector(pickups.UsmcPickupPos1, 'Нажмите ~g~Left Alt~s~ чтобы воспользоваться пикапом', 1, -1, pickups.Blue100);
     methods.createCpVector(pickups.UsmcPickupPos2, 'Нажмите ~g~Left Alt~s~ чтобы воспользоваться пикапом', 1, -1, pickups.Blue100);
     methods.createCpVector(pickups.UsmcPickupPos11, 'Нажмите ~g~Left Alt~s~ чтобы воспользоваться пикапом', 1, -1, pickups.Blue100);
     methods.createCpVector(pickups.UsmcPickupPos12, 'Нажмите ~g~Left Alt~s~ чтобы воспользоваться пикапом', 1, -1, pickups.Blue100);
-    methods.createCpVector(pickups.EmsPickupPos1, 'Нажмите ~g~Left Alt~s~ чтобы воспользоваться пикапом', 1, -1, pickups.Blue100);
-    methods.createCpVector(pickups.EmsPickupPos2, 'Нажмите ~g~Left Alt~s~ чтобы воспользоваться пикапом', 1, -1, pickups.Blue100);
-
     methods.createCpVector(pickups.CartelPickupPos1, 'Нажмите ~g~Left Alt~s~ чтобы воспользоваться пикапом', 1, -1, pickups.Blue100);
     methods.createCpVector(pickups.CartelPickupPos2, 'Нажмите ~g~Left Alt~s~ чтобы воспользоваться пикапом', 1, -1, pickups.Blue100);
-
     methods.createCpVector(pickups.Garage11Pos, 'Нажмите ~g~Left Alt~s~ чтобы воспользоваться лифтом', 3, -1, pickups.Tranparent);
     methods.createCpVector(pickups.Garage12Pos, 'Нажмите ~g~Left Alt~s~ чтобы воспользоваться лифтом', 3, -1, pickups.Tranparent);
     methods.createCpVector(pickups.Garage13Pos, 'Нажмите ~g~Left Alt~s~ чтобы воспользоваться лифтом', 3, -1, pickups.Tranparent);
-
     methods.createCpVector(pickups.Garage21Pos, 'Нажмите ~g~Left Alt~s~ чтобы воспользоваться лифтом', 3, -1, pickups.Tranparent);
     methods.createCpVector(pickups.Garage22Pos, 'Нажмите ~g~Left Alt~s~ чтобы воспользоваться лифтом', 3, -1, pickups.Tranparent);
     methods.createCpVector(pickups.Garage23Pos, 'Нажмите ~g~Left Alt~s~ чтобы воспользоваться лифтом', 3, -1, pickups.Tranparent);
-
     methods.createCpVector(pickups.FibLift0StationPos, 'Нажмите ~g~Left Alt~s~ чтобы воспользоваться пикапом', 1, -1, pickups.Blue100);
     methods.createCpVector(pickups.FibLift1StationPos, 'Нажмите ~g~Left Alt~s~ чтобы воспользоваться пикапом', 1, -1, pickups.Blue100);
     methods.createCpVector(pickups.FibLift2StationPos, 'Нажмите ~g~Left Alt~s~ чтобы воспользоваться пикапом', 1, -1, pickups.Blue100);
     methods.createCpVector(pickups.FibLift3StationPos, 'Нажмите ~g~Left Alt~s~ чтобы воспользоваться пикапом', 1, -1, pickups.Blue100);
     methods.createCpVector(pickups.FibLift4StationPos, 'Нажмите ~g~Left Alt~s~ чтобы воспользоваться пикапом', 1, -1, pickups.Blue100);
     methods.createCpVector(pickups.FibArsenalPos, 'Нажмите ~g~E~s~ чтобы воспользоваться пикапом', 1, -1, pickups.Blue);
-
     methods.createCpVector(pickups.CartelArsenalPos, 'Нажмите ~g~E~s~ чтобы воспользоваться пикапом', 1, -1, pickups.Blue);
-
     methods.createCpVector(pickups.MeriaUpPos, 'Нажмите ~g~Left Alt~s~ чтобы воспользоваться пикапом', 1, -1, pickups.Blue100);
     methods.createCpVector(pickups.MeriaDownPos, 'Нажмите ~g~Left Alt~s~ чтобы воспользоваться пикапом', 1, -1, pickups.Blue100);
     methods.createCpVector(pickups.MeriaRoofPos, 'Нажмите ~g~Left Alt~s~ чтобы воспользоваться пикапом', 1, -1, pickups.Blue100);
@@ -1206,7 +1082,6 @@ pickups.createAll = function() {
     methods.createCpVector(pickups.MeriaGarderobPos, 'Нажмите ~g~E~s~ чтобы открыть меню', 1, -1, pickups.Blue);
     methods.createCpVector(pickups.MeriaHelpPos, 'Нажмите ~g~E~s~ чтобы открыть меню', 1, -1, pickups.Blue);
     methods.createCpVector(pickups.MeriaHelpIslandPos, 'Нажмите ~g~E~s~ чтобы открыть меню', 1, -1, pickups.Blue);
-
     methods.createCpVector(pickups.SapdStockPos, 'Нажмите ~g~E~s~ чтобы открыть меню', 1, -1, pickups.Blue);
     methods.createCpVector(pickups.SapdStockPos2, 'Нажмите ~g~E~s~ чтобы открыть меню', 1, -1, pickups.Blue);
     methods.createCpVector(pickups.SapdStockPos3, 'Нажмите ~g~E~s~ чтобы открыть меню', 1, -1, pickups.Blue);
@@ -1226,17 +1101,14 @@ pickups.createAll = function() {
     methods.createCpVector(pickups.SapdArrestPos2, 'Нажмите ~g~E~s~ чтобы открыть меню', 1, -1, pickups.Blue);
     methods.createCpVector(pickups.SapdArrestPos3, 'Нажмите ~g~E~s~ чтобы открыть меню', 1, -1, pickups.Blue);
     methods.createCpVector(pickups.SapdKeyPos, 'Нажмите ~g~E~s~ чтобы открыть меню', 1, -1, pickups.Blue);
-
     methods.createCpVector(pickups.UsmcArsenalPos1, 'Нажмите ~g~E~s~ чтобы открыть меню', 1, -1, pickups.Blue);
     methods.createCpVector(pickups.UsmcArsenalPos2, 'Нажмите ~g~E~s~ чтобы открыть меню', 1, -1, pickups.Blue);
-
     methods.createCpVector(pickups.DispatcherPos1, 'Диспетчерская', 1, -1, pickups.Blue);
     methods.createCpVector(pickups.DispatcherPos2, 'Диспетчерская', 1, -1, pickups.Blue);
     methods.createCpVector(pickups.DispatcherPos3, 'Диспетчерская', 1, -1, pickups.Blue);
     methods.createCpVector(pickups.DispatcherPos4, 'Диспетчерская', 1, -1, pickups.Blue);
     methods.createCpVector(pickups.DispatcherPos5, 'Диспетчерская', 1, -1, pickups.Blue);
     methods.createCpVector(pickups.DispatcherPos6, 'Диспетчерская', 1, -1, pickups.Blue);
-
     methods.createCpVector(pickups.SheriffKeyPos, 'Нажмите ~g~E~s~ чтобы открыть меню', 1, -1, pickups.Blue);
     methods.createCpVector(pickups.InvaderKeyPos, 'Нажмите ~g~E~s~ чтобы открыть меню', 1, -1, pickups.Blue);
     methods.createCpVector(pickups.SheriffClearPos, 'Нажмите ~g~E~s~ чтобы открыть меню', 1, -1, pickups.Blue);
@@ -1250,15 +1122,7 @@ pickups.createAll = function() {
     methods.createCpVector(pickups.SheriffArsenalPos, 'Нажмите ~g~E~s~ чтобы открыть меню', 1, -1, pickups.Blue);
     methods.createCpVector(pickups.SheriffArsenalPos2, 'Нажмите ~g~E~s~ чтобы открыть меню', 1, -1, pickups.Blue);
     methods.createCpVector(pickups.SheriffArsenalPos3, 'Нажмите ~g~E~s~ чтобы открыть меню', 1, -1, pickups.Blue);
-
-    methods.createCpVector(pickups.EmsArsenalPos, 'Нажмите ~g~E~s~ чтобы открыть меню', 1, -1, pickups.Blue);
-    methods.createCpVector(pickups.EmsArsenalPos2, 'Нажмите ~g~E~s~ чтобы открыть меню', 1, -1, pickups.Blue);
-    methods.createCpVector(pickups.EmsArsenalPos3, 'Нажмите ~g~E~s~ чтобы открыть меню', 1, -1, pickups.Blue);
-    methods.createCpVector(pickups.EmsArsenalPos4, 'Нажмите ~g~E~s~ чтобы открыть меню', 1, -1, pickups.Blue);
-    methods.createCpVector(pickups.EmsArsenalPos5, 'Нажмите ~g~E~s~ чтобы открыть меню', 1, -1, pickups.Blue);
-
     methods.createCpVector(pickups.PrisonArrestPos, 'Нажмите ~g~E~s~ чтобы открыть меню', 1, -1, pickups.Blue);
-
     methods.createCpVector(pickups.ClubLsUserPos, 'Нажмите ~g~Left Alt~s~ чтобы воспользоваться пикапом', 1, -1, pickups.Blue100);
     methods.createCpVector(pickups.ClubTehUserPos, 'Нажмите ~g~Left Alt~s~ чтобы воспользоваться пикапом', 1, -1, pickups.Blue100);
     methods.createCpVector(pickups.ClubGalaxyUserPos, 'Нажмите ~g~Left Alt~s~ чтобы воспользоваться пикапом', 1, -1, pickups.Blue100);
@@ -1266,27 +1130,22 @@ pickups.createAll = function() {
     //methods.createCpVector(pickups.ClubGalaxyVPos, "Нажмите ~g~Left Alt~s~ чтобы воспользоваться пикапом", 4, -1, pickups.Blue100, 0.3);
     //methods.createCpVector(pickups.ClubTehVPos, "Нажмите ~g~Left Alt~s~ чтобы воспользоваться пикапом", 4, -1, pickups.Blue100, 0.3);
     //methods.createCpVector(pickups.ClubLsVPos, "Нажмите ~g~Left Alt~s~ чтобы воспользоваться пикапом", 4, -1, pickups.Blue100, 0.3);
-
     methods.createCpVector(pickups.IslandPos1, "Нажмите ~g~Left Alt~s~ чтобы воспользоваться пикапом", 4, -1, pickups.Blue100, 0.3);
     methods.createCpVector(pickups.IslandPos2, "Нажмите ~g~Left Alt~s~ чтобы воспользоваться пикапом", 4, -1, pickups.Blue100, 0.3);
-
     methods.createCpVector(business.BusinessOfficePos, 'Нажмите ~g~Left Alt~s~ чтобы воспользоваться пикапом', 1, -1, pickups.Blue100);
     methods.createCpVector(business.BusinessStreetPos, 'Нажмите ~g~Left Alt~s~ чтобы воспользоваться пикапом', 1, -1, pickups.Blue100);
     methods.createCpVector(business.BusinessMotorPos, 'Нажмите ~g~Left Alt~s~ чтобы воспользоваться пикапом', 1, -1, pickups.Blue100);
     methods.createCpVector(business.BusinessRoofPos, 'Нажмите ~g~Left Alt~s~ чтобы воспользоваться пикапом', 1, -1, pickups.Blue100);
     methods.createCpVector(business.BusinessGaragePos, 'Нажмите ~g~Left Alt~s~ чтобы воспользоваться пикапом', 1, -1, pickups.Blue100);
     methods.createCpVector(business.BusinessBotPos, 'Нажмите ~g~E~s~ чтобы открыть меню', 1, -1, pickups.Blue);
-
     methods.createCpVector(pickups.InvaderPos1, 'Нажмите ~g~Left Alt~s~ чтобы воспользоваться пикапом', 1, -1, pickups.Blue100);
     methods.createCpVector(pickups.InvaderPos2, 'Нажмите ~g~Left Alt~s~ чтобы воспользоваться пикапом', 1, -1, pickups.Blue100);
-
     methods.createCpVector(pickups.GangUserPosInt, 'Нажмите ~g~Left Alt~s~ чтобы воспользоваться пикапом', 1, -1, pickups.Blue100);
     methods.createCpVector(pickups.GangUserPos1, 'Нажмите ~g~Left Alt~s~ чтобы воспользоваться пикапом', 1, -1, pickups.Blue100);
     methods.createCpVector(pickups.GangUserPos2, 'Нажмите ~g~Left Alt~s~ чтобы воспользоваться пикапом', 1, -1, pickups.Blue100);
     methods.createCpVector(pickups.GangUserPos3, 'Нажмите ~g~Left Alt~s~ чтобы воспользоваться пикапом', 1, -1, pickups.Blue100);
     methods.createCpVector(pickups.GangUserPos4, 'Нажмите ~g~Left Alt~s~ чтобы воспользоваться пикапом', 1, -1, pickups.Blue100);
     methods.createCpVector(pickups.GangUserPos5, 'Нажмите ~g~Left Alt~s~ чтобы воспользоваться пикапом', 1, -1, pickups.Blue100);
-
     methods.createCpVector(pickups.Gr6Pos, 'Нажмите ~g~E~s~ чтобы открыть меню инкассатора', 1, -1, pickups.Blue);
     methods.createCpVector(pickups.Mech3Pos, 'Нажмите ~g~E~s~ чтобы открыть меню аренды транспорта', 1, -1, pickups.Blue);
     methods.createCpVector(pickups.MailPos, 'Нажмите ~g~E~s~ чтобы открыть меню аренты транспорта', 1, -1, pickups.Blue);

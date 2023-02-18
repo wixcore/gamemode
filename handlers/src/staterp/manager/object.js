@@ -1404,24 +1404,6 @@ object.load = function () {
     object.create(1681727376, new mp.Vector3(-1837.992, -607.2737, 10.35), new mp.Vector3(1.015221E-05, -0.4498585, 141.1494), false, false);
     object.create(2142033519, new mp.Vector3(246.44, -574.35, 42.31), new mp.Vector3(9.618499E-06, 0.374986, 69.37473), false, false);
 
-    // Столбики EMS PillboxHill
-    object.create(-994492850, new mp.Vector3(299.3083, -579.6682, 42.26086), new mp.Vector3(0, 0, -10.59997), false, false);
-    object.create(-994492850, new mp.Vector3(298.9536, -581.5536, 42.26086), new mp.Vector3(0, 0, -14.49999), false, false);
-    object.create(-994492850, new mp.Vector3(298.4625, -583.3111, 42.26086), new mp.Vector3(0, 0, -14.49999), false, false);
-    object.create(-994492850, new mp.Vector3(297.924, -584.9352, 42.26086), new mp.Vector3(0, 0, -17.19997), false, false);
-    object.create(-994492850, new mp.Vector3(297.269, -586.6929, 42.26086), new mp.Vector3(0, 0, -16.59998), false, false);
-    object.create(-994492850, new mp.Vector3(296.5572, -588.6815, 42.26086), new mp.Vector3(0, 0, -16.59998), false, false);
-
-    // Блокировка дверей и ворот снизу больницы Pillbox Hill
-    object.create(-982531572, new mp.Vector3(343.4154, -566.52, 30.08493), new mp.Vector3(1.00179E-05, 5.008956E-06, -20.00006), false, false);
-    object.create(-982531572, new mp.Vector3(338.9554, -564.91, 30.04101), new mp.Vector3(1.00179E-05, 5.008956E-06, -20.00006), false, false);
-    object.create(-982531572, new mp.Vector3(325.56, -560.04, 29.86809), new mp.Vector3(1.00179E-05, 5.008956E-06, -20.00006), false, false);
-    object.create(-982531572, new mp.Vector3(329.9954, -561.64, 29.95774), new mp.Vector3(1.00179E-05, 5.008956E-06, -20.00006), false, false);
-    object.create(-982531572, new mp.Vector3(334.4736, -563.27, 30.00469), new mp.Vector3(1.00179E-05, 5.008956E-06, -20.00006), false, false);
-    object.create(-1829309699, new mp.Vector3(359.09, -584.8922, 29.38), new mp.Vector3(1.00179E-05, 5.008956E-06, 69.94945), false, false);
-    object.create(-1829309699, new mp.Vector3(355.33, -595.4761, 29.38), new mp.Vector3(1.00179E-05, 5.008956E-06, 69.94945), false, false);
-    object.create(1693207013, new mp.Vector3(338.07, -583.8448, 74.40556), new mp.Vector3(1.001791E-05, -5.008956E-06, -110.7243), false, false);
-
     // Добавленные гаражные двери и простые двери к домам
     object.create(781635019, new mp.Vector3(-2169.67, 5194.76, 17.02), new mp.Vector3(1.001791E-05, 5.008957E-06, -167.6991), false, false); // Дверь в доме на острове
     object.create(-1857663329, new mp.Vector3(-911.8047, 195.3755, 70.26), new mp.Vector3(0, 0, 0), false, false); // Гаражная дверь дома id 543

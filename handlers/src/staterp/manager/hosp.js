@@ -1,32 +1,20 @@
 import methods from '../modules/methods';
-
-import Container from '../modules/data';
 import ui from '../modules/ui';
-
 import achievement from '../manager/achievement';
-
 import timer from "./timer";
 import jail from './jail';
-
 import user from '../user';
 import coffer from "../coffer";
 
 let hosp = {};
 
-hosp.pos1 = new mp.Vector3(320.7169494628906, -584.0098876953125, 42.28400802612305);
-hosp.pos2 = new mp.Vector3(-259.3686218261719, 6327.6416015625, 31.420677185058594);
-hosp.pos3 = new mp.Vector3(1827.4207763671875, 3676.67138671875, 33.27007293701172);
-hosp.pos4 = new mp.Vector3(4961.6123046875, -5790.55078125, 25.26630401611328);
+hosp.deathPillBox = new mp.Vector3(320.7169494628906, -584.0098876953125, 42.28400802612305);
+hosp.deathSandy = new mp.Vector3(1827.4207763671875, 3676.67138671875, 33.27007293701172);
+hosp.deathPaleto = new mp.Vector3(-259.3686218261719, 6327.6416015625, 31.420677185058594);
+hosp.deathZonan = new mp.Vector3(-432.0573425292969, -332.1520690917969, 33.91075897216797);
+hosp.deathArmy = new mp.Vector3(556.9434204101562, -3125.037841796875, 17.76858139038086);
 
-hosp.posArmy = new mp.Vector3(556.9434204101562, -3125.037841796875, 17.76858139038086);
-
-let hospList = [
-    hosp.pos1,
-    hosp.pos2,
-    hosp.pos3,
-    hosp.pos4,
-];
-
+let hospList = [hosp.deathPillBox, hosp.deathPaleto, hosp.deathSandy, hosp.deathZonan];
 let prvTime = 0;
 
 hosp.findNearest = function(pos) {
@@ -38,8 +26,9 @@ hosp.findNearest = function(pos) {
             prevPos = shopPos;
     });
 
-    if (user.isUsmc())
-        return hosp.posArmy;
+    if (user.isUsmc()) {
+        return hosp.deathArmy;
+    }
     return prevPos;
 };
 
@@ -66,31 +55,27 @@ hosp.timer = function() {
                 prvTime = user.getCache('med_time') + methods.getRandomInt(1, 5);
 
                 if (user.getCache('med_type') === 1) {
-                    if (methods.distanceToPos(mp.players.local.position, hosp.pos2) > 30) {
+                    if (methods.distanceToPos(mp.players.local.position, hosp.deathPaleto) > 30) {
                         mp.game.ui.notifications.show("~r~Вам необходимо проходить лечение");
                         user.teleportv(hosp.pos2);
                     }
-                }
-                else if (user.getCache('med_type') === 2) {
-                    if (methods.distanceToPos(mp.players.local.position, hosp.pos3) > 20) {
+                } else if (user.getCache('med_type') === 2) {
+                    if (methods.distanceToPos(mp.players.local.position, hosp.deathSandy) > 20) {
                         mp.game.ui.notifications.show("~r~Вам необходимо проходить лечение");
                         user.teleportv(hosp.pos3);
                     }
-                }
-                else if (user.getCache('med_type') === 3) {
-                    if (methods.distanceToPos(mp.players.local.position, hosp.posArmy) > 20) {
+                } else if (user.getCache('med_type') === 3) {
+                    if (methods.distanceToPos(mp.players.local.position, hosp.deathArmy) > 20) {
                         mp.game.ui.notifications.show("~r~Вам необходимо проходить лечение");
                         user.teleportv(hosp.posArmy);
                     }
-                }
-                else if (user.getCache('med_type') === 4) {
-                    if (methods.distanceToPos(mp.players.local.position, hosp.pos4) > 15) {
+                } else if (user.getCache('med_type') === 4) {
+                    if (methods.distanceToPos(mp.players.local.position, hosp.deathZonan) > 15) {
                         mp.game.ui.notifications.show("~r~Вам необходимо проходить лечение");
                         user.teleportv(hosp.pos4);
                     }
-                }
-                else {
-                    if (methods.distanceToPos(mp.players.local.position, hosp.pos1) > 40) {
+                } else {
+                    if (methods.distanceToPos(mp.players.local.position, hosp.deathPillBox) > 40) {
                         mp.game.ui.notifications.show("~r~Вам необходимо проходить лечение");
                         user.teleportv(hosp.pos1);
                     }
@@ -165,20 +150,16 @@ hosp.reset = function() {
 hosp.toHospCache = function() {
     try {
         if (user.getCache('med_type') === 1) {
-            user.respawn(hosp.pos2.x, hosp.pos2.y, hosp.pos2.z);
-        }
-        else if (user.getCache('med_type') === 2) {
-            user.respawn(hosp.pos3.x, hosp.pos3.y, hosp.pos3.z);
-        }
-        else if (user.getCache('med_type') === 3) {
-            user.respawn(hosp.posArmy.x, hosp.posArmy.y, hosp.posArmy.z);
-        }
-        else if (user.getCache('med_type') === 4) {
-            user.respawn(hosp.pos4.x, hosp.pos4.y, hosp.pos4.z);
-        }
-        else {
+            user.respawn(hosp.deathPaleto.x, hosp.deathPaleto.y, hosp.deathPaleto.z);
+        } else if (user.getCache('med_type') === 2) {
+            user.respawn(hosp.deathSandy.x, hosp.deathSandy.y, hosp.deathSandy.z);
+        } else if (user.getCache('med_type') === 3) {
+            user.respawn(hosp.deathArmy.x, hosp.deathArmy.y, hosp.deathArmy.z);
+        } else if (user.getCache('med_type') === 4) {
+            user.respawn(hosp.deathZonan.x, hosp.deathZonan.y, hosp.deathZonan.z);
+        } else {
             user.set('med_type', 0);
-            user.respawn(hosp.pos1.x, hosp.pos1.y, hosp.pos1.z);
+            user.respawn(hosp.deathPillBox.x, hosp.deathPillBox.y, hosp.deathPillBox.z);
         }
     }
     catch (e) {
@@ -195,25 +176,22 @@ hosp.toHosp = function() {
 
             let pos = hosp.findNearest(mp.players.local.position);
 
-            if (methods.distanceToPos(pos, hosp.pos2) < 50) {
+            if (methods.distanceToPos(pos, hosp.deathPaleto) < 50) {
                 user.set('med_type', 1);
-                user.respawn(hosp.pos2.x, hosp.pos2.y, hosp.pos2.z);
-            }
-            else if (methods.distanceToPos(pos, hosp.pos3) < 50) {
+                user.respawn(hosp.deathPaleto.x, hosp.deathPaleto.y, hosp.deathPaleto.z);
+            } else if (methods.distanceToPos(pos, hosp.deathSandy) < 50) {
                 user.set('med_type', 2);
-                user.respawn(hosp.pos3.x, hosp.pos3.y, hosp.pos3.z);
-            }
-            else if (methods.distanceToPos(pos, hosp.posArmy) < 50) {
+                user.respawn(hosp.deathSandy.x, hosp.deathSandy.y, hosp.deathSandy.z);
+            } else if (methods.distanceToPos(pos, hosp.deathArmy) < 50) {
                 user.set('med_type', 3);
-                user.respawn(hosp.posArmy.x, hosp.posArmy.y, hosp.posArmy.z);
+                user.respawn(hosp.deathArmy.x, hosp.deathArmy.y, hosp.deathArmy.z);
             }
-            else if (methods.distanceToPos(pos, hosp.pos4) < 50) {
+            else if (methods.distanceToPos(pos, hosp.deathZonan) < 50) {
                 user.set('med_type', 4);
-                user.respawn(hosp.pos4.x, hosp.pos4.y, hosp.pos4.z);
-            }
-            else {
+                user.respawn(hosp.deathZonan.x, hosp.deathZonan.y, hosp.deathZonan.z);
+            } else {
                 user.set('med_type', 0);
-                user.respawn(hosp.pos1.x, hosp.pos1.y, hosp.pos1.z);
+                user.respawn(hosp.deathPillBox.x, hosp.deathPillBox.y, hosp.deathPillBox.z);
             }
         }
 

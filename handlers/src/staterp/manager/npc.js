@@ -27,6 +27,26 @@ npc.loadAll = function () {
         methods.debug('npc.loadAll', e);
     }
     checkpoint.addMarker(-1288.153, -561.6686, 33.21216, 2, 0.5, 0.5);
+    
+    // EMS Parkings Pillbox
+    npc.create(mp.game.joaat("s_m_m_security_01"), new mp.Vector3(315.5782470703125, -559.717529296875, 28.761301040649414), -78.1510238647461, 0, false, 'WORLD_HUMAN_GUARD_STAND');
+    // EMS Parkings Zonan
+    npc.create(mp.game.joaat("s_m_m_security_01"), new mp.Vector3(-421.27081298828125, -347.6512756347656, 24.224529266357422), 107.01174926757812, 0,false, 'WORLD_HUMAN_GUARD_STAND');
+    // EMS Parkings Sandy
+    npc.create(mp.game.joaat("s_m_m_security_01"), new mp.Vector3(1823.7664794921875, 3688.929443359375, 34.22428894042969), 28.986351013183594, 0, false, 'WORLD_HUMAN_GUARD_STAND');
+    // EMS Parkings Paleto
+    npc.create(mp.game.joaat("s_m_m_security_01"), new mp.Vector3(-283.9298095703125, 6321.70751953125, 32.40444564819336), -47.8358268737793, 0, false, 'WORLD_HUMAN_GUARD_STAND');
+    // ..........
+    npc.create(mp.game.joaat("s_f_y_scrubs_01"), new mp.Vector3(309.55218505859375, -593.9552612304688, 43.28400802612305), 34.04, 0, false, "WORLD_HUMAN_STAND_IMPATIENT");
+    // ..........
+    npc.create(mp.game.joaat("s_f_y_scrubs_01"), new mp.Vector3(349.2425231933594, -587.8432006835938, 28.796838760375977), -108.64, 0, false, "WORLD_HUMAN_STAND_IMPATIENT");
+    // ..........
+    npc.create(mp.game.joaat("s_f_y_scrubs_01"), new mp.Vector3(1838.4437255859375, 3682.33544921875, 34.2700538635253901), 162.7, 0, false, "WORLD_HUMAN_STAND_IMPATIENT");
+    // ..........
+    npc.create(mp.game.joaat("s_f_y_scrubs_01"), new mp.Vector3(-246.97201538085938, 6320.427734375, 32.42073440551757801), 312.1, 0, false, "WORLD_HUMAN_STAND_IMPATIENT");
+    // ..........
+    npc.create(mp.game.joaat("s_f_y_scrubs_01"), new mp.Vector3(-435.3027343750001, -323.8680725097656, 34.91077423095703), 161.804, 0, false, "WORLD_HUMAN_STAND_IMPATIENT");
+
 
     /*//Quest BotSpawn Role0
     npc.create(mp.game.joaat("s_m_y_dockwork_01"), new mp.Vector3(-415.9264831542969, -2645.4287109375, 6.000219345092773), 316.27508544921875, false, "WORLD_HUMAN_CLIPBOARD");
@@ -85,12 +105,6 @@ npc.loadAll = function () {
     // Охранник справа в City Hall
     npc.create(mp.game.joaat("s_m_m_highsec_02"), new mp.Vector3(-1291.8, -565.9213, 30.57479), -132.9988, false, "WORLD_HUMAN_GUARD_STAND", '', '', 9, 0, '', '');
 
-    //Больница PillBox
-    npc.create(mp.game.joaat("s_f_y_scrubs_01"), new mp.Vector3(309.55218505859375, -593.9552612304688, 43.28400802612305), 21.91470, false, "WORLD_HUMAN_STAND_IMPATIENT");
-    //Больница Sandy
-    npc.create(mp.game.joaat("s_f_y_scrubs_01"), new mp.Vector3(1838.4437255859375, 3682.33544921875, 34.27005386352539), 162.76380920410156, false, "WORLD_HUMAN_STAND_IMPATIENT");
-    //Больница Paleto
-    npc.create(mp.game.joaat("s_f_y_scrubs_01"), new mp.Vector3(-246.97201538085938, 6320.427734375, 32.420734405517578), 312.1958923339844, false, "WORLD_HUMAN_STAND_IMPATIENT");
     //USMC
     npc.create(mp.game.joaat("s_m_y_marine_03"), new mp.Vector3(486.37030029296875, -3027.28515625, 6.014427661895752), 275.48919677734375, false, "WORLD_HUMAN_CLIPBOARD");
 
