@@ -10,5 +10,5 @@ require('./wixcore/nucleus');
 require('./wixcore/configs');
 require('./wixcore/classes');
 require('./wixcore/modules');
-require('./wixcore/plugins');
+require('./wixcore/feature');
 require('./wixcore/staterp');

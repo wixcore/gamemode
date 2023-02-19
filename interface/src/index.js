@@ -24,8 +24,24 @@ EventManager.addHandler('notify', value => {
 Noty.setMaxVisible(3);
 
 function notify(type, layout, message, time, theme) {
-    let types = ['information', 'error', 'success', 'warn'];
-    let layouts = ['top', 'topLeft', 'topCenter', 'topRight', 'center', 'centerLeft', 'centerRight', 'bottom', 'bottomLeft', 'bottomCenter', 'bottomRight'];
+    // let types = ['information', 'error', 'success', 'warn'];
+    var types = [
+        'alert', 'error', 'success', 'information', 'warning'
+    ];
+
+    var layouts = [
+        'top', 'topLeft', 'topCenter', 'topRight', 'center', 'centerLeft', 
+        'centerRight', 'bottom', 'bottomLeft', 'bottomCenter', 'bottomRight'
+    ];
+    
+    var style = [ 
+        '<div class="icons"><img src="https://push.wixcore.net/notify/alert.svg"></div>', 
+        '<div class="icons"><img src="https://push.wixcore.net/notify/error.svg"></div>',
+        '<div class="icons"><img src="https://push.wixcore.net/notify/success.svg"></div>',
+        '<div class="icons"><img src="https://push.wixcore.net/notify/alert.svg"></div>',
+        '<div class="icons"><img src="https://push.wixcore.net/notify/warning.svg"></div>'
+    ]
+    
     let notifyText = 'Информация!';
     switch (theme) {
         case 'error':
@@ -43,45 +59,49 @@ function notify(type, layout, message, time, theme) {
         default:
             break;
     }
+    
     switch (type) {
-        case 1:
-            notifyText = 'Ошибка!';
-            break;
-        case 3:
-            notifyText = 'Предупреждение!';
-            break;
         case 0:
             notifyText = 'Информация!';
-            break;
+        break;
+        case 1:
+            notifyText = 'Ошибка!';
+        break;
         case 2:
             notifyText = 'Успешно!';
-            break;
+        break;
+        case 3:
+            notifyText = 'Предупреждение!';
+        break;
         default:
-            break;
+        break;
     }
-    message = `
-    <div class="message__notify__container message__notify__color__${type}">
-        <span class="message__notify__type">${notifyText}</span>
-        <span class="message__notify">${message}</span>
-    </div>`;
-    let ntf = new Noty({
+
+    message = '<div class="new_notify">' + style[type] + '<div class="descript">' + message + '</div></div>';
+    
+    new Noty({
         type: types[type],
         layout: layouts[layout],
-        theme: theme || 'dednet',
+        theme: theme || 'wixcore',
         text: message,
         timeout: time,
-        progressBar: false,
+        progressBar: true,
         animation: {
-            open: 'animated fadeInLeft',
-            close: 'animated fadeOutLeft'
+            open: 'noty_effects_open',
+            close: 'noty_effects_close'
         }
-    });
-    ntf.show();
+    }).show();
 }
 
 setInterval(function () {
     mp.trigger('client:ui:checker'); // eslint-disable-line
 }, 1000);
+
+
+// notify(0, 1, 'Видимо произошла какая-то непредвиденная ошибка ', 10000)
+// notify(1, 1, 'Видимо произошла какая-то непредвиденная ошибка', 10000)
+// notify(2, 1, 'Видимо произошла какая-то непредвиденная ошибка', 10000)
+// notify(3, 1, 'Видимо произошла какая-то непредвиденная ошибка', 10000)
 
 const root = ReactDOM.createRoot(document.getElementById('ragemp-wixcore'));
 root.render(
