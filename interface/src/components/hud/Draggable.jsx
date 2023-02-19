@@ -1,8 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-
-import EventManager from "../../EventManager"
-
+import EventManager from "../../helpers/events";
 import {HudContext} from './context/HudContext'
 
 export default class Draggable extends React.Component {

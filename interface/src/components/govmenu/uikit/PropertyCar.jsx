@@ -1,12 +1,9 @@
 import React from 'react'
 import '../css/propcard.css'
-import CarCard from '../../accountmenu/uikit/CarCard'
 import { useState } from 'react'
 import BigButton from '../../accountmenu/uikit/BigButton'
-import Button from '../../accountmenu/uikit/Button'
 import MdCard from 'react-ionicons/lib/MdCard'
 import MdCash from 'react-ionicons/lib/MdCash'
-import Alert from '../../alert/Alert'
 
 const PropertyCar = (props) => {
     const { id, setAlert, type, name, vin, def, fuel, carclass, mark, number, price, tax, balance, maxbalance } = props

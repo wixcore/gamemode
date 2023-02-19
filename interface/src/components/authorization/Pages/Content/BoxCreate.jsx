@@ -1,6 +1,4 @@
 import React from 'react';
-import addPlayerIcon from '../../img/icon_add_player.svg'
-import persPlaceholder from '../../img/pers1.png'
 
 class BoxCreate extends React.Component {
     constructor(props) {

@@ -1,7 +1,7 @@
 import React from 'react';
 import InfoPlayer from './InfoPlayer';
 import BoxCreate from './BoxCreate';
-import EventManager from "../../../../EventManager";
+import EventManager from "../../../../helpers/events";
 
 class ChangePlayer extends React.Component {
     constructor(props) {

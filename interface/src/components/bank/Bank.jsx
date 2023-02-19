@@ -1,8 +1,5 @@
 import React from 'react';
-
 import "./css/bank.css"
-import BackgroundBank from './img/bank_bg.png'
-import LogoBank from './img/logo_flecca.png'
 import WithdrawIcon from './img/withdraw.svg'
 import CardItem from './components/CardItem'
 import HistoryAction from './components/HistoryAction'

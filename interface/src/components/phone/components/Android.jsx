@@ -4,7 +4,7 @@ import DefaultPage from './Android/DefaultPage';
 import TopBar from './Android/TopBar';
 import BottomBar from './Android/BottomBar';
 import { BrowserRouter as Router, Route, Redirect } from "react-router-dom";
-import EventManager from "../../../EventManager";
+import EventManager from "../../../helpers/events";
 import iphoneBox from '../img/iphone_frame.png'
 import PhoneBook from './Android/PhoneBook/PhoneBook';
 import ProfileContact from './Android/PhoneBook/pages/ProfileContact';

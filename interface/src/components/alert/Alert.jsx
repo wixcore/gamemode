@@ -1,6 +1,5 @@
 import React from 'react';
 import './css/notification.css'
-import EventManager from "../../EventManager";
 
 class Alert extends React.Component {
     

@@ -3,7 +3,7 @@ import './css/auto.css'
 import Authorization from './Pages/Authorization';
 import {BrowserRouter as Router, Route, Redirect} from "react-router-dom";
 import CreatePlayer from './Pages/CreatePlayer';
-import EventManager from "../../EventManager";
+import EventManager from "../../helpers/events";
 import serverLogo from './img/logo.svg'
 
 class AuthMain extends React.Component {

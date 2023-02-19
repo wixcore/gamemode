@@ -1,12 +1,9 @@
 import React from 'react'
 import '../css/propcard.css'
-import CarCard from '../../accountmenu/uikit/CarCard'
 import { useState } from 'react'
 import BigButton from '../../accountmenu/uikit/BigButton'
-import Button from '../../accountmenu/uikit/Button'
 import MdCard from 'react-ionicons/lib/MdCard'
 import MdCash from 'react-ionicons/lib/MdCash'
-import Alert from '../../alert/Alert'
 
 const PropertyYacht = (props) => {
     // <img className="govmenu__licensegov__propertycar__img" src={`https://state-99.com/client/images/cars/${props.name}_1.jpg`} />

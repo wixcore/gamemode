@@ -2,7 +2,7 @@ import React from 'react';
 import './css/main.css'
 import Header from './components/Header';
 import Content from './components/Content'
-import EventManager from "../../EventManager";
+import EventManager from "../../helpers/events";
 
 class AccountMenu extends React.Component {
     constructor(props) {

@@ -13,7 +13,7 @@ import {
 
 import * as styles from './PreferenceSelector.style';
 import IconClose from './icons/close.svg'
-import EventManager from "../../EventManager";
+import EventManager from "../../helpers/events";
 
 const INITIAL = 0;
 const PAYMENT = 1;

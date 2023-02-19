@@ -2,7 +2,7 @@ import React from 'react'
 import './css/main.css'
 import Header from './components/Header';
 import Car from './components/Car';
-import EventManager from "../../../EventManager";
+import EventManager from "../../../helpers/events";
 
 class CarRent extends React.Component {
     constructor(props) {

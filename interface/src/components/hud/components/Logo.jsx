@@ -1,5 +1,5 @@
 import React from 'react';
-import EventManager from "../../../EventManager";
+import EventManager from "../../../helpers/events";
 import { Animated } from 'react-animated-css';
 
 class Logo extends React.Component {

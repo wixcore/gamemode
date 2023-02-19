@@ -1,34 +1,27 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
-
+import ReactDOM from 'react-dom/client';
+import * as serviceWorker from './helpers/serviceWorker';
 import Noty from 'noty';
 import './css/theme-noty.css';
 import "../node_modules/noty/lib/noty.css";
-import "animate.css"
+import EventManager from "./helpers/events";
+import './css/base.css'
+import './css/adaptive.css'
+import './fonts/style.css'
+import './css/animate.css'
+import './fonts/Montserrat/stylesheet.css'
 
-import EventManager from "./EventManager";
+import {
+    EditorMain, Walkietalkie, AuthMain, Inventory, Phone, CircularMenu, AccountMenu,
+    GunShop, CarRent, Dialog, Tatoo, Hud, IDCard, GovMenu, WorkID, License, Certificate,
+    ModalInput, Notification, CarShop, Bank, Quickmenu
+} from './components';
 
 EventManager.addHandler('notify', value => {
     notify(value.type, value.layout, value.text, value.time)
 });
 
 Noty.setMaxVisible(3);
-
-
-/*
-*
-* theme: error, warning, info, success
-*
-*/
-
-/*
-* 0 = Info
-* 1 = Warn
-* 2 = Success
-* 3 = White
-* */
 
 function notify(type, layout, message, time, theme) {
     let types = ['information', 'error', 'success', 'warn'];
@@ -84,43 +77,57 @@ function notify(type, layout, message, time, theme) {
         }
     });
     ntf.show();
-    /*ntf.onClose((id, type) => {
-
-    });*/
 }
 
 setInterval(function () {
-    try {
-        mp.trigger('client:ui:checker'); // eslint-disable-line
-    }
-    catch (e) {
-    }
+    mp.trigger('client:ui:checker'); // eslint-disable-line
 }, 1000);
 
-/*notify(0, 1, 'Видимо произошла какая-то непредвиденная ошибка ', 5000000)
-notify(1, 1, 'Видимо произошла какая-то непредвиденная ошибка', 300000)
-notify(2, 1, 'Видимо произошла какая-то непредвиденная ошибка', 2000000)
-notify(3, 1, 'Видимо произошла какая-то непредвиденная ошибка', 2000000)*/
+const root = ReactDOM.createRoot(document.getElementById('ragemp-wixcore'));
+root.render(
+    <React.StrictMode>
+        <EditorMain />
+        <Walkietalkie />
+        <div className="box" id="box">
+            <AuthMain />
+            <Inventory />
+            <Phone />
+            <CircularMenu />
+            <AccountMenu />
+            <GunShop />
+            <CarRent />
+            <Dialog />
+            <Tatoo />
+            <Hud />
+            <IDCard />
+            <GovMenu />
+            <WorkID />
+            <License />
+            <Certificate />
+            <ModalInput />
+            <Notification />
+            <CarShop />
+            <Bank />
+            <Quickmenu />
+        </div>
+    </React.StrictMode>
+);
 
-ReactDOM.render(<App/>, document.getElementById('root'));
-
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
 serviceWorker.unregister();
 
 if (document.getElementById('disableZoom') === undefined) {
-    if (window.outerWidth > 1900)
+    if (window.outerWidth > 1900) {
         document.getElementsByTagName('body')[0].style.zoom = +(Math.sqrt(window.outerWidth ** 2 + window.outerHeight ** 2) / 2202.9071700822983).toFixed(3);
-    else
+    } else {
         document.getElementsByTagName('body')[0].style.zoom = 1;
-
+    }
     window.onresize = () => {
-        if (window.outerWidth > 1900)
+        if (window.outerWidth > 1900) {
             document.getElementsByTagName('body')[0].style.zoom = +(Math.sqrt(window.outerWidth ** 2 + window.outerHeight ** 2) / 2202.9071700822983).toFixed(3);
-        else
+        } else {
             document.getElementsByTagName('body')[0].style.zoom = 1;
+        }
     };
-}
-else
+} else {
     document.getElementsByTagName('body')[0].style.zoom = 1;
+}

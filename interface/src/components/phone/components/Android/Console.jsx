@@ -1,5 +1,5 @@
 import React from 'react';
-import EventManager from "../../../../EventManager";
+import EventManager from "../../../../helpers/events";
 
 class Console extends React.Component {
     constructor(props) {

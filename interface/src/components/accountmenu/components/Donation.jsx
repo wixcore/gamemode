@@ -1,7 +1,6 @@
 import React from 'react'
 import '../css/faq.css'
 import BigButton from '../uikit/BigButton'
-import Question from '../uikit/Question'
 import { useState } from 'react'
 import Quest from '../uikit/Quest'
 import DonationRouter from './DonationRouter'

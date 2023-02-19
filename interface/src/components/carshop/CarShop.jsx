@@ -1,8 +1,7 @@
 import React from 'react';
 import './css/carshop.css'
-
 import Slider from "react-slick";
-import EventManager from "../../EventManager";
+import EventManager from "../../helpers/events";
 
 function NextArrow(props) {
     const {onClick} = props;

@@ -1,7 +1,7 @@
 import React from 'react';
 import Autosize from 'autosize';
 import './css/modalinput.css'
-import EventManager from "../../EventManager";
+import EventManager from "../../helpers/events";
 
 class ModalInput extends React.Component {
     constructor(props) {

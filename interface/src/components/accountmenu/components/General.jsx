@@ -3,13 +3,7 @@ import '../css/general.css'
 import LineData from '../uikit/LineData'
 import StatContainer from '../uikit/StatContainer'
 import InfoBlock from '../uikit/InfoBlock'
-import ProgressBar from '../uikit/ProgressBar'
-import ProgressBarCircle from '../uikit/ProgressBarCircle'
 import Card from '../uikit/Card'
-import EventManager from "../../../EventManager";
-import { ButtonBase } from '@material-ui/core'
-import ButtonOver from '../uikit/ButtonOver'
-import Button from '../uikit/Button'
 import BigButton from '../uikit/BigButton'
 
 const General = ({ listElements, accountData, setActivePage }) => {

@@ -3,7 +3,6 @@ import Camera from './content/Camera';
 import FamilyCharacter from './content/FamilyCharacter';
 import EditorCharacter from './content/EditorCharacter';
 import {Route, Switch} from "react-router-dom";
-import EventManager from "../../EventManager";
 import NameCharacter from './content/NameCharacter';
 
 class EditorPlayer extends React.Component {

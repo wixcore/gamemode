@@ -9,7 +9,7 @@ import Gps from './components/Gps';
 import Watch from './components/Watch';
 import Logo from './components/Logo';
 import MainMenu from './components/MainMenu';
-import EventManager from "../../EventManager";
+import EventManager from "../../helpers/events";
 import Chat from './components/Chat';
 import Notification from './components/Notification/Notification'
 import Hints from './components/Hints'

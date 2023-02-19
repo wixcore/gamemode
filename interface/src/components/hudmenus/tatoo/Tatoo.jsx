@@ -3,7 +3,7 @@ import './css/main.css'
 import Header from './components/Header';
 import CatalogItem from './components/CatalogItem'
 import FlatButton from '../gunshop/uikit/FlatButton'
-import EventManager from "../../../EventManager";
+import EventManager from "../../../helpers/events";
 
 class Tatoo extends React.Component {
     constructor(props) {

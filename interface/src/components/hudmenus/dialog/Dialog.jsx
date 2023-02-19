@@ -1,7 +1,7 @@
 import React from 'react'
 import './css/main.css'
 import DialogButton from './components/DialogButton';
-import EventManager from "../../../EventManager";
+import EventManager from "../../../helpers/events";
 
 class Dialog extends React.Component {
     constructor(props) {

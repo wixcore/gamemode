@@ -1,6 +1,6 @@
 import React from 'react';
 import './css/notification.css'
-import EventManager from "../../EventManager";
+import EventManager from "../../helpers/events";
 
 class Notification extends React.Component {
     constructor(props) {

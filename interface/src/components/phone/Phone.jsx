@@ -5,7 +5,7 @@ import { Animated } from 'react-animated-css';
 import './css/phone.css'
 import '../../css/animate.css'
 import Android from './components/Android';
-import EventManager from "../../EventManager";
+import EventManager from "../../helpers/events";
 
 class Phone extends React.Component {
     constructor(props) {

@@ -3,7 +3,7 @@ import React from 'react';
 import "./css/workid.css"
 import img_woman from "./img/woman.png"
 import img_man from "./img/man.png"
-import EventManager from "../../EventManager";
+import EventManager from "../../helpers/events";
 
 class WorkID extends React.Component {
     constructor(props) {

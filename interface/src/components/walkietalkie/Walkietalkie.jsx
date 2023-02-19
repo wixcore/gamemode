@@ -1,7 +1,7 @@
 import React from 'react';
 import UIfx from 'uifx';
 import { Animated } from 'react-animated-css';
-import EventManager from "../../EventManager";
+import EventManager from "../../helpers/events";
 
 import click from './snd/click.mp3';
 import pipmp3 from './snd/pip.mp3';

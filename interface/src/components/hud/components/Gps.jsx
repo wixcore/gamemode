@@ -1,5 +1,5 @@
 import React from 'react';
-import EventManager from "../../../EventManager";
+import EventManager from "../../../helpers/events";
 
 import Draggable from '../Draggable'
 

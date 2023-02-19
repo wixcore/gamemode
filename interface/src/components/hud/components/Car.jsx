@@ -1,8 +1,5 @@
 import React from 'react';
-import EventManager from "../../../EventManager";
-import Draggable from '../Draggable'
-
-
+import EventManager from "../../../helpers/events";
 
 class Car extends React.Component {
     constructor(props) {

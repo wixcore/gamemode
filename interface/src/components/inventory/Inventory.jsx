@@ -4,7 +4,7 @@ import './assets/css/default.css';
 import './assets/css/items.css';
 import { Animated } from 'react-animated-css';
 import InteractionMenu from '../interaction/InteractionMenu';
-import EventManager from "../../EventManager";
+import EventManager from "../../helpers/events";
 import { Draggable, Droppable } from './includes';              // Компоненти Drag & Drop
 
 class Inventory extends React.Component {

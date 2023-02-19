@@ -3,7 +3,7 @@ import NavigationPanel from './components/NavigationPanel.jsx'
 import CatalogPanel from './components/CatalogPanel.jsx'
 import StatsPanel from './components/StatsPanel.jsx'
 import './css/main.css'
-import EventManager from "../../../EventManager";
+import EventManager from "../../../helpers/events";
 
 export default class GunShop extends React.Component {
     constructor(props) {

@@ -1,5 +1,5 @@
 import React from 'react';
-import EventManager from "../../../EventManager";
+import EventManager from "../../../helpers/events";
 import Header from './MainMenu/Header/Header.jsx'
 import Desc from './MainMenu/uikit/Desc.jsx'
 import InterfaceItem from './MainMenu/List/InterfaceItem.jsx'

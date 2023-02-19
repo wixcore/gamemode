@@ -4,7 +4,7 @@ import './css/editor-adaptive.css'
 import {BrowserRouter as Router, Route, Redirect} from "react-router-dom";
 import EditorPlayer from './EditorPlayer';
 import ChoiceRole from './content/ChoiceRole';
-import EventManager from "../../EventManager";
+import EventManager from "../../helpers/events";
 import serverLogo from '../authorization/img/logo.svg'
 
 class EditorMain extends React.Component {

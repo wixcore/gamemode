@@ -3,7 +3,6 @@ import Header from '../accountmenu/components/Header'
 import Content from '../accountmenu/components/Content'
 import './css/main.css'
 import Alert from '../alert/Alert'
-import { TextareaAutosize } from '@material-ui/core'
 
 class GovMenu extends React.Component {
     constructor(props) {

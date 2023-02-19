@@ -1,6 +1,4 @@
 import React from 'react';
-import SliderEditor from './PageEditor/Elements/SliderEditor';
-// import { Link } from 'react-router-dom';
 
 class NameCharacter extends React.Component {
     constructor(props) {

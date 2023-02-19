@@ -1,17 +1,14 @@
 import React from 'react';
-
 import "./css/certificate.css"
-
 import img_woman from "./img/woman.png"
 import img_man from "./img/man.png"
-import flag from "./img/logo-2.png"
 import gov from "./img/gov.png"
 import fib from "./img/fib.png"
 import lspd from "./img/lspd.png"
 import sheriff from "./img/sheff.png"
 import ems from "./img/ems.png"
 import usmc from "./img/usmc.png"
-import EventManager from "../../EventManager";
+import EventManager from "../../helpers/events";
 
 class Certificate extends React.Component {
     constructor(props) {
