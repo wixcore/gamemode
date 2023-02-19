@@ -1,15 +1,21 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import * as serviceWorker from './helpers/serviceWorker';
-import Noty from 'noty';
-import './css/theme-noty.css';
-import "../node_modules/noty/lib/noty.css";
 import EventManager from "./helpers/events";
+import Noty from 'noty';
+
+import '@fontsource/roboto/300.css';
+import '@fontsource/roboto/400.css';
+import '@fontsource/roboto/500.css';
+import '@fontsource/roboto/700.css';
+import 'font-proxima-nova/style.css';
+import "@fontsource/montserrat";
+
+import './assets/css/notice.css';
 import './css/base.css'
 import './css/adaptive.css'
 import './fonts/style.css'
 import './css/animate.css'
-import './fonts/Montserrat/stylesheet.css'
 
 import {
     EditorMain, Walkietalkie, AuthMain, Inventory, Phone, CircularMenu, AccountMenu,
