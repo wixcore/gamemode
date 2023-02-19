@@ -12,5 +12,6 @@
   await require('./wixcore/classes')();
   await require('./wixcore/modules')();
   await require('./wixcore/plugins')();
+  await require('./wixcore/feature')();
   await require('./wixcore/staterp')();
 })();
