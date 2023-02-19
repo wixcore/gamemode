@@ -5,8 +5,6 @@ module.exports = {
     Models: {},
     TypeMode: WixCore.Class.TypeMode.DataBase(),
     Connect: function () {
-        console.log(this.TypeMode)
-
         this.sequelize = new Sequelize(this.TypeMode.connect[2], this.TypeMode.connect[3], this.TypeMode.connect[4], {
             host: this.TypeMode.connect[0],
             dialect: WixCore.Config.Variable['DataBase'],
